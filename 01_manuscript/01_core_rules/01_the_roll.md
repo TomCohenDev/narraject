@@ -4,7 +4,6 @@ In **Narraject**, some actions or situations call for a roll so the story moves 
 
 > **Before We Start: Anatomy of a Character**
 > To make a roll, you need to know what is on your character sheet:
->
 > - **Stats:** You have 4 Stats (Might, Agility, Mind, Persona). Each has a **Rating** (dice you always roll when using that stat) and a **Reserve** (effort you may spend that add dice).
 > - **Traits:** Specific skills or backgrounds (e.g., "Hacker," "Soldier") that add dice.
 > - **Legendary Actions:** Your signature abilities, represented by a single **Step Die** (d8, d10, or d12).
@@ -129,24 +128,28 @@ In Narraject, actions are not locked to specific stats. You use the stat that ma
 | **Persona** | Social influence, willpower, presence, deception.        |
 
 > **Example: Opening a Locked Door**
+>
 > - **Might:** You kick the hinge until it snaps.
 > - **Agility:** You slide a lockpick into the tumbler.
 > - **Mind:** You hotwire the electronic keypad panel.
 > - **Persona:** You shout "Open up!" and hope they listen.
 
 > **Example: Getting Past a Guard**
+>
 > - **Might:** You physically overpower them, pinning them to the wall.
 > - **Agility:** You slip past silently while they're distracted.
 > - **Mind:** You memorize their patrol pattern and time your approach perfectly.
 > - **Persona:** You convince them you're authorized to be here.
 
 > **Example: Finding Information**
+>
 > - **Might:** You break into a filing cabinet and rummage through papers.
 > - **Agility:** You pickpocket the key from someone's pocket.
 > - **Mind:** You recall reading about this in a book last week.
 > - **Persona:** You charm a librarian into letting you access restricted archives.
 
 > **Example: Stopping an Enemy Attack**
+>
 > - **Might:** You grab their weapon arm and wrench it away.
 > - **Agility:** You dodge at the last second, making them overbalance.
 > - **Mind:** You predict their move from their stance and intercept.
@@ -180,6 +183,8 @@ The bonus corresponds to the gear's level, unless the gear has a specific descri
 | **Standard**   | +1d6  | Common tool that enables the action.  |
 | **Quality**    | +2d6  | Superior craftsmanship or technology. |
 | **Masterwork** | +3d6  | Exceptional, rare, or master-crafted. |
+
+**Gear can also hinder:** Some gear has tags that subtract dice from certain rolls (like **Heavy** armor giving -1d6 to Agility rolls). See the **Gear** chapter for details.
 
 ### 5. Situational Aspects
 
@@ -232,9 +237,7 @@ That's it. No addition, no multiplication. Just count.
 
 What if your Reserve is empty, no traits apply, no gear helps, and the GM grants nothing?
 
-You roll your **Rating + Step Die**. That's it.
-
-This is the desperation roll—you're running on fumes, relying purely on innate capability and identity. It's not much, but you're never completely helpless.
+You roll your **Stat Rating + Step Die**. That's it.
 
 ---
 
@@ -248,7 +251,7 @@ This is the desperation roll—you're running on fumes, relying purely on innate
 1.  **Approach:** Agility (Rating 3). **Starts with 3d6.**
 2.  **Effort:** She needs this hit. She spends 2 Reserve points. **Adds +2d6.**
 3.  **Trait:** "Expert Marksman." **Adds +2d6.**
-4.  **Gear:** Quality Scoped Rifle. **Adds +2d6.**
+4.  **Gear:** Quality Rifle. **Adds +1d6.**
 5.  **Step Die:** Her Focus is "Sniper" (d10). **Adds 1d10.**
 
 **The Roll:** 9d6 + 1d10.

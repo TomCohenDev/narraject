@@ -16,8 +16,10 @@ Gear has **Tags** that describe what it does:
 | **Concealable** | Easy to hide                              |
 | **Versatile** | Works in multiple situations               |
 | **Consumable** | One-time use                              |
+| **Heavy** | -1d6 to Agility rolls                     |
+| **Cumbersome** | -1d6 to specific actions (as described)   |
 
-**Example:** A rifle might have [Ranged, Quality, Loud]. A lockpick might have [Concealable, Quality].
+**Example:** A rifle might have [Ranged, Quality, Loud]. A lockpick might have [Concealable, Quality]. Heavy armor might have [Heavy].
 
 ---
 
@@ -30,6 +32,21 @@ Gear has **Tags** that describe what it does:
 | Masterwork | +3d6  |
 
 Most starting gear is Standard or Quality. Masterwork is rare and expensive.
+
+---
+
+## Gear Hindrances
+
+Some gear helps in certain situations but **hinders** in others. When gear has a hindrance tag (like **Heavy** or **Cumbersome**), subtract dice from relevant rolls.
+
+**Common Hindrances:**
+
+- **Heavy:** -1d6 to Agility rolls (heavy armor, massive weapons)
+- **Cumbersome:** -1d6 to specific actions as described (bulky equipment, unwieldy tools)
+
+Gear can both help and hinder. A heavy backpack might give you supplies (+dice to survival rolls) but slow you down (-1d6 to Agility rolls). A massive two-handed sword might deal devastating damage (+dice to attacks) but be harder to swing in tight spaces (-1d6 to Agility-based combat maneuvers).
+
+**Example:** Kira is wearing heavy plate armor. When she tries to sneak past a guard (Agility roll), the GM applies -1d6 because of the **Heavy** tag. The armor protects her, but it clinks and restricts her movement.
 
 ---
 
@@ -61,6 +78,8 @@ Armor doesn't add dice. Instead, it **reduces Condition severity**.
 **Example:** You take a hit that would inflict Wounded. You're wearing Medium armor. You become Hurt instead.
 
 Armor can't reduce below Hurt. Even in full plate, a solid hit still hurts.
+
+**Heavy armor hinders movement:** Heavy armor has the **Heavy** tag, which applies -1d6 to Agility rolls. The protection comes at a cost—you're harder to hurt, but harder to move quickly.
 
 ---
 
