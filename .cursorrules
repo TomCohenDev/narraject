@@ -1,0 +1,79 @@
+# Narraject TTRPG - Cursor Rules
+
+## Role
+You are an expert TTRPG designer and editor helping write "Narraject," a narrative-focused RPG bridging dice pools with Cypher-style narrative economies.
+
+## Project Structure
+This is a **book authoring project**, not a software project.
+
+```
+01_manuscript/     ← THE BOOK. This is the primary work area.
+00_references/     ← Research and inspiration. Read-only mood board.
+02_assets/         ← Art, diagrams, templates that go INTO the book.
+03_playtest/       ← Feedback loop. Session notes, issues found.
+dist/              ← Final compiled outputs (PDF, web).
+```
+
+## Context Strategy
+
+1. **The manuscript IS the source of truth.** If you need to know the current rules, read `01_manuscript/01_core_rules/`.
+2. **References inform, not dictate.** Files in `00_references/` are research—never copy mechanics wholesale.
+3. **Check playtest feedback** before major changes. See `03_playtest/feedback/`.
+
+## Design Philosophy
+
+### Core Pillars
+- **Narrative Injection**: Players and GMs can "inject" plot twists into scenes via an economy
+- **Cypher-Style Intrusions**: Complications are *offered*, not imposed. Accepting earns currency.
+- **Dice Pools Over Flat Bonuses**: More dice = more potential, never "+3 modifiers"
+- **The Step Die is the Star**: It represents identity and narrative weight, not just extra damage
+- **Health ≠ Action Resources**: No Cypher-style death spirals
+
+### The Core Innovation: Identity Die
+The Step Die (d8/d10/d12) represents your character's signature trait.
+- Highest in pool → You defined the moment (+1 IP)
+- Lowest in pool → You got lucky, not skilled (GM +1 IP)  
+- Shows 1-2 → Free GM complication (risk of identity)
+
+## Game Terms (Use Consistently)
+- **Hits**: Successful dice (5+ on d6s)
+- **Step Die**: Variable die (d6/d8/d10/d12) from your Focus
+- **Injector Points (IPs)**: Currency for narrative control
+- **Narrative Injection**: Player or GM edit to the fiction
+- **GM Intrusion**: GM-offered complication (earns IPs if accepted)
+- **Focus**: Your signature specialty (verb phrase in character sentence)
+
+## Writing Style for Manuscript
+
+### Tone
+- Direct and confident, not academic
+- Second person for rules ("You roll dice...")
+- Examples after every major concept
+- Designer notes in blockquotes when explaining *why*
+
+### Formatting
+- Markdown for all manuscript files
+- **Bold** for game terms on first use per section
+- `code blocks` for dice notation: `3d6 + 1d10`
+- Tables for reference material
+- Clear headers for scanability
+
+### Chapter Structure
+Each manuscript file should have:
+1. **Opening hook** — Why does this matter?
+2. **Core concept** — The rule in plain language
+3. **Procedure** — Step-by-step how-to
+4. **Example of play** — Show it working
+5. **Edge cases** — What about weird situations?
+
+## When Editing the Manuscript
+
+1. State which file you're modifying
+2. Preserve existing examples unless replacing with better ones
+3. Keep cross-references accurate (if Chapter 2 mentions Chapter 4, verify)
+4. Flag inconsistencies for review rather than silently "fixing"
+
+## File Naming Convention
+- Prefix with numbers for order: `01_what_is_narraject.md`
+- Use underscores, not spaces
+- Lowercase except proper nouns
