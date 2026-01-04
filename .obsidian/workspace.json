@@ -1,0 +1,225 @@
+{
+  "main": {
+    "id": "878739685ff0e791",
+    "type": "split",
+    "children": [
+      {
+        "id": "83bcf45a0984cca9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "72664bb5841409e0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01_manuscript/01_core_rules/01_the_roll.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01_the_roll"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5e07fa3a966ced55",
+    "type": "split",
+    "children": [
+      {
+        "id": "a7531ad487e324e1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1886935f3ad7783b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "5b9b9ad47a3fd3fe",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "5957aa89737c38ce",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e988b9e28835d648",
+    "type": "split",
+    "children": [
+      {
+        "id": "82f1abb6020ab333",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4ba31734b52e52d1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "01_manuscript/01_core_rules/01_the_roll.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 01_the_roll"
+            }
+          },
+          {
+            "id": "90d4f1bfacef6d61",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "01_manuscript/01_core_rules/01_the_roll.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 01_the_roll"
+            }
+          },
+          {
+            "id": "3d90029042fc60c0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "5c4da2007c8256e6",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "5d14e4ae7c460157",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "01_manuscript/01_core_rules/01_the_roll.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 01_the_roll"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "72664bb5841409e0",
+  "lastOpenFiles": [
+    "01_manuscript/02_characters/02_stats_and_capacity.md",
+    "01_manuscript/01_core_rules/01_the_roll.md",
+    "01_manuscript/01_core_rules/02_the_step_die.md",
+    "01_manuscript/00_front_matter/02_table_of_contents.md",
+    "01_manuscript/00_front_matter/01_the_pitch.md",
+    "01_manuscript/00_front_matter/00_title_credits.md",
+    "01_manuscript/01_core_rules/01_building_the_pool.md",
+    "01_manuscript/02_character/01_overview.md",
+    "01_manuscript/02_character/03_types.md",
+    "01_manuscript/02_character/02_focus.md",
+    "MIGRATION_SUMMARY.md",
+    "MIGRATION_CHECKLIST.md",
+    "01_manuscript/00_intro/01_what_is_narraject.md",
+    "01_manuscript/02_characters/07_descriptors.md",
+    "01_manuscript/02_characters/06_focus.md",
+    "02_design_notes/ideas_bin.md",
+    "01_manuscript/99_back_matter/03_sheets.md",
+    "01_manuscript/99_back_matter/02_definitions.md",
+    "01_manuscript/99_back_matter/01_tables.md",
+    "01_manuscript/04_gm_toolkit/03_the_toolbox.md",
+    "01_manuscript/04_gm_toolkit/02_npcs_threats.md",
+    "01_manuscript/04_gm_toolkit/01_principles.md",
+    "01_manuscript/03_gameplay_loops/03_consequences.md",
+    "01_manuscript/03_gameplay_loops/02_conflict.md",
+    "01_manuscript/03_gameplay_loops/01_pacing.md",
+    "01_manuscript/02_characters/05_progression.md",
+    "02_design_notes",
+    "01_manuscript/99_back_matter",
+    "01_manuscript/04_gm_toolkit",
+    "01_manuscript/03_gameplay_loops",
+    "01_manuscript/02_characters",
+    "01_manuscript/00_front_matter",
+    "01_manuscript/05_reference",
+    "01_manuscript/03_playing_the_game",
+    "01_manuscript/02_character_creation",
+    "01_manuscript/01_core_loop"
+  ]
+}
