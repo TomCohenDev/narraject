@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Narraject Character Sheet</title>
+    <style>
+      /* ============================================
+       CONFIGURATION VARIABLES - EDIT THESE!
+       ============================================ */
+      :root {
+        /* Colors */
+        --bg-primary: #0d0d0d;
+        --bg-secondary: #1a1a1a;
+        --bg-input: #252525;
+        --border-color: #3a3a3a;
+        --border-accent: #5a5a5a;
+        --text-primary: #e8e8e8;
+        --text-secondary: #888;
+        --text-muted: #555;
+        --accent-color: #c9a227;
+        --accent-glow: rgba(201, 162, 39, 0.3);
+        --danger-color: #8b2635;
+        --success-color: #2d5a27;
+
+        /* Typography */
+        --font-display: "Courier New", monospace;
+        --font-body: "Segoe UI", system-ui, sans-serif;
+        --font-mono: "Courier New", monospace;
+
+        /* Sizing */
+        --spacing-xs: 4px;
+        --spacing-sm: 8px;
+        --spacing-md: 12px;
+        --spacing-lg: 16px;
+        --spacing-xl: 24px;
+        --border-radius: 3px;
+        --input-height: 28px;
+      }
+
+      /* ============================================
+       BASE STYLES
+       ============================================ */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      @page {
+        size: A4;
+        margin: 10mm;
+      }
+
+      body {
+        font-family: var(--font-body);
+        font-size: 11px;
+        line-height: 1.4;
+        background: var(--bg-primary);
+        color: var(--text-primary);
+        padding: var(--spacing-lg);
+      }
+
+      .sheet {
+        max-width: 210mm;
+        margin: 0 auto;
+        background: var(--bg-primary);
+      }
+
+      /* ============================================
+       HEADER
+       ============================================ */
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        border-bottom: 2px solid var(--accent-color);
+        padding-bottom: var(--spacing-sm);
+        margin-bottom: var(--spacing-md);
+      }
+
+      .logo {
+        font-family: var(--font-display);
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: var(--accent-color);
+      }
+
+      .version {
+        font-family: var(--font-mono);
+        font-size: 9px;
+        color: var(--text-muted);
+      }
+
+      /* ============================================
+       CHARACTER SENTENCE
+       ============================================ */
+      .sentence-block {
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        border-left: 3px solid var(--accent-color);
+        padding: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
+      }
+
+      .sentence {
+        font-family: var(--font-display);
+        font-size: 14px;
+        color: var(--text-secondary);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: var(--spacing-xs);
+      }
+
+      .sentence span {
+        color: var(--text-muted);
+      }
+
+      .sentence input {
+        background: transparent;
+        border: none;
+        border-bottom: 1px dashed var(--border-accent);
+        color: var(--accent-color);
+        font-family: var(--font-display);
+        font-size: 14px;
+        padding: 2px 4px;
+        min-width: 100px;
+      }
+
+      .sentence input:focus {
+        outline: none;
+        border-bottom-color: var(--accent-color);
+      }
+
+      .sentence input::placeholder {
+        color: var(--text-muted);
+        font-style: italic;
+      }
+
+      /* ============================================
+       IDENTITY ROW
+       ============================================ */
+      .identity-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
+      }
+
+      .field-group {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-xs);
+      }
+
+      .field-group label {
+        font-size: 9px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--text-muted);
+      }
+
+      .field-group input {
+        background: var(--bg-input);
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        color: var(--text-primary);
+        font-family: var(--font-body);
+        font-size: 12px;
+        padding: var(--spacing-sm);
+        height: var(--input-height);
+      }
+
+      .field-group input:focus {
+        outline: none;
+        border-color: var(--accent-color);
+        box-shadow: 0 0 0 1px var(--accent-glow);
+      }
+
+      /* ============================================
+       MAIN GRID
+       ============================================ */
+      .main-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-md);
+      }
+
+      /* ============================================
+       SECTIONS
+       ============================================ */
+      .section {
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        padding: var(--spacing-md);
+      }
+
+      .section-title {
+        font-family: var(--font-display);
+        font-size: 11px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--accent-color);
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: var(--spacing-xs);
+        margin-bottom: var(--spacing-sm);
+      }
+
+      /* ============================================
+       STATS
+       ============================================ */
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--spacing-md);
+      }
+
+      .stat-block {
+        text-align: center;
+        padding: var(--spacing-md);
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        border-top: 2px solid var(--accent-color);
+        transition: all 0.2s ease;
+      }
+
+      .stat-block:hover {
+        border-color: var(--border-accent);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .stat-name {
+        font-size: 11px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--accent-color);
+        margin-bottom: var(--spacing-md);
+        font-family: var(--font-display);
+      }
+
+      .stat-values {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+      }
+
+      .stat-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: var(--spacing-sm);
+        padding: var(--spacing-xs) 0;
+      }
+
+      .stat-label {
+        font-size: 9px;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        text-align: left;
+        flex: 1;
+        font-weight: 500;
+      }
+
+      .stat-input {
+        width: 40px;
+        height: 32px;
+        text-align: center;
+        background: var(--bg-input);
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        color: var(--text-primary);
+        font-size: 14px;
+        font-weight: bold;
+        font-family: var(--font-mono);
+        transition: all 0.2s ease;
+      }
+
+      .stat-input:hover {
+        border-color: var(--border-accent);
+      }
+
+      .stat-input:focus {
+        outline: none;
+        border-color: var(--accent-color);
+        box-shadow: 0 0 0 2px var(--accent-glow);
+        background: var(--bg-primary);
+      }
+
+      .stat-divider {
+        color: var(--text-muted);
+        font-size: 12px;
+        font-weight: normal;
+        padding: 0 var(--spacing-xs);
+      }
+
+      .reserve-group {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-xs);
+      }
+
+      /* ============================================
+       TRAITS & FLAWS
+       ============================================ */
+      .trait-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-xs);
+      }
+
+      .trait-row {
+        display: grid;
+        grid-template-columns: 1fr 70px 40px;
+        gap: var(--spacing-xs);
+        align-items: center;
+      }
+
+      .trait-row input {
+        background: var(--bg-input);
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        color: var(--text-primary);
+        font-size: 10px;
+        padding: 4px 6px;
+        height: 24px;
+      }
+
+      .trait-row input:focus {
+        outline: none;
+        border-color: var(--accent-color);
+      }
+
+      .trait-row select {
+        background: var(--bg-input);
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        color: var(--text-primary);
+        font-size: 9px;
+        padding: 4px;
+        height: 24px;
+      }
+
+      .trait-row select:focus {
+        outline: none;
+        border-color: var(--accent-color);
+      }
+
+      .dice-display {
+        font-family: var(--font-mono);
+        font-size: 10px;
+        color: var(--accent-color);
+        text-align: center;
+      }
+
+      /* ============================================
+       INJECTIONS
+       ============================================ */
+      .injection-row {
+        display: grid;
+        grid-template-columns: 1fr 50px;
+        gap: var(--spacing-xs);
+        align-items: center;
+        padding: var(--spacing-xs) 0;
+        border-bottom: 1px dotted var(--border-color);
+      }
+
+      .injection-row:last-child {
+        border-bottom: none;
+      }
+
+      .injection-row input {
+        background: var(--bg-input);
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        color: var(--text-primary);
+        font-size: 10px;
+        padding: 4px 6px;
+        height: 24px;
+      }
+
+      .injection-row select {
+        background: var(--bg-input);
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        color: var(--accent-color);
+        font-family: var(--font-mono);
+        font-size: 10px;
+        padding: 4px;
+        height: 24px;
+        text-align: center;
+      }
+
+      /* ============================================
+       BACKGROUND
+       ============================================ */
+      .background-textarea {
+        width: 100%;
+        min-height: 120px;
+        background: var(--bg-input);
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        color: var(--text-primary);
+        font-family: var(--font-body);
+        font-size: 11px;
+        line-height: 1.5;
+        padding: var(--spacing-sm);
+        resize: vertical;
+      }
+
+      .background-textarea:focus {
+        outline: none;
+        border-color: var(--accent-color);
+        box-shadow: 0 0 0 1px var(--accent-glow);
+      }
+
+      /* ============================================
+       GEAR
+       ============================================ */
+      .gear-textarea {
+        width: 100%;
+        min-height: 150px;
+        background: var(--bg-input);
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        color: var(--text-primary);
+        font-family: var(--font-mono);
+        font-size: 10px;
+        line-height: 1.6;
+        padding: var(--spacing-sm);
+        resize: vertical;
+      }
+
+      .gear-textarea:focus {
+        outline: none;
+        border-color: var(--accent-color);
+        box-shadow: 0 0 0 1px var(--accent-glow);
+      }
+
+      .gear-textarea::placeholder {
+        color: var(--text-muted);
+        font-style: italic;
+      }
+
+      /* ============================================
+       CONDITIONS & IP
+       ============================================ */
+      .status-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-md);
+      }
+
+      .conditions-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-xs);
+      }
+
+      .condition-row {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-xs);
+        padding: var(--spacing-xs);
+        background: var(--bg-primary);
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+      }
+
+      .condition-row input[type="text"] {
+        flex: 1;
+        background: var(--bg-input);
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        color: var(--text-primary);
+        font-size: 10px;
+        padding: 4px 6px;
+        height: 24px;
+      }
+
+      .condition-row input[type="text"]:focus {
+        outline: none;
+        border-color: var(--danger-color);
+        box-shadow: 0 0 0 1px rgba(139, 38, 53, 0.3);
+      }
+
+      .condition-row input[type="text"]::placeholder {
+        color: var(--text-muted);
+        font-style: italic;
+      }
+
+      .ip-tracker {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+      }
+
+      .ip-label {
+        font-size: 9px;
+        color: var(--text-muted);
+        text-transform: uppercase;
+      }
+
+      .ip-pips {
+        display: flex;
+        gap: var(--spacing-xs);
+      }
+
+      .ip-pip {
+        width: 24px;
+        height: 24px;
+        border: 2px solid var(--accent-color);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+
+      .ip-pip:hover {
+        background: var(--accent-glow);
+      }
+
+      .ip-pip.filled {
+        background: var(--accent-color);
+      }
+
+      /* ============================================
+       FOCUS ABILITIES
+       ============================================ */
+      .focus-section {
+        grid-column: 1 / -1;
+      }
+
+      .focus-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-sm);
+      }
+
+      .focus-tier {
+        background: var(--bg-primary);
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        padding: var(--spacing-sm);
+      }
+
+      .tier-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: var(--spacing-xs);
+      }
+
+      .tier-label {
+        font-size: 9px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: var(--accent-color);
+      }
+
+      .tier-die {
+        font-family: var(--font-mono);
+        font-size: 10px;
+        color: var(--text-muted);
+      }
+
+      .focus-tier textarea {
+        width: 100%;
+        height: 40px;
+        background: var(--bg-input);
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        color: var(--text-primary);
+        font-size: 9px;
+        padding: var(--spacing-xs);
+        resize: none;
+        font-family: var(--font-body);
+      }
+
+      .focus-tier textarea:focus {
+        outline: none;
+        border-color: var(--accent-color);
+      }
+
+      /* ============================================
+       QUICK REFERENCE
+       ============================================ */
+      .reference-section {
+        grid-column: 1 / -1;
+        margin-top: var(--spacing-sm);
+      }
+
+      .reference-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--spacing-sm);
+        font-size: 8px;
+      }
+
+      .reference-box {
+        background: var(--bg-primary);
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        padding: var(--spacing-sm);
+      }
+
+      .reference-box h4 {
+        font-size: 8px;
+        text-transform: uppercase;
+        color: var(--accent-color);
+        margin-bottom: var(--spacing-xs);
+      }
+
+      .reference-box p {
+        color: var(--text-secondary);
+        line-height: 1.5;
+      }
+
+      .reference-box code {
+        font-family: var(--font-mono);
+        color: var(--text-primary);
+        background: var(--bg-input);
+        padding: 1px 3px;
+        border-radius: 2px;
+      }
+
+      /* ============================================
+       PRINT STYLES
+       ============================================ */
+      @media print {
+        body {
+          padding: 0;
+          background: white;
+          color: black;
+        }
+
+        .sheet {
+          background: white;
+        }
+
+        .section,
+        .stat-block,
+        .condition-row,
+        .focus-tier,
+        .reference-box {
+          background: white;
+          border-color: #ccc;
+        }
+
+        input,
+        select,
+        textarea {
+          background: white !important;
+          border-color: #999 !important;
+        }
+
+        .background-textarea,
+        .gear-textarea {
+          background: white !important;
+          border-color: #999 !important;
+        }
+
+        .ip-pip {
+          border-color: #333;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sheet">
+      <!-- Header -->
+      <header class="header">
+        <div class="logo">Narraject</div>
+        <div class="version">Alpha 0.1 | Playtest Sheet</div>
+      </header>
+
+      <!-- Identity Row -->
+      <div class="identity-row">
+        <div class="field-group">
+          <label>Character Name</label>
+          <input type="text" placeholder="Enter name..." />
+        </div>
+        <div class="field-group">
+          <label>Concept</label>
+          <input type="text" placeholder="One-line concept..." />
+        </div>
+      </div>
+
+      <!-- Background -->
+      <div class="section" style="margin-bottom: var(--spacing-md)">
+        <div class="section-title">Background</div>
+        <textarea
+          class="background-textarea"
+          placeholder="Write your character's background, history, motivations, connections, and anything else that defines who they are..."
+        ></textarea>
+      </div>
+
+      <!-- Main Content Grid -->
+      <div class="main-grid">
+        <!-- STATS -->
+        <div class="section" style="grid-column: 1 / -1">
+          <div class="section-title">Stats</div>
+          <div class="stats-grid">
+            <div class="stat-block">
+              <div class="stat-name">Might</div>
+              <div class="stat-values">
+                <div class="stat-row">
+                  <span class="stat-label">Rating</span>
+                  <input
+                    type="number"
+                    class="stat-input"
+                    min="1"
+                    max="5"
+                    value="1"
+                  />
+                </div>
+                <div class="stat-row">
+                  <span class="stat-label">Reserve</span>
+                  <div class="reserve-group">
+                    <input
+                      type="number"
+                      class="stat-input"
+                      min="0"
+                      max="15"
+                      value="7"
+                    />
+                    <span class="stat-divider">/</span>
+                    <input
+                      type="number"
+                      class="stat-input"
+                      min="7"
+                      max="15"
+                      value="7"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-name">Agility</div>
+              <div class="stat-values">
+                <div class="stat-row">
+                  <span class="stat-label">Rating</span>
+                  <input
+                    type="number"
+                    class="stat-input"
+                    min="1"
+                    max="5"
+                    value="1"
+                  />
+                </div>
+                <div class="stat-row">
+                  <span class="stat-label">Reserve</span>
+                  <div class="reserve-group">
+                    <input
+                      type="number"
+                      class="stat-input"
+                      min="0"
+                      max="15"
+                      value="7"
+                    />
+                    <span class="stat-divider">/</span>
+                    <input
+                      type="number"
+                      class="stat-input"
+                      min="7"
+                      max="15"
+                      value="7"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-name">Mind</div>
+              <div class="stat-values">
+                <div class="stat-row">
+                  <span class="stat-label">Rating</span>
+                  <input
+                    type="number"
+                    class="stat-input"
+                    min="1"
+                    max="5"
+                    value="1"
+                  />
+                </div>
+                <div class="stat-row">
+                  <span class="stat-label">Reserve</span>
+                  <div class="reserve-group">
+                    <input
+                      type="number"
+                      class="stat-input"
+                      min="0"
+                      max="15"
+                      value="7"
+                    />
+                    <span class="stat-divider">/</span>
+                    <input
+                      type="number"
+                      class="stat-input"
+                      min="7"
+                      max="15"
+                      value="7"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-name">Persona</div>
+              <div class="stat-values">
+                <div class="stat-row">
+                  <span class="stat-label">Rating</span>
+                  <input
+                    type="number"
+                    class="stat-input"
+                    min="1"
+                    max="5"
+                    value="1"
+                  />
+                </div>
+                <div class="stat-row">
+                  <span class="stat-label">Reserve</span>
+                  <div class="reserve-group">
+                    <input
+                      type="number"
+                      class="stat-input"
+                      min="0"
+                      max="15"
+                      value="7"
+                    />
+                    <span class="stat-divider">/</span>
+                    <input
+                      type="number"
+                      class="stat-input"
+                      min="7"
+                      max="15"
+                      value="7"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TRAITS -->
+        <div class="section">
+          <div class="section-title">Traits</div>
+          <div class="trait-list">
+            <div class="trait-row">
+              <input type="text" placeholder="Trait name..." />
+              <select>
+                <option value="basic">Basic</option>
+                <option value="advanced">Advanced</option>
+                <option value="master">Master</option>
+              </select>
+              <span class="dice-display">+1d6</span>
+            </div>
+            <div class="trait-row">
+              <input type="text" placeholder="Trait name..." />
+              <select>
+                <option value="basic">Basic</option>
+                <option value="advanced">Advanced</option>
+                <option value="master">Master</option>
+              </select>
+              <span class="dice-display">+1d6</span>
+            </div>
+            <div class="trait-row">
+              <input type="text" placeholder="Trait name..." />
+              <select>
+                <option value="basic">Basic</option>
+                <option value="advanced">Advanced</option>
+                <option value="master">Master</option>
+              </select>
+              <span class="dice-display">+1d6</span>
+            </div>
+            <div class="trait-row">
+              <input type="text" placeholder="Trait name..." />
+              <select>
+                <option value="basic">Basic</option>
+                <option value="advanced">Advanced</option>
+                <option value="master">Master</option>
+              </select>
+              <span class="dice-display">+1d6</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FLAWS -->
+        <div class="section">
+          <div class="section-title">
+            Flaws
+            <span
+              style="
+                font-weight: normal;
+                color: var(--text-muted);
+                font-size: 8px;
+              "
+              >(1 per Trait)</span
+            >
+          </div>
+          <div class="trait-list">
+            <div class="trait-row">
+              <input type="text" placeholder="Flaw..." />
+              <select>
+                <option value="minor">Minor</option>
+                <option value="moderate">Moderate</option>
+                <option value="severe">Severe</option>
+              </select>
+              <span class="dice-display" style="color: var(--danger-color)"
+                >-1d6</span
+              >
+            </div>
+            <div class="trait-row">
+              <input type="text" placeholder="Flaw..." />
+              <select>
+                <option value="minor">Minor</option>
+                <option value="moderate">Moderate</option>
+                <option value="severe">Severe</option>
+              </select>
+              <span class="dice-display" style="color: var(--danger-color)"
+                >-1d6</span
+              >
+            </div>
+            <div class="trait-row">
+              <input type="text" placeholder="Flaw..." />
+              <select>
+                <option value="minor">Minor</option>
+                <option value="moderate">Moderate</option>
+                <option value="severe">Severe</option>
+              </select>
+              <span class="dice-display" style="color: var(--danger-color)"
+                >-1d6</span
+              >
+            </div>
+            <div class="trait-row">
+              <input type="text" placeholder="Flaw..." />
+              <select>
+                <option value="minor">Minor</option>
+                <option value="moderate">Moderate</option>
+                <option value="severe">Severe</option>
+              </select>
+              <span class="dice-display" style="color: var(--danger-color)"
+                >-1d6</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- INJECTIONS -->
+        <div class="section">
+          <div class="section-title">
+            Injections
+            <span
+              style="
+                font-weight: normal;
+                color: var(--text-muted);
+                font-size: 8px;
+              "
+              >(1 IP to activate)</span
+            >
+          </div>
+          <div class="injection-row">
+            <input type="text" placeholder="Injection name & effect..." />
+            <select>
+              <option value="d4">d4</option>
+              <option value="d6">d6</option>
+              <option value="d8" selected>d8</option>
+              <option value="d10">d10</option>
+              <option value="d12">d12</option>
+            </select>
+          </div>
+          <div class="injection-row">
+            <input type="text" placeholder="Injection name & effect..." />
+            <select>
+              <option value="d4">d4</option>
+              <option value="d6">d6</option>
+              <option value="d8" selected>d8</option>
+              <option value="d10">d10</option>
+              <option value="d12">d12</option>
+            </select>
+          </div>
+          <div class="injection-row">
+            <input type="text" placeholder="Injection name & effect..." />
+            <select>
+              <option value="d4">d4</option>
+              <option value="d6">d6</option>
+              <option value="d8" selected>d8</option>
+              <option value="d10">d10</option>
+              <option value="d12">d12</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- GEAR -->
+        <div class="section">
+          <div class="section-title">Gear</div>
+          <textarea
+            class="gear-textarea"
+            placeholder="Write gear cards here. Example format:&#10;&#10;Scoped Rifle [Ranged, Quality, Loud] +2d6&#10;Combat Knife [Concealable] +1d6&#10;Light Armor [Concealable] -1 Condition&#10;&#10;Or use freeform notes for your equipment..."
+          ></textarea>
+        </div>
+
+        <!-- CONDITIONS & IP -->
+        <div class="section" style="grid-column: 1 / -1">
+          <div class="status-grid">
+            <div>
+              <div
+                class="section-title"
+                style="border: none; margin-bottom: var(--spacing-sm)"
+              >
+                Conditions
+                <span
+                  style="
+                    font-weight: normal;
+                    color: var(--text-muted);
+                    font-size: 8px;
+                  "
+                  >(Name your conditions)</span
+                >
+              </div>
+              <div class="conditions-list">
+                <div class="condition-row">
+                  <input
+                    type="text"
+                    placeholder="e.g., Broken Ribs (Hurt), Rattled (Wounded), Disgraced (Critical)..."
+                  />
+                </div>
+                <div class="condition-row">
+                  <input
+                    type="text"
+                    placeholder="e.g., Bleeding Out (Critical), Can't Trust Anyone (Wounded)..."
+                  />
+                </div>
+                <div class="condition-row">
+                  <input
+                    type="text"
+                    placeholder="e.g., Leg Pinned (Critical), Exiled (Social, Hurt)..."
+                  />
+                </div>
+                <div class="condition-row">
+                  <input type="text" placeholder="Add another condition..." />
+                </div>
+                <div class="condition-row">
+                  <input type="text" placeholder="Add another condition..." />
+                </div>
+                <div class="condition-row">
+                  <input type="text" placeholder="Add another condition..." />
+                </div>
+              </div>
+            </div>
+            <div class="ip-tracker">
+              <div
+                class="section-title"
+                style="border: none; margin-bottom: var(--spacing-sm)"
+              >
+                Injector Points
+              </div>
+              <div class="ip-label">Current (Max 5)</div>
+              <div class="ip-pips">
+                <div
+                  class="ip-pip filled"
+                  onclick="this.classList.toggle('filled')"
+                ></div>
+                <div
+                  class="ip-pip filled"
+                  onclick="this.classList.toggle('filled')"
+                ></div>
+                <div
+                  class="ip-pip"
+                  onclick="this.classList.toggle('filled')"
+                ></div>
+                <div
+                  class="ip-pip"
+                  onclick="this.classList.toggle('filled')"
+                ></div>
+                <div
+                  class="ip-pip"
+                  onclick="this.classList.toggle('filled')"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- QUICK REFERENCE -->
+        <div class="section reference-section">
+          <div class="section-title">Quick Reference</div>
+          <div class="reference-grid">
+            <div class="reference-box">
+              <h4>Pool Formula</h4>
+              <p>
+                <code>Rating</code> + <code>Effort</code> +
+                <code>Traits</code> + <code>Gear</code> + <code>Aspects</code> −
+                <code>Flaws</code>
+              </p>
+            </div>
+            <div class="reference-box">
+              <h4>Marks</h4>
+              <p>
+                d6 showing <code>5-6</code> = 1 Mark<br />
+                Success = Marks ≥ Difficulty
+              </p>
+            </div>
+            <div class="reference-box">
+              <h4>Injections</h4>
+              <p>
+                Spend <code>1 IP</code> → Roll die alone<br />
+                <code>3+</code> = success → Aspect<br />
+                <code>5-9</code> = +1d6 | <code>10+</code> = +2d6
+              </p>
+            </div>
+            <div class="reference-box">
+              <h4>Golden Rule</h4>
+              <p>
+                Success = Intent Happens.<br />
+                <em>Period.</em>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Auto-update dice displays for traits based on level selection
+      document.querySelectorAll(".trait-list select").forEach((select) => {
+        select.addEventListener("change", function () {
+          const display = this.parentElement.querySelector(".dice-display");
+          const isFlaw =
+            display.style.color.includes("danger") ||
+            this.closest(".section")
+              .querySelector(".section-title")
+              .textContent.includes("Flaw");
+          const sign = isFlaw ? "-" : "+";
+
+          switch (this.value) {
+            case "basic":
+            case "minor":
+              display.textContent = sign + "1d6";
+              break;
+            case "advanced":
+            case "moderate":
+              display.textContent = sign + "2d6";
+              break;
+            case "master":
+            case "severe":
+              display.textContent = sign + "3d6";
+              break;
+          }
+        });
+      });
+
+      // Auto-calculate reserve capacity when rating changes
+      document.querySelectorAll(".stat-block").forEach((block) => {
+        const ratingInput = block.querySelectorAll(".stat-input")[0];
+        const capacityInput = block.querySelectorAll(".stat-input")[2];
+
+        ratingInput.addEventListener("change", function () {
+          const rating = parseInt(this.value) || 1;
+          const capacity = rating * 2 + 5;
+          capacityInput.value = capacity;
+        });
+      });
+    </script>
+  </body>
+</html>

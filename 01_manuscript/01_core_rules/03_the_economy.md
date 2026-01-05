@@ -159,6 +159,7 @@ GM Injections are the primary tool. When a player refuses an Injection, the GM d
 | Cost     | Effect                                           |
 | -------- | ------------------------------------------------ |
 | **1 IP** | Minor complication without offering compensation |
+| **1 IP** | Exploit a player's named Condition (see Consequences) |
 | **2 IP** | Activate an NPC's special ability                |
 | **3 IP** | Introduce an unexpected enemy or obstacle        |
 | **4 IP** | Reveal a hidden connection or betrayal           |

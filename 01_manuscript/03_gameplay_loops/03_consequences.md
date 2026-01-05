@@ -18,6 +18,90 @@ You can have multiple Conditions. They stack.
 
 ---
 
+## Named Conditions
+
+When you take a Condition, **you name it**. The mechanical tier stays the same, but the narrative flavor is yours.
+
+**Example:** You take a Wounded Condition. Instead of just "Wounded," you describe it as:
+- "Broken Ribs" (physical)
+- "Can't Trust Anyone" (social)
+- "Leg Pinned Under Rubble" (environmental)
+- "Rattled" (mental)
+
+The mechanical effect is still -2d6. But now it has a story.
+
+### Why Name Conditions?
+
+Named Conditions do three things:
+
+1. **They're memorable.** "Broken Ribs" sticks in your mind better than "Wounded #2."
+2. **They guide recovery.** A named Condition suggests how it might heal—or worsen.
+3. **They're exploitable.** The GM can spend IP to make your specific injury matter.
+
+> **Design Note:** This mechanic is inspired by City of Mist and Fate, where injuries have narrative weight beyond their mechanical penalties. Your "Broken Ribs" might not just be -2d6—it might mean you can't climb that wall, period.
+
+---
+
+## Exploiting Conditions
+
+Your Conditions aren't just penalties. They're narrative hooks the GM can pull.
+
+### GM Exploitation
+
+The GM can spend **1 IP** to exploit one of your named Conditions. When exploited, the Condition's narrative becomes mechanically relevant:
+
+- **Add +1d6 to an enemy's roll** against you (they target your weakness)
+- **Force a reroll** on one of your actions (your Condition interferes)
+- **Impose a narrative restriction** (you can't do X because of your Condition)
+
+**Example:** You have "Broken Ribs" (Wounded). The GM spends 1 IP. Now the enemy's next attack gets +1d6 because they're targeting your injured side. Or the GM says: "You can't climb that wall—your ribs won't let you breathe properly."
+
+### Player Agency
+
+You can't refuse exploitation—the GM spent IP. But you can **spend 1 IP** to mitigate it:
+
+- Reduce the enemy's bonus from +1d6 to nothing
+- Ignore the narrative restriction for one action
+- Turn the exploitation into a different complication
+
+**Example:** The GM exploits your "Broken Ribs" to add +1d6 to an enemy attack. You spend 1 IP. The bonus is gone—you grit your teeth and power through.
+
+> **Design Note:** This creates a back-and-forth economy. The GM invests IP to make your injuries matter. You can invest IP to push back. Both sides are spending currency, which keeps the economy flowing.
+
+---
+
+## The Critical Comeback
+
+When you're at **Critical**, you're in the death spiral. But sometimes, being beaten down makes you stronger.
+
+### Desperation Bonus
+
+While you have a **Critical** Condition, you gain a **Desperation Bonus**:
+
+- **+1d6 to one action per scene** when you're acting from desperation
+- You must narrate how your dire situation fuels this effort
+- The bonus applies to the roll, but doesn't remove the -3d6 penalty
+
+**Example:** You're Critical with "Bleeding Out." You need to reach the medkit across the room. You declare: "I drag myself forward, ignoring the pain—I have to survive." You get +1d6 to your Agility roll, but you're still at -3d6 total.
+
+### When to Use It
+
+The Desperation Bonus isn't automatic. You choose when to invoke it. It represents that moment when a hero finds strength in their lowest point.
+
+**Good uses:**
+- Saving an ally
+- Reaching a critical objective
+- One last attempt before going down
+
+**Not for:**
+- Routine actions
+- Actions that don't matter
+- Actions that aren't desperate
+
+> **Design Note:** This mechanizes the "wounded hero comeback" trope from 7th Sea and Nobilis. You're not just penalized—you're also given a tool to push through when it matters most. But it's limited (once per scene) so it doesn't trivialize Critical Conditions.
+
+---
+
 ## Taking Conditions
 
 When you succeed on an attack, you inflict a Condition based on your intent and the excess Marks:
@@ -92,6 +176,68 @@ The GM can apply Conditions for narrative reasons, but should offer IPs if it's 
 
 ---
 
+## Mental and Social Tracks
+
+Physical Conditions aren't the only way you can be hurt. Sometimes, the damage is emotional or social.
+
+### The Three Tracks
+
+You have three separate Condition tracks:
+
+| Track      | What It Represents                    | Examples                                    |
+| ---------- | ------------------------------------- | ------------------------------------------- |
+| **Physical** | Bodily harm, injury, exhaustion      | "Broken Ribs," "Exhausted," "Poisoned"      |
+| **Mental**   | Psychological stress, trauma, confusion | "Rattled," "Paranoid," "Can't Focus"        |
+| **Social**   | Reputation damage, trust loss, isolation | "Humiliated," "Can't Trust Anyone," "Exiled" |
+
+Each track works independently. You can be physically fine but mentally shattered, or socially ruined but physically strong.
+
+### How Tracks Work
+
+Each track uses the same three tiers: **Hurt**, **Wounded**, **Critical**.
+
+- **Physical Conditions** affect all actions (as normal)
+- **Mental Conditions** affect Mind and Persona actions
+- **Social Conditions** affect Persona actions and social situations
+
+**Example:** You have "Rattled" (Mental, Wounded). You take -2d6 to Mind rolls (investigation, perception) and Persona rolls (willpower, composure). But your Might and Agility rolls are unaffected—your body is fine, your mind isn't.
+
+### Taking Mental/Social Conditions
+
+Mental and Social Conditions come from:
+
+- **Failed social rolls:** You lose a debate, get publicly shamed, or fail to convince someone
+- **GM Injections:** The GM offers a mental/social complication (with IP compensation)
+- **Narrative events:** Betrayal, trauma, public failure, isolation
+- **Enemy abilities:** Some threats target your mind or reputation directly
+
+**Example:** You fail a Persona roll to convince the council. The GM offers: "You're publicly humiliated. Take 'Disgraced' (Social, Hurt) and gain 1 IP." You accept. Now you have -1d6 to all Persona actions.
+
+### Recovery
+
+Mental and Social Conditions recover differently:
+
+- **Mental Conditions:** Require rest, therapy, or overcoming the source of stress
+- **Social Conditions:** Require reputation repair, public apology, or time away from the situation
+
+**Example:** Your "Can't Trust Anyone" (Mental, Wounded) might heal when you reconcile with a betrayed ally. Your "Humiliated" (Social, Hurt) might heal when you publicly redeem yourself.
+
+> **Design Note:** This is inspired by Masks, which uses emotional conditions. It lets Face characters and social-focused builds have meaningful consequences that aren't just "you got punched." A character who's "Exiled" might be physically fine but narratively crippled.
+
+---
+
+## Combining Tracks
+
+You can have Conditions on multiple tracks simultaneously.
+
+**Example:** You're "Bleeding Out" (Physical, Critical), "Rattled" (Mental, Wounded), and "Disgraced" (Social, Hurt). You're in bad shape, but each track affects different things.
+
+When an action could be affected by multiple Conditions, they stack.
+
+**Example:** You're making a Persona roll to command troops. You have "Rattled" (Mental, Wounded, -2d6) and "Disgraced" (Social, Hurt, -1d6). You take -3d6 total to that roll.
+
+---
+
 ## Quick Reference
 
 | Condition    | Effect                            |
@@ -101,6 +247,14 @@ The GM can apply Conditions for narrative reasons, but should offer IPs if it's 
 | **Critical** | -3d6 to all actions, death spiral |
 
 Conditions stack. Multiple Conditions = multiple penalties.
+
+**Name your Conditions.** "Broken Ribs" is more memorable than "Wounded #2."
+
+**GM can exploit Conditions** by spending 1 IP to make the narrative matter mechanically.
+
+**Critical gives Desperation Bonus:** +1d6 to one desperate action per scene.
+
+**Three tracks:** Physical (all actions), Mental (Mind/Persona), Social (Persona/social).
 
 Armor reduces severity. Light = -1 level, Medium = -2, Heavy = -3.
 

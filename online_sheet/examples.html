@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Narraject - Example Characters</title>
+  <style>
+    :root {
+      --bg-primary: #0d0d0d;
+      --bg-secondary: #1a1a1a;
+      --bg-card: #151515;
+      --border-color: #2a2a2a;
+      --text-primary: #e8e8e8;
+      --text-secondary: #999;
+      --text-muted: #555;
+      --accent-color: #c9a227;
+      --danger-color: #8b2635;
+      --success-color: #2d5a27;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-size: 13px;
+      line-height: 1.5;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      padding: 24px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 32px;
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 16px;
+    }
+
+    header h1 {
+      font-family: 'Courier New', monospace;
+      font-size: 28px;
+      letter-spacing: 4px;
+      color: var(--accent-color);
+      text-transform: uppercase;
+    }
+
+    header p {
+      color: var(--text-muted);
+      margin-top: 8px;
+    }
+
+    .characters-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+      gap: 24px;
+    }
+
+    .character-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .card-header {
+      background: var(--bg-secondary);
+      padding: 16px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .sentence {
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+    }
+
+    .sentence em {
+      color: var(--accent-color);
+      font-style: normal;
+    }
+
+    .name-concept {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .char-name {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .concept {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    .card-body {
+      padding: 16px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .section {
+      background: var(--bg-secondary);
+      border-radius: 4px;
+      padding: 12px;
+    }
+
+    .section-title {
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--accent-color);
+      margin-bottom: 8px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 4px;
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      text-align: center;
+    }
+
+    .stat {
+      background: var(--bg-primary);
+      padding: 8px 4px;
+      border-radius: 4px;
+      border: 1px solid var(--border-color);
+    }
+
+    .stat-name {
+      font-size: 9px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+
+    .stat-rating {
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--accent-color);
+    }
+
+    .stat-reserve {
+      font-size: 10px;
+      color: var(--text-secondary);
+      font-family: 'Courier New', monospace;
+    }
+
+    .list-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4px 0;
+      border-bottom: 1px dotted var(--border-color);
+      font-size: 12px;
+    }
+
+    .list-item:last-child {
+      border-bottom: none;
+    }
+
+    .item-name {
+      color: var(--text-primary);
+    }
+
+    .item-detail {
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+    }
+
+    .bonus {
+      color: var(--success-color);
+    }
+
+    .penalty {
+      color: var(--danger-color);
+    }
+
+    .injection-die {
+      color: var(--accent-color);
+      font-weight: bold;
+    }
+
+    .focus-ability {
+      margin-bottom: 8px;
+    }
+
+    .focus-ability .tier {
+      font-size: 9px;
+      color: var(--accent-color);
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .focus-ability .ability-name {
+      font-weight: bold;
+      color: var(--text-primary);
+    }
+
+    .focus-ability .ability-desc {
+      font-size: 11px;
+      color: var(--text-secondary);
+    }
+
+    .full-width {
+      grid-column: 1 / -1;
+    }
+
+    .gear-tags {
+      font-size: 9px;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    .backstory {
+      font-size: 11px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      font-style: italic;
+    }
+
+    .playstyle {
+      background: var(--bg-primary);
+      padding: 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      margin-top: 8px;
+    }
+
+    .playstyle strong {
+      color: var(--accent-color);
+    }
+
+    @media print {
+      body { background: white; color: black; }
+      .character-card { break-inside: avoid; border-color: #ccc; }
+      .section, .stat { background: #f5f5f5; border-color: #ddd; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Narraject</h1>
+      <p>Example Characters for Playtesting</p>
+    </header>
+
+    <div class="characters-grid">
+
+      <!-- CHARACTER 1: THE SNIPER -->
+      <div class="character-card">
+        <div class="card-header">
+          <div class="sentence">"I am a <em>Haunted</em> <em>Muscle</em> who <em>Never Misses</em>."</div>
+          <div class="name-concept">
+            <span class="char-name">Kira Voss</span>
+            <span class="concept">Former military sniper haunted by a failed mission</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <!-- Stats -->
+          <div class="section full-width">
+            <div class="section-title">Stats</div>
+            <div class="stats-row">
+              <div class="stat">
+                <div class="stat-name">Might</div>
+                <div class="stat-rating">3</div>
+                <div class="stat-reserve">11/11</div>
+              </div>
+              <div class="stat">
+                <div class="stat-name">Agility</div>
+                <div class="stat-rating">2</div>
+                <div class="stat-reserve">9/9</div>
+              </div>
+              <div class="stat">
+                <div class="stat-name">Mind</div>
+                <div class="stat-rating">1</div>
+                <div class="stat-reserve">7/7</div>
+              </div>
+              <div class="stat">
+                <div class="stat-name">Persona</div>
+                <div class="stat-rating">1</div>
+                <div class="stat-reserve">7/7</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Traits -->
+          <div class="section">
+            <div class="section-title">Traits</div>
+            <div class="list-item">
+              <span class="item-name">Expert Marksman</span>
+              <span class="item-detail bonus">+2d6 (Adv)</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Physical Conditioning</span>
+              <span class="item-detail bonus">+2d6 (Adv)</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Sense the Unseen</span>
+              <span class="item-detail bonus">+1d6 (Basic)</span>
+            </div>
+          </div>
+
+          <!-- Flaws -->
+          <div class="section">
+            <div class="section-title">Flaws</div>
+            <div class="list-item">
+              <span class="item-name">Nightmares</span>
+              <span class="item-detail penalty">-2d6 (Mod)</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Guilt-Driven</span>
+              <span class="item-detail penalty">-1d6 (Minor)</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Socially Withdrawn</span>
+              <span class="item-detail penalty">-1d6 (Minor)</span>
+            </div>
+          </div>
+
+          <!-- Injections -->
+          <div class="section">
+            <div class="section-title">Injections</div>
+            <div class="list-item">
+              <span class="item-name">Ricochet Shot</span>
+              <span class="item-detail injection-die">d8</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Suppressing Fire</span>
+              <span class="item-detail injection-die">d6</span>
+            </div>
+          </div>
+
+          <!-- Gear -->
+          <div class="section">
+            <div class="section-title">Gear</div>
+            <div class="list-item">
+              <span class="item-name">Scoped Rifle <span class="gear-tags">[Ranged, Quality, Loud]</span></span>
+              <span class="item-detail bonus">+2d6</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Combat Knife <span class="gear-tags">[Concealable]</span></span>
+              <span class="item-detail bonus">+1d6</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Light Armor <span class="gear-tags">[Concealable]</span></span>
+              <span class="item-detail">−1 Condition</span>
+            </div>
+          </div>
+
+          <!-- Focus Abilities -->
+          <div class="section full-width">
+            <div class="section-title">Focus: Never Misses</div>
+            <div class="focus-ability">
+              <span class="tier">Tier 1:</span>
+              <span class="ability-name">Called Shot</span>
+              <span class="ability-desc">— When you hit, declare where without penalty.</span>
+            </div>
+            <div class="playstyle">
+              <strong>Playstyle:</strong> Long-range precision. Spend Reserve heavily on crucial shots. Use Ricochet Shot injection to create Aspects for trick shots. Accept GM Intrusions related to your haunted past to fuel your IP economy.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHARACTER 2: THE FACE -->
+      <div class="character-card">
+        <div class="card-header">
+          <div class="sentence">"I am a <em>Charming</em> <em>Face</em> who <em>Speaks with Authority</em>."</div>
+          <div class="name-concept">
+            <span class="char-name">Marcus Cole</span>
+            <span class="concept">Disgraced diplomat turned fixer with old contacts everywhere</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <!-- Stats -->
+          <div class="section full-width">
+            <div class="section-title">Stats</div>
+            <div class="stats-row">
+              <div class="stat">
+                <div class="stat-name">Might</div>
+                <div class="stat-rating">1</div>
+                <div class="stat-reserve">7/7</div>
+              </div>
+              <div class="stat">
+                <div class="stat-name">Agility</div>
+                <div class="stat-rating">1</div>
+                <div class="stat-reserve">7/7</div>
+              </div>
+              <div class="stat">
+                <div class="stat-name">Mind</div>
+                <div class="stat-rating">2</div>
+                <div class="stat-reserve">9/9</div>
+              </div>
+              <div class="stat">
+                <div class="stat-name">Persona</div>
+                <div class="stat-rating">3</div>
+                <div class="stat-reserve">11/11</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Traits -->
+          <div class="section">
+            <div class="section-title">Traits</div>
+            <div class="list-item">
+              <span class="item-name">Persuasion</span>
+              <span class="item-detail bonus">+2d6 (Adv)</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Read People</span>
+              <span class="item-detail bonus">+1d6 (Basic)</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">First Impressions</span>
+              <span class="item-detail bonus">+2d6 (Adv)</span>
+            </div>
+          </div>
+
+          <!-- Flaws -->
+          <div class="section">
+            <div class="section-title">Flaws</div>
+            <div class="list-item">
+              <span class="item-name">Easily Distracted</span>
+              <span class="item-detail penalty">-1d6 (Minor)</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Old Enemies</span>
+              <span class="item-detail penalty">-2d6 (Mod)</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Can't Resist a Deal</span>
+              <span class="item-detail penalty">-1d6 (Minor)</span>
+            </div>
+          </div>
+
+          <!-- Injections -->
+          <div class="section">
+            <div class="section-title">Injections</div>
+            <div class="list-item">
+              <span class="item-name">Old Contacts</span>
+              <span class="item-detail injection-die">d10</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Silver Tongue</span>
+              <span class="item-detail injection-die">d8</span>
+            </div>
+          </div>
+
+          <!-- Gear -->
+          <div class="section">
+            <div class="section-title">Gear</div>
+            <div class="list-item">
+              <span class="item-name">Fine Clothes <span class="gear-tags">[Quality]</span></span>
+              <span class="item-detail bonus">+2d6 social</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Disguise Kit <span class="gear-tags">[Versatile]</span></span>
+              <span class="item-detail bonus">+1d6</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Holdout Pistol <span class="gear-tags">[Concealable]</span></span>
+              <span class="item-detail bonus">+1d6</span>
+            </div>
+          </div>
+
+          <!-- Focus Abilities -->
+          <div class="section full-width">
+            <div class="section-title">Focus: Speaks with Authority</div>
+            <div class="focus-ability">
+              <span class="tier">Tier 1:</span>
+              <span class="ability-name">Inspire</span>
+              <span class="ability-desc">— Grant an ally +1d6 to their next roll with a word of encouragement.</span>
+            </div>
+            <div class="playstyle">
+              <strong>Playstyle:</strong> Social encounters are your arena. Use Old Contacts (d10) for reliable information gathering. Spend IPs to inject helpful NPCs into scenes. Stay out of direct combat—support allies with Inspire.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHARACTER 3: THE TECH -->
+      <div class="character-card">
+        <div class="card-header">
+          <div class="sentence">"I am a <em>Clever</em> <em>Tech</em> who <em>Builds Impossible Things</em>."</div>
+          <div class="name-concept">
+            <span class="char-name">Zara Chen</span>
+            <span class="concept">Rogue engineer who can jury-rig anything from scrap</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <!-- Stats -->
+          <div class="section full-width">
+            <div class="section-title">Stats</div>
+            <div class="stats-row">
+              <div class="stat">
+                <div class="stat-name">Might</div>
+                <div class="stat-rating">1</div>
+                <div class="stat-reserve">7/7</div>
+              </div>
+              <div class="stat">
+                <div class="stat-name">Agility</div>
+                <div class="stat-rating">2</div>
+                <div class="stat-reserve">9/9</div>
+              </div>
+              <div class="stat">
+                <div class="stat-name">Mind</div>
+                <div class="stat-rating">3</div>
+                <div class="stat-reserve">11/11</div>
+              </div>
+              <div class="stat">
+                <div class="stat-name">Persona</div>
+                <div class="stat-rating">1</div>
+                <div class="stat-reserve">7/7</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Traits -->
+          <div class="section">
+            <div class="section-title">Traits</div>
+            <div class="list-item">
+              <span class="item-name">Engineering</span>
+              <span class="item-detail bonus">+2d6 (Adv)</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Quick Thinking</span>
+              <span class="item-detail bonus">+2d6 (Adv)</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Focused Concentration</span>
+              <span class="item-detail bonus">+1d6 (Basic)</span>
+            </div>
+          </div>
+
+          <!-- Flaws -->
+          <div class="section">
+            <div class="section-title">Flaws</div>
+            <div class="list-item">
+              <span class="item-name">Overconfident</span>
+              <span class="item-detail penalty">-2d6 (Mod)</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Tunnel Vision</span>
+              <span class="item-detail penalty">-1d6 (Minor)</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Hoarder (Parts)</span>
+              <span class="item-detail penalty">-1d6 (Minor)</span>
+            </div>
+          </div>
+
+          <!-- Injections -->
+          <div class="section">
+            <div class="section-title">Injections</div>
+            <div class="list-item">
+              <span class="item-name">Improvise Gear</span>
+              <span class="item-detail injection-die">d8</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Remote Hack</span>
+              <span class="item-detail injection-die">d6</span>
+            </div>
+          </div>
+
+          <!-- Gear -->
+          <div class="section">
+            <div class="section-title">Gear</div>
+            <div class="list-item">
+              <span class="item-name">Multi-Tool <span class="gear-tags">[Quality, Versatile]</span></span>
+              <span class="item-detail bonus">+2d6</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Salvage Pack <span class="gear-tags">[Consumable]</span></span>
+              <span class="item-detail">crafting parts</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Jury-Rigged Drone <span class="gear-tags">[Fragile]</span></span>
+              <span class="item-detail bonus">+1d6 recon</span>
+            </div>
+          </div>
+
+          <!-- Focus Abilities -->
+          <div class="section full-width">
+            <div class="section-title">Focus: Builds Impossible Things</div>
+            <div class="focus-ability">
+              <span class="tier">Tier 1:</span>
+              <span class="ability-name">Improvise Gear</span>
+              <span class="ability-desc">— Create temporary equipment from available materials (lasts one scene).</span>
+            </div>
+            <div class="playstyle">
+              <strong>Playstyle:</strong> Problem solver. Use Improvise Gear injection to create situational tools. Your Esoteric Talent (Tech core ability) means you can attempt "impossible" tech feats others can't. Avoid direct combat—prepare traps and gadgets instead.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHARACTER 4: THE SCOUT -->
+      <div class="character-card">
+        <div class="card-header">
+          <div class="sentence">"I am a <em>Cautious</em> <em>Scout</em> who <em>Strikes From Shadow</em>."</div>
+          <div class="name-concept">
+            <span class="char-name">Ren "Ghost" Nakamura</span>
+            <span class="concept">Former street kid turned infiltration specialist</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <!-- Stats -->
+          <div class="section full-width">
+            <div class="section-title">Stats</div>
+            <div class="stats-row">
+              <div class="stat">
+                <div class="stat-name">Might</div>
+                <div class="stat-rating">2</div>
+                <div class="stat-reserve">9/9</div>
+              </div>
+              <div class="stat">
+                <div class="stat-name">Agility</div>
+                <div class="stat-rating">3</div>
+                <div class="stat-reserve">11/11</div>
+              </div>
+              <div class="stat">
+                <div class="stat-name">Mind</div>
+                <div class="stat-rating">2</div>
+                <div class="stat-reserve">9/9</div>
+              </div>
+              <div class="stat">
+                <div class="stat-name">Persona</div>
+                <div class="stat-rating">1</div>
+                <div class="stat-reserve">7/7</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Traits -->
+          <div class="section">
+            <div class="section-title">Traits</div>
+            <div class="list-item">
+              <span class="item-name">Streetwise</span>
+              <span class="item-detail bonus">+2d6 (Adv)</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Keen Senses</span>
+              <span class="item-detail bonus">+1d6 (Basic)</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Danger Sense</span>
+              <span class="item-detail bonus">+2d6 (Adv)</span>
+            </div>
+          </div>
+
+          <!-- Flaws -->
+          <div class="section">
+            <div class="section-title">Flaws</div>
+            <div class="list-item">
+              <span class="item-name">Hesitant</span>
+              <span class="item-detail penalty">-1d6 (Minor)</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Trust Issues</span>
+              <span class="item-detail penalty">-2d6 (Mod)</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Small Frame</span>
+              <span class="item-detail penalty">-1d6 (Minor)</span>
+            </div>
+          </div>
+
+          <!-- Injections -->
+          <div class="section">
+            <div class="section-title">Injections</div>
+            <div class="list-item">
+              <span class="item-name">Vanish</span>
+              <span class="item-detail injection-die">d10</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Case the Joint</span>
+              <span class="item-detail injection-die">d8</span>
+            </div>
+          </div>
+
+          <!-- Gear -->
+          <div class="section">
+            <div class="section-title">Gear</div>
+            <div class="list-item">
+              <span class="item-name">Silent Blade <span class="gear-tags">[Concealable, Quality]</span></span>
+              <span class="item-detail bonus">+2d6</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Grappling Hook <span class="gear-tags">[Versatile]</span></span>
+              <span class="item-detail bonus">+1d6 climb</span>
+            </div>
+            <div class="list-item">
+              <span class="item-name">Lockpick Set <span class="gear-tags">[Quality]</span></span>
+              <span class="item-detail bonus">+2d6</span>
+            </div>
+          </div>
+
+          <!-- Focus Abilities -->
+          <div class="section full-width">
+            <div class="section-title">Focus: Strikes From Shadow</div>
+            <div class="focus-ability">
+              <span class="tier">Tier 1:</span>
+              <span class="ability-name">Ambush</span>
+              <span class="ability-desc">— Your first attack from hiding gets +1d6.</span>
+            </div>
+            <div class="playstyle">
+              <strong>Playstyle:</strong> Infiltration and ambush. Use Vanish (d10) to escape or reposition. Case the Joint before operations to create helpful Aspects. Your Versatile core ability (+1d6 untrained) makes you adaptable. Strike first, strike hard, then disappear.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Quick Reference -->
+    <div style="margin-top: 32px; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 6px; padding: 20px;">
+      <h2 style="color: var(--accent-color); font-size: 14px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 16px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">Playtest Tips</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; font-size: 12px;">
+        <div>
+          <h3 style="color: var(--accent-color); font-size: 11px; margin-bottom: 4px;">Rolling Dice</h3>
+          <p style="color: var(--text-secondary);">Pool = Rating + Effort + Traits + Gear + Aspects − Flaws. Count 5-6 on d6s as Marks. Meet or exceed Difficulty to succeed.</p>
+        </div>
+        <div>
+          <h3 style="color: var(--accent-color); font-size: 11px; margin-bottom: 4px;">Using Injections</h3>
+          <p style="color: var(--text-secondary);">Spend 1 IP → Roll the Injector Die alone → 3+ creates an Aspect (+1d6 on 5-9, +2d6 on 10+) for future rolls.</p>
+        </div>
+        <div>
+          <h3 style="color: var(--accent-color); font-size: 11px; margin-bottom: 4px;">Earning IPs</h3>
+          <p style="color: var(--text-secondary);">Accept GM Intrusions (+1 IP), play your Flaws well (+1 IP), or advance story goals (+1 IP). Start each session with 2 IPs.</p>
+        </div>
+        <div>
+          <h3 style="color: var(--accent-color); font-size: 11px; margin-bottom: 4px;">Golden Rule</h3>
+          <p style="color: var(--text-secondary);">Success = Intent Happens. Period. Declare what you want, the GM sets difficulty based on ambition. If you succeed, you get exactly what you described.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
