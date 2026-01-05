@@ -13,7 +13,7 @@
 ## Chapter 1: Core Rules
 
 1. The Roll
-2. The Step Die
+2. The Injector Die
 3. The Economy
 4. The Ladder: Ambition vs Difficulty
 
@@ -28,6 +28,7 @@
 5. Progression
 6. Focus
 7. Descriptors
+8. Flaws
 
 ---
 
@@ -58,6 +59,7 @@
 ## Quick Navigation
 
 **New to the game?** Start with:
+
 - What Is Narraject? (Front Matter)
 - The Roll (Chapter 1)
 - Creation Flow (Chapter 2)

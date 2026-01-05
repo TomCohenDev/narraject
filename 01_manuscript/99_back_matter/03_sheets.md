@@ -21,16 +21,23 @@ For each stat (Might, Agility, Mind, Persona):
   - Capacity = (Rating × 2) + 5
 
 **Example:**
+
 - Might Rating: 3
 - Might Reserve: 8 / 11
 
 ---
 
-## Step Die
+## Focus
 
 - **Focus:** Your signature specialty
-- **Tier:** 1 (d8), 2 (d10), or 3 (d12)
-- **Current Step Die:** d8 / d10 / d12
+- **Abilities:** List your Focus abilities by Tier
+
+## Injections
+
+List your Injections with their assigned Injector Dice:
+
+- **[Injection Name]** (Injector Die: d\_\_)
+  - Effect: [Description]
 
 ---
 
@@ -42,6 +49,7 @@ List your Traits:
 - **Advanced Traits:** +2d6 when relevant
 
 **Example:**
+
 - Expert Marksman (Advanced, +2d6)
 - Physical Conditioning (Advanced, +2d6)
 - Survival (Basic, +1d6)
@@ -53,6 +61,7 @@ List your Traits:
 List your gear with Tags:
 
 **Example:**
+
 - Scoped Rifle [Ranged, Quality, Loud] (+2d6 to ranged attacks)
 - Light Armor [Concealable] (Reduce Condition by 1 level)
 - Lockpick Set [Concealable, Quality] (+2d6 to lockpicking)
@@ -75,7 +84,7 @@ Conditions stack. Multiple Conditions = multiple penalties.
 
 Track your IPs:
 
-- Current: ___ / 5 (max)
+- Current: \_\_\_ / 5 (max)
 
 Use tokens (poker chips, coins, beads) for visual tracking.
 
@@ -84,6 +93,7 @@ Use tokens (poker chips, coins, beads) for visual tracking.
 ## Notes
 
 Space for:
+
 - Character background
 - Goals and motivations
 - Relationships
@@ -93,15 +103,18 @@ Space for:
 
 ## Quick Reference
 
-**Pool Formula:** Rating + Exertion + Traits + Gear + Situational + Step Die
+**Pool Formula:** Rating + Effort + Traits + Gear + Aspects - Flaws
 
-**Mark:** Any die showing 5+
+**Mark:** d6s showing 5-6 = 1 Mark each.
 
 **Success:** Marks ≥ Difficulty
 
-**Step Die Check:**
-- Highest → Gain 1 IP
-- Lowest → GM gains 1 IP
-- Shows 1-2 → GM gets free complication
+**Injections:**
+
+- Spend 1 IP → Roll Injector Die separately (not part of pool)
+- Roll 3+ → Injection succeeds, creates Aspect
+- Roll 1-2 → Injection fails
+- Roll 5-9 → Minor Aspect (+1d6 to related future rolls)
+- Roll 10+ → Significant Aspect (+2d6 to related future rolls)
 
 **The Golden Rule:** Success = Intent Happens. Period.

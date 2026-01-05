@@ -11,11 +11,13 @@ That currency is **Injector Points (IPs)**.
 IPs represent narrative authority—your ability to shape the story beyond what the dice determine.
 
 When you have IPs, you can:
+
 - Inject facts into the fiction
 - Refuse complications the GM offers
 - Push your luck after a roll
 
 When the GM has IPs, they can:
+
 - Introduce obstacles and twists
 - Activate NPC special abilities
 - Raise the stakes
@@ -28,6 +30,7 @@ When the GM has IPs, they can:
 - **The GM** begins with IPs equal to **2 × number of players**
 
 Unspent IPs carry over between sessions:
+
 - Player cap: **5 IPs**
 - GM cap: **10 IPs**
 
@@ -39,48 +42,38 @@ Use physical tokens—poker chips, coins, glass beads. Place them visibly on the
 
 Why? Because seeing the economy changes how you play.
 
-When the GM's pile is low, you know you have room to push. When it's high, you know complications are coming. When your pile is empty, you know accepting that next intrusion might be smart.
+When the GM's pile is low, you know you have room to push. When it's high, you know complications are coming. When your pile is empty, you know accepting that next injection might be smart.
 
 ---
 
 ## How Players Earn IPs
 
-| Source                    | IPs Earned | Notes                                    |
-| ------------------------- | ---------- | ---------------------------------------- |
-| **Accept a GM Intrusion** | +2         | Must give 1 to another player            |
-| **Step Die is Highest**   | +1         | Your identity defined the moment          |
-| **Advance a Story Goal**  | +1         | Completing a personal arc beat (GM discretion) |
-| **Exceptional Roleplay**  | +1         | Sparingly—don't overuse this             |
-
-### The "Give 1 Away" Rule
-
-When you accept a GM Intrusion, you receive 2 IPs but **must give 1 to another player**.
-
-State why:
-- _"I give this to Marcus—my screw-up makes his job harder."_
-- _"Yara gets this because she's going to need it for that hacking roll."_
-
-This creates table awareness. You're watching each other's IP pools. You're rooting for each other to accept complications because it feeds the party.
+| Source                    | IPs Earned | Notes                                                                           |
+| ------------------------- | ---------- | ------------------------------------------------------------------------------- |
+| **Accept a GM Injection** | +1         | The GM offers a complication                                                    |
+| **Playing the GM**        | +1         | Good roleplay, clever ideas, or making the table laugh (GM discretion)          |
+| **Flaw Activation**       | +1         | If a Flaw significantly hinders the party or causes a failure, the GM awards IP |
+| **Advance a Story Goal**  | +1         | Completing a personal arc beat (GM discretion)                                  |
 
 ---
 
-## GM Intrusions
+## GM Injections
 
-A GM Intrusion is a complication the GM introduces. Not a punishment—an _offer_.
+A GM Injection is a complication the GM introduces. Not a punishment—an _offer_.
 
-The GM describes something bad happening or about to happen. They offer you 2 IPs to accept it. You choose.
+The GM describes something bad happening or about to happen. They offer you 1 IP to accept it. You choose.
 
 ### The Flow
 
 ```
-1. GM: "The lock clicks open, but you hear footsteps behind you. 
-       Guards. I'm offering an Intrusion—2 IPs if you accept."
+1. GM: "The lock clicks open, but you hear footsteps behind you.
+       Guards. I'm offering an Injection—1 IP if you accept."
 
 2. Player chooses:
-   → ACCEPT: "I'll take it." Keep 1 IP, give 1 to another player.
+   → ACCEPT: "I'll take it." Gain 1 IP.
               The guards are real. Deal with them.
-   
-   → REFUSE: "I'll spend 1 IP to refuse." 
+
+   → REFUSE: "I'll spend 1 IP to refuse."
               The guards aren't there. Retcon. You proceed cleanly.
 ```
 
@@ -90,91 +83,64 @@ You can only refuse if you have at least 1 IP.
 
 Refusing isn't "cheating" the story—it's spending your narrative currency. You earned those IPs. Spend them how you want.
 
-But remember: refusing costs 1, while accepting nets you 2 (1 for you, 1 for an ally). Mathematically, accepting is usually smarter. The question is whether _this_ complication is worth accepting.
+Refusing costs 1 IP, while accepting gains you 1 IP. It's a break-even proposition—the choice is about whether the complication is worth it for the story.
 
-### Good Intrusions
+### Good Injections
 
 **Do:**
+
 - Complicate success: _"You hit him, but your sword gets stuck in his armor."_
 - Create choices: _"The door's open, but you can only save one hostage before the bomb goes off."_
 - Introduce new problems: _"You succeeded, but someone was watching."_
 - Allow reaction: _"You hear footsteps approaching. What do you do?"_
 
 **Don't:**
+
 - Negate success: _"Actually, you missed."_
 - Remove agency: _"Your character panics and runs."_
 - Punish smart play: _"Because you prepared, the enemy prepared more."_
 - Make the PC look incompetent: _"You trip over your own feet."_
 
-### Intrusion Frequency
+### Injection Frequency
 
 Target: **1 per player per session**, plus any triggered by rules (see below).
 
-Too few intrusions → Economy stagnates, players hoard IPs.  
-Too many intrusions → Players feel picked on, refuse everything.
+Too few injections → Economy stagnates, players hoard IPs.  
+Too many injections → Players feel picked on, refuse everything.
 
-### Free Intrusions (No Choice)
+### Free Injections (No Choice)
 
 Sometimes the GM gets complications without offering IPs:
 
-| Trigger              | Result                |
-| -------------------- | --------------------- |
-| **Step Die shows 1-2** | GM gets one complication |
-| **Zero Marks on a roll** | GM gets one complication |
+| Trigger                            | Result                                              |
+| ---------------------------------- | --------------------------------------------------- |
+| **Zero Marks on a roll**           | GM gets one complication                            |
 | **Established fiction demands it** | No roll needed (you're underwater, you're drowning) |
 
-Free intrusions aren't negotiations. They happen because the dice—or the situation—demand it.
+Free injections aren't negotiations. They happen because the dice—or the situation—demand it.
 
 ---
 
 ## Player Injections
 
-If intrusions are how trouble enters the story, **injections** are how players edit it.
+**Injections** are special, powerful abilities defined on your character sheet. You cannot improvise Injections mid-session—they must be unlocked through character progression.
 
-A Narrative Injection is a player-initiated fact, asset, or twist inserted into the fiction.
+### Activating an Injection
 
-Not: _"I attack him."_ (That's a normal action.)
+Injections are always rolled standalone (not as part of action rolls):
 
-Instead: _"There's a fire escape on this building."_ Or: _"This guard served in my old unit."_ Or: _"I actually brought a grappling hook."_
+- **Spend 1 IP** to activate an Injection
+- **Roll only the Injector Die** (no other dice)
+- **On success (3+):** The Injection creates an Aspect
+- **Aspect provides bonus:** +1d6 (roll 5-9) or +2d6 (roll 10+) to related future rolls
 
-You're not asking the GM if it's true. You're spending IPs to _make_ it true.
+**The bonus comes from the Aspect, not directly from the Injector Die.**
 
-### The Injection Menu
+You can use Injections at any moment—before, during, or after actions. You can even use them to help other players by creating Aspects that benefit them.
 
-| IP Cost | What You Can Inject                                    |
-| ------- | ------------------------------------------------------ |
-| **1 IP** | A sensory detail or environmental flavor               |
-| **2 IP** | A minor fact—a useful object, an NPC's mood            |
-| **3 IP** | A relationship or useful knowledge                     |
-| **4 IP** | A significant tactical advantage                       |
-| **5 IP** | A major story connection                               |
+Each Injection has an **Injector Die** (d4, d6, d8, d10, or d12) permanently assigned to it. The die size represents reliability and narrative weight, not raw power.
 
-**Examples:**
-
-| Cost | Example                                                                 |
-| ---- | ----------------------------------------------------------------------- |
-| 1    | "The hallway smells like antiseptic—hospital, not office."             |
-| 2    | "There's a service entrance behind the dumpsters."                     |
-| 3    | "I trained with this guard's unit. We're not friends, but there's respect." |
-| 4    | "The security system has a five-second window during shift change."    |
-| 5    | "This facility is owned by my father's company. I recognize the logo." |
-
-### GM Response
-
-The GM can:
-- **Accept:** It's exactly as you described.
-- **Yes, But:** Accept with a complication. _"Your contact is here, but he owes money to the wrong people."_
-- **Counteroffer:** Modify the injection. _"Not a fire escape, but there's a drainpipe."_
-- **Refuse:** Only if it contradicts established fiction or breaks genre.
-
-Refusals should be rare. If you're refusing often, the player is probably low on IPs anyway—let them have their moment.
-
-### When to Inject
-
-- Before a roll (to improve your situation)
-- After a roll (to explain success or mitigate failure)
-- Between scenes (to establish facts for later)
-- During GM narration (interrupt politely)
+See **The Injector Die** chapter for complete details on how Injections work.
 
 ---
 
@@ -184,21 +150,19 @@ The GM has an IP pool too. Symmetry matters.
 
 ### How the GM Earns IPs
 
-| Source                      | IPs Earned |
-| --------------------------- | ---------- |
-| **Step Die is lowest**      | +1 IP      |
-| **Free intrusion (1-2 or 0 Marks)** | +0 (complication, not IPs) |
-| **Session start**           | Reset to 2 × players if below |
+The GM does not use dice or roll for IPs. They use narrative force.
+
+GM Injections are the primary tool. When a player refuses an Injection, the GM doesn't gain IP—they simply don't lose narrative authority.
 
 ### How the GM Spends IPs
 
-| Cost   | Effect                                      |
-| ------ | ------------------------------------------- |
+| Cost     | Effect                                           |
+| -------- | ------------------------------------------------ |
 | **1 IP** | Minor complication without offering compensation |
-| **2 IP** | Activate an NPC's special ability            |
-| **3 IP** | Introduce an unexpected enemy or obstacle   |
-| **4 IP** | Reveal a hidden connection or betrayal      |
-| **5 IP** | Dramatically change the stakes of a scene   |
+| **2 IP** | Activate an NPC's special ability                |
+| **3 IP** | Introduce an unexpected enemy or obstacle        |
+| **4 IP** | Reveal a hidden connection or betrayal           |
+| **5 IP** | Dramatically change the stakes of a scene        |
 
 ### Limits
 
@@ -208,15 +172,18 @@ The GM has an IP pool too. Symmetry matters.
 
 ---
 
-## Post-Roll IP Spending
+## Spending IPs
 
-After seeing the result, you can spend IPs to adjust:
+You can spend IPs for:
 
-| Cost | Effect                                                                              |
-| ---- | ----------------------------------------------------------------------------------- |
-| 1 IP | **Reroll Step Die** — Keep the new result (for better or worse)                     |
-| 2 IP | **Add +1d6** — Roll it and add any Marks                                            |
-| 3 IP | **Partial Success** — On failure, achieve some of your intent; GM adds complication |
+| Cost                 | Effect                                                                                        |
+| -------------------- | --------------------------------------------------------------------------------------------- |
+| **1 IP**             | **Activate an Injection** — Add the Injector Die to a roll (see **The Injector Die** chapter) |
+| **Between Sessions** | **Advancement** — Spend IP like XP to:                                                        |
+|                      | • Level up Traits (Basic → Advanced → Master)                                                 |
+|                      | • Step up Injector Dice (d4 → d6 → d8 → d10 → d12)                                            |
+|                      | • Unlock new Injections                                                                       |
+| **Variable**         | **Gear/Story** — Secure assets or make temporary items permanent                              |
 
 You can only spend IPs you currently have. Choose wisely.
 
@@ -227,13 +194,15 @@ You can only spend IPs you currently have. Choose wisely.
 At session's end, assess:
 
 **Healthy signs:**
+
 - IPs changed hands often
-- Players accepted most intrusions
+- Players accepted most injections
 - Players made meaningful injections
 - GM pile fluctuated
 
 **Warning signs:**
-- Players refused every intrusion (too harsh?)
+
+- Players refused every injection (too harsh?)
 - Players hoarded IPs (nothing worth buying?)
 - One player has 5, others have 0 (redistribution failing?)
 - GM never spent IPs (not engaging the economy)

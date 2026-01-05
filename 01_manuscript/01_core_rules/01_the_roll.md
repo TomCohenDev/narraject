@@ -4,9 +4,11 @@ In **Narraject**, some actions or situations call for a roll so the story moves 
 
 > **Before We Start: Anatomy of a Character**
 > To make a roll, you need to know what is on your character sheet:
+>
 > - **Stats:** You have 4 Stats (Might, Agility, Mind, Persona). Each has a **Rating** (dice you always roll when using that stat) and a **Reserve** (effort you may spend that add dice).
-> - **Traits:** Specific skills or backgrounds (e.g., "Hacker," "Soldier") that add dice.
-> - **Legendary Actions:** Your signature abilities, represented by a single **Step Die** (d8, d10, or d12).
+> - **Traits:** Specific skills or backgrounds (e.g., "Hacker," "Soldier") that add dice. Can be **Broad** ("Athletics") or **Specific** ("Underwater Basket Weaving").
+> - **Injections:** Special, powerful abilities defined on your character sheet. Each has an **Injector Die** (d4, d6, d8, d10, or d12) assigned to it.
+> - **Flaws:** Narrative weaknesses that remove dice when they apply.
 > - **Gear:** Tools and weapons that add dice.
 > - **Aspects:** Environmental or situational elements that add dice (e.g., "High ground," "Perfect lighting," "Familiar territory"). GM-granted or player-injected via IPs.
 
@@ -15,10 +17,12 @@ In **Narraject**, some actions or situations call for a roll so the story moves 
 ## The Core Loop
 
 1.  **Declare Intent:** "I want to [Goal] by [Approach]."
-2.  **Set Difficulty:** The GM tells you how many **Marks** (5s and 6s) you need.
-3.  **Build hand:** Gather d6s from your Rating, Reserve, Traits, and Gear. Add your **Step Die**.
+2.  **Set Difficulty:** The GM tells you how many **Marks** you need.
+3.  **Build hand:** Gather d6s from your Rating, Reserve, Traits, Gear, and Aspects. Subtract dice for Flaws if they apply.
 4.  **Roll:** Count Marks.
 5.  **Result:** Succeed or Fail. Reality changes.
+
+> **Note:** Injections are never part of your dice pool. They are used separately (before, during, or after actions) to create Aspects that add dice to future rolls (see **The Injector Die** chapter).
 
 ---
 
@@ -99,7 +103,7 @@ The GM may state the exact number ("That's 4 Marks") or describe it ("That's ver
 
 You don't just roll a stat. You build a hand of dice from who you are and what you're doing.
 
-`DICE HAND = Rating + Effort + Traits + Gear + Aspects + Step Die`
+`DICE HAND = Rating + Effort + Traits + Gear + Aspects - Flaws`
 
 ### 1. Stats (Rating & Reserve)
 
@@ -113,7 +117,7 @@ Every character has four stats. Each stat has a **Rating** (Dice you always have
 | **Level 2** | 2d6    | 9 points         |
 | **Level 3** | 3d6    | 11 points        |
 
-- **Start with Rating:** Grab d6s equal to your Rating. This is your floor.
+- **Start with Rating:** Grab d6s equal to your Stat Rating. This is your floor.
 - **Add Effort (Optional):** You may spend points from your Reserve to add dice. **1 Point = +1d6**.
 
 ### 2. Your Approach Defines the Stat
@@ -161,12 +165,25 @@ In Narraject, actions are not locked to specific stats. You use the stat that ma
 
 If your character has relevant training or skills, add more d6s.
 
+Traits can be **Broad** ("Athletics") or **Specific** ("Underwater Basket Weaving"). The scope affects when they apply, not their mechanical bonus.
+
 | Source             | Bonus | Notes                         |
 | :----------------- | :---- | :---------------------------- |
 | **Basic Trait**    | +1d6  | Relevant background or skill. |
 | **Advanced Trait** | +2d6  | Specialized training.         |
+| **Master Trait**   | +3d6  | Exceptional mastery.          |
 
-### 4. Gear
+### 4. Flaws
+
+If a Flaw applies to the situation, it removes dice from your pool. Flaws are narrative weaknesses, fears, or physical limitations that mechanically hinder you.
+
+- **Minor Flaw:** -1d6
+- **Moderate Flaw:** -2d6
+- **Severe Flaw:** -3d6
+
+See the **Character Creation** chapter for details on Flaws and the Rule of Balance (1 Flaw for every 1 Trait).
+
+### 5. Gear
 
 If you have relevant equipment, add more d6s based on the gear's level.
 
@@ -186,40 +203,36 @@ The bonus corresponds to the gear's level, unless the gear has a specific descri
 
 **Gear can also hinder:** Some gear has tags that subtract dice from certain rolls (like **Heavy** armor giving -1d6 to Agility rolls). See the **Gear** chapter for details.
 
-### 5. Situational Aspects
+### 6. Situational Aspects
 
-The GM may grant bonus dice for advantageous circumstances (e.g., high ground, surprise, perfect lighting). Players can also inject aspects via IPs (see **The Economy**).
+The GM may grant bonus dice for advantageous circumstances (e.g., high ground, surprise, perfect lighting). Players can also create Aspects via Injections (see **The Injector Die**).
+
+**Aspects from Injections:**
+
+- Minor Aspect (Injection roll 5-9): +1d6 to related rolls
+- Significant Aspect (Injection roll 10+): +2d6 to related rolls
+
+Aspects can be created before, during, or after actions. They can benefit the creator or other players.
 
 | Situation                       | Bonus        |
 | :------------------------------ | :----------- |
 | High ground, good lighting      | +1d6         |
 | Surprise, significant advantage | +1d6 to +2d6 |
 | Perfect conditions              | +1d6         |
-
-### 6. The Step Die
-
-Finally, add exactly **ONE Step Die**. This represents your identity and signature capability.
-
-- **Untrained / Generic:** d6
-- **Trained:** d8
-- **Expert:** d10
-- **Master:** d12
-
-> **Note:** Only ONE Step Die per roll. If multiple specialties apply, choose the highest.
+| Aspect from Injection (minor)   | +1d6         |
+| Aspect from Injection (major)   | +2d6         |
 
 ---
 
 ## Step 4: Roll and Count Marks
 
-Roll all your dice at once—the d6s and the Step Die together.
+Roll all your d6s at once.
 
-**A Mark is any die showing 5 or higher.**
+### Counting Marks
 
-- d6 shows 5 or 6? **Mark.**
-- d10 shows 7? **Mark.**
-- d12 shows 11? **Mark.**
+**For d6s:** Any die showing **5 or 6** counts as **1 Mark**.
 
-Compare your Marks to the Difficulty:
+Compare your total Marks to the Difficulty:
 
 | Result                 | Outcome                                     |
 | :--------------------- | :------------------------------------------ |
@@ -228,8 +241,8 @@ Compare your Marks to the Difficulty:
 
 That's it. No addition, no multiplication. Just count.
 
-> **Wait, what about the Step Die?**
-> The Step Die counts as a Mark like any other die, but it **also** determines Narrative Injections based on its specific value. That is covered in the _Narrative Injection_ chapter. For now, just count the Marks.
+> **Wait, what about Injections?**
+> Injections are rolled separately (before or during the action) to create Aspects. Those Aspects add d6s to your pool, which then contribute Marks. See **The Injector Die** chapter.
 
 ---
 
@@ -237,7 +250,7 @@ That's it. No addition, no multiplication. Just count.
 
 What if your Reserve is empty, no traits apply, no gear helps, and the GM grants nothing?
 
-You roll your **Stat Rating + Step Die**. That's it.
+You roll your **Stat Rating** in d6s. That's it.
 
 ---
 
@@ -246,17 +259,24 @@ You roll your **Stat Rating + Step Die**. That's it.
 **Situation:** Kira needs to shoot a fleeing target from a rooftop. It is windy, but she has a clear sightline.
 **GM:** "That's Hard—4 Marks needed."
 
+**Before the Roll - Injection:**
+Kira decides to use her "Ricochet Shot" Injection to create an Aspect. **Spends 1 IP.** The Injection has an Injector Die of **d8**. She rolls the d8: `7`.
+
+- **Roll 7:** Injection succeeds (3+), creates a minor Aspect (5-9).
+- **Aspect Created:** **"Ricochet Angle"** (+1d6 to this attack roll).
+
 **Kira's Build:**
 
 1.  **Approach:** Agility (Rating 3). **Starts with 3d6.**
 2.  **Effort:** She needs this hit. She spends 2 Reserve points. **Adds +2d6.**
-3.  **Trait:** "Expert Marksman." **Adds +2d6.**
-4.  **Gear:** Quality Rifle. **Adds +1d6.**
-5.  **Step Die:** Her Focus is "Sniper" (d10). **Adds 1d10.**
+3.  **Trait:** "Expert Marksman" (Advanced). **Adds +2d6.**
+4.  **Gear:** Quality Rifle. **Adds +2d6.**
+5.  **Aspect:** Clear sightline (GM grants). **Adds +1d6.**
+6.  **Aspect:** "Ricochet Angle" (from Injection). **Adds +1d6.**
 
-**The Roll:** 9d6 + 1d10.
-She rolls `[6, 5, 4, 3, 2, 1, 6, 5, 2]` and `[9]`.
-She counts the dice showing 5 or higher: `6, 5, 6, 5` and the `9`.
-**Total:** 5 Marks.
+**The Roll:** 11d6.
+She rolls `[6, 5, 4, 3, 2, 1, 6, 5, 2, 3, 4]`.
+She counts the d6s showing 5 or higher: `6, 5, 6, 5` = **4 Marks**.
+**Total:** 4 Marks.
 
-**Result:** Success. The target falls.
+**Result:** Success. The target falls. The Injection succeeded (rolled 7), so the bullet ricochets to hit a secondary target behind cover as intended.

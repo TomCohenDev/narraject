@@ -20,14 +20,17 @@ Quick reference tables for play.
 
 ---
 
-## Step Die Mark Chance
+## Injector Die Results
 
-| Step Die | Mark Chance | Chance of 1-2 |
-| -------- | ----------- | ------------- |
-| d6       | 33% (5-6)   | 33%           |
-| d8       | 50% (5-8)   | 25%           |
-| d10      | 60% (5-10)  | 20%           |
-| d12      | 67% (5-12)  | 17%           |
+| Injector Die | Injection Success (3+) | Minor Aspect (5-9) | Significant Aspect (10+) |
+| ------------ | ---------------------- | ------------------ | ------------------------ |
+| d4           | 50%                    | 0%                 | 0%                       |
+| d6           | 67%                    | 33% (5-6)          | 0%                       |
+| d8           | 75%                    | 50% (5-8)          | 0%                       |
+| d10          | 80%                    | 40% (5-9)          | 10% (10)                 |
+| d12          | 83%                    | 33% (5-9)          | 25% (10-12)              |
+
+**Note:** Injector Dice are never added to action rolls. They are rolled separately to create Aspects that add dice to future rolls.
 
 ---
 
@@ -78,26 +81,12 @@ Conditions stack. Multiple Conditions = multiple penalties.
 
 ---
 
-## IP Spending Menu
+## IP Spending
 
-| Cost | Effect                    |
-| ---- | ------------------------- |
-| 1 IP | Reroll Step Die           |
-| 2 IP | Add +1d6 after roll        |
-| 3 IP | Partial success on failure |
-| 1-5 IP | Narrative Injection       |
-
----
-
-## Injection Costs
-
-| Cost | Scope                    |
-| ---- | ------------------------ |
-| 1 IP | Flavor detail            |
-| 2 IP | Minor fact               |
-| 3 IP | Relationship / knowledge |
-| 4 IP | Tactical advantage       |
-| 5 IP | Story connection         |
+| Cost             | Effect                                                                      |
+| ---------------- | --------------------------------------------------------------------------- |
+| 1 IP             | Activate an Injection (add Injector Die to roll)                            |
+| Between Sessions | Advancement (level up Traits, upgrade Injector Dice, unlock new Injections) |
 
 ---
 
@@ -130,30 +119,44 @@ Use these when players need inspiration:
 
 ## NPC Level Reference
 
-| Level | Difficulty | Threat | Conditions |
-| ----- | ---------- | ------ | ---------- |
-| 1-2   | Easy-Moderate | Low | 1 |
-| 3-4   | Challenging-Hard | Moderate | 2-3 |
-| 5-6   | Very Hard | High | 3-5 |
-| 7+    | Heroic+ | Extreme | 5+ |
+| Level | Difficulty       | Threat   | Conditions |
+| ----- | ---------------- | -------- | ---------- |
+| 1-2   | Easy-Moderate    | Low      | 1          |
+| 3-4   | Challenging-Hard | Moderate | 2-3        |
+| 5-6   | Very Hard        | High     | 3-5        |
+| 7+    | Heroic+          | Extreme  | 5+         |
 
 ---
 
 ## Recovery Times
 
-| Activity      | Effect                                    |
-| ------------- | ----------------------------------------- |
-| Short Rest    | Recover 1 point per stat (10 minutes)     |
-| Long Rest     | Recover all Reserve (full night's sleep) |
+| Activity      | Effect                                     |
+| ------------- | ------------------------------------------ |
+| Short Rest    | Recover 1 point per stat (10 minutes)      |
+| Long Rest     | Recover all Reserve (full night's sleep)   |
 | Medical Care  | Remove one Condition (Mind roll, Diff 2-4) |
-| Extended Rest | Remove all Conditions (1 week)            |
+| Extended Rest | Remove all Conditions (1 week)             |
 
 ---
 
-## Step Die Progression
+## Trait Progression
 
-| Tier | Step Die | Meaning |
-| ---- | -------- | ------- |
-| 1    | d8       | Trained |
-| 2    | d10      | Expert  |
-| 3    | d12      | Master  |
+| Level    | Bonus | Notes                        |
+| -------- | ----- | ---------------------------- |
+| Basic    | +1d6  | Relevant background or skill |
+| Advanced | +2d6  | Specialized training         |
+| Master   | +3d6  | Exceptional mastery          |
+
+## Injector Die Progression
+
+| Die Size | Reliability | Notes           |
+| -------- | ----------- | --------------- |
+| d4       | Low         | Volatile, risky |
+| d6       | Moderate    | Standard        |
+| d8       | Good        | Reliable        |
+| d10      | Very Good   | Very reliable   |
+| d12      | Excellent   | Most reliable   |
+| ----     | --------    | -------         |
+| 1        | d8          | Trained         |
+| 2        | d10         | Expert          |
+| 3        | d12         | Master          |

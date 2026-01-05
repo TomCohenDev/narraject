@@ -67,7 +67,7 @@ These are **modular rules** you can add to the core game without breaking it. Mi
 - Shaken (-1d6), Terrified (-2d6), Broken (-3d6)
 - Recovery requires safety, rest, or therapy
 
-**Horror Intrusions:**
+**Horror Injections:**
 - GM can spend IPs to trigger panic
 - Environmental horror (darkness, isolation) adds Difficulty
 - Unknown threats have higher Difficulty (fear of the unknown)

@@ -10,17 +10,19 @@ You roll dice to see if you succeed. But more importantly, you roll **your die**
 
 You're a master sniper taking an impossible shot. In most games, you roll, you hit or miss, you move on.
 
-In Narraject, you roll your dice pool and count your **Marks** (any die showing 5+). But then you look at your **Step Die**—the die that represents "Master Sniper."
+In Narraject, you roll your dice pool and count your **Marks** (d6s showing 5-6, or Injector Dice showing 5-9 for 1 Mark, 10+ for 2 Marks).
 
-**If it's your highest die**, you didn't just hit the target. You hit it _like a master sniper_. You describe the moment. You earn **Injector Points** to spend later.
+But you also have **Injections**—special abilities defined on your character sheet. When you spend **1 IP** to activate an Injection, you add its **Injector Die** (d4-d12) to your roll.
 
-**If it's your lowest die**, you still hit—but you got lucky. The wind shifted at the last second. You succeeded _despite_ your training, not because of it. The GM earns currency to complicate things later.
+**If the Injector Die rolls 3+**, your Injection succeeds. The narrative effect happens.
 
-**And if your Step Die betrays you**—showing a 1 or 2—something goes wrong. Not because you failed, but because leaning into your identity always carries risk.
+**If it rolls 1-2**, your Injection fails—even if your main action succeeds. That's the risk of using your signature abilities.
 
-**That's Narraject.** A game where your character's signature trait is mechanically central, not just flavor text.
+The die size represents **reliability and narrative weight**, not raw power. A d12 Injection is safer to use. A d4 Injection is volatile but potentially powerful.
 
-The Step Die isn't a bonus. It's the star.
+**That's Narraject.** A game where your character's special abilities are mechanically central, not just flavor text.
+
+Injections aren't bonuses. They're your signature moves.
 
 ---
 
@@ -40,11 +42,13 @@ The Step Die isn't a bonus. It's the star.
 
 When you attempt something risky, you roll a pool of six-sided dice (d6s). The more dice, the better your odds. You build this pool from your **Rating** (innate capability), **Reserve** (spendable effort), traits, gear, and circumstances.
 
-### The Step Die
+### The Injector Die
 
-In addition to your d6s, you add **one** special die—your **Step Die**. This die can be a d6, d8, d10, or d12, depending on how developed your signature trait is.
+Injections are special abilities defined on your character sheet. Each Injection has an **Injector Die** (d4, d6, d8, d10, or d12) permanently assigned to it.
 
-The Step Die doesn't just add to your pool. It's the **star of the show**. Its performance tells you whether you succeeded with style, scraped by on luck, or exposed yourself to trouble.
+When you spend **1 IP** to activate an Injection, you add its Injector Die to your roll. The die size represents reliability and narrative weight—not raw power. A d12 Injection is safer to use. A d4 Injection is risky but potentially powerful.
+
+The Injector Die does two things: it contributes Marks to your action (5-9 = 1 Mark, 10+ = 2 Marks), and it determines whether your Injection succeeds (3+ succeeds, 1-2 fails).
 
 ### Marks and Success
 
@@ -75,7 +79,7 @@ You're not asking the GM if these things are true. You're _making_ them true—w
 1. **The GM sets the scene.** What's happening? What's at stake?
 2. **Players declare actions.** What are you trying to do?
 3. **Roll dice when it matters.** Build your pool, roll, count Marks.
-4. **Read the Step Die.** Did you define the moment, or did luck carry you?
+4. **Resolve Injections (if used).** Did your Injection succeed or fail?
 5. **The GM narrates the outcome.** Success, failure, or something in between.
 6. **IPs change hands.** Complications accepted, injections spent.
 7. **Repeat.**

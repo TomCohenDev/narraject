@@ -71,6 +71,6 @@ Conditions (from combat) require separate recovery (see Consequences).
 
 What if your Reserve is empty, no traits apply, no gear helps, and the GM grants nothing?
 
-You roll your **Rating + Step Die**. That's it.
+You roll your **Stat Rating** in d6s. That's it.
 
 You're never completely helpless.

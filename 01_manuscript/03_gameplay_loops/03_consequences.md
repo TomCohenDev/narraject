@@ -88,7 +88,7 @@ Conditions aren't just for combat. They can represent:
 - **Illness:** Sickness, poison, disease
 - **Injury:** Non-combat accidents, falls, environmental hazards
 
-The GM can apply Conditions for narrative reasons, but should offer IPs if it's a GM Intrusion.
+The GM can apply Conditions for narrative reasons, but should offer IPs if it's a GM Injection.
 
 ---
 

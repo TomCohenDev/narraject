@@ -5,7 +5,6 @@ Your Focus is the verb phrase in your character sentence—and the most importan
 > "I am a Haunted Muscle who **Never Misses**."
 
 Your Focus determines:
-- Your **Step Die** and its progression
 - Your **signature abilities** as you advance
 - Your **narrative permission**—what you can plausibly attempt
 
@@ -36,20 +35,6 @@ If two players want the same Focus, negotiate. Perhaps one takes "Never Misses" 
 
 ---
 
-## Step Die Progression
-
-Your Focus determines your Step Die size:
-
-| Tier | Step Die | Meaning              |
-| ---- | -------- | -------------------- |
-| 1    | d8       | Trained              |
-| 2    | d10      | Expert               |
-| 3    | d12      | Master               |
-
-Everyone starts at **Tier 1** with a **d8** Step Die.
-
-As you advance (see Progression), your Step Die grows. By Tier 3, you're rolling a d12—the safest, most reliable expression of your identity.
-
 ---
 
 ## Focus Abilities
@@ -61,7 +46,7 @@ Each Focus grants special abilities at each Tier. These are things **only you ca
 | Tier | Ability                                                                 |
 | ---- | ----------------------------------------------------------------------- |
 | 1    | **Called Shot:** When you hit, you can declare where you hit for narrative effect without penalty. |
-| 2    | **One Shot, One Kill:** If your Step Die is highest AND a Mark, deal +1 Condition severity. |
+| 2    | **One Shot, One Kill:** When you hit, deal +1 Condition severity. |
 | 3    | **Inevitable:** Once per session, you can declare a shot hits automatically—no roll. Describe the perfection. |
 
 These abilities stack. A Tier 3 "Never Misses" character has all three.
@@ -123,7 +108,7 @@ If none of the provided Foci fit your character concept, work with your GM to cr
 **Focus Design Guidelines:**
 
 1. **The phrase should be evocative.** "Controls Gravity" is better than "Gravity Powers."
-2. **The domain should be clear.** What situations trigger your Step Die?
+2. **The domain should be clear.** What situations trigger your Focus abilities?
 3. **Tier 1 should be useful immediately.** Don't front-load the cool stuff at Tier 3.
 4. **Each tier should feel different.** Not just "more damage"—new capabilities.
 5. **Narrative permission matters.** What can you do without rolling?
@@ -134,21 +119,19 @@ If none of the provided Foci fit your character concept, work with your GM to cr
 FOCUS: [Verb Phrase]
 Domain: [When does this apply?]
 
-Tier 1 (d8): [Ability Name] — [Description]
-Tier 2 (d10): [Ability Name] — [Description]
-Tier 3 (d12): [Ability Name] — [Description]
+Tier 1: [Ability Name] — [Description]
+Tier 2: [Ability Name] — [Description]
+Tier 3: [Ability Name] — [Description]
 
 Narrative Permission: [What can you attempt or know without rolls?]
 ```
 
 ---
 
-## Your Step Die in Play
+## Focus and Injections
 
-Remember: your Focus determines **which** Step Die you roll when that Focus applies.
+Your Focus abilities are separate from **Injections**. Injections are special abilities you unlock and define on your character sheet, each with an assigned Injector Die (d4-d12).
 
-If you're a "Never Misses" character making a ranged attack, you roll your Focus Step Die (d8/d10/d12).
-
-If you're that same character trying to pick a lock—a task outside your Focus—you might roll a generic d6, or the Step Die from a relevant Trait if you have one.
+Focus abilities are always available when you're in your domain. Injections cost IP to activate and add an Injector Die to your roll.
 
 Your Focus is your specialty. When you're in your domain, you shine. That's the point.

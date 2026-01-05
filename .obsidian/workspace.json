@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_manuscript/01_core_rules/01_the_roll.md",
+                "file": "01_manuscript/01_core_rules/03_the_economy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_the_roll"
+              "title": "03_the_economy"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01_manuscript/01_core_rules/01_the_roll.md",
+                "file": "01_manuscript/01_core_rules/03_the_economy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 01_the_roll"
+              "title": "Backlinks for 03_the_economy"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01_manuscript/01_core_rules/01_the_roll.md",
+                "file": "01_manuscript/01_core_rules/03_the_economy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 01_the_roll"
+              "title": "Outgoing links from 03_the_economy"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01_manuscript/01_core_rules/01_the_roll.md",
+                "file": "01_manuscript/01_core_rules/03_the_economy.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 01_the_roll"
+              "title": "Outline of 03_the_economy"
             }
           }
         ]
@@ -185,8 +185,11 @@
   },
   "active": "72664bb5841409e0",
   "lastOpenFiles": [
-    "01_manuscript/01_core_rules/02_the_step_die.md",
+    "01_manuscript/01_core_rules/02_the_injector_die.md",
+    "01_manuscript/01_core_rules/03_the_economy.md",
     "01_manuscript/01_core_rules/01_the_roll.md",
+    "01_manuscript/02_characters/08_flaws.md",
+    "01_manuscript/01_core_rules/02_the_step_die.md",
     "01_manuscript/02_characters/02_stats_and_capacity.md",
     "01_manuscript/00_front_matter/02_table_of_contents.md",
     "01_manuscript/00_front_matter/01_the_pitch.md",
@@ -208,9 +211,6 @@
     "01_manuscript/04_gm_toolkit/02_npcs_threats.md",
     "01_manuscript/04_gm_toolkit/01_principles.md",
     "01_manuscript/03_gameplay_loops/03_consequences.md",
-    "01_manuscript/03_gameplay_loops/02_conflict.md",
-    "01_manuscript/03_gameplay_loops/01_pacing.md",
-    "01_manuscript/02_characters/05_progression.md",
     "02_design_notes",
     "01_manuscript/99_back_matter",
     "01_manuscript/04_gm_toolkit",

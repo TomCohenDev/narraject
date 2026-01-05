@@ -10,10 +10,10 @@ Your Descriptor is the adjective in your character sentence—who you are as a p
 
 Each Descriptor grants:
 - **Trait:** One free trait reflecting the descriptor
-- **Flaw:** A narrative weakness
+- **Flaw:** A narrative weakness that mechanically removes dice when it applies
 - **Narrative flavor:** Who you are, not just what you do
 
-Descriptors don't modify stats in the new system. Your Package sets your Ratings. Descriptors add personality and a trait.
+Descriptors don't modify stats in the new system. Your Package sets your Ratings. Descriptors add personality, a trait, and a flaw.
 
 ---
 

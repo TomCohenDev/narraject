@@ -66,17 +66,17 @@ The player can then decide: do I want to try for 10 Marks, or do I want to aim f
 
 ---
 
-## Using GM Intrusions
+## Using GM Injections
 
 Target: **1 per player per session**, plus any triggered by rules.
 
-**Good Intrusions:**
+**Good Injections:**
 - Complicate success
 - Create choices
 - Introduce new problems
 - Allow reaction
 
-**Bad Intrusions:**
+**Bad Injections:**
 - Negate success
 - Remove agency
 - Punish smart play
@@ -88,12 +88,12 @@ Target: **1 per player per session**, plus any triggered by rules.
 
 **Healthy signs:**
 - IPs changed hands often
-- Players accepted most intrusions
+- Players accepted most injections
 - Players made meaningful injections
 - GM pile fluctuated
 
 **Warning signs:**
-- Players refused every intrusion (too harsh?)
+- Players refused every injection (too harsh?)
 - Players hoarded IPs (nothing worth buying?)
 - One player has 5, others have 0 (redistribution failing?)
 - GM never spent IPs (not engaging the economy)
