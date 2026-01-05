@@ -74,7 +74,7 @@ Conditions stack. Multiple Conditions = multiple penalties.
 
 | Weapon Type | Bonus |
 | ----------- | ----- |
-| Improvised  | +0d6  |
+| Improvised  | +1d6  |
 | Standard    | +1d6  |
 | Quality     | +2d6  |
 | Masterwork  | +3d6  |
