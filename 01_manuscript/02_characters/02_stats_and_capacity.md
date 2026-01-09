@@ -1,6 +1,6 @@
 # Stats and Capacity
 
-Each character has four stats: **Might**, **Agility**, **Mind**, and **Persona**.
+Each character has four stats: **Might**, **Agility**, **Intellect**, and **Persona**.
 
 Each stat has two values: **Rating** and **Reserve**.
 
@@ -20,7 +20,9 @@ Rating determines:
 
 Your **Reserve** is spendable effort—pushing yourself beyond your baseline. You spend from it to add dice, but it depletes and needs recovery.
 
-**Capacity Formula:** Reserve = (Rating × 2) + 5
+**Capacity Formula:**
+- **Rating 1-5:** Reserve = (Rating × 2) + 5
+- **Rating 6-10:** Reserve = (Rating × 3) + 2
 
 | Rating | Capacity |
 | ------ | -------- |
@@ -29,6 +31,13 @@ Your **Reserve** is spendable effort—pushing yourself beyond your baseline. Yo
 | 3      | 11       |
 | 4      | 13       |
 | 5      | 15       |
+| 6      | 20       |
+| 7      | 23       |
+| 8      | 26       |
+| 9      | 29       |
+| 10     | 32       |
+
+Reserve capacity accelerates at higher ratings to allow legendary characters to consistently achieve heroic feats. Most starting characters have Ratings between 1-3.
 
 You start each session with your Reserve at full capacity. It recovers during downtime (see Gameplay Loops).
 
@@ -40,18 +49,10 @@ You start each session with your Reserve at full capacity. It recovers during do
 | ----------- | ---------------------------------------------------------------- |
 | **Might**   | Physical power, endurance, melee combat, resisting physical harm |
 | **Agility** | Speed, reflexes, coordination, ranged combat, stealth, balance   |
-| **Mind**    | Knowledge, perception, reasoning, technical skills, memory       |
+| **Intellect**    | Knowledge, perception, reasoning, technical skills, memory       |
 | **Persona** | Social influence, willpower, presence, deception, leadership     |
 
 When you attempt an action, the GM tells you which stat applies based on your declared approach.
-
----
-
-## Starting Stats
-
-Your **Package** determines your starting Ratings and Reserve capacities.
-
-See Packages for starting stat arrays.
 
 ---
 

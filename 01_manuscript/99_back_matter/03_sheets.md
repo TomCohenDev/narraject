@@ -14,7 +14,7 @@ A reference for filling out your character sheet.
 
 ## Stats
 
-For each stat (Might, Agility, Mind, Persona):
+For each stat (Might, Agility, Intellect, Persona):
 
 - **Rating:** Your innate capability (1-5)
 - **Reserve:** Current / Capacity
@@ -105,9 +105,9 @@ Space for:
 
 **Pool Formula:** Rating + Effort + Traits + Gear + Aspects - Flaws
 
-**Mark:** d6s showing 5-6 = 1 Mark each.
+**Success:** d6s showing 5-6 = 1 Success each.
 
-**Success:** Marks ≥ Difficulty
+**Success:** Successes ≥ Difficulty
 
 **Injections:**
 

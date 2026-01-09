@@ -114,7 +114,7 @@ Sometimes the GM gets complications without offering IPs:
 
 | Trigger                            | Result                                              |
 | ---------------------------------- | --------------------------------------------------- |
-| **Zero Marks on a roll**           | GM gets one complication                            |
+| **Zero Successes on a roll**       | GM gets one complication                            |
 | **Established fiction demands it** | No roll needed (you're underwater, you're drowning) |
 
 Free injections aren't negotiations. They happen because the dice—or the situation—demand it.
@@ -156,14 +156,14 @@ GM Injections are the primary tool. When a player refuses an Injection, the GM d
 
 ### How the GM Spends IPs
 
-| Cost     | Effect                                           |
-| -------- | ------------------------------------------------ |
-| **1 IP** | Minor complication without offering compensation |
+| Cost     | Effect                                                |
+| -------- | ----------------------------------------------------- |
+| **1 IP** | Minor complication without offering compensation      |
 | **1 IP** | Exploit a player's named Condition (see Consequences) |
-| **2 IP** | Activate an NPC's special ability                |
-| **3 IP** | Introduce an unexpected enemy or obstacle        |
-| **4 IP** | Reveal a hidden connection or betrayal           |
-| **5 IP** | Dramatically change the stakes of a scene        |
+| **2 IP** | Activate an NPC's special ability                     |
+| **3 IP** | Introduce an unexpected enemy or obstacle             |
+| **4 IP** | Reveal a hidden connection or betrayal                |
+| **5 IP** | Dramatically change the stakes of a scene             |
 
 ### Limits
 

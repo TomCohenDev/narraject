@@ -1,6 +1,6 @@
 # Conflict: Combat
 
-Combat in Narraject uses the same core loop as any other action. You declare your intent, build your pool, roll, and count Marks. The difference is the stakes.
+Combat in Narraject uses the same core loop as any other action. You declare your intent, build your pool, roll, and count Successes. The difference is the stakes.
 
 ---
 
@@ -9,7 +9,7 @@ Combat in Narraject uses the same core loop as any other action. You declare you
 Combat follows the standard action resolution:
 
 1. **DECLARE** — State your intent (what you want to achieve)
-2. **ROLL** — Build your pool, roll, count Marks
+2. **ROLL** — Build your pool, roll, count Successes
 3. **RESOLVE** — Success means your intent happens
 4. **ASSESS** — Update Conditions, describe results
 
@@ -47,9 +47,9 @@ Movement between zones is usually free unless someone is blocking you.
 
 Be specific. Your intent determines both Difficulty and outcome.
 
-- **"I slash at his arm to disarm him."** → Moderate (2 Marks). Success = he drops his weapon.
-- **"I stab him in the heart to kill him."** → Hard (4 Marks). Success = he dies.
-- **"I shoot the gun out of his hand."** → Challenging (3 Marks). Success = weapon flies away.
+- **"I slash at his arm to disarm him."** → Moderate (2 Successes). Success = he drops his weapon.
+- **"I stab him in the heart to kill him."** → Hard (4 Successes). Success = he dies.
+- **"I shoot the gun out of his hand."** → Challenging (3 Successes). Success = weapon flies away.
 
 ### Building Your Pool
 
@@ -67,10 +67,10 @@ Same as any action:
 There's no separate defense roll. Instead, the GM sets Difficulty based on:
 
 - **Target's Agility Rating** (dodging, reflexes)
-- **Cover** (+1 to +3 Marks needed)
+- **Cover** (+1 to +3 Successes needed)
 - **Armor** (reduces Condition severity, see Consequences)
 
-**Example:** Attacking a guard with Agility Rating 2 in light cover might be Moderate (2 Marks). Attacking the same guard behind full cover might be Hard (4 Marks).
+**Example:** Attacking a guard with Agility Rating 2 in light cover might be Moderate (2 Successes). Attacking the same guard behind full cover might be Hard (4 Successes).
 
 ---
 
@@ -80,25 +80,25 @@ There's no separate defense roll. Instead, the GM sets Difficulty based on:
 
 Intent: "I want to knock the weapon from their hand."
 
-Difficulty: Moderate (2 Marks). Success = weapon drops.
+Difficulty: Moderate (2 Successes). Success = weapon drops.
 
 ### Grapple
 
 Intent: "I want to pin them to the ground."
 
-Difficulty: Challenging (3 Marks). Success = they're restrained. They can't act until they break free (their own Challenging roll).
+Difficulty: Challenging (3 Successes). Success = they're restrained. They can't act until they break free (their own Challenging roll).
 
 ### Called Shot
 
 Intent: "I want to hit their leg to slow them down."
 
-Difficulty: Hard (4 Marks). Success = they're slowed, plus Condition.
+Difficulty: Hard (4 Successes). Success = they're slowed, plus Condition.
 
 ### Area Attack
 
 Intent: "I want to hit everyone in this room with my fireball."
 
-Difficulty: Very Hard (5 Marks). Success = everyone in the area takes a Condition.
+Difficulty: Very Hard (5 Successes). Success = everyone in the area takes a Condition.
 
 ---
 
@@ -114,8 +114,9 @@ Special: Pack tactics (+1d6 with allies)
 ```
 
 **Level** determines:
-- Marks needed to affect them (usually Level = Difficulty)
-- Threat they pose (Level = Marks needed to inflict Conditions)
+
+- Successes needed to affect them (usually Level = Difficulty)
+- Threat they pose (Level = Successes needed to inflict Conditions)
 - Reserve capacity (if tracked)
 
 Most NPCs have 1-3 Conditions before they're out. Bosses might have more.
@@ -128,27 +129,27 @@ Most NPCs have 1-3 Conditions before they're out. Bosses might have more.
 
 **Round 1:**
 
-**Kira:** "I want to shoot the first bandit in the chest to wound him." (Difficulty: Hard, 4 Marks)
+**Kira:** "I want to shoot the first bandit in the chest to wound him." (Difficulty: Hard, 4 Successes)
 
 **Pool:** 3d6 (Rating) + 2d6 (Exertion) + 2d6 (Expert Marksman) + 2d6 (Quality rifle) + 1d10 (Step Die) = 9d6 + 1d10
 
 **Roll:** `[6, 6, 5, 4, 3, 2, 1, 1, 1]` + `[d10: 8]`
 
-**Marks:** 6, 6, 5, 8 = 4 Marks. Success!
+**Successes:** 6, 6, 5, 8 = 4 Successes. Success!
 
 **Step Die:** d10 (8) is highest. Kira gains 1 IP.
 
 **Result:** Bandit takes Wounded. Kira describes: "Two shots, center mass. He stumbles back, clutching his chest."
 
-**Bandit 1:** Tries to flee. (Difficulty: Moderate, 2 Marks) Fails. Stays in fight, but is Wounded.
+**Bandit 1:** Tries to flee. (Difficulty: Moderate, 2 Successes) Fails. Stays in fight, but is Wounded.
 
-**Bandit 2:** "I want to stab Kira to hurt her." (Difficulty: Moderate, 2 Marks) Succeeds. Kira takes Hurt (-1d6 to all actions).
+**Bandit 2:** "I want to stab Kira to hurt her." (Difficulty: Moderate, 2 Successes) Succeeds. Kira takes Hurt (-1d6 to all actions).
 
 **Round 2:**
 
-**Kira:** "I want to finish off the wounded bandit." (Difficulty: Hard, 4 Marks, but he's Wounded so maybe easier...)
+**Kira:** "I want to finish off the wounded bandit." (Difficulty: Hard, 4 Successes, but he's Wounded so maybe easier...)
 
-**GM:** "He's hurt and slow. That's Challenging—3 Marks."
+**GM:** "He's hurt and slow. That's Challenging—3 Successes."
 
 Kira rolls with -1d6 from Hurt. Still succeeds. Bandit takes Critical. Out of the fight.
 

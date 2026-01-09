@@ -52,5 +52,8 @@ If you're stuck, ask the table: "What kind of character would be fun to have aro
 - **Flaws:** Narrative weaknesses (Rule of Balance: 1 Flaw per 1 Trait)
 - **Injections:** Special abilities with Injector Dice
 - **Gear:** What you carry
+- **Power Levels:** Point buy for veteran characters and campaign progression
+
+**Note for GMs:** If you want to create characters at different power levels (street-level rookies, veteran operatives, legendary heroes), see **Power Levels and Point Buy** instead of using Packages.
 
 Let's start with the core: your Focus.

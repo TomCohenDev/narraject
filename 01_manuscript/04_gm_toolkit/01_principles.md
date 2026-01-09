@@ -24,21 +24,21 @@ Don't roll when:
 
 ## Setting Difficulty
 
-The GM determines how many **Marks** you need. A Mark is any die showing 5 or higher.
+The GM determines how many **Successes** you need. A Success is any die showing 5 or higher.
 
-| Marks Needed | Difficulty  | Example                                                  |
-| ------------ | ----------- | -------------------------------------------------------- |
-| 0            | Trivial     | Routine task, no roll needed                             |
-| 1            | Easy        | Climb a ladder, spot an obvious clue                     |
-| 2            | Moderate    | Pick a simple lock, persuade a neutral stranger          |
-| 3            | Challenging | Hit a moving target, hack a secured system               |
-| 4            | Hard        | Scale a sheer wall in rain, convince a hostile NPC       |
-| 5-6          | Very Hard   | Near-impossible shot, walk on fire, sway a hostile crowd |
-| 7-8          | Heroic      | Feats that define legends, impossible odds               |
-| 9-10         | Legendary   | Nearly impossible, once-in-a-lifetime achievements       |
-| 10+          | Mythic      | Feats of gods and demigods                               |
+| Successes Needed | Difficulty  | Example                                                  |
+| ---------------- | ----------- | -------------------------------------------------------- |
+| 0                | Trivial     | Routine task, no roll needed                             |
+| 1                | Easy        | Climb a ladder, spot an obvious clue                     |
+| 2                | Moderate    | Pick a simple lock, persuade a neutral stranger          |
+| 3                | Challenging | Hit a moving target, hack a secured system               |
+| 4                | Hard        | Scale a sheer wall in rain, convince a hostile NPC       |
+| 5-6              | Very Hard   | Near-impossible shot, walk on fire, sway a hostile crowd |
+| 7-8              | Heroic      | Feats that define legends, impossible odds               |
+| 9-10             | Legendary   | Nearly impossible, once-in-a-lifetime achievements       |
+| 10+              | Mythic      | Feats of gods and demigods                               |
 
-The GM may state the exact number ("That's 4 Marks") or describe it ("That's very hard"). Both work.
+The GM may state the exact number ("That's 4 Successes") or describe it ("That's very hard"). Both work.
 
 ---
 
@@ -50,9 +50,9 @@ When a player declares intent, set the Difficulty that matches the ambition.
 
 **Don't say:** "You can't kill a dragon with a fork."
 
-**Do say:** "That's Legendary—10 Marks. If you succeed, the fork pierces its eye and kills it instantly."
+**Do say:** "That's Legendary—10 Successes. If you succeed, the fork pierces its eye and kills it instantly."
 
-The player can then decide: do I want to try for 10 Marks, or do I want to aim for something more achievable?
+The player can then decide: do I want to try for 10 Successes, or do I want to aim for something more achievable?
 
 ---
 
@@ -71,12 +71,14 @@ The player can then decide: do I want to try for 10 Marks, or do I want to aim f
 Target: **1 per player per session**, plus any triggered by rules.
 
 **Good Injections:**
+
 - Complicate success
 - Create choices
 - Introduce new problems
 - Allow reaction
 
 **Bad Injections:**
+
 - Negate success
 - Remove agency
 - Punish smart play
@@ -87,12 +89,14 @@ Target: **1 per player per session**, plus any triggered by rules.
 ## Managing the IP Economy
 
 **Healthy signs:**
+
 - IPs changed hands often
 - Players accepted most injections
 - Players made meaningful injections
 - GM pile fluctuated
 
 **Warning signs:**
+
 - Players refused every injection (too harsh?)
 - Players hoarded IPs (nothing worth buying?)
 - One player has 5, others have 0 (redistribution failing?)

@@ -450,14 +450,8 @@
       }
 
       /* ============================================
-       CONDITIONS & IP
+       CONDITIONS
        ============================================ */
-      .status-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: var(--spacing-md);
-      }
-
       .conditions-list {
         display: flex;
         flex-direction: column;
@@ -630,6 +624,256 @@
         border-radius: 2px;
       }
 
+      .reference-box.clickable {
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .reference-box.clickable:hover {
+        border-color: var(--accent-color);
+        box-shadow: 0 0 4px var(--accent-glow);
+      }
+
+      .reference-box.clickable h4::after {
+        content: " ▼";
+        font-size: 6px;
+        color: var(--accent-color);
+        margin-left: 4px;
+      }
+
+      .reference-box.clickable.expanded h4::after {
+        content: " ▲";
+      }
+
+      .probability-table {
+        display: none;
+        margin-top: var(--spacing-sm);
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 7px;
+        overflow-x: auto;
+      }
+
+      .probability-table.visible {
+        display: table;
+      }
+
+      .probability-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .probability-table th,
+      .probability-table td {
+        padding: 2px 3px;
+        text-align: center;
+        border: 1px solid var(--border-color);
+        white-space: nowrap;
+      }
+
+      .probability-table th {
+        background: var(--bg-input);
+        color: var(--accent-color);
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 6px;
+      }
+
+      .probability-table td {
+        color: var(--text-primary);
+        font-family: var(--font-mono);
+      }
+
+      .probability-table td:first-child {
+        position: sticky;
+        left: 0;
+        background: var(--bg-secondary);
+        z-index: 1;
+      }
+
+      .probability-table tr:hover td {
+        background: var(--bg-input);
+      }
+
+      .probability-table tr:hover td:first-child {
+        background: var(--bg-input);
+      }
+
+      /* ============================================
+       RESPONSIVE STYLES
+       ============================================ */
+      @media (max-width: 768px) {
+        body {
+          padding: var(--spacing-sm);
+          font-size: 12px;
+        }
+
+        .sheet {
+          max-width: 100%;
+        }
+
+        .header {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: var(--spacing-xs);
+        }
+
+        .logo {
+          font-size: 20px;
+          letter-spacing: 2px;
+        }
+
+        .identity-row {
+          grid-template-columns: 1fr;
+        }
+
+        .main-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .stats-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: var(--spacing-sm);
+        }
+
+        .stat-block {
+          padding: var(--spacing-sm);
+        }
+
+        .stat-name {
+          font-size: 10px;
+          letter-spacing: 1px;
+          margin-bottom: var(--spacing-sm);
+        }
+
+        .reserve-group {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .trait-row {
+          grid-template-columns: 1fr 80px 40px;
+          gap: var(--spacing-xs);
+        }
+
+        .focus-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .reference-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .ip-pips {
+          justify-content: flex-start;
+          flex-wrap: wrap;
+        }
+      }
+
+      @media (max-width: 480px) {
+        body {
+          padding: var(--spacing-xs);
+          font-size: 11px;
+        }
+
+        .logo {
+          font-size: 18px;
+          letter-spacing: 1px;
+        }
+
+        .version {
+          font-size: 8px;
+        }
+
+        .sentence {
+          font-size: 12px;
+        }
+
+        .sentence input {
+          font-size: 12px;
+          min-width: 80px;
+        }
+
+        .stats-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .stat-block {
+          padding: var(--spacing-sm);
+        }
+
+        .stat-input {
+          width: 36px;
+          height: 28px;
+          font-size: 12px;
+        }
+
+        .trait-row {
+          grid-template-columns: 1fr;
+          gap: var(--spacing-xs);
+        }
+
+        .trait-row select {
+          width: 100%;
+        }
+
+        .dice-display {
+          text-align: left;
+          padding-left: var(--spacing-xs);
+        }
+
+        .injection-row {
+          grid-template-columns: 1fr 60px;
+        }
+
+        .reference-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .reference-box {
+          padding: var(--spacing-xs);
+        }
+
+        .reference-box h4 {
+          font-size: 9px;
+        }
+
+        .reference-box p {
+          font-size: 8px;
+        }
+
+        .probability-table {
+          font-size: 5px;
+        }
+
+        .probability-table th,
+        .probability-table td {
+          padding: 1px 1px;
+        }
+
+        .reference-box.clickable p {
+          font-size: 7px;
+        }
+
+        /* Character Building Guide responsive */
+        table {
+          font-size: 8px;
+        }
+
+        table th,
+        table td {
+          padding: var(--spacing-xs) !important;
+        }
+
+        [style*="grid-template-columns: 1fr 1fr"] {
+          grid-template-columns: 1fr !important;
+        }
+
+        [style*="grid-template-columns: repeat(3, 1fr)"] {
+          grid-template-columns: 1fr !important;
+        }
+      }
+
       /* ============================================
        PRINT STYLES
        ============================================ */
@@ -692,13 +936,25 @@
         </div>
       </div>
 
-      <!-- Background -->
+      <!-- Injector Points -->
       <div class="section" style="margin-bottom: var(--spacing-md)">
-        <div class="section-title">Background</div>
-        <textarea
-          class="background-textarea"
-          placeholder="Write your character's background, history, motivations, connections, and anything else that defines who they are..."
-        ></textarea>
+        <div class="section-title">Injector Points</div>
+        <div class="ip-tracker">
+          <div class="ip-label">Current (Max 5)</div>
+          <div class="ip-pips">
+            <div
+              class="ip-pip filled"
+              onclick="this.classList.toggle('filled')"
+            ></div>
+            <div
+              class="ip-pip filled"
+              onclick="this.classList.toggle('filled')"
+            ></div>
+            <div class="ip-pip" onclick="this.classList.toggle('filled')"></div>
+            <div class="ip-pip" onclick="this.classList.toggle('filled')"></div>
+            <div class="ip-pip" onclick="this.classList.toggle('filled')"></div>
+          </div>
+        </div>
       </div>
 
       <!-- Main Content Grid -->
@@ -716,7 +972,7 @@
                     type="number"
                     class="stat-input"
                     min="1"
-                    max="5"
+                    max="10"
                     value="1"
                   />
                 </div>
@@ -727,7 +983,7 @@
                       type="number"
                       class="stat-input"
                       min="0"
-                      max="15"
+                      max="35"
                       value="7"
                     />
                     <span class="stat-divider">/</span>
@@ -735,7 +991,7 @@
                       type="number"
                       class="stat-input"
                       min="7"
-                      max="15"
+                      max="35"
                       value="7"
                     />
                   </div>
@@ -751,7 +1007,7 @@
                     type="number"
                     class="stat-input"
                     min="1"
-                    max="5"
+                    max="10"
                     value="1"
                   />
                 </div>
@@ -762,7 +1018,7 @@
                       type="number"
                       class="stat-input"
                       min="0"
-                      max="15"
+                      max="35"
                       value="7"
                     />
                     <span class="stat-divider">/</span>
@@ -770,7 +1026,7 @@
                       type="number"
                       class="stat-input"
                       min="7"
-                      max="15"
+                      max="35"
                       value="7"
                     />
                   </div>
@@ -778,7 +1034,7 @@
               </div>
             </div>
             <div class="stat-block">
-              <div class="stat-name">Mind</div>
+              <div class="stat-name">Intellect</div>
               <div class="stat-values">
                 <div class="stat-row">
                   <span class="stat-label">Rating</span>
@@ -786,7 +1042,7 @@
                     type="number"
                     class="stat-input"
                     min="1"
-                    max="5"
+                    max="10"
                     value="1"
                   />
                 </div>
@@ -797,7 +1053,7 @@
                       type="number"
                       class="stat-input"
                       min="0"
-                      max="15"
+                      max="35"
                       value="7"
                     />
                     <span class="stat-divider">/</span>
@@ -805,7 +1061,7 @@
                       type="number"
                       class="stat-input"
                       min="7"
-                      max="15"
+                      max="35"
                       value="7"
                     />
                   </div>
@@ -821,7 +1077,7 @@
                     type="number"
                     class="stat-input"
                     min="1"
-                    max="5"
+                    max="10"
                     value="1"
                   />
                 </div>
@@ -832,7 +1088,7 @@
                       type="number"
                       class="stat-input"
                       min="0"
-                      max="15"
+                      max="35"
                       value="7"
                     />
                     <span class="stat-divider">/</span>
@@ -840,7 +1096,7 @@
                       type="number"
                       class="stat-input"
                       min="7"
-                      max="15"
+                      max="35"
                       value="7"
                     />
                   </div>
@@ -1008,86 +1264,57 @@
           ></textarea>
         </div>
 
-        <!-- CONDITIONS & IP -->
+        <!-- CONDITIONS -->
         <div class="section" style="grid-column: 1 / -1">
-          <div class="status-grid">
-            <div>
-              <div
-                class="section-title"
-                style="border: none; margin-bottom: var(--spacing-sm)"
-              >
-                Conditions
-                <span
-                  style="
-                    font-weight: normal;
-                    color: var(--text-muted);
-                    font-size: 8px;
-                  "
-                  >(Name your conditions)</span
-                >
-              </div>
-              <div class="conditions-list">
-                <div class="condition-row">
-                  <input
-                    type="text"
-                    placeholder="e.g., Broken Ribs (Hurt), Rattled (Wounded), Disgraced (Critical)..."
-                  />
-                </div>
-                <div class="condition-row">
-                  <input
-                    type="text"
-                    placeholder="e.g., Bleeding Out (Critical), Can't Trust Anyone (Wounded)..."
-                  />
-                </div>
-                <div class="condition-row">
-                  <input
-                    type="text"
-                    placeholder="e.g., Leg Pinned (Critical), Exiled (Social, Hurt)..."
-                  />
-                </div>
-                <div class="condition-row">
-                  <input type="text" placeholder="Add another condition..." />
-                </div>
-                <div class="condition-row">
-                  <input type="text" placeholder="Add another condition..." />
-                </div>
-                <div class="condition-row">
-                  <input type="text" placeholder="Add another condition..." />
-                </div>
-              </div>
+          <div class="section-title">
+            Conditions
+            <span
+              style="
+                font-weight: normal;
+                color: var(--text-muted);
+                font-size: 8px;
+              "
+              >(Name your conditions)</span
+            >
+          </div>
+          <div class="conditions-list">
+            <div class="condition-row">
+              <input
+                type="text"
+                placeholder="e.g., Broken Ribs (Hurt), Rattled (Wounded), Disgraced (Critical)..."
+              />
             </div>
-            <div class="ip-tracker">
-              <div
-                class="section-title"
-                style="border: none; margin-bottom: var(--spacing-sm)"
-              >
-                Injector Points
-              </div>
-              <div class="ip-label">Current (Max 5)</div>
-              <div class="ip-pips">
-                <div
-                  class="ip-pip filled"
-                  onclick="this.classList.toggle('filled')"
-                ></div>
-                <div
-                  class="ip-pip filled"
-                  onclick="this.classList.toggle('filled')"
-                ></div>
-                <div
-                  class="ip-pip"
-                  onclick="this.classList.toggle('filled')"
-                ></div>
-                <div
-                  class="ip-pip"
-                  onclick="this.classList.toggle('filled')"
-                ></div>
-                <div
-                  class="ip-pip"
-                  onclick="this.classList.toggle('filled')"
-                ></div>
-              </div>
+            <div class="condition-row">
+              <input
+                type="text"
+                placeholder="e.g., Bleeding Out (Critical), Can't Trust Anyone (Wounded)..."
+              />
+            </div>
+            <div class="condition-row">
+              <input
+                type="text"
+                placeholder="e.g., Leg Pinned (Critical), Exiled (Social, Hurt)..."
+              />
+            </div>
+            <div class="condition-row">
+              <input type="text" placeholder="Add another condition..." />
+            </div>
+            <div class="condition-row">
+              <input type="text" placeholder="Add another condition..." />
+            </div>
+            <div class="condition-row">
+              <input type="text" placeholder="Add another condition..." />
             </div>
           </div>
+        </div>
+
+        <!-- BACKGROUND -->
+        <div class="section" style="grid-column: 1 / -1">
+          <div class="section-title">Background</div>
+          <textarea
+            class="background-textarea"
+            placeholder="Write your character's background, history, motivations, connections, and anything else that defines who they are..."
+          ></textarea>
         </div>
 
         <!-- QUICK REFERENCE -->
@@ -1103,10 +1330,10 @@
               </p>
             </div>
             <div class="reference-box">
-              <h4>Marks</h4>
+              <h4>Successes</h4>
               <p>
-                d6 showing <code>5-6</code> = 1 Mark<br />
-                Success = Marks ≥ Difficulty
+                d6 showing <code>5-6</code> = 1 Success<br />
+                Success = Successes ≥ Difficulty
               </p>
             </div>
             <div class="reference-box">
@@ -1125,11 +1352,769 @@
               </p>
             </div>
           </div>
+          <div style="margin-top: var(--spacing-sm)">
+            <div
+              class="reference-box clickable"
+              onclick="toggleProbability(this)"
+            >
+              <h4>Roll Odds</h4>
+              <p style="color: var(--text-secondary)">
+                Click to see success probabilities
+              </p>
+              <table class="probability-table" id="probabilityTable">
+                <thead>
+                  <tr>
+                    <th>Pool</th>
+                    <th>1+</th>
+                    <th>2+</th>
+                    <th>3+</th>
+                    <th>4+</th>
+                    <th>5+</th>
+                    <th>6+</th>
+                    <th>7+</th>
+                    <th>8+</th>
+                    <th>9+</th>
+                    <th>10+</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Generated dynamically by JavaScript -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHARACTER BUILDING GUIDE -->
+      <div style="margin-top: var(--spacing-xl); page-break-before: always">
+        <div class="section" style="grid-column: 1 / -1">
+          <div class="section-title">Character Building Guide</div>
+
+          <div style="margin-bottom: var(--spacing-lg)">
+            <h3
+              style="
+                color: var(--accent-color);
+                font-family: var(--font-display);
+                font-size: 13px;
+                margin-bottom: var(--spacing-sm);
+              "
+            >
+              Point Buy by Power Level
+            </h3>
+            <p
+              style="
+                color: var(--text-secondary);
+                font-size: 10px;
+                line-height: 1.6;
+                margin-bottom: var(--spacing-md);
+              "
+            >
+              Power levels represent what difficulty tier should be "fairly
+              easy" (~70-80% success) when you optimize your build with Rating +
+              Effort + Traits + Gear.
+            </p>
+          </div>
+
+          <table
+            style="
+              width: 100%;
+              border-collapse: collapse;
+              font-size: 10px;
+              margin-bottom: var(--spacing-lg);
+            "
+          >
+            <thead>
+              <tr
+                style="
+                  background: var(--bg-input);
+                  border-bottom: 2px solid var(--accent-color);
+                "
+              >
+                <th
+                  style="
+                    padding: var(--spacing-sm);
+                    text-align: left;
+                    color: var(--accent-color);
+                    font-family: var(--font-display);
+                  "
+                >
+                  Level
+                </th>
+                <th
+                  style="
+                    padding: var(--spacing-sm);
+                    text-align: left;
+                    color: var(--accent-color);
+                    font-family: var(--font-display);
+                  "
+                >
+                  Fairly Easy
+                </th>
+                <th
+                  style="
+                    padding: var(--spacing-sm);
+                    text-align: center;
+                    color: var(--accent-color);
+                    font-family: var(--font-display);
+                  "
+                >
+                  Points
+                </th>
+                <th
+                  style="
+                    padding: var(--spacing-sm);
+                    text-align: left;
+                    color: var(--accent-color);
+                    font-family: var(--font-display);
+                  "
+                >
+                  Example Distribution
+                </th>
+                <th
+                  style="
+                    padding: var(--spacing-sm);
+                    text-align: left;
+                    color: var(--accent-color);
+                    font-family: var(--font-display);
+                  "
+                >
+                  Traits
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid var(--border-color)">
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    color: var(--text-primary);
+                    font-weight: bold;
+                  "
+                >
+                  1
+                </td>
+                <td
+                  style="padding: var(--spacing-sm); color: var(--text-primary)"
+                >
+                  Easy (1 mark)
+                </td>
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    text-align: center;
+                    color: var(--accent-color);
+                    font-family: var(--font-mono);
+                    font-weight: bold;
+                  "
+                >
+                  4-6
+                </td>
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    color: var(--text-secondary);
+                    font-family: var(--font-mono);
+                    font-size: 9px;
+                  "
+                >
+                  (2,1,1,0) or (1,1,1,1)
+                </td>
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    color: var(--text-secondary);
+                    font-size: 9px;
+                  "
+                >
+                  0-1 basic
+                </td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-color)">
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    color: var(--text-primary);
+                    font-weight: bold;
+                  "
+                >
+                  2
+                </td>
+                <td
+                  style="padding: var(--spacing-sm); color: var(--text-primary)"
+                >
+                  Moderate (2 marks)
+                </td>
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    text-align: center;
+                    color: var(--accent-color);
+                    font-family: var(--font-mono);
+                    font-weight: bold;
+                  "
+                >
+                  8-12
+                </td>
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    color: var(--text-secondary);
+                    font-family: var(--font-mono);
+                    font-size: 9px;
+                  "
+                >
+                  (3,3,2,0) or (3,2,2,1)
+                </td>
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    color: var(--text-secondary);
+                    font-size: 9px;
+                  "
+                >
+                  2-3 basic
+                </td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-color)">
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    color: var(--text-primary);
+                    font-weight: bold;
+                  "
+                >
+                  3
+                </td>
+                <td
+                  style="padding: var(--spacing-sm); color: var(--text-primary)"
+                >
+                  Challenging (3 marks)
+                </td>
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    text-align: center;
+                    color: var(--accent-color);
+                    font-family: var(--font-mono);
+                    font-weight: bold;
+                  "
+                >
+                  12-16
+                </td>
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    color: var(--text-secondary);
+                    font-family: var(--font-mono);
+                    font-size: 9px;
+                  "
+                >
+                  (4,4,3,1) or (5,3,3,1)
+                </td>
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    color: var(--text-secondary);
+                    font-size: 9px;
+                  "
+                >
+                  3-4 (1-2 adv)
+                </td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-color)">
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    color: var(--text-primary);
+                    font-weight: bold;
+                  "
+                >
+                  4
+                </td>
+                <td
+                  style="padding: var(--spacing-sm); color: var(--text-primary)"
+                >
+                  Hard (4 marks)
+                </td>
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    text-align: center;
+                    color: var(--accent-color);
+                    font-family: var(--font-mono);
+                    font-weight: bold;
+                  "
+                >
+                  16-20
+                </td>
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    color: var(--text-secondary);
+                    font-family: var(--font-mono);
+                    font-size: 9px;
+                  "
+                >
+                  (5,5,4,2) or (6,5,4,1)
+                </td>
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    color: var(--text-secondary);
+                    font-size: 9px;
+                  "
+                >
+                  4-5 (2-3 adv)
+                </td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-color)">
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    color: var(--text-primary);
+                    font-weight: bold;
+                  "
+                >
+                  5
+                </td>
+                <td
+                  style="padding: var(--spacing-sm); color: var(--text-primary)"
+                >
+                  Very Hard (5 marks)
+                </td>
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    text-align: center;
+                    color: var(--accent-color);
+                    font-family: var(--font-mono);
+                    font-weight: bold;
+                  "
+                >
+                  20-24
+                </td>
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    color: var(--text-secondary);
+                    font-family: var(--font-mono);
+                    font-size: 9px;
+                  "
+                >
+                  (6,6,5,3) or (7,6,5,2)
+                </td>
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    color: var(--text-secondary);
+                    font-size: 9px;
+                  "
+                >
+                  5+ (2-3 adv, 1 master)
+                </td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-color)">
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    color: var(--text-primary);
+                    font-weight: bold;
+                  "
+                >
+                  6
+                </td>
+                <td
+                  style="padding: var(--spacing-sm); color: var(--text-primary)"
+                >
+                  Formidable (6 marks)
+                </td>
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    text-align: center;
+                    color: var(--accent-color);
+                    font-family: var(--font-mono);
+                    font-weight: bold;
+                  "
+                >
+                  24-28
+                </td>
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    color: var(--text-secondary);
+                    font-family: var(--font-mono);
+                    font-size: 9px;
+                  "
+                >
+                  (7,7,6,4) or (8,7,6,3)
+                </td>
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    color: var(--text-secondary);
+                    font-size: 9px;
+                  "
+                >
+                  6+ (3-4 adv, 1-2 master)
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    color: var(--text-primary);
+                    font-weight: bold;
+                  "
+                >
+                  7+
+                </td>
+                <td
+                  style="padding: var(--spacing-sm); color: var(--text-primary)"
+                >
+                  Heroic/Legendary
+                </td>
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    text-align: center;
+                    color: var(--accent-color);
+                    font-family: var(--font-mono);
+                    font-weight: bold;
+                  "
+                >
+                  28-32
+                </td>
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    color: var(--text-secondary);
+                    font-family: var(--font-mono);
+                    font-size: 9px;
+                  "
+                >
+                  (8,8,7,5) or (9,8,7,6)
+                </td>
+                <td
+                  style="
+                    padding: var(--spacing-sm);
+                    color: var(--text-secondary);
+                    font-size: 9px;
+                  "
+                >
+                  Full optimization
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: var(--spacing-md);
+              margin-bottom: var(--spacing-lg);
+            "
+          >
+            <div
+              style="
+                background: var(--bg-input);
+                border-left: 3px solid var(--accent-color);
+                padding: var(--spacing-md);
+              "
+            >
+              <h4
+                style="
+                  color: var(--accent-color);
+                  font-family: var(--font-display);
+                  font-size: 11px;
+                  margin-bottom: var(--spacing-sm);
+                "
+              >
+                Example: Level 2 Character (8 points)
+              </h4>
+              <div
+                style="
+                  color: var(--text-secondary);
+                  font-size: 9px;
+                  line-height: 1.6;
+                "
+              >
+                <p style="margin-bottom: var(--spacing-xs)">
+                  <strong style="color: var(--text-primary)">Stats:</strong>
+                  Might 3, Agility 3, Intellect 2, Persona 0
+                </p>
+                <p style="margin-bottom: var(--spacing-xs)">
+                  <strong style="color: var(--text-primary)">Traits:</strong>
+                  Combat Trained (Adv +2d6), Quick Reflexes (Basic +1d6)
+                </p>
+                <p style="margin-bottom: var(--spacing-sm)">
+                  <strong style="color: var(--text-primary)">Gear:</strong>
+                  Pistol (+1d6)
+                </p>
+                <p
+                  style="
+                    margin-bottom: var(--spacing-xs);
+                    color: var(--accent-color);
+                  "
+                >
+                  <strong>Dodging fire (2 marks = Moderate):</strong>
+                </p>
+                <p
+                  style="
+                    margin-bottom: var(--spacing-xs);
+                    font-family: var(--font-mono);
+                  "
+                >
+                  3 (Agility) + 3 (Effort) + 1d6 (Trait) = 7d6
+                </p>
+                <p style="color: var(--success-color); font-weight: bold">
+                  → 73.7% success (fairly easy as intended)
+                </p>
+              </div>
+            </div>
+
+            <div
+              style="
+                background: var(--bg-input);
+                border-left: 3px solid var(--accent-color);
+                padding: var(--spacing-md);
+              "
+            >
+              <h4
+                style="
+                  color: var(--accent-color);
+                  font-family: var(--font-display);
+                  font-size: 11px;
+                  margin-bottom: var(--spacing-sm);
+                "
+              >
+                Design Principles
+              </h4>
+              <ul
+                style="
+                  color: var(--text-secondary);
+                  font-size: 9px;
+                  line-height: 1.6;
+                  padding-left: var(--spacing-lg);
+                  margin: 0;
+                "
+              >
+                <li style="margin-bottom: var(--spacing-xs)">
+                  <strong style="color: var(--text-primary)"
+                    >Reserve Capacity:</strong
+                  >
+                  Rating 1-5: (Rating × 2) + 5 | Rating 6-10: (Rating × 3) + 2
+                  (max 32 at Rating 10)
+                </li>
+                <li style="margin-bottom: var(--spacing-xs)">
+                  <strong style="color: var(--text-primary)"
+                    >Optimization Gap:</strong
+                  >
+                  Rating 5: 16d6 max | Rating 10: 34d6 max (with full
+                  optimization)
+                </li>
+                <li style="margin-bottom: var(--spacing-xs)">
+                  <strong style="color: var(--text-primary)"
+                    >Specialization:</strong
+                  >
+                  (8,2,2,0) vs (4,3,3,2) both work at 12 points
+                </li>
+                <li style="margin-bottom: var(--spacing-xs)">
+                  <strong style="color: var(--text-primary)"
+                    >Aspiration:</strong
+                  >
+                  Lower level characters CAN attempt higher difficulties, just
+                  unlikely
+                </li>
+                <li>
+                  <strong style="color: var(--text-primary)"
+                    >Progression:</strong
+                  >
+                  Characters advance by increasing ratings AND acquiring better
+                  traits/gear
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            style="
+              background: var(--bg-secondary);
+              border: 1px solid var(--accent-color);
+              border-radius: var(--border-radius);
+              padding: var(--spacing-md);
+            "
+          >
+            <h4
+              style="
+                color: var(--accent-color);
+                font-family: var(--font-display);
+                font-size: 11px;
+                margin-bottom: var(--spacing-sm);
+              "
+            >
+              Recommended Starting Points
+            </h4>
+            <div
+              style="
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: var(--spacing-md);
+                color: var(--text-secondary);
+                font-size: 9px;
+              "
+            >
+              <div>
+                <p
+                  style="
+                    color: var(--accent-color);
+                    font-weight: bold;
+                    margin-bottom: var(--spacing-xs);
+                  "
+                >
+                  Street Level
+                </p>
+                <p
+                  style="
+                    font-family: var(--font-mono);
+                    color: var(--text-primary);
+                  "
+                >
+                  4-6 points
+                </p>
+                <p>Beginners, civilians, learning the ropes</p>
+              </div>
+              <div>
+                <p
+                  style="
+                    color: var(--accent-color);
+                    font-weight: bold;
+                    margin-bottom: var(--spacing-xs);
+                  "
+                >
+                  Competent Protagonist
+                </p>
+                <p
+                  style="
+                    font-family: var(--font-mono);
+                    color: var(--text-primary);
+                  "
+                >
+                  8-12 points
+                </p>
+                <p>Trained professionals, main characters</p>
+              </div>
+              <div>
+                <p
+                  style="
+                    color: var(--accent-color);
+                    font-weight: bold;
+                    margin-bottom: var(--spacing-xs);
+                  "
+                >
+                  Veteran Expert
+                </p>
+                <p
+                  style="
+                    font-family: var(--font-mono);
+                    color: var(--text-primary);
+                  "
+                >
+                  12-16 points
+                </p>
+                <p>Seasoned specialists, dangerous adversaries</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <script>
+      // Binomial coefficient: C(n, k) = n! / (k! * (n-k)!)
+      function binomialCoefficient(n, k) {
+        if (k < 0 || k > n) return 0;
+        if (k === 0 || k === n) return 1;
+
+        let result = 1;
+        for (let i = 1; i <= k; i++) {
+          result *= (n - i + 1) / i;
+        }
+        return result;
+      }
+
+      // Calculate P(X = k) for binomial distribution
+      // n = number of trials (dice), k = number of successes, p = success probability
+      function binomialProbability(n, k, p) {
+        const coeff = binomialCoefficient(n, k);
+        return coeff * Math.pow(p, k) * Math.pow(1 - p, n - k);
+      }
+
+      // Calculate P(X >= k) - cumulative probability of at least k successes
+      function cumulativeProbabilityAtLeast(n, k, p) {
+        let prob = 0;
+        for (let i = k; i <= n; i++) {
+          prob += binomialProbability(n, i, p);
+        }
+        return prob;
+      }
+
+      // Format percentage with appropriate precision
+      function formatPercentage(prob) {
+        const percent = prob * 100;
+        if (percent < 0.05) return "—";
+        if (percent < 10) {
+          return percent.toFixed(1) + "%";
+        } else {
+          return percent.toFixed(1) + "%";
+        }
+      }
+
+      // Generate probability table
+      function generateProbabilityTable() {
+        const tbody = document.querySelector("#probabilityTable tbody");
+        const p = 1 / 3; // Probability of rolling 5-6 on a d6
+        const maxDice = 20;
+        const maxMarks = 10;
+
+        for (let dice = 1; dice <= maxDice; dice++) {
+          const row = document.createElement("tr");
+
+          // Pool column
+          const poolCell = document.createElement("td");
+          poolCell.innerHTML = `<strong>${dice}d6</strong>`;
+          row.appendChild(poolCell);
+
+          // Success columns (1+ through 10+)
+          for (let marks = 1; marks <= maxMarks; marks++) {
+            const cell = document.createElement("td");
+            if (marks <= dice) {
+              const prob = cumulativeProbabilityAtLeast(dice, marks, p);
+              cell.textContent = formatPercentage(prob);
+            } else {
+              cell.textContent = "—";
+            }
+            row.appendChild(cell);
+          }
+
+          tbody.appendChild(row);
+        }
+      }
+
+      // Toggle probability table visibility
+      function toggleProbability(element) {
+        const table = element.querySelector(".probability-table");
+        table.classList.toggle("visible");
+        element.classList.toggle("expanded");
+      }
+
+      // Generate table on page load
+      document.addEventListener("DOMContentLoaded", function () {
+        generateProbabilityTable();
+      });
+
       // Auto-update dice displays for traits based on level selection
       document.querySelectorAll(".trait-list select").forEach((select) => {
         select.addEventListener("change", function () {
@@ -1165,7 +2150,8 @@
 
         ratingInput.addEventListener("change", function () {
           const rating = parseInt(this.value) || 1;
-          const capacity = rating * 2 + 5;
+          // Accelerated formula: Rating 1-5 uses (Rating × 2) + 5, Rating 6-10 uses (Rating × 3) + 2
+          const capacity = rating <= 5 ? rating * 2 + 5 : rating * 3 + 2;
           capacityInput.value = capacity;
         });
       });

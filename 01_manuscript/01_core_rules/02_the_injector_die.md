@@ -125,7 +125,7 @@ When you roll your Injector Die, you resolve it as follows:
 4. **The Result:**
    - **Roll 11:** The Injection succeeds (3+), and creates a Significant Aspect (10+).
    - **Narrative:** You reach out to an old contact who not only knows about the organization but owes you a favor. They're willing to help. Marcus gains the Aspect **"Helpful Informant"** (+2d6 to related information gathering rolls for the rest of the session).
-5. **Future Use:** Marcus can use the +2d6 from this Aspect when making Persona or Mind rolls to gather information related to this organization.
+5. **Future Use:** Marcus can use the +2d6 from this Aspect when making Persona or Intellect rolls to gather information related to this organization.
 
 ---
 

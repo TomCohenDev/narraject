@@ -23,6 +23,7 @@ You can have multiple Conditions. They stack.
 When you take a Condition, **you name it**. The mechanical tier stays the same, but the narrative flavor is yours.
 
 **Example:** You take a Wounded Condition. Instead of just "Wounded," you describe it as:
+
 - "Broken Ribs" (physical)
 - "Can't Trust Anyone" (social)
 - "Leg Pinned Under Rubble" (environmental)
@@ -89,11 +90,13 @@ While you have a **Critical** Condition, you gain a **Desperation Bonus**:
 The Desperation Bonus isn't automatic. You choose when to invoke it. It represents that moment when a hero finds strength in their lowest point.
 
 **Good uses:**
+
 - Saving an ally
 - Reaching a critical objective
 - One last attempt before going down
 
 **Not for:**
+
 - Routine actions
 - Actions that don't matter
 - Actions that aren't desperate
@@ -104,20 +107,20 @@ The Desperation Bonus isn't automatic. You choose when to invoke it. It represen
 
 ## Taking Conditions
 
-When you succeed on an attack, you inflict a Condition based on your intent and the excess Marks:
+When you succeed on an attack, you inflict a Condition based on your intent and the excess Successes:
 
-| Intent / Result        | Condition Inflicted |
-| ---------------------- | ------------------- |
-| "I want to hurt them"  | Hurt (1 Mark)       |
-| "I want to wound them" | Wounded (2 Marks)   |
-| "I want to kill them"  | Critical (3 Marks)  |
+| Intent / Result        | Condition Inflicted    |
+| ---------------------- | ---------------------- |
+| "I want to hurt them"  | Hurt (1 Success)       |
+| "I want to wound them" | Wounded (2 Successes)  |
+| "I want to kill them"  | Critical (3 Successes) |
 
-**Excess Marks** can upgrade the Condition:
+**Excess Successes** can upgrade the Condition:
 
-- Base intent achieved + 1-2 excess Marks = One Condition worse
-- Base intent achieved + 3+ excess Marks = Two Conditions worse
+- Base intent achieved + 1-2 excess Successes = One Condition worse
+- Base intent achieved + 3+ excess Successes = Two Conditions worse
 
-**Example:** You declare "I want to hurt the bandit" (1 Mark needed). You roll 4 Marks. You inflicted Hurt, but the 3 excess Marks upgrade it to Wounded.
+**Example:** You declare "I want to hurt the bandit" (1 Success needed). You roll 4 Successes. You inflicted Hurt, but the 3 excess Successes upgrade it to Wounded.
 
 ---
 
@@ -142,7 +145,7 @@ Armor can't reduce below Hurt. Even in full plate, a solid hit still hurts.
 Conditions don't heal automatically. You need:
 
 - **Rest:** A full night's sleep removes one Condition
-- **Medical Care:** A successful Mind roll (Difficulty 2-4) removes one Condition
+- **Medical Care:** A successful Intellect roll (Difficulty 2-4) removes one Condition
 - **Time:** A week of rest removes all Conditions
 
 > **GM Tip:** Don't let Conditions linger forever. Recovery should be achievable, but not trivial.
@@ -184,10 +187,10 @@ Physical Conditions aren't the only way you can be hurt. Sometimes, the damage i
 
 You have three separate Condition tracks:
 
-| Track      | What It Represents                    | Examples                                    |
-| ---------- | ------------------------------------- | ------------------------------------------- |
-| **Physical** | Bodily harm, injury, exhaustion      | "Broken Ribs," "Exhausted," "Poisoned"      |
-| **Mental**   | Psychological stress, trauma, confusion | "Rattled," "Paranoid," "Can't Focus"        |
+| Track        | What It Represents                       | Examples                                     |
+| ------------ | ---------------------------------------- | -------------------------------------------- |
+| **Physical** | Bodily harm, injury, exhaustion          | "Broken Ribs," "Exhausted," "Poisoned"       |
+| **Mental**   | Psychological stress, trauma, confusion  | "Rattled," "Paranoid," "Can't Focus"         |
 | **Social**   | Reputation damage, trust loss, isolation | "Humiliated," "Can't Trust Anyone," "Exiled" |
 
 Each track works independently. You can be physically fine but mentally shattered, or socially ruined but physically strong.
@@ -197,10 +200,10 @@ Each track works independently. You can be physically fine but mentally shattere
 Each track uses the same three tiers: **Hurt**, **Wounded**, **Critical**.
 
 - **Physical Conditions** affect all actions (as normal)
-- **Mental Conditions** affect Mind and Persona actions
+- **Mental Conditions** affect Intellect and Persona actions
 - **Social Conditions** affect Persona actions and social situations
 
-**Example:** You have "Rattled" (Mental, Wounded). You take -2d6 to Mind rolls (investigation, perception) and Persona rolls (willpower, composure). But your Might and Agility rolls are unaffected—your body is fine, your mind isn't.
+**Example:** You have "Rattled" (Mental, Wounded). You take -2d6 to Intellect rolls (investigation, perception) and Persona rolls (willpower, composure). But your Might and Agility rolls are unaffected—your body is fine, your Intellect isn't.
 
 ### Taking Mental/Social Conditions
 
@@ -209,7 +212,7 @@ Mental and Social Conditions come from:
 - **Failed social rolls:** You lose a debate, get publicly shamed, or fail to convince someone
 - **GM Injections:** The GM offers a mental/social complication (with IP compensation)
 - **Narrative events:** Betrayal, trauma, public failure, isolation
-- **Enemy abilities:** Some threats target your mind or reputation directly
+- **Enemy abilities:** Some threats target your Intellect or reputation directly
 
 **Example:** You fail a Persona roll to convince the council. The GM offers: "You're publicly humiliated. Take 'Disgraced' (Social, Hurt) and gain 1 IP." You accept. Now you have -1d6 to all Persona actions.
 
@@ -254,7 +257,7 @@ Conditions stack. Multiple Conditions = multiple penalties.
 
 **Critical gives Desperation Bonus:** +1d6 to one desperate action per scene.
 
-**Three tracks:** Physical (all actions), Mental (Mind/Persona), Social (Persona/social).
+**Three tracks:** Physical (all actions), Mental (Intellect/Persona), Social (Persona/social).
 
 Armor reduces severity. Light = -1 level, Medium = -2, Heavy = -3.
 

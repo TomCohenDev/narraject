@@ -6,7 +6,7 @@ A glossary of key terms.
 
 ## Core Terms
 
-**Mark:** Any d6 showing 5 or 6 counts as 1 Mark. You count Marks to determine success.
+**Success:** Any d6 showing 5 or 6 counts as 1 Success. You count Successes to determine success.
 
 **Injector Die:** A special die (d4, d6, d8, d10, or d12) assigned to an Injection. Rolled separately (never as part of your dice pool) when you spend IP to activate that Injection.
 
@@ -48,13 +48,13 @@ A glossary of key terms.
 
 **Intent:** What you want to achieve and _how_ you're doing it. Success means your Intent happens. Period.
 
-**Difficulty:** How many Marks you need to succeed. Set by the GM based on the ambition of your Intent.
+**Difficulty:** How many Successes you need to succeed. Set by the GM based on the ambition of your Intent.
 
 **Pool:** Your total dice for a roll. Pool = Rating + Effort + Traits + Gear + Aspects - Flaws.
 
-**Success:** Marks ≥ Difficulty. Success means your Intent happens. Period.
+**Success:** Successes ≥ Difficulty. Success means your Intent happens. Period.
 
-**Failure:** Marks < Difficulty. You don't get what you wanted.
+**Failure:** Successes < Difficulty. You don't get what you wanted.
 
 ---
 
@@ -76,7 +76,7 @@ A glossary of key terms.
 
 **Refuse Injection:** Spend 1 IP to reject the GM's complication. The complication doesn't happen.
 
-**Free Injection:** A complication that happens automatically (Zero Marks). No IPs offered.
+**Free Injection:** A complication that happens automatically (Zero Successes). No IPs offered.
 
 **Activate Injection:** Spend 1 IP to roll an Injector Die standalone, creating an Aspect on success. The Aspect provides bonuses to future rolls.
 

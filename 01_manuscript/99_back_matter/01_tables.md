@@ -6,17 +6,17 @@ Quick reference tables for play.
 
 ## Difficulty Scale
 
-| Marks | Difficulty  |
-| ----- | ----------- |
-| 0     | Trivial     |
-| 1     | Easy        |
-| 2     | Moderate    |
-| 3     | Challenging |
-| 4     | Hard        |
-| 5-6   | Very Hard   |
-| 7-8   | Heroic      |
-| 9-10  | Legendary   |
-| 10+   | Mythic      |
+| Successes | Difficulty  |
+| --------- | ----------- |
+| 0         | Trivial     |
+| 1         | Easy        |
+| 2         | Moderate    |
+| 3         | Challenging |
+| 4         | Hard        |
+| 5-6       | Very Hard   |
+| 7-8       | Heroic      |
+| 9-10      | Legendary   |
+| 10+       | Mythic      |
 
 ---
 
@@ -130,12 +130,12 @@ Use these when players need inspiration:
 
 ## Recovery Times
 
-| Activity      | Effect                                     |
-| ------------- | ------------------------------------------ |
-| Short Rest    | Recover 1 point per stat (10 minutes)      |
-| Long Rest     | Recover all Reserve (full night's sleep)   |
-| Medical Care  | Remove one Condition (Mind roll, Diff 2-4) |
-| Extended Rest | Remove all Conditions (1 week)             |
+| Activity      | Effect                                          |
+| ------------- | ----------------------------------------------- |
+| Short Rest    | Recover 1 point per stat (10 minutes)           |
+| Long Rest     | Recover all Reserve (full night's sleep)        |
+| Medical Care  | Remove one Condition (Intellect roll, Diff 2-4) |
+| Extended Rest | Remove all Conditions (1 week)                  |
 
 ---
 

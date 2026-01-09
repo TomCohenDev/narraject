@@ -4,8 +4,7 @@ In **Narraject**, some actions or situations call for a roll so the story moves 
 
 > **Before We Start: Anatomy of a Character**
 > To make a roll, you need to know what is on your character sheet:
->
-> - **Stats:** You have 4 Stats (Might, Agility, Mind, Persona). Each has a **Rating** (dice you always roll when using that stat) and a **Reserve** (effort you may spend that add dice).
+> - **Stats:** You have 4 Stats (Might, Agility, Intellect, Persona). Each has a **Rating** (dice you always roll when using that stat, this is your base for that stat) and a **Reserve** (effort you may spend that add additional dice).
 > - **Traits:** Specific skills or backgrounds (e.g., "Hacker," "Soldier") that add dice. Can be **Broad** ("Athletics") or **Specific** ("Underwater Basket Weaving").
 > - **Injections:** Special, powerful abilities defined on your character sheet. Each has an **Injector Die** (d4, d6, d8, d10, or d12) assigned to it.
 > - **Flaws:** Narrative weaknesses that remove dice when they apply.
@@ -17,9 +16,9 @@ In **Narraject**, some actions or situations call for a roll so the story moves 
 ## The Core Loop
 
 1.  **Declare Intent:** "I want to [Goal] by [Approach]."
-2.  **Set Difficulty:** The GM tells you how many **Marks** you need.
+2.  **Set Difficulty:** The GM tells you how many **Successes** you need.
 3.  **Build hand:** Gather d6s from your Rating, Reserve, Traits, Gear, and Aspects. Subtract dice for Flaws if they apply.
-4.  **Roll:** Count Marks.
+4.  **Roll:** Count Successes (5+).
 5.  **Result:** Succeed or Fail. Reality changes.
 
 > **Note:** Injections are never part of your dice pool. They are used separately (before, during, or after actions) to create Aspects that add dice to future rolls (see **The Injector Die** chapter).
@@ -53,26 +52,26 @@ There is no "you hit him but didn't do enough damage." There is no "you persuade
 Because success guarantees the outcome, the _ambition_ of your intent sets the Difficulty.
 
 - **"I want to distract the dragon by throwing a rock."**
-  - **Difficulty:** Moderate (2 Marks).
+  - **Difficulty:** Moderate (2 Successes).
   - **Success:** The dragon looks away for a moment.
 - **"I want to kill the dragon instantly by throwing a fork into its eye."**
-  - **Difficulty:** Legendary (10 Marks).
+  - **Difficulty:** Legendary (10 Successes).
   - **Success:** The fork pierces the brain. The dragon dies.
 
-You can attempt anything—even killing a dragon with a fork. The GM will never say "you can't try." They will simply set the Difficulty to match the impossibility of the task. If you can build a hand big enough to hit 10 Marks, then yes, you kill the dragon with a fork.
+You can attempt anything—even killing a dragon with a fork. The GM will never say "you can't try." They will simply set the Difficulty to match the impossibility of the task. If you can build a hand big enough to hit 10 Successes, then yes, you kill the dragon with a fork.
 
 ### Balancing Risk and Reward
 
 Your intent matters for the difficulty.
 
 - **Safe Intent:** "I slash at the bandit's torso to drive him back."
-  - **Difficulty:** Moderate (2 Marks).
+  - **Difficulty:** Moderate (2 Successes).
   - **Outcome:** He retreats, but is still alive and fighting.
 - **Risky Intent:** "I slash at his neck to take his head off."
-  - **Difficulty:** Hard (4 Marks).
+  - **Difficulty:** Hard (4 Successes).
   - **Outcome:** He is dead instantly.
 - **Creative Intent:** "I persuade the King to give us the army... by performing a perfect ancestral dance."
-  - **Difficulty:** Very Hard (5 Marks) because it's an unconventional approach.
+  - **Difficulty:** Very Hard (5 Successes) because it's an unconventional approach.
   - **Outcome:** The King is moved to tears and grants you the army.
 
 Be specific. Be ambitious. Be creative. But remember: the bigger the request, the harder the roll.
@@ -81,21 +80,21 @@ Be specific. Be ambitious. Be creative. But remember: the bigger the request, th
 
 ## Step 2: The GM Sets Difficulty
 
-The GM determines how many **Marks** you need. A **Mark** is any die showing **5 or higher**.
+The GM determines how many **Successes** you need. A **Success** is any die showing **5 or higher**.
 
-| Marks Needed | Difficulty      | Example                                             |
-| :----------- | :-------------- | :-------------------------------------------------- |
-| **0**        | **Trivial**     | Routine task. No roll needed.                       |
-| **1**        | **Easy**        | Climb a ladder, spot an obvious clue.               |
-| **2**        | **Moderate**    | Pick a simple lock, persuade a neutral stranger.    |
-| **3**        | **Challenging** | Hit a moving target, hack a secured system.         |
-| **4**        | **Hard**        | Scale a sheer wall in rain, convince a hostile NPC. |
-| **5-6**      | **Very Hard**   | Near-impossible shot, walk on fire.                 |
-| **7-8**      | **Heroic**      | Feats that define legends.                          |
-| **9-10**     | **Legendary**   | Once-in-a-lifetime achievements.                    |
-| **10+**      | **Mythic**      | Feats of gods.                                      |
+| Successes Needed | Difficulty      | Example                                             |
+| :--------------- | :-------------- | :-------------------------------------------------- |
+| **0**            | **Trivial**     | Routine task. No roll needed.                       |
+| **1**            | **Easy**        | Climb a ladder, spot an obvious clue.               |
+| **2**            | **Moderate**    | Pick a simple lock, persuade a neutral stranger.    |
+| **3**            | **Challenging** | Hit a moving target, hack a secured system.         |
+| **4**            | **Hard**        | Scale a sheer wall in rain, convince a hostile NPC. |
+| **5-6**          | **Very Hard**   | Near-impossible shot, walk on fire.                 |
+| **7-8**          | **Heroic**      | Feats that define legends.                          |
+| **9-10**         | **Legendary**   | Once-in-a-lifetime achievements.                    |
+| **10+**          | **Mythic**      | Feats of gods.                                      |
 
-The GM may state the exact number ("That's 4 Marks") or describe it ("That's very hard"). Both work.
+The GM may state the exact number ("That's 4 Successes") or describe it ("That's very hard"). Both work.
 
 ---
 
@@ -124,39 +123,35 @@ Every character has four stats. Each stat has a **Rating** (Dice you always have
 
 In Narraject, actions are not locked to specific stats. You use the stat that matches your description.
 
-| Stat        | Domain                                                   |
-| :---------- | :------------------------------------------------------- |
-| **Might**   | Physical power, endurance, melee combat, resisting harm. |
-| **Agility** | Speed, reflexes, coordination, stealth, balance.         |
-| **Mind**    | Knowledge, perception, reasoning, technical skills.      |
-| **Persona** | Social influence, willpower, presence, deception.        |
+| Stat          | Domain                                                   |
+| :------------ | :------------------------------------------------------- |
+| **Might**     | Physical power, endurance, melee combat, resisting harm. |
+| **Agility**   | Speed, reflexes, coordination, stealth, balance.         |
+| **Intellect** | Knowledge, perception, reasoning, technical skills.      |
+| **Persona**   | Social influence, willpower, presence, deception.        |
 
 > **Example: Opening a Locked Door**
->
 > - **Might:** You kick the hinge until it snaps.
 > - **Agility:** You slide a lockpick into the tumbler.
-> - **Mind:** You hotwire the electronic keypad panel.
+> - **Intellect:** You hotwire the electronic keypad panel.
 > - **Persona:** You shout "Open up!" and hope they listen.
 
 > **Example: Getting Past a Guard**
->
 > - **Might:** You physically overpower them, pinning them to the wall.
 > - **Agility:** You slip past silently while they're distracted.
-> - **Mind:** You memorize their patrol pattern and time your approach perfectly.
+> - **Intellect:** You memorize their patrol pattern and time your approach perfectly.
 > - **Persona:** You convince them you're authorized to be here.
 
 > **Example: Finding Information**
->
 > - **Might:** You break into a filing cabinet and rummage through papers.
 > - **Agility:** You pickpocket the key from someone's pocket.
-> - **Mind:** You recall reading about this in a book last week.
+> - **Intellect:** You recall reading about this in a book last week.
 > - **Persona:** You charm a librarian into letting you access restricted archives.
 
 > **Example: Stopping an Enemy Attack**
->
 > - **Might:** You grab their weapon arm and wrench it away.
 > - **Agility:** You dodge at the last second, making them overbalance.
-> - **Mind:** You predict their move from their stance and intercept.
+> - **Intellect:** You predict their move from their stance and intercept.
 > - **Persona:** You shout a command that makes them hesitate.
 
 **The Golden Rule:** If you can justify the narrative, you can use the stat.
@@ -224,25 +219,25 @@ Aspects can be created before, during, or after actions. They can benefit the cr
 
 ---
 
-## Step 4: Roll and Count Marks
+## Step 4: Roll and Count Successes
 
 Roll all your d6s at once.
 
-### Counting Marks
+### Counting Successes
 
-**For d6s:** Any die showing **5 or 6** counts as **1 Mark**.
+**For d6s:** Any die showing **5 or 6** counts as **1 Success**.
 
-Compare your total Marks to the Difficulty:
+Compare your total Successes to the Difficulty:
 
-| Result                 | Outcome                                     |
-| :--------------------- | :------------------------------------------ |
-| **Marks ≥ Difficulty** | **Success.** You achieve your intent.       |
-| **Marks < Difficulty** | **Failure.** You don't get what you wanted. |
+| Result                     | Outcome                                     |
+| :------------------------- | :------------------------------------------ |
+| **Successes ≥ Difficulty** | **Success.** You achieve your intent.       |
+| **Successes < Difficulty** | **Failure.** You don't get what you wanted. |
 
 That's it. No addition, no multiplication. Just count.
 
 > **Wait, what about Injections?**
-> Injections are rolled separately (before or during the action) to create Aspects. Those Aspects add d6s to your pool, which then contribute Marks. See **The Injector Die** chapter.
+> Injections are rolled separately (before or during the action) to create Aspects. Those Aspects add d6s to your pool, which then contribute Successes. See **The Injector Die** chapter.
 
 ---
 
@@ -257,7 +252,7 @@ You roll your **Stat Rating** in d6s. That's it.
 ## Example of Play
 
 **Situation:** Kira needs to shoot a fleeing target from a rooftop. It is windy, but she has a clear sightline.
-**GM:** "That's Hard—4 Marks needed."
+**GM:** "That's Hard—4 Successes needed."
 
 **Before the Roll - Injection:**
 Kira decides to use her "Ricochet Shot" Injection to create an Aspect. **Spends 1 IP.** The Injection has an Injector Die of **d8**. She rolls the d8: `7`.
@@ -276,7 +271,7 @@ Kira decides to use her "Ricochet Shot" Injection to create an Aspect. **Spends 
 
 **The Roll:** 11d6.
 She rolls `[6, 5, 4, 3, 2, 1, 6, 5, 2, 3, 4]`.
-She counts the d6s showing 5 or higher: `6, 5, 6, 5` = **4 Marks**.
-**Total:** 4 Marks.
+She counts the d6s showing 5 or higher: `6, 5, 6, 5` = **4 Successes**.
+**Total:** 4 Successes.
 
 **Result:** Success. The target falls. The Injection succeeded (rolled 7), so the bullet ricochets to hit a secondary target behind cover as intended.

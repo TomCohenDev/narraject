@@ -54,16 +54,4 @@
 2. Definitions
 3. Character Sheet Reference
 
----
 
-## Quick Navigation
-
-**New to the game?** Start with:
-
-- What Is Narraject? (Front Matter)
-- The Roll (Chapter 1)
-- Creation Flow (Chapter 2)
-- The Economy (Chapter 1)
-
-**Players:** Read Chapters 1-3  
-**GMs:** Read everything
