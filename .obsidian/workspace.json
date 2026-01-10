@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_manuscript/01_core_rules/01_the_roll.md",
+                "file": "01_manuscript/02_characters/08_flaws.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_the_roll"
+              "title": "08_flaws"
             }
           }
         ]
@@ -187,9 +187,12 @@
   "lastOpenFiles": [
     "01_manuscript/00_front_matter/02_table_of_contents.md",
     "01_manuscript/00_front_matter/01_the_pitch.md",
+    "01_manuscript/00_front_matter/00_title_credits.md",
+    "01_manuscript/01_core_rules/02_the_injector_die.md",
+    "01_manuscript/02_characters/08_flaws.md.tmp.60784.1768073003406",
+    "01_manuscript/01_core_rules/01_the_roll.md",
     "01_manuscript/00_front_matter/01_the_pitch.md.tmp.60784.1767996516736",
     "01_manuscript/00_front_matter/01_the_pitch.md.tmp.60784.1767996504778",
-    "01_manuscript/00_front_matter/00_title_credits.md",
     "01_manuscript/02_characters/02_stats_and_capacity.md",
     "online_sheet/sheet.html.tmp.60784.1767995282492",
     "01_manuscript/02_characters/09_power_levels.md.tmp.60784.1767995228508",
@@ -203,13 +206,11 @@
     "01_manuscript/02_characters/03_packages.md",
     "01_manuscript/02_characters/09_power_levels.md",
     "01_manuscript/01_core_rules/04_the_ladder.md",
-    "01_manuscript/01_core_rules/01_the_roll.md",
     "online_sheet/sheet.html.tmp.60784.1767992663109",
     "online_sheet/sheet.html.tmp.60784.1767991960154",
     "online_sheet/sheet.html.tmp.60784.1767991784603",
     "online_sheet/sheet.html.tmp.60784.1767991578348",
     "online_sheet/sheet.html.tmp.60784.1767991562903",
-    "online_sheet/sheet.html.tmp.60784.1767991389436",
     "MIGRATION_SUMMARY.md",
     "MIGRATION_CHECKLIST.md",
     "02_design_notes/ideas_bin.md",

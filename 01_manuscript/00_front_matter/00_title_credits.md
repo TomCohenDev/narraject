@@ -1,13 +1,12 @@
 # Narraject
 
-> _Roll dice to succeed. Roll YOUR die to matter._
+> _The thin narrow line betyween a narrative baced system to crunchy gameplay that rewards good story building_
 
 A narrative-focused TTRPG bridging tactile dice pools with narrative economies.
 
 ---
 
 **Version:** Alpha 0.1  
-**Page Count:** ~50 pages  
 
 ---
 
@@ -19,4 +18,4 @@ A narrative-focused TTRPG bridging tactile dice pools with narrative economies.
 
 ## Special Thanks
 
-Inspired by the Cypher System, Blades in the Dark, Shadowdark, Cortex Prime, Mothership, FATE, Draw Steel, and Daggerheart.
+Inspired by The Cypher System, Blades in the Dark, Shadowdark, Cortex Prime, Mothership, FATE, Draw Steel, Knife Theory, and Daggerheart
