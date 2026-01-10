@@ -174,14 +174,8 @@ Ask these questions together:
 **Example Conversation:**
 
 > **Player:** "I have a Flaw: my sister Kara thinks I'm dead. She's a corporate exec now."
->
 > **GM:** "Perfect. So if she shows up, what happens?"
->
-> **Player:** "Minor penalty to social rolls when she's present—I'm distracted. But narratively, you can use her to complicate missions. Like, what if she's the target?"
->
-> **GM:** "Got it. And is this a 'surprise her with Kara' situation, or should I give you warning?"
->
-> **Player:** "Surprise is fine. I trust you."
+> **Player:** "Minor penalty to social rolls when she's present—I'm distracted."
 
 **That's a good knife.** Sharp, specific, and ready to stab.
 
@@ -212,7 +206,7 @@ The GM can also use Flaws to introduce complications, raise stakes, or create dr
 **Example:** You have "Sister (Kara) thinks I'm dead." The GM says: "As you enter the corporate lobby, you see her. She's walking toward you. She hasn't seen you yet. What do you do?"
 
 ### The Stab-and-Reward Cycle
-When a Flaw **meaningfully complicates your life**—causes a failure, forces a difficult choice, or creates dramatic tension—the GM should award you **1 IP**.
+When a Flaw **meaningfully complicates your life**—causes a failure, forces a difficult choice, or creates dramatic tension—the GM can and should award you **1 IP** if the flaw plays out well and creates a good story.
 
 This creates a beautiful loop:
 1. GM stabs you with your Flaw
@@ -221,6 +215,68 @@ This creates a beautiful loop:
 4. You spend IP later to be awesome
 
 **Flaws make you vulnerable. IPs make you powerful. The cycle continues.**
+
+### When NOT to Award IP (Boring Stab)
+
+**Example:** You have "Claustrophobic (Moderate)" and you're crawling through a dungeon corridor.
+
+**GM:** "The walls are tight here. Take -2d6 to your Agility pool."
+**Player:** *Rolls with the penalty, succeeds, moves on*
+
+**No IP awarded.** Why? The Flaw applied mechanically, but it didn't create drama. It was just a tax on the dice pool. The player didn't make a difficult choice, experience narrative tension, or create a memorable moment. It was routine.
+
+**This is fine.** Not every Flaw trigger needs to be epic. But routine penalties don't earn IPs.
+
+### When to Award IP (Good Stab)
+
+**Same Flaw, Same Corridor. Different Choices.**
+
+**GM:** "The walls are closing in. The corridor narrows to barely shoulder-width. You hear voices behind you—the guards are coming. You need to crawl through fast."
+
+**Player:** *Panics* "No. No, I can't. My chest is tightening. I'm starting to hyperventilate."
+
+**GM:** "The voices are getting closer. Your party is ahead—they're through the narrow section, waving you forward. What do you do?"
+
+**Player:** "I... I try to push forward, but I'm shaking. Can I still make the Agility roll?"
+
+**GM:** "Yes, but you're at -2d6 from the claustrophobia. And the guards will spot you in seconds if you don't move NOW."
+
+**Player:** *Rolls, fails* "I freeze. I can't move. I'm stuck."
+
+**GM:** "Your teammate reaches back: 'Grab my hand! NOW!' The guards round the corner. They see you."
+
+**Player:** "I grab their hand. I let them pull me, even though every instinct is screaming to back out. I'm crying, I'm terrified, but I trust them."
+
+**GM:** "You're dragged through, gasping. The guards open fire just as you clear the gap. Your party slams a door shut. You're safe—but you're a wreck."
+
+**Award 1 IP.** Why? Same Flaw, same mechanical penalty—but this time:
+1. **The player roleplayed the panic honestly** (hyperventilating, freezing, crying)
+2. **The failure created dramatic tension** (guards spotted them, party had to intervene)
+3. **A difficult choice emerged** (trust the teammate vs. flee back)
+4. **Character relationships deepened** (vulnerability shown, trust built)
+5. **The moment mattered** (everyone at the table felt it)
+
+The difference isn't the Flaw. It's **how the player and GM engaged with it**. One was mechanical. The other was a knife to the heart.
+
+
+**Example:** You have "Sister (Kara) thinks I'm dead" and you're infiltrating a corporate gala to steal data.
+
+**GM:** "As you're hacking the terminal, you hear a familiar laugh. You turn—and there's Kara, twenty feet away, talking to a group of executives. She's walking this direction. She hasn't seen you yet."
+
+**Player:** *Freezes* "Oh no. Can I... can I hide my face without blowing my cover?"
+
+**GM:** "You'd need to turn away from the terminal mid-hack. The download has 30 seconds left. If you turn away, you might lose the data. If you stay focused, she might see you."
+
+**Player:** *Agonizes, decides to stay focused, takes -2d6 to the hacking roll from distraction, barely succeeds* "I'm keeping my head down, but my hands are shaking. Please don't let her see me..."
+
+**GM:** "The download finishes. You pull the drive. And then you hear: 'Excuse me, do I know you?' She's right behind you."
+
+**Award 1 IP.** Why? The Flaw created:
+1. **A difficult choice** (mission vs. secrecy)
+2. **Dramatic tension** (real stakes, real fear)
+3. **A memorable moment** (the player agonized, roleplayed honestly, and now faces consequences)
+
+The Flaw didn't just impose a penalty—it stabbed deep. The player bled beautifully. That earns IP.
 
 ---
 
@@ -267,20 +323,6 @@ This is advanced GMing, but when it works, it's magical.
 
 ---
 
-## Breaking Your Own Flaws
-
-GMs can also **break your knives**—take a Flaw you expect to be used one way and twist it:
-
-**Example:**
-- Your Flaw: "I failed to save my partner, Chen, during the last mission. He died."
-- GM's twist: Chen is alive. He faked his death. He's been hunting you.
-
-**Your Flaw just became a different Flaw.** The knife was reforged mid-stab.
-
-This requires GM-player trust, but it can create unforgettable moments.
-
----
-
 ## Flaws and Progression
 
 As you gain new Traits through advancement, you must also gain new Flaws. The Rule of Balance persists.
@@ -298,7 +340,7 @@ With GM approval, resolved Flaws might:
 - Change nature (enemy becomes uneasy ally)
 - Become narrative victories (the heirloom is recovered)
 
-But they don't disappear. Your story is written in scars.
+If a flaw is removed the GMs might reward the player with more IP point depending on the narrative.
 
 ---
 
@@ -315,6 +357,7 @@ But they don't disappear. Your story is written in scars.
 2. **Stab without variety.** Rotate through different characters' Flaws.
 3. **Forget to reward.** Meaningful complications deserve IPs.
 4. **Cross boundaries.** Honor off-limits topics discussed in Session Zero.
+5. **Stop successful plans.** Let the players have their hard earn wins.
 
 **The players gave you these knives because they trust you to use them well.**
 
@@ -327,8 +370,6 @@ But they don't disappear. Your story is written in scars.
 | **Minor**     | -1d6         | Nuisance that complicates but doesn't cripple |
 | **Moderate**  | -2d6         | Significant hindrance requiring adaptation |
 | **Severe**    | -3d6         | Major obstacle or fail-state condition |
-
-**Recommended Flaws per character:** 7-12 total (mix of mechanical penalties and narrative hooks)
 
 **IP reward:** 1 IP when a Flaw meaningfully complicates the story
 

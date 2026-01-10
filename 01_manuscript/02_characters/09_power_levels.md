@@ -36,21 +36,26 @@ More dice = more consistent results. But how many dice do you need for different
 
 Ratings can go up to **10** for truly legendary characters:
 
-| Rating | Reserve Capacity                  |
-| ------ | --------------------------------- |
-| 1-5    | See core rules (7, 9, 11, 13, 15) |
-| 6      | 20                                |
-| 7      | 23                                |
-| 8      | 26                                |
-| 9      | 29                                |
-| 10     | 32                                |
+| Rating | Reserve Capacity | Effort Cap | Max Single Pool (Rating + Effort + ~6 from traits/gear) |
+| ------ | ---------------- | ---------- | -------------------------------------------------------- |
+| 1      | 7                | 3          | ~10d6                                                    |
+| 2      | 9                | 4          | ~12d6                                                    |
+| 3      | 11               | 5          | ~14d6                                                    |
+| 4      | 13               | 6          | ~16d6                                                    |
+| 5      | 15               | 7          | ~18d6                                                    |
+| 6      | 20               | 9          | ~21d6                                                    |
+| 7      | 23               | 10         | ~23d6                                                    |
+| 8      | 26               | 11         | ~25d6                                                    |
+| 9      | 29               | 12         | ~27d6                                                    |
+| 10     | 32               | 13         | ~29d6                                                    |
 
-**Formula:**
+**Formulas:**
 
 - **Rating 1-5:** Reserve = (Rating × 2) + 5
 - **Rating 6-10:** Reserve = (Rating × 3) + 2
+- **Effort:** Effort = Rating + 2
 
-This accelerated growth ensures legendary characters can consistently achieve heroic feats.
+This accelerated growth ensures legendary characters can consistently achieve heroic feats while preventing single-roll nova builds that empty their entire Reserve.
 
 ---
 
@@ -111,7 +116,11 @@ Use for: Gods, ancient dragons, civilization-ending threats, mythic finales.
 ## Working Example: Level 2 Character (8 points)
 
 **Concept:** Combat Medic
-**Stats:** Might 3, Agility 3, Intellect 2, Persona 0 (8 points)
+**Stats:**
+- Might 3 (Reserve: 11, Effort: 5)
+- Agility 3 (Reserve: 11, Effort: 5)
+- Intellect 2 (Reserve: 9, Effort: 4)
+- Persona 0 (Reserve: 5, Effort: 2)
 **Traits:** Combat Trained (Advanced +2d6), Field Medicine (Basic +1d6)
 **Gear:** Assault Rifle (+1d6), Med Kit
 
@@ -120,19 +129,23 @@ Use for: Gods, ancient dragons, civilization-ending threats, mythic finales.
 **Treating a wounded ally under fire (2 marks = Moderate difficulty):**
 
 - Base: 2 (Intellect)
-- Effort: +2 (spend Reserve)
+- Effort: +2 (spend 2 Reserve, within Effort cap of 4)
 - Trait: +1d6 (Field Medicine)
 - **Total: 5d6** = 53.9% chance of 2+ marks
+- **Reserve Remaining:** Intellect 7/9
 
 **Returning fire while treating them (2 marks = Moderate difficulty):**
 
 - Base: 3 (Agility)
-- Effort: +3 (spend Reserve)
+- Effort: +3 (spend 3 Reserve, within Effort cap of 5)
 - Trait: +2d6 (Combat Trained)
 - Gear: +1d6 (Assault Rifle)
 - **Total: 9d6** = 85.7% chance of 2+ marks (fairly easy)
+- **Reserve Remaining:** Agility 8/11
 
 This character handles Moderate tasks fairly easily in their specialty (combat), struggles with Challenging tasks (3 marks = 60.5% at 9d6), and Very Hard tasks (5+ marks) are aspirational goals requiring perfect optimization and luck.
+
+**Resource Management:** With Effort caps, this character can't dump all their Reserve into one nova roll. They must pace themselves across multiple actions in a scene.
 
 ---
 
@@ -140,11 +153,13 @@ This character handles Moderate tasks fairly easily in their specialty (combat),
 
 ### Optimization Gap
 
-Characters with Rating 5 can build pools of 5 + 5 (effort) + 4 (traits) + 2 (gear) = **16d6**.
+Characters with Rating 5 can build pools of 5 (rating) + 7 (effort cap) + 4 (traits) + 2 (gear) = **18d6** per roll.
 
-Characters with Rating 10 can build pools of 10 + 16 (effort) + 6 (traits) + 2 (gear) = **34d6**.
+Characters with Rating 10 can build pools of 10 (rating) + 13 (effort cap) + 6 (traits) + 2 (gear) = **31d6** per roll.
 
 **System mastery matters.** Smart choices about when to spend Reserve, which Traits to activate, and what Gear to carry make the difference. Legendary characters (Rating 10) can consistently achieve Heroic tasks (7-8 marks) and have a fighting chance at Legendary tasks (9-10 marks).
+
+**Effort vs. Reserve:** While Rating 10 characters have 32 Reserve, they can only spend 13 per roll (Effort cap). This means they can sustain 2-3 maximum-effort rolls per scene before needing rest, creating natural pacing and tension.
 
 ### Specialization vs. Generalization
 

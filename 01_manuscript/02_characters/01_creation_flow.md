@@ -44,14 +44,11 @@ If you're stuck, ask the table: "What kind of character would be fun to have aro
 
 ## The Sections Ahead
 
-- **Packages:** The four archetypes (The Muscle, The Face, The Tech, The Scout)
-- **Foci:** Your signature specialty and unique abilities
-- **Descriptors:** The adjectives that add flavor, traits, and flaws
-- **Stats & Capacity:** Your resources
-- **Traits:** Skills, backgrounds, and knacks
-- **Flaws:** Narrative weaknesses (Rule of Balance: 1 Flaw per 1 Trait)
-- **Injections:** Special abilities with Injector Dice
+- **Stats & Capacity:** Your resources (Rating, Reserve, Effort)
+- **Traits:** Skills, backgrounds, and knacks (see Creating Good Traits)
 - **Gear:** What you carry
+- **Flaws:** Narrative weaknesses (Rule of Balance: 1 Flaw per 1 Trait)
+- **Progression:** How characters advance
 - **Power Levels:** Point buy for veteran characters and campaign progression
 
 **Note for GMs:** If you want to create characters at different power levels (street-level rookies, veteran operatives, legendary heroes), see **Power Levels and Point Buy** instead of using Packages.

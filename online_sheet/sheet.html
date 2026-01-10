@@ -970,7 +970,8 @@
                   <span class="stat-label">Rating</span>
                   <input
                     type="number"
-                    class="stat-input"
+                    class="stat-input stat-rating"
+                    data-stat="might"
                     min="1"
                     max="10"
                     value="1"
@@ -981,7 +982,8 @@
                   <div class="reserve-group">
                     <input
                       type="number"
-                      class="stat-input"
+                      class="stat-input stat-reserve-current"
+                      data-stat="might"
                       min="0"
                       max="35"
                       value="7"
@@ -989,12 +991,26 @@
                     <span class="stat-divider">/</span>
                     <input
                       type="number"
-                      class="stat-input"
+                      class="stat-input stat-reserve-max"
+                      data-stat="might"
                       min="7"
                       max="35"
                       value="7"
+                      readonly
                     />
                   </div>
+                </div>
+                <div class="stat-row">
+                  <span class="stat-label">Effort</span>
+                  <input
+                    type="number"
+                    class="stat-input stat-effort"
+                    data-stat="might"
+                    min="3"
+                    max="15"
+                    value="3"
+                    readonly
+                  />
                 </div>
               </div>
             </div>
@@ -1005,7 +1021,8 @@
                   <span class="stat-label">Rating</span>
                   <input
                     type="number"
-                    class="stat-input"
+                    class="stat-input stat-rating"
+                    data-stat="agility"
                     min="1"
                     max="10"
                     value="1"
@@ -1016,7 +1033,8 @@
                   <div class="reserve-group">
                     <input
                       type="number"
-                      class="stat-input"
+                      class="stat-input stat-reserve-current"
+                      data-stat="agility"
                       min="0"
                       max="35"
                       value="7"
@@ -1024,12 +1042,26 @@
                     <span class="stat-divider">/</span>
                     <input
                       type="number"
-                      class="stat-input"
+                      class="stat-input stat-reserve-max"
+                      data-stat="agility"
                       min="7"
                       max="35"
                       value="7"
+                      readonly
                     />
                   </div>
+                </div>
+                <div class="stat-row">
+                  <span class="stat-label">Effort</span>
+                  <input
+                    type="number"
+                    class="stat-input stat-effort"
+                    data-stat="agility"
+                    min="3"
+                    max="15"
+                    value="3"
+                    readonly
+                  />
                 </div>
               </div>
             </div>
@@ -1040,7 +1072,8 @@
                   <span class="stat-label">Rating</span>
                   <input
                     type="number"
-                    class="stat-input"
+                    class="stat-input stat-rating"
+                    data-stat="intellect"
                     min="1"
                     max="10"
                     value="1"
@@ -1051,7 +1084,8 @@
                   <div class="reserve-group">
                     <input
                       type="number"
-                      class="stat-input"
+                      class="stat-input stat-reserve-current"
+                      data-stat="intellect"
                       min="0"
                       max="35"
                       value="7"
@@ -1059,12 +1093,26 @@
                     <span class="stat-divider">/</span>
                     <input
                       type="number"
-                      class="stat-input"
+                      class="stat-input stat-reserve-max"
+                      data-stat="intellect"
                       min="7"
                       max="35"
                       value="7"
+                      readonly
                     />
                   </div>
+                </div>
+                <div class="stat-row">
+                  <span class="stat-label">Effort</span>
+                  <input
+                    type="number"
+                    class="stat-input stat-effort"
+                    data-stat="intellect"
+                    min="3"
+                    max="15"
+                    value="3"
+                    readonly
+                  />
                 </div>
               </div>
             </div>
@@ -1075,7 +1123,8 @@
                   <span class="stat-label">Rating</span>
                   <input
                     type="number"
-                    class="stat-input"
+                    class="stat-input stat-rating"
+                    data-stat="persona"
                     min="1"
                     max="10"
                     value="1"
@@ -1086,7 +1135,8 @@
                   <div class="reserve-group">
                     <input
                       type="number"
-                      class="stat-input"
+                      class="stat-input stat-reserve-current"
+                      data-stat="persona"
                       min="0"
                       max="35"
                       value="7"
@@ -1094,12 +1144,26 @@
                     <span class="stat-divider">/</span>
                     <input
                       type="number"
-                      class="stat-input"
+                      class="stat-input stat-reserve-max"
+                      data-stat="persona"
                       min="7"
                       max="35"
                       value="7"
+                      readonly
                     />
                   </div>
+                </div>
+                <div class="stat-row">
+                  <span class="stat-label">Effort</span>
+                  <input
+                    type="number"
+                    class="stat-input stat-effort"
+                    data-stat="persona"
+                    min="3"
+                    max="15"
+                    value="3"
+                    readonly
+                  />
                 </div>
               </div>
             </div>
@@ -1909,11 +1973,16 @@
                   (max 32 at Rating 10)
                 </li>
                 <li style="margin-bottom: var(--spacing-xs)">
+                  <strong style="color: var(--text-primary)">Effort Cap:</strong>
+                  Rating + 2 (max spend per roll). Prevents nova builds, creates
+                  pacing
+                </li>
+                <li style="margin-bottom: var(--spacing-xs)">
                   <strong style="color: var(--text-primary)"
                     >Optimization Gap:</strong
                   >
-                  Rating 5: 16d6 max | Rating 10: 34d6 max (with full
-                  optimization)
+                  Rating 5: 18d6 max | Rating 10: 31d6 max (with Effort cap + traits
+                  + gear)
                 </li>
                 <li style="margin-bottom: var(--spacing-xs)">
                   <strong style="color: var(--text-primary)"
@@ -2143,16 +2212,38 @@
         });
       });
 
-      // Auto-calculate reserve capacity when rating changes
-      document.querySelectorAll(".stat-block").forEach((block) => {
-        const ratingInput = block.querySelectorAll(".stat-input")[0];
-        const capacityInput = block.querySelectorAll(".stat-input")[2];
-
+      // Auto-calculate reserve capacity and effort when rating changes
+      document.querySelectorAll(".stat-rating").forEach((ratingInput) => {
         ratingInput.addEventListener("change", function () {
           const rating = parseInt(this.value) || 1;
-          // Accelerated formula: Rating 1-5 uses (Rating × 2) + 5, Rating 6-10 uses (Rating × 3) + 2
+          const statName = this.dataset.stat;
+
+          // Calculate Reserve capacity using accelerated formula
+          // Rating 1-5 uses (Rating × 2) + 5, Rating 6-10 uses (Rating × 3) + 2
           const capacity = rating <= 5 ? rating * 2 + 5 : rating * 3 + 2;
-          capacityInput.value = capacity;
+
+          // Calculate Effort: Rating + 2
+          const effort = rating + 2;
+
+          // Update the max reserve input (readonly)
+          const reserveMax = document.querySelector(
+            `.stat-reserve-max[data-stat="${statName}"]`
+          );
+          if (reserveMax) reserveMax.value = capacity;
+
+          // Update the current reserve to match new max if it exceeds
+          const reserveCurrent = document.querySelector(
+            `.stat-reserve-current[data-stat="${statName}"]`
+          );
+          if (reserveCurrent && parseInt(reserveCurrent.value) > capacity) {
+            reserveCurrent.value = capacity;
+          }
+
+          // Update the effort input (readonly)
+          const effortInput = document.querySelector(
+            `.stat-effort[data-stat="${statName}"]`
+          );
+          if (effortInput) effortInput.value = effort;
         });
       });
     </script>

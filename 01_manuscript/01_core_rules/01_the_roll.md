@@ -104,20 +104,26 @@ You don't just roll a stat. You build a hand of dice from who you are and what y
 
 `DICE HAND = Rating + Effort + Traits + Gear + Aspects - Flaws`
 
-### 1. Stats (Rating & Reserve)
+### 1. Stats (Rating, Reserve & Effort)
 
-Every character has four stats. Each stat has a **Rating** (Dice you always have) and a **Reserve** (Effort you spend).
+Every character has four stats. Each stat has:
+- A **Rating** (Dice you always have)
+- A **Reserve** (Total effort pool you can spend)
+- An **Effort** (Maximum effort you can spend on a single roll)
 
-**Reserve Capacity** = (Rating × 2) + 5
+**Reserve Capacity** = (Rating × 2) + 5 for Rating 1-5, or (Rating × 3) + 2 for Rating 6-10
+**Effort Cap** = Rating + 2
 
-| Stat        | Rating | Reserve Capacity |
-| :---------- | :----- | :--------------- |
-| **Level 1** | 1d6    | 7 points         |
-| **Level 2** | 2d6    | 9 points         |
-| **Level 3** | 3d6    | 11 points        |
+| Stat        | Rating | Reserve Capacity | Effort Cap |
+| :---------- | :----- | :--------------- | :--------- |
+| **Level 1** | 1d6    | 7 points         | 3          |
+| **Level 2** | 2d6    | 9 points         | 4          |
+| **Level 3** | 3d6    | 11 points        | 5          |
 
 - **Start with Rating:** Grab d6s equal to your Stat Rating. This is your floor.
 - **Add Effort (Optional):** You may spend points from your Reserve to add dice. **1 Point = +1d6**.
+  - **Effort Cap:** You can only spend up to your Effort value on a single roll.
+  - **Example:** If you have Agility 3 (Reserve: 11, Effort: 5), you can spend up to 5 Reserve on one roll, even if you have more available.
 
 ### 2. Your Approach Defines the Stat
 
