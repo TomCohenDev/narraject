@@ -1,211 +1,268 @@
-# The Economy
+# The Economy: Narrative Points
 
-Narraject isn't a game where the GM tells a story and players react. It's a negotiation. Both sides have currency. Both sides spend it.
-
-That currency is **Injector Points (IPs)**.
+Narraject uses **Narrative Points (NP)** as a currency for character progression. You earn NP through exceptional play, and spend them to advance your character mechanically and narratively.
 
 ---
 
-## What Are IPs?
+## What Are Narrative Points?
 
-IPs represent narrative authority—your ability to shape the story beyond what the dice determine.
+Narrative Points represent your character's growth through experience, training, and personal development. They're not spent during play—they're invested between sessions (or during downtime) to improve your character.
 
-When you have IPs, you can:
-
-- Inject facts into the fiction
-- Refuse complications the GM offers
-- Push your luck after a roll
-
-When the GM has IPs, they can:
-
-- Introduce obstacles and twists
-- Activate NPC special abilities
-- Raise the stakes
+**NP is for progression only.** You don't spend NP to activate abilities, reroll dice, or gain tactical advantages during play. For in-the-moment tactical options, you spend **Effort** from your stat Reserves.
 
 ---
 
-## Starting IPs
+## Earning Narrative Points
 
-- **Players** begin each session with **2 IPs**
-- **The GM** begins with IPs equal to **2 × number of players**
+NP is awarded by the GM or through group consensus when players engage meaningfully with the narrative.
 
-Unspent IPs carry over between sessions:
+### How to Earn NP
 
-- Player cap: **5 IPs**
-- GM cap: **10 IPs**
+You earn **1 NP** when you:
+- Play a Burden in a way that creates compelling drama or complications
+- Use your Narrative Injection creatively and meaningfully
+- Create a "holy shit" story moment that makes the table lean in
+- Drive the narrative forward through roleplay, tactics, or storytelling
+- Achieve a Story Goal or personal character milestone
+- Demonstrate exceptional play that enriches the session
 
----
+**Important:** NP is awarded for **engaging with the system**, not just for having Burdens or using mechanics. You must actively create interesting story moments.
 
-## Using Tokens
+### Who Can Award NP?
 
-Use physical tokens—poker chips, coins, glass beads. Place them visibly on the table.
+**Option 1: GM Awards (Simple)**
+- The GM awards NP when they see great play
+- Fast, straightforward, but less collaborative
 
-Why? Because seeing the economy changes how you play.
+**Option 2: Group Recognition (Collaborative)**
+- Any player can nominate another player for NP
+- Table consensus or GM approval finalizes the award
+- Encourages group engagement and recognition
 
-When the GM's pile is low, you know you have room to push. When it's high, you know complications are coming. When your pile is empty, you know accepting that next injection might be smart.
-
----
-
-## How Players Earn IPs
-
-| Source                    | IPs Earned | Notes                                                                           |
-| ------------------------- | ---------- | ------------------------------------------------------------------------------- |
-| **Accept a GM Injection** | +1         | The GM offers a complication                                                    |
-| **Playing the GM**        | +1         | Good roleplay, clever ideas, or making the table laugh (GM discretion)          |
-| **Flaw Activation**       | +1         | If a Flaw significantly hinders the party or causes a failure, the GM awards IP |
-| **Advance a Story Goal**  | +1         | Completing a personal arc beat (GM discretion)                                  |
-
----
-
-## GM Injections
-
-A GM Injection is a complication the GM introduces. Not a punishment—an _offer_.
-
-The GM describes something bad happening or about to happen. They offer you 1 IP to accept it. You choose.
-
-### The Flow
-
-```
-1. GM: "The lock clicks open, but you hear footsteps behind you.
-       Guards. I'm offering an Injection—1 IP if you accept."
-
-2. Player chooses:
-   → ACCEPT: "I'll take it." Gain 1 IP.
-              The guards are real. Deal with them.
-
-   → REFUSE: "I'll spend 1 IP to refuse."
-              The guards aren't there. Retcon. You proceed cleanly.
-```
-
-### When to Refuse
-
-You can only refuse if you have at least 1 IP.
-
-Refusing isn't "cheating" the story—it's spending your narrative currency. You earned those IPs. Spend them how you want.
-
-Refusing costs 1 IP, while accepting gains you 1 IP. It's a break-even proposition—the choice is about whether the complication is worth it for the story.
-
-### Good Injections
-
-**Do:**
-
-- Complicate success: _"You hit him, but your sword gets stuck in his armor."_
-- Create choices: _"The door's open, but you can only save one hostage before the bomb goes off."_
-- Introduce new problems: _"You succeeded, but someone was watching."_
-- Allow reaction: _"You hear footsteps approaching. What do you do?"_
-
-**Don't:**
-
-- Negate success: _"Actually, you missed."_
-- Remove agency: _"Your character panics and runs."_
-- Punish smart play: _"Because you prepared, the enemy prepared more."_
-- Make the PC look incompetent: _"You trip over your own feet."_
-
-### Injection Frequency
-
-Target: **1 per player per session**, plus any triggered by rules (see below).
-
-Too few injections → Economy stagnates, players hoard IPs.  
-Too many injections → Players feel picked on, refuse everything.
-
-### Free Injections (No Choice)
-
-Sometimes the GM gets complications without offering IPs:
-
-| Trigger                            | Result                                              |
-| ---------------------------------- | --------------------------------------------------- |
-| **Zero Successes on a roll**       | GM gets one complication                            |
-| **Established fiction demands it** | No roll needed (you're underwater, you're drowning) |
-
-Free injections aren't negotiations. They happen because the dice—or the situation—demand it.
+**Option 3: Hybrid (Recommended)**
+- GM can award NP directly for exceptional moments
+- Players can nominate each other with GM approval
+- Combines speed with collaboration
 
 ---
 
-## Player Injections
+## NP Distribution Guidelines
 
-**Injections** are special, powerful abilities defined on your character sheet. You cannot improvise Injections mid-session—they must be unlocked through character progression.
+Different tables have different pacing needs. The GM chooses the distribution model that fits their campaign:
 
-### Activating an Injection
+### Model 1: Capped Per Player (Recommended)
+- Each player can earn **up to 2 NP per session**
+- If all players earn at least 1 NP, everyone gets a bonus +1 NP
+- Encourages everyone to engage
 
-Injections are always rolled standalone (not as part of action rolls):
+### Model 2: Shared Pool
+- **6 total NP per session** to distribute among the group
+- Each player can only receive up to 2 NP
+- Encourages tactical distribution to those who need it
 
-- **Spend 1 IP** to activate an Injection
-- **Roll only the Injector Die** (no other dice)
-- **On success (3+):** The Injection creates an Aspect
-- **Aspect provides bonus:** +1d6 (roll 5-9) or +2d6 (roll 10+) to related future rolls
+### Model 3: Round Robin
+- First "round": everyone can get 1 NP
+- Only after everyone has 1 NP, players can get their 2nd
+- If everyone gets 2 NP, bonus round unlocks
+- Ensures everyone gets rewarded before anyone gets seconds
 
-**The bonus comes from the Aspect, not directly from the Injector Die.**
+### Model 4: Uncapped (For Experienced Groups)
+- No limits on NP awards
+- Risk of imbalance, but rewards consistent excellence
+- Progression costs may need to scale
 
-You can use Injections at any moment—before, during, or after actions. You can even use them to help other players by creating Aspects that benefit them.
-
-Each Injection has an **Injector Die** (d4, d6, d8, d10, or d12) permanently assigned to it. The die size represents reliability and narrative weight, not raw power.
-
-See **The Injector Die** chapter for complete details on how Injections work.
-
----
-
-## The GM's IPs
-
-The GM has an IP pool too. Symmetry matters.
-
-### How the GM Earns IPs
-
-The GM does not use dice or roll for IPs. They use narrative force.
-
-GM Injections are the primary tool. When a player refuses an Injection, the GM doesn't gain IP—they simply don't lose narrative authority.
-
-### How the GM Spends IPs
-
-| Cost     | Effect                                                |
-| -------- | ----------------------------------------------------- |
-| **1 IP** | Minor complication without offering compensation      |
-| **1 IP** | Exploit a player's named Condition (see Consequences) |
-| **2 IP** | Activate an NPC's special ability                     |
-| **3 IP** | Introduce an unexpected enemy or obstacle             |
-| **4 IP** | Reveal a hidden connection or betrayal                |
-| **5 IP** | Dramatically change the stakes of a scene             |
-
-### Limits
-
-- The GM **cannot** spend IPs to negate player Injections
-- The GM **must** announce IP spending before players roll
-- No "gotcha" moments—the economy is visible
+**For new groups:** Start with Model 1. It balances fairness with reward.
 
 ---
 
-## Spending IPs
+## Spending Narrative Points
 
-You can spend IPs for:
+NP is spent **between sessions** or during **in-game downtime** to advance your character.
 
-| Cost                 | Effect                                                                                        |
-| -------------------- | --------------------------------------------------------------------------------------------- |
-| **1 IP**             | **Activate an Injection** — Add the Injector Die to a roll (see **The Injector Die** chapter) |
-| **Between Sessions** | **Advancement** — Spend IP like XP to:                                                        |
-|                      | • Level up Traits (Basic → Advanced → Master)                                                 |
-|                      | • Step up Injector Dice (d4 → d6 → d8 → d10 → d12)                                            |
-|                      | • Unlock new Injections                                                                       |
-| **Variable**         | **Gear/Story** — Secure assets or make temporary items permanent                              |
+### Progression Costs
 
-You can only spend IPs you currently have. Choose wisely.
+| Advancement                              | NP Cost | Notes                                     |
+| ---------------------------------------- | ------- | ----------------------------------------- |
+| **Upgrade Anchor (Basic → Advanced)**    | 2 NP    | Requires narrative justification          |
+| **Upgrade Anchor (Advanced → Master)**   | 3 NP    | Requires significant narrative moment     |
+| **Add New Basic Anchor**                 | 2 NP    | Explain how you learned this              |
+| **Add New Advanced Anchor**              | 4 NP    | Justify why you'd start at this level     |
+| **Reduce Burden Severity (-3d6 → -2d6)** | 3 NP    | Requires narrative resolution             |
+| **Remove Minor Burden (-1d6)**           | 3 NP    | Story must meaningfully address this      |
+| **Increase Stat Rating**                 | 3 NP    | Represents deep training, max Rating 5    |
+| **Unlock Setting Ability** (future)      | Varies  | Per setting package (magic, psionics, etc.) |
+
+### Narrative Justification Required
+
+You can't just spend NP and claim advancement. You must narrate how your character earned it.
+
+**Examples:**
+
+**Upgrading an Anchor:**
+- "During our downtime, I trained with the veteran soldier. I'm upgrading my Combat Training from Basic → Advanced."
+- "After nearly dying in that fire, I've faced my fear. I'm reducing my 'Fear of Fire' Burden from -2d6 → -1d6."
+
+**Adding a New Anchor:**
+- "I've been studying the ancient texts we found. I'm adding 'Ancient History' as a Basic Anchor."
+- "After working with the hacker for three missions, I've picked up some skills. I'm adding 'Basic Hacking' as an Anchor."
+
+**Removing a Burden:**
+- "I reconciled with my sister. The 'Estranged Family' Burden no longer applies."
+- "After months of therapy and facing my trauma, I'm removing my 'PTSD' Burden."
+
+**The Rule:** The narrative must make sense for the advancement. GMs can reject advancements that lack proper narrative grounding.
 
 ---
 
-## Economy Health
+## NP Cap: Use It or Lose It
 
-At session's end, assess:
+You can store **up to 5 NP at a time**. Once you hit the cap, you stop earning NP until you spend some.
 
-**Healthy signs:**
+**Why cap NP?**
+- Forces players to invest in their characters
+- Prevents infinite hoarding
+- Creates meaningful progression choices
+- "Use it or lose it" encourages engagement
 
-- IPs changed hands often
-- Players accepted most injections
-- Players made meaningful injections
-- GM pile fluctuated
+**When you hit 5 NP:** Spend at least some NP before the next session, or you won't earn more.
 
-**Warning signs:**
+---
 
-- Players refused every injection (too harsh?)
-- Players hoarded IPs (nothing worth buying?)
-- One player has 5, others have 0 (redistribution failing?)
-- GM never spent IPs (not engaging the economy)
+## Milestone Advancement (Optional)
 
-Adjust accordingly. The economy should _flow_.
+GMs can grant **milestone advancements** independent of NP:
+
+- Completing major story arcs
+- Defeating significant threats
+- Achieving personal character goals
+- Surviving epic challenges
+
+**Milestone rewards can be:**
+- Free Anchor upgrade (no NP cost)
+- Bonus NP (beyond session cap)
+- Unlocking unique abilities
+- Narrative advancements (reputation, titles, resources)
+
+Milestones are in addition to normal NP progression. Use them sparingly for truly epic moments.
+
+---
+
+## Example: Earning and Spending NP
+
+### Session 1: Earning NP
+
+**Scene:** The party is infiltrating a corporate gala. Marcus (the Face) has a Burden: "Sister (Kara) thinks I'm dead."
+
+**GM:** "As you scan the room, you see her. Kara. Your sister. She's talking to the CEO—the man you're here to rob."
+
+**Marcus:** "Oh no. I freeze. She can't see me. But I need to get to the CEO."
+
+**Marcus makes a Persona roll to stay calm, takes -1d6 from distraction. He barely succeeds, gets the data, but Kara almost sees him. He escapes by inches.**
+
+**GM:** "That was tense. Marcus, you played your Burden beautifully and created real drama. You earn 1 NP."
+
+**Later in the session, Marcus uses his Narrative Injection:**
+
+**Marcus:** "I inject this: One of the security guards is an old contact from my street days. I try to convince him to let us through."
+
+**GM creates a quick NPC, Marcus roleplays the scene, and it adds depth to the heist.**
+
+**GM:** "That Narrative Injection created a great moment and added texture to the world. That's another 1 NP."
+
+**End of session:** Marcus has earned 2 NP (the session cap).
+
+---
+
+### Between Sessions: Spending NP
+
+**Marcus (to GM):** "I want to spend my 2 NP. During downtime, I've been thinking about Kara. Seeing her reminded me of my old life. I want to add a new Anchor: 'Corporate Insider Knowledge (Basic)' — I grew up around that world because of her."
+
+**GM:** "I love it. That makes perfect sense narratively. You spend 2 NP, you now have 'Corporate Insider Knowledge (Basic)' as an Anchor. +1d6 when dealing with corporate culture."
+
+**Marcus now has 0 NP and is ready to earn more next session.**
+
+---
+
+## Narrative Points and Burdens
+
+When you take a new Anchor (especially Advanced or Master), you must also balance it with a Burden. See the **Rule of Balance** in the Anchors and Burdens chapters.
+
+**Example:** You spend 4 NP to add "Master Swordsman (Advanced)" as an Anchor. You must also add or deepen a Burden:
+- Add a new Burden: "Rival Duelist (narrative complication)"
+- Deepen an existing Burden: "Arrogant" goes from -1d6 → -2d6
+
+This keeps characters balanced and ensures new power comes with new complications.
+
+---
+
+## NP and Setting Packages (Future)
+
+When setting-specific rules are introduced (magic systems, cybernetics, psionics), they will have their own NP costs and requirements:
+
+**Example (Magical Abilities - Future Content):**
+- Unlock Basic Spell: 2 NP + narrative explanation
+- Upgrade Spell Potency: 3 NP
+- Unlock Advanced School of Magic: 5 NP + in-game training
+
+These systems will be modular—GMs can add them or ignore them based on their campaign.
+
+**For now:** Core rules don't include setting-specific abilities. They'll be added as expansions.
+
+---
+
+## GM Guidance: Awarding NP
+
+### When to Award NP
+
+✅ **Award NP when:**
+- A player creates a memorable story moment
+- A Burden is played in a way that deepens the narrative
+- Narrative Injection is used creatively (not just mechanically)
+- Roleplay drives the session forward
+- The table reacts with genuine excitement or emotion
+
+❌ **Don't award NP for:**
+- Just using game mechanics (everyone rolls dice)
+- Showing up to the session (that's baseline)
+- Having Burdens on your sheet (playing them matters, not having them)
+- Doing cool tactical moves without narrative depth
+
+### Balancing Awards
+
+- Aim for **1-2 NP per player per session** as baseline
+- If one player dominates, encourage others
+- If someone's struggling, ask what would help them engage
+- NP should feel earned, not given
+
+### Dealing with NP Hoarding
+
+If players are hitting the 5 NP cap and not spending:
+- Remind them: "Use it or you can't earn more"
+- Offer clear advancement opportunities during downtime
+- Ask: "What does your character want to improve?"
+
+---
+
+## Quick Reference
+
+**Earning NP:** Play Burdens well, use Narrative Injection creatively, create story moments, achieve goals
+
+**Award Amount:** 1 NP per worthy moment
+
+**Session Cap (Recommended):** 2 NP per player per session, +1 bonus if everyone earns at least 1
+
+**NP Cap:** Maximum 5 NP stored
+
+**Spending NP:** Between sessions or during downtime, with narrative justification
+
+**Costs:** 2-4 NP for most advancements
+
+**Rule of Balance:** New Anchors require new or deepened Burdens
+
+---
+
+## Final Thought
+
+Narrative Points aren't just XP by another name. They're a reward system that encourages players to engage with the narrative—to play their Burdens, use their tools creatively, and create moments that make the story memorable.
+
+**Don't hoard them. Spend them. Grow your character. Make them legendary.**

@@ -5,11 +5,15 @@ In **Narraject**, some actions or situations call for a roll so the story moves 
 > **Before We Start: Anatomy of a Character**
 > To make a roll, you need to know what is on your character sheet:
 > - **Stats:** You have 4 Stats (Might, Agility, Intellect, Persona). Each has a **Rating** (dice you always roll when using that stat, this is your base for that stat) and a **Reserve** (effort you may spend that add additional dice).
-> - **Traits:** Specific skills or backgrounds (e.g., "Hacker," "Soldier") that add dice. Can be **Broad** ("Athletics") or **Specific** ("Underwater Basket Weaving").
-> - **Injections:** Special, powerful abilities defined on your character sheet. Each has an **Injector Die** (d4, d6, d8, d10, or d12) assigned to it.
-> - **Flaws:** Narrative weaknesses that remove dice when they apply.
-> - **Gear:** Tools and weapons that add dice.
-> - **Aspects:** Environmental or situational elements that add dice (e.g., "High ground," "Perfect lighting," "Familiar territory"). GM-granted or player-injected via IPs.
+> - **Character Injections:** Your character's defining elements:
+>   - **Anchors:** Background elements and skills (e.g., "Hacker," "Soldier") that add dice. Can be **Broad** ("Athletics") or **Specific** ("Underwater Basket Weaving").
+>   - **Burdens:** Narrative weaknesses that remove dice when they apply.
+>   - **Gear:** Tools and weapons that add dice.
+> - **Narrative Injection:** Once per session, you can inject a story fact or context at any moment (see Narrative Injection chapter).
+> - **Aspects:** Elements injected into the narrative that can add dice:
+>   - **Character Injections:** Anchors, Burdens, Conditions, Gear on your sheet
+>   - **Scene Injections:** Environmental factors (e.g., "High ground," "Smoke-filled room")
+>   - **Story Injections:** Ongoing narrative elements (e.g., "Looming darkness over town")
 
 ---
 
@@ -17,11 +21,11 @@ In **Narraject**, some actions or situations call for a roll so the story moves 
 
 1.  **Declare Intent:** "I want to [Goal] by [Approach]."
 2.  **Set Difficulty:** The GM tells you how many **Successes** you need.
-3.  **Build hand:** Gather d6s from your Rating, Reserve, Traits, Gear, and Aspects. Subtract dice for Flaws if they apply.
+3.  **Build hand:** Gather d6s from your Rating, Reserve (Effort), Anchors, Gear, and Aspects. Subtract dice for Burdens if they apply.
 4.  **Roll:** Count Successes (5+).
 5.  **Result:** Succeed or Fail. Reality changes.
 
-> **Note:** Injections are never part of your dice pool. They are used separately (before, during, or after actions) to create Aspects that add dice to future rolls (see **The Injector Die** chapter).
+> **Note:** Narrative Injection is not part of dice rolls—it's used to inject story facts and context at any moment. See **Narrative Injection** chapter.
 
 ---
 
@@ -102,7 +106,7 @@ The GM may state the exact number ("That's 4 Successes") or describe it ("That's
 
 You don't just roll a stat. You build a hand of dice from who you are and what you're doing.
 
-`DICE HAND = Rating + Effort + Traits + Gear + Aspects - Flaws`
+`DICE HAND = Rating + Effort + Anchors + Gear + Aspects - Burdens`
 
 ### 1. Stats (Rating, Reserve & Effort)
 
@@ -162,27 +166,27 @@ In Narraject, actions are not locked to specific stats. You use the stat that ma
 
 **The Golden Rule:** If you can justify the narrative, you can use the stat.
 
-### 3. Traits
+### 3. Anchors
 
-If your character has relevant training or skills, add more d6s.
+If your character has relevant training, background, or skills, add more d6s.
 
-Traits can be **Broad** ("Athletics") or **Specific** ("Underwater Basket Weaving"). The scope affects when they apply, not their mechanical bonus.
+Anchors can be **Broad** ("Athletics") or **Specific** ("Underwater Basket Weaving"). The scope affects when they apply, not their mechanical bonus.
 
-| Source             | Bonus | Notes                         |
-| :----------------- | :---- | :---------------------------- |
-| **Basic Trait**    | +1d6  | Relevant background or skill. |
-| **Advanced Trait** | +2d6  | Specialized training.         |
-| **Master Trait**   | +3d6  | Exceptional mastery.          |
+| Source              | Bonus | Notes                         |
+| :------------------ | :---- | :---------------------------- |
+| **Basic Anchor**    | +1d6  | Relevant background or skill. |
+| **Advanced Anchor** | +2d6  | Specialized training.         |
+| **Master Anchor**   | +3d6  | Exceptional mastery.          |
 
-### 4. Flaws
+### 4. Burdens
 
-If a Flaw applies to the situation, it removes dice from your pool. Flaws are narrative weaknesses, fears, or physical limitations that mechanically hinder you.
+If a Burden applies to the situation, it removes dice from your pool. Burdens are narrative weaknesses, fears, or physical limitations that mechanically hinder you.
 
-- **Minor Flaw:** -1d6
-- **Moderate Flaw:** -2d6
-- **Severe Flaw:** -3d6
+- **Minor Burden:** -1d6
+- **Moderate Burden:** -2d6
+- **Severe Burden:** -3d6
 
-See the **Character Creation** chapter for details on Flaws and the Rule of Balance (1 Flaw for every 1 Trait).
+See the **Anchors** and **Burdens** chapters for details and the Rule of Balance (1 Burden for every 1 Anchor).
 
 ### 5. Gear
 
@@ -206,22 +210,23 @@ The bonus corresponds to the gear's level, unless the gear has a specific descri
 
 ### 6. Situational Aspects
 
-The GM may grant bonus dice for advantageous circumstances (e.g., high ground, surprise, perfect lighting). Players can also create Aspects via Injections (see **The Injector Die**).
+The GM may grant bonus dice for advantageous circumstances (e.g., high ground, surprise, perfect lighting). Players can also create **Scene Injections** through their actions or use **Narrative Injection** to establish helpful facts.
 
-**Aspects from Injections:**
+**Types of Aspects:**
 
-- Minor Aspect (Injection roll 5-9): +1d6 to related rolls
-- Significant Aspect (Injection roll 10+): +2d6 to related rolls
+- **Character Injections:** Anchors, Burdens, Gear on your sheet
+- **Scene Injections:** Environmental factors created by actions (smoke grenades, barricades, tactical positioning)
+- **Story Injections:** Ongoing narrative elements established through play
 
-Aspects can be created before, during, or after actions. They can benefit the creator or other players.
+**When they grant dice:** Aspects grant +1d6 or +2d6 when the GM judges they create significant advantage.
 
 | Situation                       | Bonus        |
 | :------------------------------ | :----------- |
 | High ground, good lighting      | +1d6         |
 | Surprise, significant advantage | +1d6 to +2d6 |
 | Perfect conditions              | +1d6         |
-| Aspect from Injection (minor)   | +1d6         |
-| Aspect from Injection (major)   | +2d6         |
+| Scene Injection (smoke, cover)  | +1d6         |
+| Major tactical advantage        | +2d6         |
 
 ---
 
@@ -242,9 +247,6 @@ Compare your total Successes to the Difficulty:
 
 That's it. No addition, no multiplication. Just count.
 
-> **Wait, what about Injections?**
-> Injections are rolled separately (before or during the action) to create Aspects. Those Aspects add d6s to your pool, which then contribute Successes. See **The Injector Die** chapter.
-
 ---
 
 ## The Desperation Roll
@@ -260,24 +262,17 @@ You roll your **Stat Rating** in d6s. That's it.
 **Situation:** Kira needs to shoot a fleeing target from a rooftop. It is windy, but she has a clear sightline.
 **GM:** "That's Hard—4 Successes needed."
 
-**Before the Roll - Injection:**
-Kira decides to use her "Ricochet Shot" Injection to create an Aspect. **Spends 1 IP.** The Injection has an Injector Die of **d8**. She rolls the d8: `7`.
-
-- **Roll 7:** Injection succeeds (3+), creates a minor Aspect (5-9).
-- **Aspect Created:** **"Ricochet Angle"** (+1d6 to this attack roll).
-
 **Kira's Build:**
 
 1.  **Approach:** Agility (Rating 3). **Starts with 3d6.**
 2.  **Effort:** She needs this hit. She spends 2 Reserve points. **Adds +2d6.**
-3.  **Trait:** "Expert Marksman" (Advanced). **Adds +2d6.**
+3.  **Anchor:** "Expert Marksman" (Advanced). **Adds +2d6.**
 4.  **Gear:** Quality Rifle. **Adds +2d6.**
 5.  **Aspect:** Clear sightline (GM grants). **Adds +1d6.**
-6.  **Aspect:** "Ricochet Angle" (from Injection). **Adds +1d6.**
 
-**The Roll:** 11d6.
-She rolls `[6, 5, 4, 3, 2, 1, 6, 5, 2, 3, 4]`.
+**The Roll:** 10d6.
+She rolls `[6, 5, 4, 3, 2, 1, 6, 5, 2, 3]`.
 She counts the d6s showing 5 or higher: `6, 5, 6, 5` = **4 Successes**.
 **Total:** 4 Successes.
 
-**Result:** Success. The target falls. The Injection succeeded (rolled 7), so the bullet ricochets to hit a secondary target behind cover as intended.
+**Result:** Success. The target falls.
