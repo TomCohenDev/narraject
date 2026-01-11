@@ -936,9 +936,9 @@
         </div>
       </div>
 
-      <!-- Injector Points -->
+      <!-- Narrative Points -->
       <div class="section" style="margin-bottom: var(--spacing-md)">
-        <div class="section-title">Injector Points</div>
+        <div class="section-title">Narrative Points</div>
         <div class="ip-tracker">
           <div class="ip-label">Current (Max 5)</div>
           <div class="ip-pips">
@@ -1170,12 +1170,12 @@
           </div>
         </div>
 
-        <!-- TRAITS -->
+        <!-- ANCHORS -->
         <div class="section">
-          <div class="section-title">Traits</div>
+          <div class="section-title">Anchors</div>
           <div class="trait-list">
             <div class="trait-row">
-              <input type="text" placeholder="Trait name..." />
+              <input type="text" placeholder="Anchor name..." />
               <select>
                 <option value="basic">Basic</option>
                 <option value="advanced">Advanced</option>
@@ -1184,7 +1184,7 @@
               <span class="dice-display">+1d6</span>
             </div>
             <div class="trait-row">
-              <input type="text" placeholder="Trait name..." />
+              <input type="text" placeholder="Anchor name..." />
               <select>
                 <option value="basic">Basic</option>
                 <option value="advanced">Advanced</option>
@@ -1193,7 +1193,7 @@
               <span class="dice-display">+1d6</span>
             </div>
             <div class="trait-row">
-              <input type="text" placeholder="Trait name..." />
+              <input type="text" placeholder="Anchor name..." />
               <select>
                 <option value="basic">Basic</option>
                 <option value="advanced">Advanced</option>
@@ -1202,7 +1202,7 @@
               <span class="dice-display">+1d6</span>
             </div>
             <div class="trait-row">
-              <input type="text" placeholder="Trait name..." />
+              <input type="text" placeholder="Anchor name..." />
               <select>
                 <option value="basic">Basic</option>
                 <option value="advanced">Advanced</option>
@@ -1213,22 +1213,22 @@
           </div>
         </div>
 
-        <!-- FLAWS -->
+        <!-- BURDENS -->
         <div class="section">
           <div class="section-title">
-            Flaws
+            Burdens
             <span
               style="
                 font-weight: normal;
                 color: var(--text-muted);
                 font-size: 8px;
               "
-              >(1 per Trait)</span
+              >(1 per Anchor)</span
             >
           </div>
           <div class="trait-list">
             <div class="trait-row">
-              <input type="text" placeholder="Flaw..." />
+              <input type="text" placeholder="Burden..." />
               <select>
                 <option value="minor">Minor</option>
                 <option value="moderate">Moderate</option>
@@ -1239,7 +1239,7 @@
               >
             </div>
             <div class="trait-row">
-              <input type="text" placeholder="Flaw..." />
+              <input type="text" placeholder="Burden..." />
               <select>
                 <option value="minor">Minor</option>
                 <option value="moderate">Moderate</option>
@@ -1250,7 +1250,7 @@
               >
             </div>
             <div class="trait-row">
-              <input type="text" placeholder="Flaw..." />
+              <input type="text" placeholder="Burden..." />
               <select>
                 <option value="minor">Minor</option>
                 <option value="moderate">Moderate</option>
@@ -1261,7 +1261,7 @@
               >
             </div>
             <div class="trait-row">
-              <input type="text" placeholder="Flaw..." />
+              <input type="text" placeholder="Burden..." />
               <select>
                 <option value="minor">Minor</option>
                 <option value="moderate">Moderate</option>
@@ -1274,48 +1274,40 @@
           </div>
         </div>
 
-        <!-- INJECTIONS -->
+        <!-- NARRATIVE INJECTION -->
         <div class="section">
           <div class="section-title">
-            Injections
+            Narrative Injection
             <span
               style="
                 font-weight: normal;
                 color: var(--text-muted);
                 font-size: 8px;
               "
-              >(1 IP to activate)</span
+              >(1 per session)</span
             >
           </div>
-          <div class="injection-row">
-            <input type="text" placeholder="Injection name & effect..." />
-            <select>
-              <option value="d4">d4</option>
-              <option value="d6">d6</option>
-              <option value="d8" selected>d8</option>
-              <option value="d10">d10</option>
-              <option value="d12">d12</option>
-            </select>
-          </div>
-          <div class="injection-row">
-            <input type="text" placeholder="Injection name & effect..." />
-            <select>
-              <option value="d4">d4</option>
-              <option value="d6">d6</option>
-              <option value="d8" selected>d8</option>
-              <option value="d10">d10</option>
-              <option value="d12">d12</option>
-            </select>
-          </div>
-          <div class="injection-row">
-            <input type="text" placeholder="Injection name & effect..." />
-            <select>
-              <option value="d4">d4</option>
-              <option value="d6">d6</option>
-              <option value="d8" selected>d8</option>
-              <option value="d10">d10</option>
-              <option value="d12">d12</option>
-            </select>
+          <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+            <input
+              type="checkbox"
+              id="narrative-injection-used"
+              style="
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+                accent-color: var(--accent-color);
+              "
+            />
+            <label
+              for="narrative-injection-used"
+              style="
+                font-size: 10px;
+                color: var(--text-secondary);
+                cursor: pointer;
+              "
+            >
+              Used this session (inject a story fact without roll or cost)
+            </label>
           </div>
         </div>
 
@@ -1328,6 +1320,47 @@
           ></textarea>
         </div>
 
+        <!-- STRESS TRACKS -->
+        <div class="section" style="grid-column: 1 / -1">
+          <div class="section-title">
+            Stress Tracks
+            <span
+              style="
+                font-weight: normal;
+                color: var(--text-muted);
+                font-size: 8px;
+              "
+              >(Capacity: Stat Rating + 3)</span
+            >
+          </div>
+          <div style="display: flex; flex-direction: column; gap: var(--spacing-md);">
+            <!-- Physical Stress -->
+            <div>
+              <div style="font-size: 9px; color: var(--text-muted); margin-bottom: var(--spacing-xs); text-transform: uppercase; letter-spacing: 1px;">
+                Physical Stress (Might + 3) <span id="physical-stress-capacity" style="color: var(--accent-color);">= 4 boxes</span>
+              </div>
+              <div class="ip-pips" id="physical-stress-track">
+                <div class="ip-pip" onclick="this.classList.toggle('filled')"></div>
+                <div class="ip-pip" onclick="this.classList.toggle('filled')"></div>
+                <div class="ip-pip" onclick="this.classList.toggle('filled')"></div>
+                <div class="ip-pip" onclick="this.classList.toggle('filled')"></div>
+              </div>
+            </div>
+            <!-- Mental Stress -->
+            <div>
+              <div style="font-size: 9px; color: var(--text-muted); margin-bottom: var(--spacing-xs); text-transform: uppercase; letter-spacing: 1px;">
+                Mental Stress (Persona + 3) <span id="mental-stress-capacity" style="color: var(--accent-color);">= 4 boxes</span>
+              </div>
+              <div class="ip-pips" id="mental-stress-track">
+                <div class="ip-pip" onclick="this.classList.toggle('filled')"></div>
+                <div class="ip-pip" onclick="this.classList.toggle('filled')"></div>
+                <div class="ip-pip" onclick="this.classList.toggle('filled')"></div>
+                <div class="ip-pip" onclick="this.classList.toggle('filled')"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- CONDITIONS -->
         <div class="section" style="grid-column: 1 / -1">
           <div class="section-title">
@@ -1338,26 +1371,26 @@
                 color: var(--text-muted);
                 font-size: 8px;
               "
-              >(Name your conditions)</span
+              >(From Stress overflow - name your conditions)</span
             >
           </div>
           <div class="conditions-list">
             <div class="condition-row">
               <input
                 type="text"
-                placeholder="e.g., Broken Ribs (Hurt), Rattled (Wounded), Disgraced (Critical)..."
+                placeholder="e.g., Broken Ribs (Minor -1d6), Rattled (Moderate -2d6), Bleeding Out (Severe -3d6)..."
               />
             </div>
             <div class="condition-row">
               <input
                 type="text"
-                placeholder="e.g., Bleeding Out (Critical), Can't Trust Anyone (Wounded)..."
+                placeholder="e.g., Disgraced (Minor -1d6), Can't Trust Anyone (Moderate -2d6)..."
               />
             </div>
             <div class="condition-row">
               <input
                 type="text"
-                placeholder="e.g., Leg Pinned (Critical), Exiled (Social, Hurt)..."
+                placeholder="e.g., Leg Pinned (Severe -3d6), Exiled (Moderate -2d6)..."
               />
             </div>
             <div class="condition-row">
@@ -1389,8 +1422,8 @@
               <h4>Pool Formula</h4>
               <p>
                 <code>Rating</code> + <code>Effort</code> +
-                <code>Traits</code> + <code>Gear</code> + <code>Aspects</code> −
-                <code>Flaws</code>
+                <code>Anchors</code> + <code>Gear</code> + <code>Aspects</code> −
+                <code>Burdens</code>
               </p>
             </div>
             <div class="reference-box">
@@ -1401,18 +1434,19 @@
               </p>
             </div>
             <div class="reference-box">
-              <h4>Injections</h4>
+              <h4>Narrative Injection</h4>
               <p>
-                Spend <code>1 IP</code> → Roll die alone<br />
-                <code>3+</code> = success → Aspect<br />
-                <code>5-9</code> = +1d6 | <code>10+</code> = +2d6
+                <code>1/session</code> inject story fact<br />
+                No roll, no cost<br />
+                GM can veto unreasonable facts
               </p>
             </div>
             <div class="reference-box">
-              <h4>Golden Rule</h4>
+              <h4>Stress & Conditions</h4>
               <p>
-                Success = Intent Happens.<br />
-                <em>Period.</em>
+                Stress = buffer (Rating + 3)<br />
+                Overflow → Conditions<br />
+                1-2 Minor | 3-4 Mod | 5+ Severe
               </p>
             </div>
           </div>
@@ -1543,7 +1577,7 @@
                     font-family: var(--font-display);
                   "
                 >
-                  Traits
+                  Anchors
                 </th>
               </tr>
             </thead>
@@ -1910,7 +1944,7 @@
                   Might 3, Agility 3, Intellect 2, Persona 0
                 </p>
                 <p style="margin-bottom: var(--spacing-xs)">
-                  <strong style="color: var(--text-primary)">Traits:</strong>
+                  <strong style="color: var(--text-primary)">Anchors:</strong>
                   Combat Trained (Adv +2d6), Quick Reflexes (Basic +1d6)
                 </p>
                 <p style="margin-bottom: var(--spacing-sm)">
@@ -1981,7 +2015,7 @@
                   <strong style="color: var(--text-primary)"
                     >Optimization Gap:</strong
                   >
-                  Rating 5: 18d6 max | Rating 10: 31d6 max (with Effort cap + traits
+                  Rating 5: 18d6 max | Rating 10: 31d6 max (with Effort cap + anchors
                   + gear)
                 </li>
                 <li style="margin-bottom: var(--spacing-xs)">
@@ -2002,7 +2036,7 @@
                     >Progression:</strong
                   >
                   Characters advance by increasing ratings AND acquiring better
-                  traits/gear
+                  anchors/gear
                 </li>
               </ul>
             </div>
@@ -2184,16 +2218,16 @@
         generateProbabilityTable();
       });
 
-      // Auto-update dice displays for traits based on level selection
+      // Auto-update dice displays for anchors/burdens based on level selection
       document.querySelectorAll(".trait-list select").forEach((select) => {
         select.addEventListener("change", function () {
           const display = this.parentElement.querySelector(".dice-display");
-          const isFlaw =
+          const isBurden =
             display.style.color.includes("danger") ||
             this.closest(".section")
               .querySelector(".section-title")
-              .textContent.includes("Flaw");
-          const sign = isFlaw ? "-" : "+";
+              .textContent.includes("Burden");
+          const sign = isBurden ? "-" : "+";
 
           switch (this.value) {
             case "basic":
@@ -2212,7 +2246,7 @@
         });
       });
 
-      // Auto-calculate reserve capacity and effort when rating changes
+      // Auto-calculate reserve capacity, effort, and stress when rating changes
       document.querySelectorAll(".stat-rating").forEach((ratingInput) => {
         ratingInput.addEventListener("change", function () {
           const rating = parseInt(this.value) || 1;
@@ -2244,7 +2278,61 @@
             `.stat-effort[data-stat="${statName}"]`
           );
           if (effortInput) effortInput.value = effort;
+
+          // Update Stress tracks based on Might and Persona
+          updateStressTracks();
         });
+      });
+
+      // Function to update stress track capacities
+      function updateStressTracks() {
+        // Get Might and Persona ratings
+        const mightRating = parseInt(document.querySelector('.stat-rating[data-stat="might"]')?.value) || 1;
+        const personaRating = parseInt(document.querySelector('.stat-rating[data-stat="persona"]')?.value) || 1;
+
+        // Calculate stress capacities (Rating + 3)
+        const physicalStress = mightRating + 3;
+        const mentalStress = personaRating + 3;
+
+        // Update capacity displays
+        const physicalCapacityLabel = document.getElementById('physical-stress-capacity');
+        const mentalCapacityLabel = document.getElementById('mental-stress-capacity');
+
+        if (physicalCapacityLabel) {
+          physicalCapacityLabel.textContent = `= ${physicalStress} boxes`;
+        }
+        if (mentalCapacityLabel) {
+          mentalCapacityLabel.textContent = `= ${mentalStress} boxes`;
+        }
+
+        // Update physical stress track boxes
+        const physicalTrack = document.getElementById('physical-stress-track');
+        if (physicalTrack) {
+          physicalTrack.innerHTML = '';
+          for (let i = 0; i < physicalStress; i++) {
+            const box = document.createElement('div');
+            box.className = 'ip-pip';
+            box.onclick = function() { this.classList.toggle('filled'); };
+            physicalTrack.appendChild(box);
+          }
+        }
+
+        // Update mental stress track boxes
+        const mentalTrack = document.getElementById('mental-stress-track');
+        if (mentalTrack) {
+          mentalTrack.innerHTML = '';
+          for (let i = 0; i < mentalStress; i++) {
+            const box = document.createElement('div');
+            box.className = 'ip-pip';
+            box.onclick = function() { this.classList.toggle('filled'); };
+            mentalTrack.appendChild(box);
+          }
+        }
+      }
+
+      // Initialize stress tracks on page load
+      document.addEventListener('DOMContentLoaded', function() {
+        updateStressTracks();
       });
     </script>
   </body>
