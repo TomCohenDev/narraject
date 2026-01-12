@@ -16,17 +16,17 @@ This ensures characters have both strengths and weaknesses. If you have 4 Anchor
 
 ---
 
-## Anchor Tiers
+## Anchor Impact
 
-Anchors come in three tiers, representing your level of mastery:
+Anchors come in three impact levels, representing your level of mastery:
 
-| Tier         | Bonus | What It Represents                          |
+| Impact       | Bonus | What It Represents                          |
 | ------------ | ----- | ------------------------------------------- |
-| **Basic**    | +1d6  | Relevant background, training, or skill     |
-| **Advanced** | +2d6  | Specialized expertise or significant talent |
-| **Master**   | +3d6  | Exceptional mastery, world-class ability    |
+| **Minor**    | +1d6  | Relevant background, training, or skill     |
+| **Moderate** | +2d6  | Specialized expertise or significant talent |
+| **Major**    | +3d6  | Exceptional mastery, world-class ability    |
 
-You advance Anchors through play by spending Narrative Points (see Progression). Most characters start with Basic and Advanced Anchors.
+You advance Anchors through play by spending Narrative Points (see Progression). Most characters start with Minor and Moderate Anchors.
 
 ---
 
@@ -101,9 +101,9 @@ Once you have answers, turn them into Anchors.
 **Example:** "My character was a military medic before becoming a mercenary."
 
 That suggests:
-- Combat Trained (Advanced) - from military service
-- Field Medicine (Basic) - from medic training
-- Iron Nerves (Basic) - from working under fire
+- Combat Trained (Moderate) - from military service
+- Field Medicine (Minor) - from medic training
+- Iron Nerves (Minor) - from working under fire
 
 ### 2. Make It Evocative
 
@@ -125,7 +125,7 @@ Some of the best Anchors imply connections to the world:
 
 - **Organizations:** "Undercover Fed," "Guild Assassin," "Corporate Heir"
 - **Reputations:** "Famous Detective," "Wanted Outlaw," "Legendary Duelist"
-- **Mentors/Rivals:** "Trained by Master Chen," "Rival of the Crimson Hand"
+- **Mentors/Rivals:** "Trained by Major Chen," "Rival of the Crimson Hand"
 - **Cultural Ties:** "Daughter of the Wastes," "City Guard Veteran," "Nomad Trader"
 
 These Anchors not only add dice—they give the GM ammunition for creating personal stakes.
@@ -133,18 +133,18 @@ These Anchors not only add dice—they give the GM ammunition for creating perso
 ### 4. Vary Your Portfolio
 
 Don't make all your Anchors the same type. A character with:
-- Expert Swordsman (Advanced)
-- Master Duelist (Master)
-- Combat Veteran (Basic)
-- Trained in Fencing (Basic)
+- Expert Swordsman (Moderate)
+- Major Duelist (Major)
+- Combat Veteran (Minor)
+- Trained in Fencing (Minor)
 
 ...is one-note. They're VERY good at fighting, but have no other dimensions.
 
 Compare that to:
-- Expert Swordsman (Advanced)
-- Noble-Born (Basic)
-- Tactical Mind (Basic)
-- Silver Tongue (Basic)
+- Expert Swordsman (Moderate)
+- Noble-Born (Minor)
+- Tactical Mind (Minor)
+- Silver Tongue (Minor)
 
 Now you have a character who's not just a fighter—they're a noble with social graces, tactical acumen, and a signature combat style. That's richer.
 
@@ -152,14 +152,14 @@ Now you have a character who's not just a fighter—they're a noble with social 
 
 ### 5. Consider Action Economy
 
-In Narraject, you're building dice pools. Anchors that apply to your PRIMARY actions (the things you'll do most often) should generally be Advanced or Master tier.
+In Narraject, you're building dice pools. Anchors that apply to your PRIMARY actions (the things you'll do most often) should generally be Moderate or Major tier.
 
-Anchors that apply to SECONDARY actions (things you do occasionally) can be Basic tier.
+Anchors that apply to SECONDARY actions (things you do occasionally) can be Minor tier.
 
 **Example Combat Character:**
-- Close Combat Specialist (Advanced) - your bread and butter
-- Intimidating Presence (Basic) - occasionally useful
-- Urban Navigation (Basic) - situational but helpful
+- Close Combat Specialist (Moderate) - your bread and butter
+- Intimidating Presence (Minor) - occasionally useful
+- Urban Navigation (Minor) - situational but helpful
 
 This ensures you're effective at your core role while having breadth.
 
@@ -210,13 +210,13 @@ Anchors should be flavorful and specific. They're on your character sheet for th
 
 The Rule of Balance means every Anchor has a corresponding Burden. You don't have to link them explicitly, but sometimes it makes sense to create pairs:
 
-**Anchor:** Military Veteran (Advanced)
+**Anchor:** Military Veteran (Moderate)
 **Burden:** PTSD from the War (Moderate penalty in high-stress combat)
 
-**Anchor:** Master Hacker (Master)
+**Anchor:** Major Hacker (Major)
 **Burden:** Wanted by Megacorp Security (narrative complication)
 
-**Anchor:** Noble-Born (Basic)
+**Anchor:** Noble-Born (Minor)
 **Burden:** Obligation to the Family (narrative burden)
 
 This creates rich characters—your strengths come with costs, your expertise comes with history.
@@ -258,12 +258,12 @@ This creates rich characters—your strengths come with costs, your expertise co
 When you write down an Anchor, you're not just claiming a mechanical bonus—you're introducing facts about the world:
 
 - "Guild Assassin" suggests a Guild exists
-- "Trained by Master Chen" suggests Master Chen exists (and might appear in-game)
+- "Trained by Major Chen" suggests Major Chen exists (and might appear in-game)
 - "Wanted Outlaw" suggests you have a criminal past the GM can exploit
 
 The GM should ask questions:
 - "What's the Guild like?"
-- "Tell me about Master Chen—friend or foe now?"
+- "Tell me about Major Chen—friend or foe now?"
 - "What did you do to get that bounty?"
 
 Your answers create the world together.
@@ -273,17 +273,17 @@ Your answers create the world together.
 ## Starting Anchors
 
 Most starting characters have **3-5 Anchors** (and therefore 3-5 Burdens):
-- 1-2 Advanced Anchors (your specialties)
-- 2-3 Basic Anchors (your breadth)
+- 1-2 Moderate Anchors (your specialties)
+- 2-3 Minor Anchors (your breadth)
 
 ---
 
 ## Advancing Anchors
 
 You can improve Anchors through advancement by spending Narrative Points:
-- **Basic → Advanced:** Costs 2 NP + narrative justification
-- **Advanced → Master:** Costs 3 NP + narrative justification
-- **New Basic Anchor:** Costs 2 NP + new Burden
+- **Minor → Moderate:** Costs 2 NP + narrative justification
+- **Moderate → Major:** Costs 3 NP + narrative justification
+- **New Minor Anchor:** Costs 2 NP + new Burden
 
 See **Progression** and **The Economy** for details.
 
@@ -312,7 +312,7 @@ When creating a new Anchor, ask yourself:
 
 1. **What does this Anchor represent?** (background, training, reputation, skill)
 2. **When does it apply?** (give 2-3 example situations)
-3. **What tier is it?** (Basic, Advanced, Master)
+3. **What tier is it?** (Minor, Moderate, Major)
 4. **What story hooks does it create?** (relationships, obligations, complications)
 5. **What's the matching Burden?** (remember the Rule of Balance)
 
@@ -324,10 +324,10 @@ If you can answer all five, you have a good Anchor.
 
 ### The Veteran Soldier
 
-- **Close Combat Specialist** (Advanced) - core competency
-- **Tactics and Strategy** (Basic) - battlefield knowledge
-- **Military Protocol** (Basic) - connections and procedure
-- **Iron Nerves** (Basic) - steady under fire
+- **Close Combat Specialist** (Moderate) - core competency
+- **Tactics and Strategy** (Minor) - battlefield knowledge
+- **Military Protocol** (Minor) - connections and procedure
+- **Iron Nerves** (Minor) - steady under fire
 
 **Burdens:** PTSD (Moderate), Obligation to Old Unit (narrative), Failed to Save My Squad (guilt), Follows Orders Even Bad Ones (personality)
 
@@ -335,10 +335,10 @@ If you can answer all five, you have a good Anchor.
 
 ### The Street-Smart Rogue
 
-- **Cat Burglar** (Advanced) - core competency
-- **Urban Navigation** (Basic) - knows the city
-- **Fast Talk** (Basic) - social defense
-- **Underworld Contacts** (Basic) - network of informants
+- **Cat Burglar** (Moderate) - core competency
+- **Urban Navigation** (Minor) - knows the city
+- **Fast Talk** (Minor) - social defense
+- **Underworld Contacts** (Minor) - network of informants
 
 **Burdens:** Wanted by the Law (narrative), Greedy (personality), Trust No One (social hindrance), Rival Thief (enemy)
 
@@ -346,10 +346,10 @@ If you can answer all five, you have a good Anchor.
 
 ### The Brilliant Scientist
 
-- **Quantum Physics Expert** (Master) - world-class specialist
-- **Analytical Mind** (Advanced) - problem-solving
-- **Laboratory Resources** (Basic) - access to equipment
-- **Published Researcher** (Basic) - reputation
+- **Quantum Physics Expert** (Major) - world-class specialist
+- **Analytical Mind** (Moderate) - problem-solving
+- **Laboratory Resources** (Minor) - access to equipment
+- **Published Researcher** (Minor) - reputation
 
 **Burdens:** Socially Awkward (Minor social penalty), Obsessed with Proving My Theory (compulsion), Rival Professor (enemy), Equipment Dependent (limitation)
 

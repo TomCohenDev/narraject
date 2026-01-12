@@ -21,38 +21,28 @@ Instead of hit points, characters track harm through **Stress** (a quick-recover
 
 ## Stress Tracks
 
-Each character has two **Stress Tracks** with capacity based on their stats:
+Each character has two **Stress Tracks**, each starting with a fixed capacity:
 
 ### Physical Stress
-**Capacity = Might Rating + 3**
+**Capacity = 3 boxes** (fixed at character creation)
 
-| Might Rating | Stress Capacity |
-| ------------ | --------------- |
-| 1            | 4 boxes         |
-| 2            | 5 boxes         |
-| 3            | 6 boxes         |
-| 4            | 7 boxes         |
-| 5            | 8 boxes         |
+Represents your ability to absorb physical damage through stamina, dodging, glancing blows, and adrenaline.
 
 ### Mental Stress
-**Capacity = Persona Rating + 3**
+**Capacity = 3 boxes** (fixed at character creation)
 
-| Persona Rating | Stress Capacity |
-| -------------- | --------------- |
-| 1              | 4 boxes         |
-| 2              | 5 boxes         |
-| 3              | 6 boxes         |
-| 4              | 7 boxes         |
-| 5              | 8 boxes         |
+Represents your ability to absorb mental/social damage through willpower, composure, and emotional resilience.
 
 **Character Sheet Layout:**
 ```
-PHYSICAL STRESS (Might 3 = 6 boxes)
-□ □ □ □ □ □
+PHYSICAL STRESS
+□ □ □
 
-MENTAL STRESS (Persona 2 = 5 boxes)
-□ □ □ □ □
+MENTAL STRESS
+□ □ □
 ```
+
+> **Future Content:** Progression systems and special abilities may allow characters to increase their Stress capacity beyond 3 boxes.
 
 ---
 
@@ -91,31 +81,31 @@ After taking a Condition, **reset Stress to 0** for that track.
 
 ## Example: Taking Damage with Stress
 
-**Setup:** Character has Might 3 (6 Physical Stress boxes). Currently at 3/6 Stress.
+**Setup:** Character has 3 Physical Stress boxes, currently at 2/3 Stress marked.
 
 ```
-PHYSICAL STRESS (Current: 3/6)
-■ ■ ■ □ □ □
+PHYSICAL STRESS (Current: 2/3)
+■ ■ □
 ```
 
 **Scenario 1: Damage Within Capacity**
-Takes 2 damage → Mark 2 more boxes (now at 5/6)
+Takes 1 damage → Mark 1 more box (now at 3/3 - full)
 ```
-PHYSICAL STRESS (Current: 5/6)
-■ ■ ■ ■ ■ □
+PHYSICAL STRESS (Current: 3/3)
+■ ■ ■
 ```
-**Result:** No Condition. Absorbs the hit.
+**Result:** No Condition. Stress is full, but no overflow.
 
 ---
 
-**Scenario 2: Damage Overflows**
-Takes 4 damage:
-- 3 remaining Stress absorbs 3 damage
+**Scenario 2: Damage Overflows by 1-2**
+Takes 2 damage:
+- 1 remaining Stress absorbs 1 damage
 - 1 overflow → Minor Physical Condition
 
 ```
-PHYSICAL STRESS (Current: 0/6 - RESET)
-□ □ □ □ □ □
+PHYSICAL STRESS (Current: 0/3 - RESET)
+□ □ □
 
 PHYSICAL CONDITIONS
 ■ Minor (-1d6): "Bruised ribs"
@@ -125,14 +115,14 @@ PHYSICAL CONDITIONS
 
 ---
 
-**Scenario 3: Massive Overflow**
-At 4/6 Stress, takes 7 damage:
-- 2 remaining Stress absorbs 2 damage
+**Scenario 3: Massive Overflow (5+)**
+At 2/3 Stress, takes 6 damage:
+- 1 remaining Stress absorbs 1 damage
 - 5 overflow → Severe Physical Condition
 
 ```
-PHYSICAL STRESS (Current: 0/6 - RESET)
-□ □ □ □ □ □
+PHYSICAL STRESS (Current: 0/3 - RESET)
+□ □ □
 
 PHYSICAL CONDITIONS
 □ Minor (-1d6)
@@ -276,7 +266,7 @@ You're **critically vulnerable**. The next Physical damage takes you out:
 Multiple Conditions can apply to the same roll. They stack.
 
 **Example:** You have:
-- Physical Stress: 5/6 (tiring)
+- Physical Stress: 3/3 (full)
 - Physical: "Broken ribs" (-2d6)
 - Mental: "Rattled" (-1d6)
 
@@ -385,16 +375,16 @@ When an attack succeeds, determine damage:
 
 ## Power Level Variants
 
-Adjust Stress capacity and Condition slots for campaign tone:
+Adjust Condition slots for campaign tone (Stress stays at 3 boxes):
 
-| Power Level | Physical Stress   | Mental Stress     | Condition Slots     | Tone         |
-| ----------- | ----------------- | ----------------- | ------------------- | ------------ |
-| **Gritty**  | Might + 2         | Persona + 2       | 1/1/1 per track     | Deadly, tense|
-| **Standard**| Might + 3         | Persona + 3       | 1/1/1 per track     | Balanced     |
-| **Heroic**  | Might + 4         | Persona + 4       | 2/1/1 per track     | Resilient    |
-| **Epic**    | Might + 5         | Persona + 5       | 2/2/1 per track     | Pulp action  |
+| Power Level | Physical Stress | Mental Stress | Condition Slots     | Tone         |
+| ----------- | --------------- | ------------- | ------------------- | ------------ |
+| **Gritty**  | 3 boxes         | 3 boxes       | 1/1/1 per track     | Deadly, tense|
+| **Standard**| 3 boxes         | 3 boxes       | 1/1/1 per track     | Balanced     |
+| **Heroic**  | 3 boxes         | 3 boxes       | 2/1/1 per track     | Resilient    |
+| **Epic**    | 3 boxes         | 3 boxes       | 2/2/1 per track     | Pulp action  |
 
-Standard characters can absorb 4-6 hits of Stress before risking Conditions.
+> **Future Content:** Special abilities and progression may allow characters to increase Stress capacity beyond 3 boxes.
 
 ---
 
@@ -403,8 +393,8 @@ Standard characters can absorb 4-6 hits of Stress before risking Conditions.
 For intrigue-heavy campaigns:
 
 ```
-SOCIAL STRESS (Persona + 3)
-□ □ □ □ □ □
+SOCIAL STRESS
+□ □ □
 
 SOCIAL CONDITION TRACK
 □ Minor (-1d6)     _______________
@@ -426,8 +416,8 @@ SOCIAL CONDITION TRACK
 ## Quick Reference
 
 **Stress Tracks:**
-- Physical: Might + 3 boxes
-- Mental: Persona + 3 boxes
+- Physical: 3 boxes
+- Mental: 3 boxes
 - Recovers: 10 minutes (all boxes)
 
 **Condition Tracks:**
@@ -451,11 +441,11 @@ SOCIAL CONDITION TRACK
 
 ## Example in Play
 
-**Setup:** Rook has Might 3 (6 Physical Stress). Currently at 2/6 Stress. No Conditions yet.
+**Setup:** Rook has 3 Physical Stress boxes. Currently at 1/3 Stress. No Conditions yet.
 
 ```
-PHYSICAL STRESS (Current: 2/6)
-■ ■ □ □ □ □
+PHYSICAL STRESS (Current: 1/3)
+■ □ □
 ```
 
 ---
@@ -468,34 +458,34 @@ PHYSICAL STRESS (Current: 2/6)
 
 **GM:** "It connects, but you roll with it. Take 2 Physical Stress damage."
 
-**Rook:** *Marks 2 more boxes (now at 4/6)*
+**Rook:** *Marks 2 more boxes (now at 3/3 - full)*
 
 ```
-PHYSICAL STRESS (Current: 4/6)
-■ ■ ■ ■ □ □
+PHYSICAL STRESS (Current: 3/3)
+■ ■ ■
 ```
 
-**No Condition yet.** Still in the fight, feeling the pressure.
+**No Condition yet.** Stress is full, but no overflow. Still in the fight.
 
 ---
 
-**Round 2: Harder Hit**
+**Round 2: Overflow Hit**
 
-**GM:** "He follows up with a gut punch. You're hit. That's 4 Stress damage."
+**GM:** "He follows up with a gut punch. You're hit. That's 3 Stress damage."
 
-**Rook:** "I only have 2 Stress boxes left. I'm overflowing."
+**Rook:** "I'm already at 3/3. That's full overflow."
 
-**GM:** "Right. 2 boxes absorb 2 damage, then 2 overflow = Minor Physical Condition. Name it."
+**GM:** "Right. All 3 damage overflows = Moderate Physical Condition. Name it."
 
-**Rook:** *Marks last 2 Stress boxes, overflows, takes Minor Condition, resets Stress*
+**Rook:** *Takes Moderate Condition, resets Stress*
 
 ```
-PHYSICAL STRESS (Current: 0/6 - RESET)
-□ □ □ □ □ □
+PHYSICAL STRESS (Current: 0/3 - RESET)
+□ □ □
 
 PHYSICAL CONDITIONS
-■ Minor (-1d6): "Winded and bruised"
-□ Moderate (-2d6)
+□ Minor (-1d6)
+■ Moderate (-2d6): "Cracked ribs"
 □ Severe (-3d6)
 ```
 
@@ -503,28 +493,27 @@ PHYSICAL CONDITIONS
 
 **Round 3: Armored Defense**
 
-**GM:** "Another attack coming. This one's 5 Stress damage if it hits."
+**GM:** "Another attack coming. This one's 4 Stress damage if it hits."
 
-**Rook:** "I'm wearing Light armor (-1 Stress). If I fail to dodge, it's 4 Stress damage."
+**Rook:** "I'm wearing Light armor (-1 Stress). If I fail to dodge, it's 3 Stress damage."
 
 **GM:** "Correct. Roll to dodge."
 
 **Rook:** *Rolls, fails* "Damn."
 
-**GM:** "You take 4 Stress damage. You're at 0 Stress, so that's all overflow. 4 overflow = Moderate Physical Condition."
+**GM:** "You take 3 Stress damage. You're at 0 Stress, so that's all overflow. 3 overflow = Moderate Physical Condition."
 
-**Rook:** "Can I split it? I'll take another Minor Physical and a Minor Mental instead—the pain is breaking my focus."
+**Rook:** "Can I split it? I'll take a Minor Physical and a Minor Mental instead—the pain is breaking my focus."
 
 **GM:** "That works narratively. Mark them."
 
 ```
-PHYSICAL STRESS (Current: 0/6)
-□ □ □ □ □ □
+PHYSICAL STRESS (Current: 0/3)
+□ □ □
 
 PHYSICAL CONDITIONS
-■ Minor (-1d6): "Winded and bruised"
-■ Minor (-1d6): "Cracked rib"
-□ Moderate (-2d6)
+■ Minor (-1d6): "Bruised and limping"
+■ Moderate (-2d6): "Cracked ribs"
 □ Severe (-3d6)
 
 MENTAL CONDITIONS
@@ -533,7 +522,7 @@ MENTAL CONDITIONS
 □ Severe (-3d6)
 ```
 
-**Now fighting at -3d6 total** (-2d6 Physical, -1d6 Mental when applicable).
+**Now fighting at -4d6 total** (-3d6 Physical, -1d6 Mental when applicable).
 
 ---
 
@@ -543,11 +532,11 @@ MENTAL CONDITIONS
 
 **GM:** "Roll it."
 
-**Rook:** *Builds pool, rolls... 5 Successes!* "Yes!"
+**Rook:** *Builds pool, rolls... 5 Successes despite penalties!* "Yes!"
 
 **GM:** "You needed 2, got 5. That's 2 base Stress + 3 excess = 5 Stress damage to him. He staggers back, gasping."
 
-**Enemy thug:** Takes 5 Stress, overflows into Moderate Condition, looking rough.
+**Enemy thug:** Takes 5 Stress, overflows into Severe Condition, reeling.
 
 ---
 
@@ -557,18 +546,18 @@ MENTAL CONDITIONS
 
 **Rook:** "I catch my breath and bandage up. Does my Stress reset?"
 
-**GM:** "Yes. Short rest clears all Stress boxes. You're back to 0/6."
+**GM:** "Yes. Short rest clears all Stress boxes. You're back to 0/3."
 
 ```
-PHYSICAL STRESS (Current: 0/6 - FULL RECOVERY)
-□ □ □ □ □ □
+PHYSICAL STRESS (Current: 0/3 - FULL RECOVERY)
+□ □ □
 ```
 
-**GM:** "But the Conditions stay. You're still 'Winded and bruised,' 'Cracked rib,' and 'Pain-distracted' until you get proper medical care."
+**GM:** "But the Conditions stay. You're still 'Bruised and limping,' 'Cracked ribs,' and 'Pain-distracted' until you get proper medical care."
 
 **Rook:** "Fair. I'll push through."
 
-**Still at -3d6 from Conditions, but Stress buffer is restored for the next fight.**
+**Still at -4d6 from Conditions, but Stress buffer is restored for the next fight.**
 
 ---
 

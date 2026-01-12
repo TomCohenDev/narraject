@@ -8,10 +8,10 @@ In **Narraject**, some actions or situations call for a roll so the story moves 
 > - **Character Injections:** Your character's defining elements:
 >   - **Anchors:** Background elements and skills (e.g., "Hacker," "Soldier") that add dice. Can be **Broad** ("Athletics") or **Specific** ("Underwater Basket Weaving").
 >   - **Burdens:** Narrative weaknesses that remove dice when they apply.
->   - **Gear:** Tools and weapons that add dice.
+>   - **Assets:** Tools and weapons that add dice.
 > - **Narrative Injection:** Once per session, you can inject a story fact or context at any moment (see Narrative Injection chapter).
 > - **Aspects:** Elements injected into the narrative that can add dice:
->   - **Character Injections:** Anchors, Burdens, Conditions, Gear on your sheet
+>   - **Character Injections:** Anchors, Burdens, Conditions, Assets on your sheet
 >   - **Scene Injections:** Environmental factors (e.g., "High ground," "Smoke-filled room")
 >   - **Story Injections:** Ongoing narrative elements (e.g., "Looming darkness over town")
 
@@ -21,7 +21,7 @@ In **Narraject**, some actions or situations call for a roll so the story moves 
 
 1.  **Declare Intent:** "I want to [Goal] by [Approach]."
 2.  **Set Difficulty:** The GM tells you how many **Successes** you need.
-3.  **Build hand:** Gather d6s from your Rating, Reserve (Effort), Anchors, Gear, and Aspects. Subtract dice for Burdens if they apply.
+3.  **Build hand:** Gather d6s from your Rating, Reserve (Focus), Anchors, Assets, and Aspects. Subtract dice for Burdens if they apply.
 4.  **Roll:** Count Successes (5+).
 5.  **Result:** Succeed or Fail. Reality changes.
 
@@ -106,28 +106,28 @@ The GM may state the exact number ("That's 4 Successes") or describe it ("That's
 
 You don't just roll a stat. You build a hand of dice from who you are and what you're doing.
 
-`DICE HAND = Rating + Effort + Anchors + Gear + Aspects - Burdens`
+`DICE HAND = Rating + Focus + Anchors + Assets + Aspects - Burdens`
 
-### 1. Stats (Rating, Reserve & Effort)
+### 1. Stats (Rating, Reserve & Focus)
 
 Every character has four stats. Each stat has:
 - A **Rating** (Dice you always have)
 - A **Reserve** (Total effort pool you can spend)
-- An **Effort** (Maximum effort you can spend on a single roll)
+- An **Focus** (Maximum effort you can spend on a single roll)
 
 **Reserve Capacity** = (Rating × 2) + 5 for Rating 1-5, or (Rating × 3) + 2 for Rating 6-10
-**Effort Cap** = Rating + 2
+**Focus Cap** = Rating + 2
 
-| Stat        | Rating | Reserve Capacity | Effort Cap |
+| Stat        | Rating | Reserve Capacity | Focus Cap |
 | :---------- | :----- | :--------------- | :--------- |
 | **Level 1** | 1d6    | 7 points         | 3          |
 | **Level 2** | 2d6    | 9 points         | 4          |
 | **Level 3** | 3d6    | 11 points        | 5          |
 
 - **Start with Rating:** Grab d6s equal to your Stat Rating. This is your floor.
-- **Add Effort (Optional):** You may spend points from your Reserve to add dice. **1 Point = +1d6**.
-  - **Effort Cap:** You can only spend up to your Effort value on a single roll.
-  - **Example:** If you have Agility 3 (Reserve: 11, Effort: 5), you can spend up to 5 Reserve on one roll, even if you have more available.
+- **Add Focus (Optional):** You may spend points from your Reserve to add dice. **1 Point = +1d6**.
+  - **Focus Cap:** You can only spend up to your Focus value on a single roll.
+  - **Example:** If you have Agility 3 (Reserve: 11, Focus: 5), you can spend up to 5 Reserve on one roll, even if you have more available.
 
 ### 2. Your Approach Defines the Stat
 
@@ -172,11 +172,11 @@ If your character has relevant training, background, or skills, add more d6s.
 
 Anchors can be **Broad** ("Athletics") or **Specific** ("Underwater Basket Weaving"). The scope affects when they apply, not their mechanical bonus.
 
-| Source              | Bonus | Notes                         |
+| Impact              | Bonus | Notes                         |
 | :------------------ | :---- | :---------------------------- |
-| **Basic Anchor**    | +1d6  | Relevant background or skill. |
-| **Advanced Anchor** | +2d6  | Specialized training.         |
-| **Master Anchor**   | +3d6  | Exceptional mastery.          |
+| **Minor Anchor**    | +1d6  | Relevant background or skill. |
+| **Moderate Anchor** | +2d6  | Specialized training.         |
+| **Major Anchor**    | +3d6  | Exceptional mastery.          |
 
 ### 4. Burdens
 
@@ -184,29 +184,29 @@ If a Burden applies to the situation, it removes dice from your pool. Burdens ar
 
 - **Minor Burden:** -1d6
 - **Moderate Burden:** -2d6
-- **Severe Burden:** -3d6
+- **Major Burden:** -3d6
 
 See the **Anchors** and **Burdens** chapters for details and the Rule of Balance (1 Burden for every 1 Anchor).
 
-### 5. Gear
+### 5. Assets
 
-If you have relevant equipment, add more d6s based on the gear's level.
+If you have relevant equipment, add more d6s based on the asset's level.
 
-**Gear has a level that determines its bonus:**
+**Assets have a level that determines their bonus:**
 
 - **Standard:** +1d6
 - **Quality:** +2d6
 - **Masterwork:** +3d6
 
-The bonus corresponds to the gear's level, unless the gear has a specific description that states otherwise.
+The bonus corresponds to the asset's level, unless the asset has a specific description that states otherwise.
 
-| Gear Level     | Bonus | Notes                                 |
+| Assets Level     | Bonus | Notes                                 |
 | :------------- | :---- | :------------------------------------ |
 | **Standard**   | +1d6  | Common tool that enables the action.  |
 | **Quality**    | +2d6  | Superior craftsmanship or technology. |
 | **Masterwork** | +3d6  | Exceptional, rare, or master-crafted. |
 
-**Gear can also hinder:** Some gear has tags that subtract dice from certain rolls (like **Heavy** armor giving -1d6 to Agility rolls). See the **Gear** chapter for details.
+**Assets can also hinder:** Some assets have tags that subtract dice from certain rolls (like **Heavy** armor giving -1d6 to Agility rolls). See the **Assets** chapter for details.
 
 ### 6. Situational Aspects
 
@@ -214,7 +214,7 @@ The GM may grant bonus dice for advantageous circumstances (e.g., high ground, s
 
 **Types of Aspects:**
 
-- **Character Injections:** Anchors, Burdens, Gear on your sheet
+- **Character Injections:** Anchors, Burdens, Assets on your sheet
 - **Scene Injections:** Environmental factors created by actions (smoke grenades, barricades, tactical positioning)
 - **Story Injections:** Ongoing narrative elements established through play
 
@@ -251,7 +251,7 @@ That's it. No addition, no multiplication. Just count.
 
 ## The Desperation Roll
 
-What if your Reserve is empty, no traits apply, no gear helps, and the GM grants nothing?
+What if your Reserve is empty, no Anchors apply, no Assets help, and the GM grants nothing?
 
 You roll your **Stat Rating** in d6s. That's it.
 
@@ -265,9 +265,9 @@ You roll your **Stat Rating** in d6s. That's it.
 **Kira's Build:**
 
 1.  **Approach:** Agility (Rating 3). **Starts with 3d6.**
-2.  **Effort:** She needs this hit. She spends 2 Reserve points. **Adds +2d6.**
-3.  **Anchor:** "Expert Marksman" (Advanced). **Adds +2d6.**
-4.  **Gear:** Quality Rifle. **Adds +2d6.**
+2.  **Focus:** She needs this hit. She spends 2 Reserve points. **Adds +2d6.**
+3.  **Anchor:** "Expert Marksman" (Moderate). **Adds +2d6.**
+4.  **Assets:** Quality Rifle. **Adds +2d6.**
 5.  **Aspect:** Clear sightline (GM grants). **Adds +1d6.**
 
 **The Roll:** 10d6.

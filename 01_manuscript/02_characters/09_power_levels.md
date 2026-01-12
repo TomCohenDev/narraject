@@ -27,6 +27,7 @@ More dice = more consistent results. But how many dice do you need for different
 | **5**  | Very Hard (5 marks)      | **20-24**   | (6,6,5,3) or (7,6,5,2) | 5+ (2-3 adv, 1 master)   |
 | **6**  | Formidable (6 marks)     | **24-28**   | (7,7,6,4) or (8,7,6,3) | 6+ (3-4 adv, 1-2 master) |
 | **7+** | Heroic/Legendary         | **28-32**   | (8,8,7,5) or (9,8,7,6) | Full optimization        |
+|        |                          |             |                        |                          |
 
 **Note:** Standard Packages (The Muscle, The Face, The Tech, The Scout) each have **7 total stat points**, placing them between Level 1 and Level 2.
 
@@ -34,20 +35,21 @@ More dice = more consistent results. But how many dice do you need for different
 
 ## Extended Stat Ratings
 
-Ratings can go up to **10** for truly legendary characters:
+Ratings can go up to **10** for truly lei gendary characters:
 
 | Rating | Reserve Capacity | Effort Cap | Max Single Pool (Rating + Effort + ~6 from traits/gear) |
-| ------ | ---------------- | ---------- | -------------------------------------------------------- |
-| 1      | 7                | 3          | ~10d6                                                    |
-| 2      | 9                | 4          | ~12d6                                                    |
-| 3      | 11               | 5          | ~14d6                                                    |
-| 4      | 13               | 6          | ~16d6                                                    |
-| 5      | 15               | 7          | ~18d6                                                    |
-| 6      | 20               | 9          | ~21d6                                                    |
-| 7      | 23               | 10         | ~23d6                                                    |
-| 8      | 26               | 11         | ~25d6                                                    |
-| 9      | 29               | 12         | ~27d6                                                    |
-| 10     | 32               | 13         | ~29d6                                                    |
+| ------ | ---------------- | ---------- | ------------------------------------------------------- |
+| 1      | 7                | 3          | ~10d6                                                   |
+| 2      | 9                | 4          | ~12d6                                                   |
+| 3      | 11               | 5          | ~14d6                                                   |
+| 4      | 13               | 6          | ~16d6                                                   |
+| 5      | 15               | 7          | ~18d6                                                   |
+| 6      | 20               | 9          | ~21d6                                                   |
+| 7      | 23               | 10         | ~23d6                                                   |
+| 8      | 26               | 11         | ~25d6                                                   |
+| 9      | 29               | 12         | ~27d6                                                   |
+| 10     | 32               | 13         | ~29d6                                                   |
+|        |                  |            |                                                         |
 
 **Formulas:**
 

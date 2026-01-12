@@ -1001,7 +1001,7 @@
                   </div>
                 </div>
                 <div class="stat-row">
-                  <span class="stat-label">Effort</span>
+                  <span class="stat-label">Focus</span>
                   <input
                     type="number"
                     class="stat-input stat-effort"
@@ -1052,7 +1052,7 @@
                   </div>
                 </div>
                 <div class="stat-row">
-                  <span class="stat-label">Effort</span>
+                  <span class="stat-label">Focus</span>
                   <input
                     type="number"
                     class="stat-input stat-effort"
@@ -1103,7 +1103,7 @@
                   </div>
                 </div>
                 <div class="stat-row">
-                  <span class="stat-label">Effort</span>
+                  <span class="stat-label">Focus</span>
                   <input
                     type="number"
                     class="stat-input stat-effort"
@@ -1154,7 +1154,7 @@
                   </div>
                 </div>
                 <div class="stat-row">
-                  <span class="stat-label">Effort</span>
+                  <span class="stat-label">Focus</span>
                   <input
                     type="number"
                     class="stat-input stat-effort"
@@ -1177,36 +1177,36 @@
             <div class="trait-row">
               <input type="text" placeholder="Anchor name..." />
               <select>
-                <option value="basic">Basic</option>
-                <option value="advanced">Advanced</option>
-                <option value="master">Master</option>
+                <option value="minor">Minor</option>
+                <option value="moderate">Moderate</option>
+                <option value="major">Major</option>
               </select>
               <span class="dice-display">+1d6</span>
             </div>
             <div class="trait-row">
               <input type="text" placeholder="Anchor name..." />
               <select>
-                <option value="basic">Basic</option>
-                <option value="advanced">Advanced</option>
-                <option value="master">Master</option>
+                <option value="minor">Minor</option>
+                <option value="moderate">Moderate</option>
+                <option value="major">Major</option>
               </select>
               <span class="dice-display">+1d6</span>
             </div>
             <div class="trait-row">
               <input type="text" placeholder="Anchor name..." />
               <select>
-                <option value="basic">Basic</option>
-                <option value="advanced">Advanced</option>
-                <option value="master">Master</option>
+                <option value="minor">Minor</option>
+                <option value="moderate">Moderate</option>
+                <option value="major">Major</option>
               </select>
               <span class="dice-display">+1d6</span>
             </div>
             <div class="trait-row">
               <input type="text" placeholder="Anchor name..." />
               <select>
-                <option value="basic">Basic</option>
-                <option value="advanced">Advanced</option>
-                <option value="master">Master</option>
+                <option value="minor">Minor</option>
+                <option value="moderate">Moderate</option>
+                <option value="major">Major</option>
               </select>
               <span class="dice-display">+1d6</span>
             </div>
@@ -1313,7 +1313,7 @@
 
         <!-- GEAR -->
         <div class="section">
-          <div class="section-title">Gear</div>
+          <div class="section-title">Assets</div>
           <textarea
             class="gear-textarea"
             placeholder="Write gear cards here. Example format:&#10;&#10;Scoped Rifle [Ranged, Quality, Loud] +2d6&#10;Combat Knife [Concealable] +1d6&#10;Light Armor [Concealable] -1 Condition&#10;&#10;Or use freeform notes for your equipment..."
@@ -1330,17 +1330,16 @@
                 color: var(--text-muted);
                 font-size: 8px;
               "
-              >(Capacity: Stat Rating + 3)</span
+              >(3 boxes each - fixed)</span
             >
           </div>
           <div style="display: flex; flex-direction: column; gap: var(--spacing-md);">
             <!-- Physical Stress -->
             <div>
               <div style="font-size: 9px; color: var(--text-muted); margin-bottom: var(--spacing-xs); text-transform: uppercase; letter-spacing: 1px;">
-                Physical Stress (Might + 3) <span id="physical-stress-capacity" style="color: var(--accent-color);">= 4 boxes</span>
+                Physical Stress
               </div>
-              <div class="ip-pips" id="physical-stress-track">
-                <div class="ip-pip" onclick="this.classList.toggle('filled')"></div>
+              <div class="ip-pips">
                 <div class="ip-pip" onclick="this.classList.toggle('filled')"></div>
                 <div class="ip-pip" onclick="this.classList.toggle('filled')"></div>
                 <div class="ip-pip" onclick="this.classList.toggle('filled')"></div>
@@ -1349,10 +1348,9 @@
             <!-- Mental Stress -->
             <div>
               <div style="font-size: 9px; color: var(--text-muted); margin-bottom: var(--spacing-xs); text-transform: uppercase; letter-spacing: 1px;">
-                Mental Stress (Persona + 3) <span id="mental-stress-capacity" style="color: var(--accent-color);">= 4 boxes</span>
+                Mental Stress
               </div>
-              <div class="ip-pips" id="mental-stress-track">
-                <div class="ip-pip" onclick="this.classList.toggle('filled')"></div>
+              <div class="ip-pips">
                 <div class="ip-pip" onclick="this.classList.toggle('filled')"></div>
                 <div class="ip-pip" onclick="this.classList.toggle('filled')"></div>
                 <div class="ip-pip" onclick="this.classList.toggle('filled')"></div>
@@ -1421,8 +1419,8 @@
             <div class="reference-box">
               <h4>Pool Formula</h4>
               <p>
-                <code>Rating</code> + <code>Effort</code> +
-                <code>Anchors</code> + <code>Gear</code> + <code>Aspects</code> −
+                <code>Rating</code> + <code>Focus</code> +
+                <code>Anchors</code> + <code>Assets</code> + <code>Aspects</code> −
                 <code>Burdens</code>
               </p>
             </div>
@@ -1444,7 +1442,7 @@
             <div class="reference-box">
               <h4>Stress & Conditions</h4>
               <p>
-                Stress = buffer (Rating + 3)<br />
+                Stress = buffer (3 boxes)<br />
                 Overflow → Conditions<br />
                 1-2 Minor | 3-4 Mod | 5+ Severe
               </p>
@@ -1510,7 +1508,7 @@
             >
               Power levels represent what difficulty tier should be "fairly
               easy" (~70-80% success) when you optimize your build with Rating +
-              Effort + Traits + Gear.
+              Focus + Traits + Assets.
             </p>
           </div>
 
@@ -1948,7 +1946,7 @@
                   Combat Trained (Adv +2d6), Quick Reflexes (Basic +1d6)
                 </p>
                 <p style="margin-bottom: var(--spacing-sm)">
-                  <strong style="color: var(--text-primary)">Gear:</strong>
+                  <strong style="color: var(--text-primary)">Assets:</strong>
                   Pistol (+1d6)
                 </p>
                 <p
@@ -1965,7 +1963,7 @@
                     font-family: var(--font-mono);
                   "
                 >
-                  3 (Agility) + 3 (Effort) + 1d6 (Trait) = 7d6
+                  3 (Agility) + 3 (Focus) + 1d6 (Trait) = 7d6
                 </p>
                 <p style="color: var(--success-color); font-weight: bold">
                   → 73.7% success (fairly easy as intended)
@@ -2007,7 +2005,7 @@
                   (max 32 at Rating 10)
                 </li>
                 <li style="margin-bottom: var(--spacing-xs)">
-                  <strong style="color: var(--text-primary)">Effort Cap:</strong>
+                  <strong style="color: var(--text-primary)">Focus Cap:</strong>
                   Rating + 2 (max spend per roll). Prevents nova builds, creates
                   pacing
                 </li>
@@ -2015,7 +2013,7 @@
                   <strong style="color: var(--text-primary)"
                     >Optimization Gap:</strong
                   >
-                  Rating 5: 18d6 max | Rating 10: 31d6 max (with Effort cap + anchors
+                  Rating 5: 18d6 max | Rating 10: 31d6 max (with Focus cap + anchors
                   + gear)
                 </li>
                 <li style="margin-bottom: var(--spacing-xs)">
@@ -2230,23 +2228,20 @@
           const sign = isBurden ? "-" : "+";
 
           switch (this.value) {
-            case "basic":
             case "minor":
               display.textContent = sign + "1d6";
               break;
-            case "advanced":
             case "moderate":
               display.textContent = sign + "2d6";
               break;
-            case "master":
-            case "severe":
+            case "major":
               display.textContent = sign + "3d6";
               break;
           }
         });
       });
 
-      // Auto-calculate reserve capacity, effort, and stress when rating changes
+      // Auto-calculate reserve capacity and effort when rating changes
       document.querySelectorAll(".stat-rating").forEach((ratingInput) => {
         ratingInput.addEventListener("change", function () {
           const rating = parseInt(this.value) || 1;
@@ -2256,8 +2251,8 @@
           // Rating 1-5 uses (Rating × 2) + 5, Rating 6-10 uses (Rating × 3) + 2
           const capacity = rating <= 5 ? rating * 2 + 5 : rating * 3 + 2;
 
-          // Calculate Effort: Rating + 2
-          const effort = rating + 2;
+          // Calculate Focus: Rating + 2
+          const focus = rating + 2;
 
           // Update the max reserve input (readonly)
           const reserveMax = document.querySelector(
@@ -2273,66 +2268,12 @@
             reserveCurrent.value = capacity;
           }
 
-          // Update the effort input (readonly)
-          const effortInput = document.querySelector(
+          // Update the focus input (readonly)
+          const focusInput = document.querySelector(
             `.stat-effort[data-stat="${statName}"]`
           );
-          if (effortInput) effortInput.value = effort;
-
-          // Update Stress tracks based on Might and Persona
-          updateStressTracks();
+          if (focusInput) focusInput.value = focus;
         });
-      });
-
-      // Function to update stress track capacities
-      function updateStressTracks() {
-        // Get Might and Persona ratings
-        const mightRating = parseInt(document.querySelector('.stat-rating[data-stat="might"]')?.value) || 1;
-        const personaRating = parseInt(document.querySelector('.stat-rating[data-stat="persona"]')?.value) || 1;
-
-        // Calculate stress capacities (Rating + 3)
-        const physicalStress = mightRating + 3;
-        const mentalStress = personaRating + 3;
-
-        // Update capacity displays
-        const physicalCapacityLabel = document.getElementById('physical-stress-capacity');
-        const mentalCapacityLabel = document.getElementById('mental-stress-capacity');
-
-        if (physicalCapacityLabel) {
-          physicalCapacityLabel.textContent = `= ${physicalStress} boxes`;
-        }
-        if (mentalCapacityLabel) {
-          mentalCapacityLabel.textContent = `= ${mentalStress} boxes`;
-        }
-
-        // Update physical stress track boxes
-        const physicalTrack = document.getElementById('physical-stress-track');
-        if (physicalTrack) {
-          physicalTrack.innerHTML = '';
-          for (let i = 0; i < physicalStress; i++) {
-            const box = document.createElement('div');
-            box.className = 'ip-pip';
-            box.onclick = function() { this.classList.toggle('filled'); };
-            physicalTrack.appendChild(box);
-          }
-        }
-
-        // Update mental stress track boxes
-        const mentalTrack = document.getElementById('mental-stress-track');
-        if (mentalTrack) {
-          mentalTrack.innerHTML = '';
-          for (let i = 0; i < mentalStress; i++) {
-            const box = document.createElement('div');
-            box.className = 'ip-pip';
-            box.onclick = function() { this.classList.toggle('filled'); };
-            mentalTrack.appendChild(box);
-          }
-        }
-      }
-
-      // Initialize stress tracks on page load
-      document.addEventListener('DOMContentLoaded', function() {
-        updateStressTracks();
       });
     </script>
   </body>

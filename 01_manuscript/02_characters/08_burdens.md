@@ -57,7 +57,7 @@ Here are categories to consider:
 - Darkness
 - Specific enemy types (e.g., undead, machines)
 
-**Mechanical Effect:** Moderate to Severe penalty in trigger situations.
+**Mechanical Effect:** Moderate to Major penalty in trigger situations.
 
 ### 3. Mysteries in Your Past
 **Unanswered questions that haunt you.**
@@ -110,7 +110,7 @@ Here are categories to consider:
 - Betrayal of trust
 - False accusations you're avoiding
 
-**Mechanical Effect:** Severe penalty if exposed, or narrative complications when secrecy is threatened.
+**Mechanical Effect:** Major penalty if exposed, or narrative complications when secrecy is threatened.
 
 ### 8. Discrimination Experienced
 **Prejudice, marginalization, or systemic barriers.**
@@ -143,7 +143,7 @@ Here are categories to consider:
 - Respiratory condition
 - Addiction
 
-**Mechanical Effect:** Moderate to Severe penalty on relevant actions.
+**Mechanical Effect:** Moderate to Major penalty on relevant actions.
 
 ### 11. Personality Flaws
 **Character traits that get you in trouble.**
@@ -166,7 +166,7 @@ Here are categories to consider:
 Ask these questions together:
 
 1. **Which Burdens are mechanical?** (Dice penalties) Which are purely narrative hooks?
-2. **How severe is each Burden?** Minor, Moderate, or Severe?
+2. **How severe is each Burden?** Minor, Moderate, or Major?
 3. **When do they apply?** Define clear triggers.
 4. **Can the GM introduce these Burdens without warning?** Or should they telegraph them first?
 5. **Are any Burdens off-limits?** (Topics you don't want explored in-game)
@@ -190,7 +190,7 @@ When a Burden applies to a situation, it removes dice from your pool:
 
 - **Minor Burden:** -1d6 (nuisance)
 - **Moderate Burden:** -2d6 (significant hindrance)
-- **Severe Burden:** -3d6 (major obstacle)
+- **Major Burden:** -3d6 (major obstacle)
 
 **Example:** You have "Claustrophobic (Moderate)" and you're crawling through a ventilation shaft. The GM says: "You're taking -2d6 from your Agility pool. Your hands are shaking."
 
@@ -316,7 +316,7 @@ You **can reduce or remove Burdens** through NP expenditure (3 NP to reduce seve
 - Paying your debts
 
 With GM approval, resolved Burdens might:
-- Reduce in severity (Severe → Moderate)
+- Reduce in severity (Major → Moderate)
 - Change nature (enemy becomes uneasy ally)
 - Become narrative victories (the heirloom is recovered)
 
@@ -349,7 +349,7 @@ If a Burden is narratively removed without NP cost (through exceptional roleplay
 | --------------- | ------------ | ----------------------------------------------- |
 | **Minor**       | -1d6         | Nuisance that complicates but doesn't cripple   |
 | **Moderate**    | -2d6         | Significant hindrance requiring adaptation      |
-| **Severe**      | -3d6         | Major obstacle or fail-state condition          |
+| **Major**      | -3d6         | Major obstacle or fail-state condition          |
 
 **NP reward:** 1 NP when a Burden meaningfully complicates the story (GM discretion)
 

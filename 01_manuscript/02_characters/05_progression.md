@@ -8,7 +8,7 @@ Characters advance through **Narrative Points (NP)** earned during play. You spe
 
 Between sessions (or during downtime), you can spend NP to:
 
-1. **Upgrade an Anchor** (Basic → Advanced → Master)
+1. **Upgrade an Anchor** (Minor → Moderate → Major)
 2. **Gain a new Anchor** (with matching Burden)
 3. **Increase a Stat Rating** (max 5)
 4. **Reduce or Remove a Burden** (with narrative resolution)
@@ -22,10 +22,10 @@ Between sessions (or during downtime), you can spend NP to:
 
 | Advancement                              | NP Cost | Notes                                     |
 | ---------------------------------------- | ------- | ----------------------------------------- |
-| **Upgrade Anchor (Basic → Advanced)**    | 2 NP    | Requires narrative justification          |
-| **Upgrade Anchor (Advanced → Master)**   | 3 NP    | Requires significant narrative moment     |
-| **Add New Basic Anchor**                 | 2 NP    | Explain how you learned this              |
-| **Add New Advanced Anchor**              | 4 NP    | Justify why you'd start at this level     |
+| **Upgrade Anchor (Minor → Moderate)**    | 2 NP    | Requires narrative justification          |
+| **Upgrade Anchor (Moderate → Major)**   | 3 NP    | Requires significant narrative moment     |
+| **Add New Minor Anchor**                 | 2 NP    | Explain how you learned this              |
+| **Add New Moderate Anchor**              | 4 NP    | Justify why you'd start at this level     |
 | **Reduce Burden Severity (-3d6 → -2d6)** | 3 NP    | Requires narrative resolution             |
 | **Remove Minor Burden (-1d6)**           | 3 NP    | Story must meaningfully address this      |
 | **Increase Stat Rating**                 | 3 NP    | Represents deep training, max Rating 5    |
@@ -40,44 +40,44 @@ Increasing a Stat Rating costs **3 NP** and requires narrative justification.
 **What it does:**
 - Increases your minimum dice for that stat (Rating = Xd6)
 - Increases your Reserve capacity (Capacity = Rating × 2 + 5, or Rating × 3 + 2 for Rating 6-10)
-- Increases your Effort limit (Effort = Rating + 2)
+- Increases your Focus limit (Focus = Rating + 2)
 
 **Maximum Rating is 5** for most campaigns. Legendary campaigns might allow Rating 6-10, but these are rare.
 
-**Example:** You have Might 2 (Reserve: 9, Effort: 4). You spend 3 NP and narrate: "During our downtime, I trained daily with the veteran soldier, pushing my body to its limits." Your Might increases to 3 (Reserve: 11, Effort: 5).
+**Example:** You have Might 2 (Reserve: 9, Focus: 4). You spend 3 NP and narrate: "During our downtime, I trained daily with the veteran soldier, pushing my body to its limits." Your Might increases to 3 (Reserve: 11, Focus: 5).
 
 ---
 
 ## New Anchors
 
 Gaining a new Anchor requires:
-- **2 NP for Basic Anchor** (or 4 NP for Advanced)
+- **2 NP for Minor Anchor** (or 4 NP for Moderate)
 - **Narrative justification** (how did you learn this?)
 - **A matching Burden** (Rule of Balance - 1 Burden per 1 Anchor)
 
 **Example:**
 
-**Player:** "I want to add 'Ancient History (Basic)' as an Anchor. We've been exploring ruins for three sessions, and I've been studying the inscriptions. I spend 2 NP."
+**Player:** "I want to add 'Ancient History (Minor)' as an Anchor. We've been exploring ruins for three sessions, and I've been studying the inscriptions. I spend 2 NP."
 
 **GM:** "Great. What's the matching Burden?"
 
 **Player:** "My obsession with the ruins is distracting me. I'll add 'Obsessed with Uncovering the Truth (Minor)' as a Burden—I get -1d6 when my curiosity conflicts with practical needs."
 
-**GM:** "Perfect. You now have 'Ancient History (Basic)' as an Anchor."
+**GM:** "Perfect. You now have 'Ancient History (Minor)' as an Anchor."
 
 ---
 
 ## Upgrading Anchors
 
 You can upgrade existing Anchors:
-- **Basic → Advanced:** 2 NP + narrative justification
-- **Advanced → Master:** 3 NP + narrative justification
+- **Minor → Moderate:** 2 NP + narrative justification
+- **Moderate → Major:** 3 NP + narrative justification
 
 **Example:**
 
-**Player:** "I want to upgrade my 'Combat Training (Basic)' to Advanced. We've been in brutal fights for the last four sessions, and I've been training with the mercenary captain between missions. I spend 2 NP."
+**Player:** "I want to upgrade my 'Combat Training (Minor)' to Moderate. We've been in brutal fights for the last four sessions, and I've been training with the mercenary captain between missions. I spend 2 NP."
 
-**GM:** "Makes sense. Your 'Combat Training' is now Advanced (+2d6 instead of +1d6)."
+**GM:** "Makes sense. Your 'Combat Training' is now Moderate (+2d6 instead of +1d6)."
 
 ---
 
@@ -85,7 +85,7 @@ You can upgrade existing Anchors:
 
 Burdens can be reduced or removed through NP expenditure, **but only with narrative resolution**:
 
-- **Reduce Burden Severity:** 3 NP + narrative resolution (Severe → Moderate, or Moderate → Minor)
+- **Reduce Burden Severity:** 3 NP + narrative resolution (Major → Moderate, or Moderate → Minor)
 - **Remove Minor Burden:** 3 NP + narrative resolution
 
 **Example:**
@@ -94,7 +94,7 @@ Burdens can be reduced or removed through NP expenditure, **but only with narrat
 
 **GM:** "That makes sense. Your fear isn't gone, but it's manageable now. 'Fear of Fire' is reduced to Minor (-1d6)."
 
-**Severe and Moderate Burdens** require significant narrative work to overcome. The GM should challenge players to earn these removals through story, not just NP.
+**Major and Moderate Burdens** require significant narrative work to overcome. The GM should challenge players to earn these removals through story, not just NP.
 
 **Alternative:** If a Burden is narratively resolved through exceptional roleplay without NP, the GM can remove it for free and may award bonus NP for the story resolution.
 
@@ -124,9 +124,9 @@ Milestones are in addition to normal NP progression. Use them sparingly for trul
 When setting-specific content is released (magic systems, cybernetics, psionics, superhuman abilities), they will integrate with the NP progression system.
 
 **Example (Future Content):**
-- **Unlock Basic Spell:** 2 NP + in-game training
+- **Unlock Minor Spell:** 2 NP + in-game training
 - **Upgrade Spell Potency:** 3 NP
-- **Learn Advanced Magical School:** 5 NP + quest completion
+- **Learn Moderate Magical School:** 5 NP + quest completion
 
 These systems will be modular—GMs can add them to their campaign or ignore them entirely.
 
@@ -162,7 +162,7 @@ How fast characters advance depends on NP award rate:
 Characters typically cap at:
 - **Rating 4-5** in primary stats
 - **5-7 Anchors total**
-- **Advanced or Master tier** in 2-3 primary Anchors
+- **Moderate or Major tier** in 2-3 primary Anchors
 - **Balanced Burdens** to match
 
 Beyond this, advancement becomes narrative rather than mechanical. You're already a legend.
@@ -175,26 +175,26 @@ Beyond this, advancement becomes narrative rather than mechanical. You're alread
 
 **Starting Character (Session 0):**
 - Might 2, Agility 3, Intellect 2, Persona 2
-- Anchors: Close Combat (Advanced), Urban Navigation (Basic), Fast Talk (Basic), Underworld Contacts (Basic)
+- Anchors: Close Combat (Moderate), Urban Navigation (Minor), Fast Talk (Minor), Underworld Contacts (Minor)
 - Burdens: Wanted by Law, Greedy, Trust No One, Rival Thief
 - NP: 0
 
 **After Session 1:**
 - Earned 2 NP (played Burden well, used Narrative Injection creatively)
-- Spent 2 NP: Upgraded "Fast Talk (Basic)" → "Fast Talk (Advanced)"
+- Spent 2 NP: Upgraded "Fast Talk (Minor)" → "Fast Talk (Moderate)"
   - Narrative: "After talking our way out of three dangerous situations, I've gotten really good at this."
 - NP: 0
 
 **After Session 3:**
 - Earned 4 NP total across two sessions (2 per session)
-- Spent 4 NP: Added "Master Lockpick (Advanced)" + matching Burden "Overconfident (-1d6)"
+- Spent 4 NP: Added "Major Lockpick (Moderate)" + matching Burden "Overconfident (-1d6)"
   - Narrative: "I've been practicing on every lock we find. I'm getting cocky about it."
 - NP: 0
 
 **After Session 6:**
 - Earned 6 NP total (2 per session for three sessions)
 - Spent 3 NP: Increased Agility 3 → 4
-  - Reserve goes from 11 → 13, Effort goes from 5 → 6
+  - Reserve goes from 11 → 13, Focus goes from 5 → 6
   - Narrative: "All this running, climbing, and fighting has made me faster."
 - Spent 3 NP: Removed "Rival Thief" Burden
   - Narrative: "We confronted each other last session and made peace. The rivalry is over."
