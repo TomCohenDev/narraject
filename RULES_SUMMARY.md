@@ -144,11 +144,13 @@ DICE HAND = Rating + Anchors + Gear + Aspects - Burdens - Conditions
 
 ### Success Counting
 
-**For d6s:** Roll all dice. Count 5s and 6s as Successes.
+**For d6s:** Roll all dice. Count 4s, 5s, and 6s as Successes.
 
 Compare total Successes to Difficulty:
 - **Successes ≥ Difficulty:** SUCCESS - You achieve your intent
 - **Successes < Difficulty:** FAILURE - You don't get what you wanted
+
+**Each die has a 50% chance of Success** (rolling 4, 5, or 6).
 
 ### Difficulty Scale
 
@@ -387,6 +389,33 @@ When you **just earned** fresh Narrative Points (NP) in the current scene, you c
 If your Focus is empty, no traits apply, no gear helps, and GM grants nothing:
 
 **You roll your Stat Rating in d6s.** That's it. You're never completely helpless.
+
+### Increasing Stats: Narrative Milestones Only
+
+**Stats cannot be purchased with NP.** They represent innate capability and only change through story.
+
+**How Stats Increase:**
+1. **GM discretion at narrative milestones** (major story beats, character arcs resolved)
+2. GM awards X rating points to distribute as player chooses
+3. **Setting-specific roles/abilities** (future content)
+
+**Examples of Stat Increase Moments:**
+- Completing a major training arc with a master
+- Surviving a transformative ordeal (near-death, spiritual awakening)
+- Achieving a significant character goal
+- GM-defined milestones (every 10 sessions, major campaign arcs, etc.)
+
+**When GM awards stat points:**
+- "You've completed your training with the master. Gain 1 rating point to distribute."
+- "After surviving that ordeal, you've fundamentally changed. Gain 2 rating points."
+- Player decides which Stat(s) to increase
+
+**Why narrative milestones?**
+- Stats represent innate capability, not learned skills
+- Makes stat increases feel epic and meaningful
+- Prevents stat-stacking through NP grinding
+- Keeps character progression focused on Anchors and Burdens
+- Leaves room for setting-specific advancement systems
 
 ---
 
@@ -720,15 +749,43 @@ Armor provides **situational defense bonuses** rather than reducing Condition se
 - Wearing Light Armor: No penalty
 - Wearing Heavy Armor: -1d6 to stealth roll (clanking and heavy)
 
-### Consumables
+### Consumables and Time-Limited Gear
 
-One-time use items that might include:
+**Narrative Injection Philosophy:** We believe time-limited gear encourages adaptive, dynamic play.
+
+**Why Time-Limited Gear?**
+- Forces players to **use** powerful items instead of hoarding them
+- Creates meaningful tactical choices ("Do I use this now or save it?")
+- Introduces complex, adaptive play patterns
+- Prevents static "optimal loadout" syndrome
+
+**Types of Limits:**
+- **One-time use:** Consumed when used (potions, grenades, scrolls)
+- **Durability:** Breaks after X uses or specific circumstances
+- **Narrative limits:** "Can only carry 2 magic scrolls due to dark energy interference"
+- **Scene-based:** "This disguise only works once before they recognize you"
+- **Cooldown:** "The artifact needs time to recharge"
+
+**Examples:**
+
+**One-Time Consumables:**
 - Medkits (bonus to healing rolls or clear Minor Condition)
-- Ammo (reload ranged weapons)
-- Tools (temporary +1d6 bonus for specific tasks)
-- Supplies (enable certain actions)
+- Ammo (reload ranged weapons, limited supply)
+- Magic scrolls (+3d6 to one roll, then consumed)
+- Explosives (create environmental advantage, one use)
+- Antidotes (clear poison Condition, single use)
 
-The GM decides what consumables do and when they're useful.
+**Narrative-Limited Items:**
+- **"You can only carry 2 dark magic scrolls at once"** - forces choice between which scrolls to bring
+- **"The disguise kit works once per location"** - can't reuse same trick
+- **"The holy water damages undead, but you only have 3 vials"** - resource management
+
+**Time-Pressured Gear:**
+- **"This potion expires in 24 hours"** - use it or lose it
+- **"The hacked security pass only works until they notice"** - creates urgency
+- **"The blessing lasts until sunrise"** - scene-limited buff
+
+The GM decides what consumables do, when they're useful, and what limits apply. **Encourage use, not hoarding.**
 
 ---
 
@@ -880,6 +937,63 @@ If it's unclear or contested, the GM can:
 - Let the player with the idea go first
 - Start with whoever has narrative momentum
 
+### Taking Damage
+
+**Damage is calculated by the difference between your Successes and the Difficulty.**
+
+**Simple formula:**
+```
+Damage = Difficulty - Your Successes
+```
+
+If you don't get enough Successes, you take damage equal to the difference.
+
+**Examples:**
+
+**Example 1: Defending Against Attack**
+- NPC (Level 4) attacks you
+- You roll defense, get 3 Successes
+- Difficulty was 4, you got 3
+- **Damage: 4 - 3 = 1 Stress point**
+
+**Example 2: Barely Defending**
+- NPC (Level 5) attacks you
+- You roll defense, get 2 Successes
+- Difficulty was 5, you got 2
+- **Damage: 5 - 2 = 3 Stress points (fills Stress Track)**
+
+**Example 3: Complete Defense**
+- NPC (Level 3) attacks you
+- You roll defense, get 4 Successes
+- Difficulty was 3, you got 4
+- **Damage: 3 - 4 = 0 (no damage, you exceeded the Difficulty)**
+
+**Example 4: Failed Attack**
+- You attack NPC (Level 4)
+- You roll, get 2 Successes
+- Difficulty was 4, you got 2
+- **Damage to you: 4 - 2 = 2 Stress points** (the NPC counterattacks or you leave yourself open)
+
+### Static Damage
+
+Some NPCs or special attacks deal **static damage** regardless of the roll difference.
+
+```
+ASSASSIN'S POISONED BLADE
+Attack: 4
+Special: Poison (if attack succeeds, target takes 2 Stress regardless of roll margin)
+```
+
+**How it works:**
+- Player defends, gets 3 Successes (would normally take 1 Stress)
+- Because of "Poison" special ability, takes 2 Stress instead
+- Static damage overrides normal damage calculation
+
+**Other static damage examples:**
+- "Brutal Strike: deals 3 Stress on any successful hit"
+- "Explosive Blast: deals 2 Stress to everyone in area, no defense roll"
+- "Mental Assault: deals 1 Mental Stress, ignores physical defenses"
+
 ### Attack Resolution
 
 **Declaring Intent:**
@@ -889,23 +1003,130 @@ Be specific. Your intent determines both Difficulty and outcome.
 - "I stab him in the heart to kill him" → Hard (4 Successes) → he dies
 - "I shoot the gun out of his hand" → Challenging (3 Successes) → weapon flies away
 
-### NPCs
+### NPCs and Monsters
 
-NPCs need minimal stats:
+**IMPORTANT: NPCs and monsters DON'T ROLL DICE.**
+
+Players always roll - whether attacking or defending. The NPC's Level determines the Difficulty.
+
+**Simple NPCs:**
 
 ```
 GANG ENFORCER
 Level: 3
 Motivation: Protect the boss
-Special: Pack tactics (+1d6 with allies)
+Special: Pack tactics (+1 to all rolls with allies)
 ```
 
 **Level determines:**
 - Successes needed to affect them (usually Level = Difficulty)
-- Threat they pose (Level = Successes needed to inflict Conditions)
-- Reserve capacity (if tracked)
+- Threat they pose when attacking (Level = Difficulty to defend)
 
-Most NPCs have 1-3 Conditions before they're out. Bosses might have more.
+**Players roll for everything:**
+- **Attacking the NPC:** Roll to hit, Difficulty = NPC's Level
+- **NPC attacks player:** Player rolls to defend, Difficulty = NPC's Level
+- **Players ALWAYS roll, NPCs NEVER roll**
+
+### Specific Action Levels
+
+**GMs have total control over NPC power through specific action levels.**
+
+Instead of one Level for everything, you can give NPCs **different Levels for different actions:**
+
+```
+ELITE SWORDMASTER
+Attack: 6 (very deadly with a blade)
+Defense: 2 (overconfident, leaves openings)
+Motivation: Prove superiority
+Special: Riposte (if player fails to hit, player takes Minor Physical Condition)
+```
+
+```
+ANCIENT DRAGON
+Physical Attacks: 8 (claws, bite, tail - nearly unstoppable)
+Breath Weapon: 10 (legendary destructive power)
+Defense vs Physical: 7 (armored scales)
+Defense vs Mental: 3 (arrogant, can be tricked)
+Motivation: Hoard treasure, crush lesser beings
+Special: Fear Aura (first time seeing dragon = Mind check, Diff 5)
+```
+
+```
+NERVOUS GUARD
+Attack: 3 (trained but hesitant)
+Defense: 4 (good armor, cautious)
+Intimidate: 1 (easily scared)
+Motivation: Get through shift without trouble
+```
+
+**This gives infinite possibilities:**
+- Glass cannon NPCs (high attack, low defense)
+- Tank NPCs (low attack, high defense)
+- Specialists (high in one stat, low in others)
+- Situational threats (deadly in specific circumstances)
+
+**How it works:**
+- Player attacks Elite Swordmaster → Roll vs Difficulty 2 (Defense)
+- Elite Swordmaster attacks player → Player rolls defense vs Difficulty 6 (Attack)
+- Player tries to intimidate Nervous Guard → Roll vs Difficulty 1 (Intimidate)
+
+### NPC Conditions
+
+Most NPCs have **1-3 Conditions** before they're out. Bosses might have more.
+
+NPCs use the same Condition system as players, but simpler:
+- **Minor Condition:** -1d6 (if GM tracks NPC pools at all)
+- **Moderate Condition:** -2d6
+- **Severe Condition:** Out of fight (dead, unconscious, fleeing)
+
+**Simple tracking:** Many GMs just use "hits to take down" instead of tracking Conditions:
+- Minion: 1 hit
+- Tough NPC: 2-3 hits
+- Boss: 4-6 hits
+
+### Creating NPCs On The Fly
+
+**NPCs are extremely easy to improvise.**
+
+Worst case scenario: just assign a Level and all rolls are against that Level.
+
+```
+RANDOM BOUNCER
+Level: 3
+```
+
+Done. Players roll vs Difficulty 3 for everything involving this character.
+
+### Understanding NPC Scale
+
+**What do Levels mean in terms of player capability?**
+
+With the new 50% success rate (4-5-6 = Success), players need approximately 2 dice per Success.
+
+To reliably succeed against an NPC, players need:
+
+| NPC Level | Dice Pool Needed | What This Means |
+|-----------|------------------|-----------------|
+| **1** | ~2 dice | Trivial opponent - starting characters handle easily |
+| **2** | ~4 dice | Moderate opponent - requires some investment or teamwork |
+| **3** | ~6 dice | Serious opponent - requires Anchors, gear, or Focus |
+| **4** | ~8 dice | Dangerous opponent - requires specialization and preparation |
+| **5** | ~10 dice | Very dangerous - requires multiple advantages and Focus |
+| **6+** | ~12+ dice | Deadly opponent - requires full optimization and smart play |
+
+**Example: Level 3 NPC**
+
+A Level 3 NPC requires ~6 Successes to reliably defeat. A Level 3 PC can achieve this with:
+- Base Stat 6-7 (6-7d6)
+- Advanced Anchor (+2d6)
+- Relevant gear (+1d6)
+- Aspect (+1d6)
+- **Total: 10-11 dice** (~5-5.5 Successes average)
+- May need to spend 1 Focus to guarantee success
+
+**This means most "standard" NPCs should be Level 1-3.** Higher levels are bosses, experts, and serious threats.
+
+**Design Tip:** Don't inflate NPC levels. A Level 5 opponent is VERY dangerous. A Level 8 opponent requires extraordinary measures to defeat.
 
 ---
 
@@ -1024,7 +1245,7 @@ All slots marked = **vulnerable** in that area. Can still act, but:
 **Taking Consequences with Full Tracks:**
 
 ### Conditions Don't Stack
-
+1
 **Only the highest relevant Condition applies to a roll.**
 
 If you have multiple Conditions that would affect the same action, use only the one with the highest penalty.
@@ -1086,7 +1307,7 @@ When all Physical slots marked, next Physical consequence takes you out.
 
 ### Narrative Points (NP)
 
-**NP** is the universal currency of Narrative Injection. You earn it through exceptional play and can spend it on:
+**NP** is the universal currency of Narrative Points. You earn it through exceptional play and can spend it on:
 - **Character progression** (upgrading Anchors, removing Burdens, increasing Stats)
 - **Activating Injections** (special abilities during play)
 - **Gambling for Focus recovery** (converting fresh NP to Focus)
@@ -1102,8 +1323,9 @@ You earn **1 NP** when you:
 - Drive narrative forward through roleplay, tactics, storytelling
 - Achieve Story Goal or personal character milestone
 - Demonstrate exceptional play that enriches session
+- GM's discretion
 
-**Important:** NP awarded for **engaging with the system**, not just having Burdens or using mechanics.
+**Important:** NP awarded for **engaging with the system**, not just having Burdens or using mechanics. The goal of Narraject is to create good epic stories
 
 ### Who Can Award NP?
 
@@ -1114,40 +1336,76 @@ You earn **1 NP** when you:
 ### NP Distribution Guidelines
 
 **Model 1: Capped Per Player (Recommended)**
-- Each player can earn up to 2 NP per session
+- Each player can earn 1 NP. Only after everyone has gotten 1, players can get 2nd and so on.
 - If all earn at least 1 NP, everyone gets bonus +1 NP
+- This makes constant progression between players and reinforces team collaboration to progress.
 
-**Model 2: Shared Pool**
-- 6 total NP per session to distribute among group
-- Each player max 2 NP
+**Example Session (Model 1):**
 
-**Model 3: Round Robin**
-- First "round": everyone can get 1 NP
-- Only after everyone has 1, players can get 2nd
-- If everyone gets 2, bonus round unlocks
+Party has 4 players: Alice, Bob, Charlie, Dana
 
-**Model 4: Uncapped (Experienced Groups)**
+1. **Alice** plays her Burden "Overconfident" and charges into danger, creating drama → Earns 1 NP
+2. **Charlie** uses Narrative Injection creatively to save the mission → Earns 1 NP
+3. **Bob** has great roleplay moment with enemy NPC → Earns 1 NP
+4. **Dana** hasn't earned NP yet, so the group can't award 2nd NP to anyone until Dana gets 1
+5. **Dana** engages her Burden "Hunted by the Syndicate" creating story tension → Earns 1 NP
+6. Now **everyone has 1 NP**, so bonus +1 NP to all!
+7. **Final result:** Alice 2, Bob 2, Charlie 2, Dana 2 (everyone progresses together)
+
+**What if Dana never earned NP?**
+- Alice 1, Bob 1, Charlie 1, Dana 0
+- No bonus +1 for anyone because not everyone got 1 NP
+- This incentivizes helping Dana get involved and earn her NP
+
+**Model 2: Uncapped (Experienced Groups)**
 - No limits on NP awards
 - Risk of imbalance
+- This can reward good players but leave behind unbalanced progression if there are less experienced players
+- To allow for narrative progression and better team dynamics we recommend to allow players to share their NP's with others. This can be done via interaction with each other or helping each other. If they give narrative justification for the transfer of NP then it can be done.
+
+**Example Session (Model 2):**
+
+Party has 4 players: Alice, Bob, Charlie, Dana
+
+1. **Alice** has 3 great moments → Earns 3 NP
+2. **Bob** has 1 moment → Earns 1 NP
+3. **Charlie** has 2 moments → Earns 2 NP
+4. **Dana** is quiet, learning the game → Earns 0 NP
+5. **Final result:** Alice 3, Bob 1, Charlie 2, Dana 0 (imbalanced progression)
+
+**With NP Sharing:**
+- Alice gives 1 NP to Dana: "I teach you combat techniques during downtime"
+- Bob gives 1 NP to Dana: "I help you study the arcane texts we found"
+- **Final result:** Alice 2, Bob 0, Charlie 2, Dana 2 (more balanced through mentorship)
 
 **For new groups:** Start with Model 1.
 
 ### Spending Narrative Points
 
-NP spent **between sessions** or during **in-game downtime**.
+NP can be spent **between sessions**, during **in-game downtime**, or **during play** (for Focus).
 
-**Progression Costs:**
+**NP Uses:**
 
-| Advancement | NP Cost | Notes |
-|-------------|---------|-------|
-| **Upgrade Anchor (Basic → Advanced)** | 2 NP | Requires narrative justification |
-| **Upgrade Anchor (Advanced → Master)** | 3 NP | Requires significant narrative moment |
-| **Add New Basic Anchor** | 2 NP | Explain how you learned this |
-| **Add New Advanced Anchor** | 4 NP | Justify why starting at this level |
-| **Reduce Burden Severity** | 3 NP | Requires narrative resolution |
-| **Remove Minor Burden** | 3 NP | Story must meaningfully address this |
-| **Increase Stat Rating** | 3 NP | Represents deep training, max Rating 5 |
-| **Unlock Setting Ability** | Varies | Future content |
+| Use | NP Cost | When |
+|-----|---------|------|
+| **Add/Upgrade Anchor** | 2 NP | Between sessions or downtime |
+| **Reduce/Remove Burden** | 2 NP | Between sessions or downtime |
+| **Gamble for Focus** | 1 NP (fresh) | During play |
+
+**Note:** Stats (Mighty, Agility, Intellect, Persona) **cannot be increased with NP**. See "Increasing Stats: Narrative Milestones Only" in the Character Stats & Focus section.
+
+### Progression: Anchors and Burdens
+
+**Add/Upgrade Anchor (2 NP):**
+- Add new Basic Anchor (+1d6)
+- Upgrade Basic → Advanced (+1d6 → +2d6)
+- Upgrade Advanced → Master (+2d6 → +3d6)
+- Requires narrative justification
+
+**Reduce/Remove Burden (2 NP):**
+- Reduce Severity (Severe → Moderate → Minor → Removed)
+- Remove Burden entirely (if already Minor)
+- Requires narrative resolution
 
 ### Narrative Justification Required
 
@@ -1155,22 +1413,15 @@ Can't just spend NP and claim advancement. Must narrate how character earned it.
 
 **Examples:**
 
-"During downtime, I trained with the veteran soldier. Upgrading Combat Training Basic → Advanced."
+**Anchors:**
+- "During downtime, I trained with the veteran soldier. Upgrading Combat Training Basic → Advanced."
+- "I've been studying the ancient texts we found. Adding 'Ancient History' as Basic Anchor."
+- "After months of practice, my swordsmanship has reached mastery. Upgrading Swordplay Advanced → Master."
 
-"After nearly dying in that fire, I've faced my fear. Reducing 'Fear of Fire' from -2d6 → -1d6."
-
-"I've been studying the ancient texts we found. Adding 'Ancient History' as Basic Anchor."
-
-### NP Cap: Use It or Lose It
-
-Can store **up to 5 NP at a time**. Once you hit cap, stop earning NP until you spend some.
-
-**Why cap NP:**
-- Forces players to invest in characters
-- Prevents infinite hoarding
-- Creates meaningful progression choices
-
-**When hit 5 NP:** Spend some before next session, or won't earn more.
+**Burdens:**
+- "After nearly dying in that fire, I've faced my fear. Reducing 'Fear of Fire' from Moderate (-2d6) → Minor (-1d6)."
+- "I've reconciled with my brother. Removing 'Estranged Family' Burden entirely."
+- "Therapy and time have helped. Reducing 'Traumatized' from Severe (-3d6) → Moderate (-2d6)."
 
 ### Milestone Advancement (Optional)
 
@@ -1185,75 +1436,103 @@ GMs can grant **milestone advancements** independent of NP:
 - Unlocking unique abilities
 - Narrative advancements (reputation, titles, resources)
 
-### Progression Pacing
-
-**Slow (Gritty):** 1 NP per player per session average
-
-**Standard (Most Campaigns):** 1-2 NP per player per session average
-
-**Fast (Heroic/Epic):** 2-3 NP per player per session average
-
-**Recommended:** Start with Standard, adjust based on table preference.
-
 ---
 
 ## 12. Power Levels & Point Buy
 
-### Understanding Power Levels
+### Understanding Character Levels
 
-Characters can be created at different power levels using point buy.
+**Character Level is a reference point for power level, not a literal number on your sheet.**
 
-The table shows what difficulty should be "fairly easy" (~70-80% success) when optimized:
+There is no "level up" system. Characters progress by gaining Anchors, removing Burdens, and occasionally increasing Stats through narrative milestones.
 
-| Level | "Fairly Easy" Difficulty | Stat Points | Example Distribution | Expected Traits |
-|-------|-------------------------|-------------|---------------------|-----------------|
-| **1** | Easy (1 mark) | 4-6 | (2,1,1,0) or (1,1,1,1) | 0-1 basic |
-| **2** | Moderate (2 marks) | 8-12 | (3,3,2,0) or (3,2,2,1) | 2-3 basic |
-| **3** | Challenging (3 marks) | 12-16 | (4,4,3,1) or (5,3,3,1) | 3-4 (1-2 adv) |
-| **4** | Hard (4 marks) | 16-20 | (5,5,4,2) or (6,5,4,1) | 4-5 (2-3 adv) |
-| **5** | Very Hard (5 marks) | 20-24 | (6,6,5,3) or (7,6,5,2) | 5+ (2-3 adv, 1 master) |
-| **6** | Formidable (6 marks) | 24-28 | (7,7,6,4) or (8,7,6,3) | 6+ (3-4 adv, 1-2 master) |
-| **7+** | Heroic/Legendary | 28-32 | (8,8,7,5) or (9,8,7,6) | Full optimization |
+**Character Level = Highest Stat Rating divided by 2 (approximately)**
 
-### Campaign Recommendations
+A character's level roughly equals their highest stat divided by 2. This helps GMs balance challenges:
 
-**Street Level (Level 1):**
-- 4-6 stat points
-- Use for: Civilians, rookies, desperate survivors
+- **Level 3 character** has highest stat ~6-7 (3-3.5 Successes statistically from base dice)
+- With Anchors, gear, and Aspects, they typically roll 9-11 dice in their specialty
+- Tasks at their level (Difficulty 3) should be fairly easy
+- Tasks 1 level below (Difficulty 2) should be almost automatic
+- Tasks 1 level above (Difficulty 4) are harder
+- Tasks 2+ levels above (Difficulty 5+) are very difficult
 
-**Competent Protagonist (Level 2):**
-- 8-12 stat points
-- Use for: Standard starting characters, trained professionals
-- **Standard Packages fall here** (7 points)
+### Power Levels Table
 
-**Veteran Expert (Level 3):**
-- 12-16 stat points
-- Use for: Experienced operatives, mid-campaign characters
+| Level  | Highest Stat | Total Points | Example Distribution     | Expected Anchors       | Expected Dice in Specialty | Can Handle Easily | Campaign Use                     |
+| ------ | ------------ | ------------ | ------------------------ | ---------------------- | -------------------------- | ----------------- | -------------------------------- |
+| **1**  | 2-3          | 5-6          | (3,1,1,1) or (2,2,1,1)   | 1 Basic, 1 Advanced    | 6-7d6                      | Difficulty 1-2    | Street-level, rookies, civilians |
+| **2**  | 4-5          | 8-10         | (5,2,1,1) or (4,3,1,1)   | 2 Basic, 1 Advanced    | 8-10d6                     | Difficulty 2-3    | Standard starting characters     |
+| **3**  | 6-7          | 12-14        | (7,3,2,1) or (6,4,2,1)   | 2-3 Advanced           | 10-12d6                    | Difficulty 3-4    | Experienced operatives           |
+| **4**  | 8-9          | 16-18        | (9,5,2,1) or (8,6,2,1)   | 3-4 Advanced           | 12-14d6                    | Difficulty 4-5    | Elite professionals              |
+| **5**  | 10-11        | 20-22        | (11,6,3,1) or (10,7,3,1) | 3-4 Advanced, 1 Master | 14-16d6                    | Difficulty 5-6    | Masters, legendary NPCs          |
+| **6**  | 12-13        | 24-26        | (13,8,4,1) or (12,9,4,1) | 4-5 Advanced, 1 Master | 16-18d6                    | Difficulty 6-7    | Heroes of legend                 |
+| **7**  | 14-15        | 28-30        | (15,9,5,1) or (14,10,5,1) | 5 Advanced, 2 Master  | 18-20d6                    | Difficulty 7-8    | Demigods, ancient dragons        |
+| **8**  | 16-17        | 32-34        | (17,11,5,1) or (16,12,5,1) | 5 Advanced, 2-3 Master | 20-22d6                   | Difficulty 8-9    | Gods, primordial forces          |
+| **9**  | 18-19        | 36-38        | (19,12,6,1) or (18,13,6,1) | 6 Advanced, 3 Master  | 22-24d6                    | Difficulty 9-10   | Cosmic entities                  |
+| **10** | 20+          | 40+          | (20,14,7,1) or (21,13,7,1) | Full mastery          | 24-26d6                    | Difficulty 10+    | Peak of existence                |
 
-**Master Specialist (Level 4-5):**
-- 16-24 stat points
-- Use for: Campaign endgame, legendary NPCs
+**"Expected Dice in Specialty"** assumes: Base Rating + Advanced Anchor (+2d6) + Gear (+1d6) + Aspect (+1d6)
 
-**Legendary Hero (Level 6+):**
-- 24+ stat points
-- Use for: Gods, ancient dragons, mythic finales
+**Success rate:** Each die has 50% chance of Success (rolling 4, 5, or 6)
 
-### Extended Stat Ratings
+### Stat Distribution Rules
 
-Ratings can go up to **10** for legendary characters:
+**1. Every stat must be at least 1** (no 0 stats allowed)
 
-| Rating | Reserve Capacity | Effort Cap | Max Single Pool |
-|--------|------------------|------------|-----------------|
-| 1 | 7 | 3 | ~10d6 |
-| 2 | 9 | 4 | ~12d6 |
-| 3 | 11 | 5 | ~14d6 |
-| 4 | 13 | 6 | ~16d6 |
-| 5 | 15 | 7 | ~18d6 |
-| 6 | 20 | 9 | ~21d6 |
-| 7 | 23 | 10 | ~23d6 |
-| 8 | 26 | 11 | ~25d6 |
-| 9 | 29 | 12 | ~27d6 |
-| 10 | 32 | 13 | ~29d6 |
+**2. Distribute stat points however you want**
+
+There are no other restrictions on stat distribution. You can specialize heavily or spread points evenly.
+
+Examples:
+- Specialist: (6,2,1,1) - Master of one area, weak elsewhere
+- Balanced: (3,3,2,2) - Competent in multiple areas
+- Two-stat: (4,4,1,1) - Good at two things, weak at others
+
+**Trade-offs:**
+- **Specialists** excel in their area but must narrate all actions through their specialty
+- **Generalists** have more options but are never exceptional
+- **Your choice** - both are valid playstyles
+
+### Effective Character Level: Gear and Aspects Matter
+
+**Important:** A character's effective level can be higher or lower than their base stats suggest, depending on gear and Aspects.
+
+**Example:**
+- Character has Intellect 4 (Level 2 character, ~2 Successes base)
+- Has special robes that grant +3d6 to all Intellect rolls
+- Effectively rolls 7d6 for Intellect (~3.5 Successes)
+- **This character is effectively Level 3 for Intellect tasks**
+
+**What this means:**
+- Character level is fluid based on gear, Anchors, and Aspects
+- A Level 2 character with great gear can perform at Level 3
+- A Level 3 character without gear/Anchors might perform at Level 2
+- GMs should consider total dice pools when balancing, not just base stats
+
+**Balancing Considerations:**
+- If a character consistently rolls +5d6 more than their base stat, treat them as ~1-2 levels higher for challenge balancing
+- Powerful gear/Aspects can elevate a character's effective level significantly
+- This is intentional and OK! It just means their "level" shifts with their equipment
+- Losing that gear means losing that effective level
+
+### What Character Level Tells You
+
+**Being Level 3 means:**
+- Highest stat is around 6-7
+- With gear/Anchors, typically rolls 10-12 dice in specialty
+- Expected Successes in specialty: 5-6 Successes
+- Difficulty 3 tasks should be fairly easy (~80%+ success)
+- Difficulty 1-2 tasks should almost always succeed (95%+)
+- Difficulty 4-5 tasks are harder (~60-70% success)
+- Difficulty 6+ tasks are challenging (~40-50% success, may need Focus)
+
+**GM Guidance:**
+- Use character level to set baseline difficulty
+- Add +1-2 Difficulty if they have powerful gear/Aspects
+- Subtract 1-2 Difficulty if they lack gear/Anchors
+- Character level is a guideline, not a hard rule
+- Remember: 50% success rate per die (4-5-6 counts as Success)
 
 ### Custom Point Buy
 
