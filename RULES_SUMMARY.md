@@ -1534,19 +1534,6 @@ Examples:
 - Character level is a guideline, not a hard rule
 - Remember: 50% success rate per die (4-5-6 counts as Success)
 
-### Custom Point Buy
-
-Want to build outside Packages?
-
-1. Determine campaign power level
-2. Allocate stat points freely (1 point = 1 Rating)
-3. Calculate Reserve capacity (Rating × 2 + 5, or Rating × 3 + 2 for 6-10)
-4. Select Traits based on level
-5. Work with GM to define starting gear
-6. Create 1-2 Injections collaboratively
-
-**Balance is optional.** If everyone agrees, (10,0,0,0) is valid.
-
 ---
 
 ## 13. Pacing & Session Structure
@@ -1568,7 +1555,6 @@ Narraject alternates between **Scenes** (action, risk, rolls) and **Downtime** (
 - Table needs a break
 
 **Downtime** is space between Scenes for:
-- Recover Reserve (1 point per stat per 10 min)
 - Remove Conditions (requires rest or medical care)
 - Plan next moves
 - Roleplay character moments
@@ -1579,44 +1565,8 @@ Narraject alternates between **Scenes** (action, risk, rolls) and **Downtime** (
 2. Players declare actions (what are you trying to do?)
 3. Roll dice when it matters (build pool, roll, count Successes)
 4. GM narrates outcome (success, failure, or in between)
-5. IPs change hands (complications accepted, injections spent)
-6. Repeat or transition to Downtime
+5. Repeat or transition to Downtime
 
-### Pacing Guidelines
-
-**Fast Pacing:**
-- Multiple short Scenes
-- Quick transitions
-- High action, low downtime
-
-**Slow Pacing:**
-- Fewer, longer Scenes
-- Extended Downtime
-- More roleplay, less action
-
-**Balanced Pacing:**
-- Mix of Scene types
-- Regular Downtime breaks
-- Action and roleplay in balance
-
-### Session Structure
-
-Typical 3-4 hour session:
-
-1. **Opening Scene** (15-30 min) - Establish situation
-2. **Main Scenes** (2-3 hours) - Meat of session
-3. **Climax Scene** (30-60 min) - Big stakes, big rolls
-4. **Downtime/Epilogue** (15-30 min) - Recovery, planning, advancement
-
-Not every session needs this structure. Trust the table.
-
-### Recovery During Play
-
-**Short Rest (10 minutes):** Recover 1 Reserve point per stat
-
-**Full Recovery:** Requires Downtime or Long Rest (full night's sleep)
-
-**Conditions:** Require separate recovery (see Consequences section)
 
 ---
 
@@ -1674,28 +1624,7 @@ Narraject designed for improvisation. Don't need to prep everything.
 
 **Trust the table:** Players help create story
 
-### Safety Tools
-
-Use safety tools. They make game better for everyone.
-
-- **Lines and Veils:** Establish boundaries before play
-- **X-card:** Stop game if something uncomfortable
-- **Check in:** Ask how everyone is doing
-
-Goal is fun for everyone.
-
 ### Your Job as GM
-
-**Your job is to:**
-- Set the scene
-- Adjudicate actions
-- Facilitate fun
-
-**Your job is NOT to:**
-- Control the story
-- "Win" against players
-- Gatekeep actions
-- Punish players
 
 Trust the system. Trust the table. Have fun.
 
@@ -1703,94 +1632,135 @@ Trust the system. Trust the table. Have fun.
 
 ## Quick Reference Tables
 
-### Dice Pool Formula
-```
-DICE HAND = Rating + Traits + Gear + Aspects - Burdens - Conditions
-```
+### Success Rate
+- **4, 5, or 6 = Success** (50% per die)
+- Roll dice, count Successes, compare to Difficulty
 
-### Focus (Focusing on the Action)
-- **All characters have 0-6 Focus points** (shared pool)
-- **Spend Focus AFTER rolling:** 1 Focus = +1 Success (add to your roll result)
-- **LIMIT:** Cannot spend more Focus than the Stat Rating you're using
-- **Never wasted:** You see the roll first, so you know exactly how much you need
-- **Recover via:** Long Rest (1-3 Focus) or Gamble fresh NP (roll 1d6, if > current Focus, gain 1 Focus and lose NP)
+### Difficulty Scale
+| Successes | Difficulty  | Example Task |
+|-----------|-------------|--------------|
+| 1 | Easy | Climb ladder, spot obvious clue |
+| 2 | Moderate | Pick simple lock, persuade neutral person |
+| 3 | Challenging | Hit moving target, hack secured system |
+| 4 | Hard | Scale sheer wall in rain, convince hostile NPC |
+| 5-6 | Very Hard | Near-impossible shot, sway hostile crowd |
+| 7-8 | Heroic | Feats that define legends |
+| 9-10 | Legendary | Once-in-a-lifetime achievements |
+| 10+ | Mythic | Feats of gods |
 
-### Success Counting
-- **d6:** 5-6 = 1 Success
-- Compare total to Difficulty
-- Success ≥ Difficulty = You achieve intent
-- **Failure still has impact** - you make progress even when you don't achieve intent
+### The Four Stats
+| Stat          | Domain                                                  |
+| ------------- | ------------------------------------------------------- |
+| **Might**     | Physical power, endurance, melee combat, resisting harm |
+| **Agility**   | Speed, reflexes, coordination, stealth, ranged combat   |
+| **Intellect** | Knowledge, perception, reasoning, technical skills      |
+| **Persona**   | Social influence, willpower, presence, deception        |
 
-### Difficulty Quick Reference
-| Successes | Difficulty | Typical Use |
-|-----------|------------|-------------|
-| 1 | Easy | Level 1-2 characters, ~70% |
-| 2 | Moderate | Level 2-3 characters, fairly easy |
-| 3 | Challenging | Level 3-4 characters, need optimization |
-| 4 | Hard | Level 4-5 characters with good builds |
-| 5-6 | Very Hard | Level 5-6 characters at full power |
-| 7-8 | Heroic | Requires 20+ dice and luck |
-| 9-10 | Legendary | Even optimized legendary characters need fortune |
+### Character Levels
+| Level | Highest Stat | Total Points | Expected Dice in Specialty | Can Handle Easily |
+|-------|--------------|--------------|---------------------------|-------------------|
+| 1 | 2-3 | 5-6 | 6-7d6 | Difficulty 1-2 |
+| 2 | 4-5 | 8-10 | 8-10d6 | Difficulty 2-3 |
+| 3 | 6-7 | 12-14 | 10-12d6 | Difficulty 3-4 |
+| 4 | 8-9 | 16-18 | 12-14d6 | Difficulty 4-5 |
+| 5 | 10-11 | 20-22 | 14-16d6 | Difficulty 5-6 |
 
-### Anchor Tiers
-| Tier | Bonus | Cost to Unlock | Cost to Upgrade |
-|------|-------|----------------|-----------------|
-| Basic | +1d6 | 2 NP | - |
-| Advanced | +2d6 | 4 NP | 2 NP (from Basic) |
-| Master | +3d6 | - | 3 NP (from Advanced) |
+**Note:** Character Level ≈ Highest Stat ÷ 2
 
-### Burden Severity
-| Severity | Penalty | NP Award |
-|----------|---------|----------|
-| Minor | -1d6 | 1 NP (if good stab) |
-| Moderate | -2d6 | 1 NP (if good stab) |
-| Severe | -3d6 | 1 NP (if good stab) |
+### Focus
+- **Capacity:** 0-6 points (shared across all stats)
+- **Spend:** After rolling, add 1 Success per Focus spent
+- **Limit:** Cannot spend more than your Stat Rating for that roll
+- **Recovery:** Long Rest (full recovery) or Gamble fresh NP (roll 1d6, success if > current Focus)
 
-### Condition Tracks (Standard)
-**Physical Track:** □ Minor (-1d6) □ Moderate (-2d6) □ Severe (-3d6)
+### Anchors (Skills & Competencies)
+| Tier | Bonus | Cost to Add/Upgrade |
+|------|-------|---------------------|
+| Basic | +1d6 | 2 NP |
+| Advanced | +2d6 | 2 NP (from Basic) |
+| Master | +3d6 | 2 NP (from Advanced) |
 
-**Mental Track:** □ Minor (-1d6) □ Moderate (-2d6) □ Severe (-3d6)
+### Burdens (Flaws & Vulnerabilities)
+| Severity | Penalty | Cost to Reduce/Remove |
+|----------|---------|----------------------|
+| Minor | -1d6 | 2 NP |
+| Moderate | -2d6 | 2 NP (to Minor) |
+| Severe | -3d6 | 2 NP (to Moderate) |
 
-**Optional Social Track:** □ Minor (-1d6) □ Moderate (-2d6) □ Severe (-3d6)
+### Condition Tracks
+**Two Core Tracks:** Physical, Mental (Social is optional)
 
-### Recovery
-- **Long Rest (8 hours):** Typically recover all Focus (GM discretion based on quality of rest), clear 1 Condition
-- **Extended Downtime:** Full Focus recovery, clear all but Severe Conditions
-- **Gamble Fresh NP:** Roll 1d6 after earning NP. If result > current Focus, gain 1 Focus and lose that NP
+**Slots:** Minor (-1d6), Moderate (-2d6), Severe (-3d6)
 
-### Gear & Equipment
-- **Situational:** No fixed tiers or tags, GM decides when gear applies and how much
-- **Typical Bonus:** +1d6 when gear is relevant
-- **Special Gear:** +2d6 (Superior) or +3d6 (Exceptional) if narratively special
+**Stress Track:** 3 points buffer before taking Conditions. When full, next damage triggers a Condition (type = damage type that broke the buffer). Resets after taking Condition.
 
-### Armor (Situational Defense)
-| Type | Defense Bonus | Against | Penalty |
-|------|---------------|---------|---------|
-| **Light** | +1d6 | Agility-based attacks (arrows, daggers) | None |
-| **Heavy** | +1d6 | Might-based attacks (swords, axes) | -1d6 to Agility/Stealth |
+**Only highest relevant Condition applies** (they don't stack)
 
-### Injector Die Resolution
-- **Roll 3+:** Injection Succeeds
-- **Roll 1-2:** Injection Fails
-- **Roll 5-9:** Minor Aspect (+1d6 to related rolls)
-- **Roll 10+:** Significant Aspect (+2d6 to related rolls)
+### Damage Formula
+**Damage = Difficulty - Your Successes**
 
-### Narrative Injection
-- **Frequency:** Once per session per player
-- **Cost:** Free
-- **Mechanic:** No roll, GM approval
-- **Purpose:** Story authorship, inject facts/context
+If you fail a roll, you take Stress equal to the margin of failure.
 
-### NP Costs Summary
-| Advancement | NP Cost |
-|-------------|---------|
-| Upgrade Anchor (Basic → Adv) | 2 NP |
-| Upgrade Anchor (Adv → Master) | 3 NP |
-| New Basic Anchor | 2 NP |
-| New Advanced Anchor | 4 NP |
-| Reduce/Remove Burden | 3 NP |
-| Increase Stat Rating | 3 NP |
-| **NP Cap** | **5 NP** |
+**Example:** NPC attacks (Level 4), you roll defense and get 2 Successes → Take 2 Stress
+
+### Gear
+- **Situational:** GM decides bonus per scenario
+- **Typical:** +1d6 when relevant
+- **Superior/Special:** +2d6 or +3d6 if narratively significant
+
+**Armor:**
+- **Light:** +1d6 vs Agility-based attacks, no stealth penalty
+- **Heavy:** +1d6 vs Might-based attacks, -1d6 to Agility/stealth
+
+### Narrative Points (NP)
+**Earning:** 1 NP for exceptional play (Burdens creating drama, creative Narrative Injection, story moments)
+
+**Spending:**
+- Add/Upgrade Anchor: 2 NP
+- Reduce/Remove Burden: 2 NP
+- Gamble for Focus: 1 NP (fresh only, roll 1d6)
+
+**Stats:** Cannot be bought with NP. Only increase through narrative milestones at GM discretion.
+
+### NPCs
+- **Don't roll dice** - Players always roll
+- **Level = Difficulty** for rolls against them
+- **Can have specific action levels** (Attack 6, Defense 2, etc.)
+- **Simple tracking:** 1-3 hits to take down (minions to tough enemies)
+
+### Stat Distribution Rules
+1. **Every stat must be at least 1**
+2. **Distribute points however you want** (no other restrictions)
+3. Examples: (6,2,1,1) specialist, (3,3,2,2) generalist, (4,4,1,1) two-stat
+
+### Quick Dice Math
+- **~2 dice per Success** (50% success rate)
+- Level 3 character with gear/Anchors: ~10-12 dice = ~5-6 Successes
+- Focus adds Successes after rolling (max = your Rating in that stat)
+
+---
+
+## Glossary
+
+**Anchors:** Character competencies (skills, backgrounds, training, connections). Come in three tiers: Basic (+1d6), Advanced (+2d6), Master (+3d6).
+
+**Aspects:** Temporary beneficial conditions created through play (+1d6 typically). Examples: "High Ground," "Behind Cover," "Studied Their Moves."
+
+**Burdens:** Character vulnerabilities (fears, enemies, obligations, flaws). Come in three severities: Minor (-1d6), Moderate (-2d6), Severe (-3d6).
+
+**Condition Tracks:** Physical, Mental, and (optionally) Social tracks for harm. Each has Minor, Moderate, and Severe slots.
+
+**Focus:** Shared resource pool (0-6 points) representing concentration and determination. Spend after rolling to add Successes (1 Focus = +1 Success, max = Stat Rating).
+
+**Narrative Injection:** Once-per-session ability to inject story facts.
+
+**Narrative Points (NP):** Progression currency earned through exceptional play, spent between sessions or gambled for Focus recovery.
+
+**Rating:** Your base capability in a stat. Determines minimum dice (Rating = Xd6).
+
+**Successes:** A d6 showing 4, 5, or 6 counts as 1 Success (50% chance per die).
+
+**Stress Track:** 3-point buffer that fills before taking Conditions. Resets when Condition is taken.
 
 ---
 
@@ -1800,63 +1770,86 @@ DICE HAND = Rating + Traits + Gear + Aspects - Burdens - Conditions
 
 **1. Success = Intent Happens (Period)**
 - No "you hit but low damage"
-- Dice say success = what you described becomes true
+- If you succeed on the roll, your stated intent becomes reality
+- Ambition determines difficulty, not possibility
 
 **2. Ambition Sets Difficulty**
-- Bigger asks = higher target number
-- Players choose their own risk level
+- Want to do something small? Easy difficulty
+- Want to do something epic? High difficulty
+- Players choose their own risk level by declaring intent
 
 **3. Dice Pools Over Math**
-- Add dice, count successes
-- No multiplication, modifiers, or complex math
+- Add dice together, roll them, count Successes
+- No multiplication, subtraction of modifiers, or complex math
+- 50% success rate per die (4-5-6 counts as Success)
 
 **4. Separate Health from Action**
 - No death spirals from damage
-- Getting hurt doesn't drain your abilities (Focus separate from Conditions)
+- Conditions affect specific actions, not your entire dice pool
+- Focus separate from Conditions - getting hurt doesn't drain your concentration pool
+- Only highest relevant Condition applies (no stacking)
 
-**5. Narrative First**
+**5. Failure Still Moves Story Forward**
+- Even failures create impact and progress
+- Wounded enemies, planted seeds, learned information
+- GM makes every roll matter
+
+**6. Focus Feels Good**
+- Spend Focus AFTER seeing the roll result
+- Never wasted - you know exactly what you need
+- Capped by your Rating - specialists shine in their areas
+
+**7. Narrative First**
 - Story authority shared between players and GM
-- Narrative Injection gives players co-authorship
-- Burdens create personal stakes
+- Narrative Injection gives players once-per-session co-authorship
+- Burdens create personal stakes and earn progression
 
-**6. Modular & Flexible**
+**8. Stats Through Story**
+- Can't buy stat increases with currency
+- Stats only increase through narrative milestones
+- Keeps progression focused on skills (Anchors) and character development
+
+**9. Modular & Flexible**
 - Core game is setting-agnostic
-- Future expansions add pluggable modules (magic, cybernetics, etc.)
+- Future expansions add pluggable modules (magic systems, cybernetics, setting-specific roles)
+- Easy to adapt to any genre
 
-**7. GM Prep is Easy**
-- Single-number NPCs
-- Improvisational tools
-- Theater of mind combat
+**10. GM Prep is Easy**
+- Single-number NPCs (just assign a Level)
+- Theater of mind combat with narrative zones
+- Improvisational tools built into the system
 
 ---
 
-## Glossary
+## Glossary (Alphabetical)
 
-**Anchors:** Character skills, backgrounds, training, and experiences that add dice to your pools when relevant.
+**Anchors:** Character competencies - skills, backgrounds, training, connections, and experiences. Come in three tiers: Basic (+1d6), Advanced (+2d6), Master (+3d6). Cost 2 NP to add or upgrade.
 
-**Aspects:** Beneficial conditions or facts that add dice to rolls. Can be Character Injections, Scene Injections, or Story Injections.
+**Aspects:** Temporary beneficial conditions created through play that add dice to rolls (+1d6 typically). Examples: "High Ground," "Behind Cover," "Studied Their Moves." Last until situation changes or scene ends.
 
-**Burdens:** Narrative weaknesses and vulnerabilities that remove dice and create story hooks.
+**Burdens:** Character vulnerabilities - fears, enemies, obligations, flaws, and narrative hooks. Come in three severities: Minor (-1d6), Moderate (-2d6), Severe (-3d6). Cost 2 NP to reduce or remove.
 
-**Condition Tracks:** Physical, Mental, and (optionally) Social tracks for harm. Each has Minor, Moderate, and Severe slots.
+**Character Level:** Reference point for power level, not a literal stat. Approximately equals Highest Stat ÷ 2. Used by GMs to balance challenges.
 
-**Focus:** Shared resource pool (0-6 points) representing concentration and determination. Spend after rolling to add Successes (1 Focus = +1 Success, max = Stat Rating). Also called "focusing on the action."
+**Condition Tracks:** Harm tracking system with separate tracks for Physical, Mental, and (optionally) Social damage. Each track has three slots: Minor (-1d6), Moderate (-2d6), Severe (-3d6). Only highest relevant Condition applies to any given roll.
 
-**Focusing:** The act of spending Focus points to add Successes after making a roll.
+**Difficulty:** Target number of Successes needed to accomplish a task. Set by GM based on ambition of the declared intent. Scale: 1 (Easy) to 10+ (Mythic).
 
-**Injection:** A special character ability that costs 1 NP and requires an Injector Die roll.
+**Focus:** Shared resource pool (0-6 points) representing concentration, determination, and will to push beyond limits. Spend AFTER rolling to add Successes (1 Focus = +1 Success). Limited by your Stat Rating for that roll. Recovered through Long Rest or gambling fresh NP.
 
-**Injector Die:** A die (d4-d12) permanently assigned to each Injection ability. Determines reliability.
+**Narrative Injection:** Once-per-session player ability to inject a story fact, context, or element into the narrative. Can be used before or after rolls, or between scenes.
 
-**Narrative Injection:** Once-per-session ability to inject story facts. Different from "Injections."
+**Narrative Points (NP):** Universal progression currency earned through exceptional play (engaging Burdens dramatically, creative story moments, great roleplay). Spent between sessions to improve Anchors/Burdens, or gambled during play for Focus recovery.
 
-**Narrative Points (NP):** Progression currency earned through exceptional play, spent between sessions or gambled for Focus recovery.
+**NPCs:** Non-player characters. Don't roll dice - players always roll against their Level. Can have simple single Level or specific action levels (Attack 6, Defense 2, etc.).
 
-**Rating:** Your base capability in a stat. Determines minimum dice (Rating = Xd6).
+**Rating:** Your base capability in a stat (Might, Agility, Intellect, Persona). Determines base dice pool (Rating = Xd6). Also caps how much Focus you can spend on that stat's rolls.
 
-**Rule of Balance:** You must have 1 Burden for every 1 Anchor you possess.
+**Stats:** The four core attributes - Might, Agility, Intellect, Persona. Cannot be increased with NP; only through narrative milestones at GM discretion.
 
-**Successes:** A d6 showing 5 or 6 counts as 1 Success.
+**Stress Track:** 3-point buffer that fills before taking Conditions. When full, next damage triggers a Condition (type determined by the damage type that broke the buffer). Resets after Condition is taken.
+
+**Successes:** A d6 showing 4, 5, or 6 counts as 1 Success (50% chance per die). Compare total Successes to Difficulty to determine outcome.
 
 ---
 
