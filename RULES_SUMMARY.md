@@ -1630,6 +1630,105 @@ Trust the system. Trust the table. Have fun.
 
 ---
 
+## 15. Frameworks & Paths (Setting-Specific Content)
+
+### What Are Frameworks?
+
+**Frameworks** are setting-specific supplements that add flavor, rules, and options to Narraject's core system.
+
+Think of them as plug-and-play expansions:
+- "Narraject with the Fantasy Framework"
+- "Narraject with the Sci-Fi Framework"
+- "Narraject with the Terra World Framework"
+- "Narraject with the Horror Framework"
+
+Each Framework is tailored to its genre and can include:
+- **Setting lore and worldbuilding**
+- **New gear, equipment, or technology**
+- **Special rules or subsystems** (magic, cybernetics, psychic powers)
+- **Character progression options** (often called Paths)
+- **Setting-appropriate terminology and flavor**
+
+**Frameworks are optional.** The core rules work for any setting. Frameworks add genre-specific polish and mechanics.
+
+### What Are Paths?
+
+**Paths** are character progression options within a Framework. They represent specializations, vocations, classes, or character archetypes specific to that setting.
+
+**Examples:**
+- **Fantasy Framework:** Path of the Berserker, Path of the Mage, Path of the Rogue
+- **Sci-Fi Framework:** Path of the Sniper, Path of the Pilot, Path of the Engineer
+- **Horror Framework:** Path of the Investigator, Path of the Occultist, Path of the Survivor
+- **Psychic Framework:** Path of the Mentalist, Path of the Empath, Path of the Telekinetic
+
+**What Paths typically provide:**
+- Specific Anchors or Anchor progressions unique to that Path
+- Special abilities or mechanics (spells, tech, powers)
+- Narrative stat increase milestones tied to Path advancement
+- Setting-appropriate gear or starting resources
+- Story hooks and setting connections
+
+**Paths are the default structure**, but not all Frameworks use them. Some Frameworks might use different systems or terminology entirely.
+
+### Framework Flexibility
+
+**Important:** Each Framework defines its own rules and structure.
+
+- Some Frameworks use Paths extensively
+- Some might rename them (Vocations, Callings, Specializations, Roles)
+- Some might not have character options at all (just setting rules and gear)
+- Some might have completely different progression systems
+
+**The Framework decides how it works.**
+
+### Creating Your Own Framework
+
+If you're creating a Framework for your own setting:
+
+1. **Choose your structure** - Will you use Paths? Something else? Nothing at all?
+2. **Use "Paths" terminology if possible** - It's the suggested default and helps consistency
+3. **Define what your options provide** - Anchors? Special abilities? Stat progressions?
+4. **Integrate with core rules** - Don't replace core mechanics, extend them
+5. **Add setting flavor** - Terminology, lore, and genre-specific feel
+
+**We suggest using "Paths" terminology** when designing character progression options for your Framework. This helps players recognize the structure across different Frameworks, but you're free to rename them to fit your setting.
+
+### Where to Find Frameworks
+
+**Core book:** No Frameworks included (just core rules)
+
+**Future supplements:**
+- Fantasy Framework
+- Sci-Fi Framework
+- Horror Framework
+- Therra World Framework
+- Modern Framework
+- And more...
+
+**Community Frameworks:** Players can create and share their own Frameworks for different settings and genres.
+
+**Each Framework supplement includes:**
+- Complete setting information
+- Character options (Paths or equivalent)
+- Special rules and subsystems
+- GM guidance for that genre
+- Everything needed to play in that setting
+
+### Using Frameworks with Core Rules
+
+**Frameworks extend, not replace:**
+- Core rules (stats, Focus, Anchors, Burdens, etc.) remain unchanged
+- Frameworks add on top of the core system
+- You can use multiple Frameworks together if they're compatible
+- GMs decide what fits their game
+
+**Example in play:**
+- Core rules: Stats, Focus, Anchors, Burdens, Narrative Injection
+- Fantasy Framework adds: Magic system, fantasy Paths, setting-specific gear
+- Players still use the same core mechanics, now with fantasy flavor
+
+---
+
 ## Quick Reference Tables
 
 ### Success Rate
