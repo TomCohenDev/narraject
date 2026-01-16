@@ -1,4 +1,4 @@
-# Narrative Injection: Complete Rules Summary
+# Narraject: Complete Rules Summary
 
 **Version:** Working Draft v0.3
 **Purpose:** Comprehensive rules reference for playtesting and iteration
@@ -62,7 +62,7 @@
 
 ## About This Game
 
-Hi. I'm Tom Cohen, and this is **Narrative Injection**.
+Hi. I'm Tom Cohen, and this is **Narraject**.
 
 I've been running and playing tabletop RPGs for years now, and I kept running into the same problem: I wanted tactical, crunchy gameplay with cool abilities and meaningful choices, but I also wanted fast-paced narrative play where the story moves forward and players have real authorship. And I couldn't find a system that gave me both.
 
@@ -72,7 +72,7 @@ On the other hand, tactical games - games with classes and abilities and cool po
 
 **I wanted both.** I wanted the tactician to feel as cool and unique as the wizard. I wanted players who are good at narration to still benefit from having specific abilities on their sheet. I wanted fast, flowing gameplay that doesn't bog down in rules, but still has meaningful tactical choices.
 
-So I made Narrative Injection.
+So I made Narraject.
 
 ### The Core Problem I'm Solving
 
@@ -82,13 +82,13 @@ In most narrative games, a clever player can just narrate being tactical. They c
 
 The wizard gets spells - third-party mechanical elements that do things you can't just narrate. But what does the tactician get? What makes them special besides description?
 
-This is the problem Narrative Injection solves. Every Path (my term for classes/jobs/roles) gets abilities that affect the narrative in ways you can't just describe. The tactician doesn't just inspire people with words - they spend resources to make their allies' actions more impactful in concrete, mechanical ways. The investigator doesn't just look for clues - they have abilities that let them inject information into the scene that the GM has to honor.
+This is the problem Narraject solves. Every Path (my term for classes/jobs/roles) gets abilities that affect the narrative in ways you can't just describe. The tactician doesn't just inspire people with words - they spend resources to make their allies' actions more impactful in concrete, mechanical ways. The investigator doesn't just look for clues - they have abilities that let them inject information into the scene that the GM has to honor.
 
 Your character sheet matters. Your choices matter. And the story still moves fast.
 
 ### What This System Does
 
-**Narrative Injection is designed to:**
+**Narraject is designed to:**
 
 1. **Give every character type mechanical teeth** - Whether you're slinging spells or leading troops, you have unique abilities that matter
 2. **Keep narrative authority shared** - Players can inject story facts once per session, failures still create progress, description still matters
@@ -121,7 +121,7 @@ If you're tired of systems where "good at narration" is more powerful than anyth
 
 Look, I'm going to be honest with you: this game puts a lot of pressure on the GM. The narrative play style requires you to think on your feet, improvise constantly, track multiple story threads, and make failures interesting. You're not just running encounters from a book - you're co-creating a story with your players in real-time.
 
-That doesn't mean new players and GMs can't play this game and have fun. They absolutely can! But when I designed Narrative Injection, I designed it with **experienced players in mind**. Players who are comfortable with narrative authority. GMs who can improvise and don't need rigid structure.
+That doesn't mean new players and GMs can't play this game and have fun. They absolutely can! But when I designed Narraject, I designed it with **experienced players in mind**. Players who are comfortable with narrative authority. GMs who can improvise and don't need rigid structure.
 
 If you're an experienced GM looking for something that gives you tools without boxing you in, this might be exactly what you need.
 
@@ -137,7 +137,7 @@ This creates a beautiful space where description and mechanics dance together. Y
 
 ### What's In This Document
 
-This is the **complete core rules** - everything you need to run Narrative Injection in any setting. Character creation, core mechanics, combat, progression, GM principles, everything.
+This is the **complete core rules** - everything you need to run Narraject in any setting. Character creation, core mechanics, combat, progression, GM principles, everything.
 
 Later sections include **Frameworks** - setting-specific rules and Paths (character classes) for fantasy, sci-fi, horror, and more. Each Framework is modular. Use one, use many, or ignore them and make your own.
 
