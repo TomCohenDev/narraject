@@ -1,29 +1,39 @@
 # Narrative Injection: Complete Rules Summary
 
-**Version:** Working Draft v0.2
+**Version:** Working Draft v0.3
 **Purpose:** Comprehensive rules reference for playtesting and iteration
-**Last Updated:** 2026-01-14
+**Last Updated:** 2026-01-16
 
 ## Changelog
+
+### v0.3 (2026-01-16)
+- **MAJOR SYSTEM REBALANCE:**
+- **Success Rate Changed:** 5-6 → 4-5-6 (33% → 50% per die)
+- **Character Level Scale Adjusted:** Level now ≈ Highest Stat ÷ 2 (was ÷ 3)
+- **Stat Ratings Rebalanced:** Level 1 = 2-3 highest stat (was 3-5), Level 3 = 6-7 (was 9-11)
+- **Stat Distribution Simplified:** Removed minimum spread formula (÷3 rule), only requirement is each stat ≥ 1
+- **Power Levels Table Updated:** All 10 levels rebalanced for new success rate
+- **Dice Pools Reduced:** Typical specialty pools now 6-12d6 (was 9-18d6)
+- **Initiative System:** Changed from Popcorn to "What Makes Sense" (narrative-based)
+- **Stress Track Added:** 3-point buffer before taking Conditions
+- **Damage Formula:** Damage = Difficulty - Successes
+- **Conditions Don't Stack:** Only highest relevant Condition applies
+- **NPC Scale Updated:** Level = Difficulty, can have specific action levels
+- **Stats via Milestones Only:** Cannot buy stats with NP, only through narrative progression
+- **Frameworks & Paths Added:** Section 14 explaining setting-specific content structure
 
 ### v0.2 (2026-01-14)
 - **Major Change:** Replaced Reserve/Effort system with Focus (0-6 shared pool)
 - **Focus Mechanics:** Spend Focus AFTER rolling to add Successes (1 Focus = +1 Success)
 - **Focus Timing:** Spend after seeing roll result - never wasted!
-- **Focus Limit:** Cannot spend more Focus than your Stat Rating (prevents dump-stat abuse)
-- **Focus Recovery:** Long Rest (full recovery typical) or Gamble fresh NP (roll 1d6, if > current Focus gain 1)
-- **Starting Focus:** GM-assigned, typically 3 for standard campaigns
-- **Character Creation:** Simplified to Name + Descriptor (freeform one-liner), removed Package/Type/Focus structure
-- **Character Creation:** GM-driven process - GM sets stat points, Anchor/Burden count, gear, and starting Focus
-- **Terminology Changes:** "Traits" → "Anchors", "Flaws" → "Burdens" (primary names)
-- **Currency Unification:** Removed Injector Points (IP), unified to Narrative Points (NP) only
-- **NP Uses:** Now used for progression, activating Injections, AND gambling for Focus
-- **Gear System:** Removed fixed tiers/tags, gear is fully situational (GM decides bonuses per scenario)
-- **Armor Redesign:** Changed from Condition reduction to situational defense bonuses (+1d6 vs specific attack types)
-- **Armor Types:** Light armor defends against Agility attacks, Heavy armor defends against Might attacks
-- **Failure Impact:** Added rule that failures still create progress and impact
-- **Terminology:** "Focusing on the action" = spending Focus points
-- **Examples:** Added 6 new funny/creative stat usage examples
+- **Focus Limit:** Cannot spend more Focus than your Stat Rating
+- **Character Creation:** Simplified to Name + Descriptor, GM-driven process
+- **Terminology Changes:** "Traits" → "Anchors", "Flaws" → "Burdens"
+- **Currency Unification:** Unified to Narrative Points (NP) only
+- **NP Uses:** Progression and gambling for Focus recovery
+- **Gear System:** Fully situational, no fixed tiers
+- **Armor Redesign:** Situational defense bonuses
+- **Failure Impact:** Added rule that failures still create progress
 
 ### v0.1 (2026-01-13)
 - Initial comprehensive rules summary created
@@ -46,6 +56,102 @@
 11. [Power Levels & Point Buy](#11-power-levels--point-buy)
 12. [Pacing & Session Structure](#12-pacing--session-structure)
 13. [GM Principles](#13-gm-principles)
+14. [Frameworks & Paths](#14-frameworks--paths-setting-specific-content)
+
+---
+
+## About This Game
+
+Hi. I'm Tom Cohen, and this is **Narrative Injection**.
+
+I've been running and playing tabletop RPGs for years now, and I kept running into the same problem: I wanted tactical, crunchy gameplay with cool abilities and meaningful choices, but I also wanted fast-paced narrative play where the story moves forward and players have real authorship. And I couldn't find a system that gave me both.
+
+See, here's the thing: most narrative games are great at giving players story authority, but they feel... mushy. There's no crunch. No tactical depth. No moment where you go "holy shit, I have THIS ability that does THIS thing and only I can do it." It's all just description. And that's fine! But it's not what I wanted.
+
+On the other hand, tactical games - games with classes and abilities and cool powers - those games often turn into tactical miniatures games where the narration becomes secondary. You're not describing your character inspiring the troops, you're saying "I use my Inspiring Presence ability to give +2 to attack rolls within 30 feet." The mechanics overshadow the fiction.
+
+**I wanted both.** I wanted the tactician to feel as cool and unique as the wizard. I wanted players who are good at narration to still benefit from having specific abilities on their sheet. I wanted fast, flowing gameplay that doesn't bog down in rules, but still has meaningful tactical choices.
+
+So I made Narrative Injection.
+
+### The Core Problem I'm Solving
+
+Here's the design challenge that keeps me up at night: **How do you make a character with no magic feel as impactful as a character with magic?**
+
+In most narrative games, a clever player can just narrate being tactical. They can describe rallying the troops, creating diversions, coordinating attacks - all without any mechanical support. Which is great! Except it means there's no reason to play "the tactician" when you could play "the wizard who also narrates tactical stuff."
+
+The wizard gets spells - third-party mechanical elements that do things you can't just narrate. But what does the tactician get? What makes them special besides description?
+
+This is the problem Narrative Injection solves. Every Path (my term for classes/jobs/roles) gets abilities that affect the narrative in ways you can't just describe. The tactician doesn't just inspire people with words - they spend resources to make their allies' actions more impactful in concrete, mechanical ways. The investigator doesn't just look for clues - they have abilities that let them inject information into the scene that the GM has to honor.
+
+Your character sheet matters. Your choices matter. And the story still moves fast.
+
+### What This System Does
+
+**Narrative Injection is designed to:**
+
+1. **Give every character type mechanical teeth** - Whether you're slinging spells or leading troops, you have unique abilities that matter
+2. **Keep narrative authority shared** - Players can inject story facts once per session, failures still create progress, description still matters
+3. **Move fast** - Roll once, get a result, move on. No attack rolls AND damage rolls. No initiative tracking. No death spirals.
+4. **Support any genre** - The core rules are setting-agnostic. Frameworks (setting supplements) add magic, tech, psychic powers, whatever.
+5. **Scale elegantly** - Works for street-level noir, epic fantasy, cosmic horror, whatever. The math stays simple.
+
+**The key innovation** is Focus - a resource you spend AFTER seeing your roll to guarantee success. It feels good because you never waste it, but your stats cap how much you can spend, so your choices during character creation matter.
+
+The other key innovation is that success means your stated intent happens. Period. No "you hit but don't do enough damage." If you say "I want to kill the guard" and you succeed, the guard dies. This keeps play moving and makes every roll meaningful.
+
+### Who This Is For
+
+This game is for people who:
+- Love narrative games but want more crunch
+- Love tactical games but want faster play
+- Want every character to feel unique and powerful
+- Trust their players to be co-authors
+- Want to run games in multiple genres without learning new systems
+
+If you like games like Blades in the Dark, Fate, or Cortex, but wish they had more tactical depth and specific abilities, this might be for you.
+
+If you like games like D&D or Draw Steel, but wish combat was faster and more narrative, this might be for you.
+
+If you're tired of systems where "good at narration" is more powerful than anything on your character sheet, this might be for you.
+
+### A Note on Experience Level
+
+**This is not designed as an entry-level system.**
+
+Look, I'm going to be honest with you: this game puts a lot of pressure on the GM. The narrative play style requires you to think on your feet, improvise constantly, track multiple story threads, and make failures interesting. You're not just running encounters from a book - you're co-creating a story with your players in real-time.
+
+That doesn't mean new players and GMs can't play this game and have fun. They absolutely can! But when I designed Narrative Injection, I designed it with **experienced players in mind**. Players who are comfortable with narrative authority. GMs who can improvise and don't need rigid structure.
+
+If you're an experienced GM looking for something that gives you tools without boxing you in, this might be exactly what you need.
+
+### The Design Philosophy
+
+I believe that **mechanics should enable fiction, not replace it**.
+
+Your Anchor (skill/background) in "Combat Training" doesn't say exactly what you do in combat - it adds dice when you describe fighting. Your Burden "Haunted by the Dead" doesn't have a rigid penalty - it removes dice when the GM agrees it's relevant to the scene.
+
+But your Path abilities? Those are concrete. Specific. When the Tactician uses "Coordinated Strike," their ally's next attack is MORE EFFECTIVE in a way that's mechanically real, not just described. When the Mentalist uses "Read Surface Thoughts," they get information the GM must provide, not just permission to ask.
+
+This creates a beautiful space where description and mechanics dance together. You describe how you do things (fiction), and your character sheet determines what you can achieve (mechanics).
+
+### What's In This Document
+
+This is the **complete core rules** - everything you need to run Narrative Injection in any setting. Character creation, core mechanics, combat, progression, GM principles, everything.
+
+Later sections include **Frameworks** - setting-specific rules and Paths (character classes) for fantasy, sci-fi, horror, and more. Each Framework is modular. Use one, use many, or ignore them and make your own.
+
+This is version 0.3. It's ready for playtesting. Things will change based on feedback. If you playtest this and have thoughts, I want to hear them.
+
+### A Note on Inspiration
+
+I owe massive debts to games that came before: Blades in the Dark for player agency, Fate for aspect-based play, Cortex for flexible dice pools, and Draw Steel for heroic resource management. I'm standing on the shoulders of giants here, and I'm not pretending otherwise.
+
+The goal isn't to revolutionize the hobby. The goal is to make the game I wanted to play, and share it with people who might want the same thing.
+
+If that's you, welcome. Let's tell some stories.
+
+— Tom Cohen
 
 ---
 
@@ -67,8 +173,8 @@
 
 1. **Declare Intent:** "I want to [Goal] by [Approach]"
 2. **Set Difficulty:** GM tells you how many Successes you need
-3. **Build Hand:** Gather d6s from Rating, Traits, Gear, and Aspects
-4. **Roll:** Count Successes (5+ on d6)
+3. **Build Hand:** Gather d6s from Rating, Anchors, Gear, and Aspects
+4. **Roll:** Count Successes (4-6 on d6)
 5. **Decide to Focus (Optional):** If you failed, you can spend Focus to add Successes (1 Focus = +1 Success)
 6. **Result:** Succeed or Fail - Reality changes
 
@@ -81,7 +187,7 @@
 
 **AMBITION SETS DIFFICULTY**
 - Want to distract the dragon? Moderate (2 Successes)
-- Want to one shot the dragon with a fork? Legendary (14 Successes)
+- Want to one-shot the dragon with a fork? Mythic (10+ Successes)
 - The GM never says "you can't try" - they just set the difficulty
 
 ### Building Your Dice Pool
@@ -111,9 +217,9 @@ DICE HAND = Rating + Anchors + Gear + Aspects - Burdens - Conditions
 
 **Your Pool:** Rating 3 (3d6) + "Hacker" Anchor Advanced (2d6) + Quality Laptop (2d6) = **7d6 total**
 
-**You Roll:** 7d6 and get `[6, 5, 4, 3, 2, 2, 1]` = **2 Successes** (the 6 and 5)
+**You Roll:** 7d6 and get `[6, 5, 4, 3, 2, 2, 1]` = **3 Successes** (the 6, 5, and 4)
 
-**You Failed!** You needed 4 Successes but only got 2. You're 2 Successes short.
+**You Failed!** You needed 4 Successes but only got 3. You're 1 Success short.
 
 **Decision Point - Do You Focus?**
 
@@ -122,11 +228,11 @@ DICE HAND = Rating + Anchors + Gear + Aspects - Burdens - Conditions
 - Maybe you partially crack the system, alert security, or learn something valuable
 - Keep your 5 Focus for later challenges
 
-**Option B: Spend 2 Focus (Focusing to Succeed)**
-- You're 2 short, so spend 2 Focus to add +2 Successes
+**Option B: Spend 1 Focus (Focusing to Succeed)**
+- You're 1 short, so spend 1 Focus to add +1 Success
 - Your Intellect Rating is 3, so you CAN spend up to 3 Focus on this roll
-- Your 2 Successes + 2 Focus = 4 Successes = SUCCESS!
-- You now have 3 Focus remaining
+- Your 3 Successes + 1 Focus = 4 Successes = SUCCESS!
+- You now have 4 Focus remaining
 - **This feels good:** You only spent Focus because you needed it
 
 **Option C: What if you rolled 1 Success?**
@@ -137,8 +243,8 @@ DICE HAND = Rating + Anchors + Gear + Aspects - Burdens - Conditions
 **Option D: What if you rolled 0 Successes?**
 - You'd be 4 short, but can only spend 3 Focus (your Rating limit)
 - 0 Successes + 3 Focus = 3 Successes = STILL FAILED (needed 4)
-- You'd have to accept failure OR you wasted 3 Focus trying
-- **This is why you don't spend all your Focus on dump stats!**
+- You'd have to accept failure (spending Focus on a failed roll is allowed but wasteful)
+- **This is why you don't rely on Focus for dump stats!**
 
 **The Strategic Choice:** Focus is never wasted because you spend it AFTER seeing the roll. You know exactly how much you need. But your Rating still caps how much you can spend, so invest in stats you care about!
 
@@ -1130,7 +1236,7 @@ A Level 3 NPC requires ~6 Successes to reliably defeat. A Level 3 PC can achieve
 
 ---
 
-## 10. Condition Tracks & Consequences
+## 9. Condition Tracks & Consequences
 
 ### Instead of Hit Points
 
@@ -1303,14 +1409,15 @@ When all Physical slots marked, next Physical consequence takes you out.
 
 ---
 
-## 11. Progression & Narrative Points
+## 10. Progression & Narrative Points
 
 ### Narrative Points (NP)
 
 **NP** is the universal currency of Narrative Points. You earn it through exceptional play and can spend it on:
-- **Character progression** (upgrading Anchors, removing Burdens, increasing Stats)
-- **Activating Injections** (special abilities during play)
-- **Gambling for Focus recovery** (converting fresh NP to Focus)
+- **Character progression** (upgrading Anchors, removing Burdens)
+- **Gambling for Focus recovery** (converting fresh NP to Focus during play)
+
+**Note:** Stats cannot be increased with NP. They only increase through narrative milestones at GM discretion (see Section 2).
 
 **NP is earned through narrative engagement**, not just mechanical success.
 
@@ -1438,7 +1545,7 @@ GMs can grant **milestone advancements** independent of NP:
 
 ---
 
-## 12. Power Levels & Point Buy
+## 11. Power Levels & Point Buy
 
 ### Understanding Character Levels
 
@@ -1536,7 +1643,7 @@ Examples:
 
 ---
 
-## 13. Pacing & Session Structure
+## 12. Pacing & Session Structure
 
 ### Scenes vs. Downtime
 
@@ -1570,7 +1677,7 @@ Narraject alternates between **Scenes** (action, risk, rolls) and **Downtime** (
 
 ---
 
-## 14. GM Principles
+## 13. GM Principles
 
 ### When to Roll
 
@@ -1628,9 +1735,42 @@ Narraject designed for improvisation. Don't need to prep everything.
 
 Trust the system. Trust the table. Have fun.
 
+### Using Cards (Optional Tool)
+
+**Cards are an optional organizational tool** to help track Aspects and gear during play. They are not required, but many groups find them helpful.
+
+**What to write on cards:**
+- **Scene Aspects** - Environmental features, situational elements
+- **Character Aspects** - Personal traits, conditions, temporary effects
+- **Gear** - Especially recurring equipment like armor, weapons, or important items
+- **GM Aspects** - Threats, environmental hazards, plot elements
+
+**How to use cards:**
+
+1. **Write the Aspect or gear name on the card** (front side)
+2. **Add mechanical effect** (e.g., "+2d6 to Stealth", "Cover: +1d6 to Defense")
+3. **When using it in play, place the card on the table** - This makes it clear to everyone what's affecting the scene
+4. **GM can play cards too** - Place threat cards, environmental aspects, or complications on the table
+5. **Remove cards when no longer relevant** - When the Aspect ends or gear is no longer in play
+
+**Why use cards?**
+
+- **Visual organization** - Everyone can see what's affecting the scene at a glance
+- **Reminder system** - Don't forget about that armor bonus or environmental aspect
+- **Clear communication** - When a card is on the table, it's "active" and can affect rolls
+- **Similar to Fate's aspect cards** - If you're familiar with Fate, this will feel natural
+
+**Examples:**
+- Player places "Combat Armor" card on table during firefight (+2d6 to Defense)
+- GM places "Heavy Rain" card on table (all Perception rolls at -1d6)
+- Player places "Injured Leg" Burden card to remind everyone it's affecting their Movement
+- GM places "Sniper on Rooftop" threat card to track the active danger
+
+**This is completely optional.** Some groups prefer tracking everything mentally or with notes. Use cards if they help your table stay organized.
+
 ---
 
-## 15. Frameworks & Paths (Setting-Specific Content)
+## 14. Frameworks & Paths (Setting-Specific Content)
 
 ### What Are Frameworks?
 
@@ -1641,6 +1781,8 @@ Think of them as plug-and-play expansions:
 - "Narraject with the Sci-Fi Framework"
 - "Narraject with the Terra World Framework"
 - "Narraject with the Horror Framework"
+- "Narraject with the Alien Framework"
+- "Narraject with the Zombie Apocalypse Framework"
 
 Each Framework is tailored to its genre and can include:
 - **Setting lore and worldbuilding**
@@ -1675,7 +1817,7 @@ Each Framework is tailored to its genre and can include:
 **Important:** Each Framework defines its own rules and structure.
 
 - Some Frameworks use Paths extensively
-- Some might rename them (Vocations, Callings, Specializations, Roles)
+- Some might rename them (Vocations, Callings, Specializations, Roles, Classes...)
 - Some might not have character options at all (just setting rules and gear)
 - Some might have completely different progression systems
 
@@ -1688,31 +1830,27 @@ If you're creating a Framework for your own setting:
 1. **Choose your structure** - Will you use Paths? Something else? Nothing at all?
 2. **Use "Paths" terminology if possible** - It's the suggested default and helps consistency
 3. **Define what your options provide** - Anchors? Special abilities? Stat progressions?
-4. **Integrate with core rules** - Don't replace core mechanics, extend them
-5. **Add setting flavor** - Terminology, lore, and genre-specific feel
+4. **Add setting flavor** - Terminology, lore, and genre-specific feel
 
 **We suggest using "Paths" terminology** when designing character progression options for your Framework. This helps players recognize the structure across different Frameworks, but you're free to rename them to fit your setting.
 
 ### Where to Find Frameworks
 
-**Core book:** No Frameworks included (just core rules)
+**Core rulebook includes several Frameworks:**
 
-**Future supplements:**
-- Fantasy Framework
-- Sci-Fi Framework
-- Horror Framework
-- Therra World Framework
-- Modern Framework
-- And more...
-
-**Community Frameworks:** Players can create and share their own Frameworks for different settings and genres.
-
-**Each Framework supplement includes:**
-- Complete setting information
+Each Framework in this book provides everything needed to play in that setting:
+- Complete setting information and lore
 - Character options (Paths or equivalent)
 - Special rules and subsystems
+- Setting-specific gear and equipment
 - GM guidance for that genre
-- Everything needed to play in that setting
+
+**Future expansion Frameworks:**
+- Additional settings and genres as separate supplements
+- Community-created Frameworks
+- Third-party Framework support
+
+**Included Frameworks are complete and ready to play.** Choose the one that fits your game, or use the core rules without any Framework for maximum flexibility.
 
 ### Using Frameworks with Core Rules
 
