@@ -1,20 +1,34 @@
 # Tom's Thoughts
 
 **Date:** 2026-01-16
+## Core Concerns: Anchors, Burdens, and Narrative Flow
 
-I am contiplating the ideas of Anchores and burdens and how they would play with flow. currently the aspects can be invoked everytime they come into relevance and create drama. for now they just grant +xd6 to the role while burdens do the opposide. with that if the aspect narration was a good moment of epicness then the player also gets NP. which currently used to upgrade and lessen burdens or create new anchores. NP can also be traded to focus points which used to get instent success AFTER rolls. i loved that idea.
+I'm contemplating how Anchors and Burdens interact with the game's flow. Currently, Aspects can be invoked whenever they're relevant and create drama. Right now they just grant +Xd6 to rolls, while Burdens do the opposite. When a player creates an epic moment through Aspect narration, they earn NP (Narrative Points). NP is currently used to upgrade Anchors, lessen Burdens, or create new Anchors. NP can also be traded for Focus points, which add instant successes AFTER rolls. I love that idea.
 
-i originally wantd NP to be used as reasorces for Paths and abilities for the characters.
-i run into issuse:
-- the abilities of the paths dont work well with the core rule set, as the game is light on rules the abilities need to effect narration. something just doesnt click there
-- NP seems to be the core reasorces and be used for many things, im still not sure if i like that. as NP will be the main source of power for players.
-- rolls can be effeted by anchores, burdens, gear and stats and aspects. from personal experience using aspects that alwasy apply are hard to track, using gear that always alliped +1d6 is hard to remember. always spamming my anchores can be an option. which will make for spammy unbalanced game.
-- anhores and burdens need to change in their gameplay mechanics and perhaps even in their meanings
+Originally, I wanted NP to be the resource for Path abilities and character powers.
 
-another issue is the dmg, i have been told that the chance to get one hit killed by a level 5 enemy is too great. if i attack him and i get 0 success thats 5 hits, meaning already one condition and 1 stress from getting another one. dmg rules need to change OR a set dmg for enemies for scale. techinally the player can use focus of get more sucess and reduce the dmg taken. 
+### Issues I'm Running Into:
 
-even aspects in the scene need some kind of invocation to use, to it is easy to track what relavent as MANY aspects can be used at ones.
+**Path Abilities Don't Click**
+- Path abilities don't work well with the core ruleset. Since the game is light on rules, abilities need to affect narration directly. Something just doesn't click there.
 
-my first thought right now is to remove bonuses from anchores and burdens and just allow for gaining NP points from them. but that doestn solve the spamming issue that can happen with them. and also how do you balacne anchores and burdens, as they can be anything at all. meaning some players might have MUCH more NP then others unless i cap the NP, then i hurt progression becouse i want NP to be used and gained alot during the session so their cool abilities in their Framewok path can be used.
+**NP Does Too Many Things**
+- NP seems to be the core resource and is used for many things. I'm still not sure if I like that, since NP will be the main source of power for players.
 
-some aspects, like gear should alwasy be used. there is no reason to invoke it. if i am attacked an i have armor then i should be safer. 
+**Too Many Modifiers to Track**
+- Rolls can be affected by Anchors, Burdens, Gear, Stats, AND Aspects. From personal experience, using Aspects that always apply is hard to track. Gear that always applies +1d6 is hard to remember. Always invoking Anchors becomes spammy and unbalanced.
+- Anchors and Burdens need to change in their gameplay mechanics—perhaps even in their meanings.
+
+**Damage Scaling Problems**
+- I've been told the chance of getting one-hit killed by a Level 5 enemy is too high. If I attack them and get 0 successes, that's 5 damage—meaning I immediately take one Condition plus 1 Stress, putting me close to a second Condition. Damage rules need to change OR enemies need set damage for scaling purposes. Technically, players can use Focus to get more successes and reduce damage taken, but the math feels punishing.
+
+**Aspects Need Invocation Tracking**
+- Even scene Aspects need some kind of invocation mechanic, so it's easy to track what's relevant. Otherwise, MANY Aspects can be used at once, making tracking impossible.
+
+### Possible Solutions (and New Problems)
+
+**Remove Anchor/Burden Bonuses?**
+- My first thought is to remove dice bonuses from Anchors and Burdens and just allow them to grant NP when invoked. But that doesn't solve the spamming issue. Also, how do you balance Anchors and Burdens when they can be anything at all? Some players might earn MUCH more NP than others. If I cap NP, I hurt progression—because I want NP to be used and gained a lot during sessions so players can use their cool Framework Path abilities.
+
+**Gear Should Always Apply**
+	- Some Aspects, like gear, should always be active. There's no reason to invoke armor—if I'm attacked and I have armor, I should be safer. Period.     

@@ -1,6 +1,6 @@
 # Narraject: Complete Rules Summary
 
-**Version:** Working Draft v0.3
+**Version:** Working Draft v0.4
 **Purpose:** Comprehensive rules reference for playtesting and iteration
 **Last Updated:** 2026-01-16
 
@@ -190,6 +190,19 @@ If that's you, welcome. Let's tell some stories.
 - Want to one-shot the dragon with a fork? Mythic (10+ Successes)
 - The GM never says "you can't try" - they just set the difficulty
 
+**SOCIAL ROLLS CLARIFICATION**
+
+"Success = intent" is not mind control. The GM sets difficulty based on both what's being asked AND the NPC's motivations:
+
+| Request | Typical Difficulty |
+|---------|-------------------|
+| Persuade guard to let you pass | 3 (Challenging) |
+| Persuade guard to look the other way while you steal | 5 (Very Hard) |
+| Persuade guard to abandon their post | 6-7 (Heroic) |
+| Persuade guard to betray their family | 8+ or impossible |
+
+Unreasonable requests have unreasonable difficulties. Asking someone to act against their core values may simply be impossible - no roll allowed.
+
 ### Building Your Dice Pool
 
 ```
@@ -208,6 +221,28 @@ DICE HAND = Rating + Anchors + Gear + Aspects - Burdens - Conditions
 
 **Adding Successes After Rolling:**
 - **Focus:** Spend AFTER rolling if you failed (1 Focus = +1 Success, up to Stat Rating limit)
+
+### Assisting Other Characters
+
+Before another character rolls, you may **Assist** them:
+
+1. **Describe how you help** - What are you doing to contribute?
+2. **GM agrees it's relevant** - Your assistance must make sense in the fiction
+3. **Add dice to their pool:**
+   - Basic assistance: **+1d6**
+   - If you have a relevant Advanced Anchor: **+2d6**
+   - If you have a relevant Master Anchor: **+3d6**
+
+**Best Stat Option:** Sometimes the most capable character should lead, with others assisting:
+- Example: Shoving a heavy metal door - the strongest character uses their Might
+- Other characters add +1d6 each to that character's roll
+- The group uses the best stat for the task; assistants contribute dice
+
+**Example:**
+- Kira (Might 2) wants to break down a door
+- Marcus (Might 5, "Combat Training" Advanced) offers to lead instead
+- Kira assists Marcus, adding +1d6 to his roll
+- Marcus rolls his Might 5 + Kira's assist (+1d6) = 6d6
 
 ### Focus in Action: Complete Example
 
@@ -273,7 +308,7 @@ Compare total Successes to Difficulty:
 | **10+**   | Mythic      | Feats of gods                                  |
 
 
-### Degrees of Success (Optional)
+### Degrees of Success
 
 **Excess Successes** make your success better:
 
@@ -283,7 +318,7 @@ Compare total Successes to Difficulty:
 | +3-4 Successes | **Strong Success** - Exceptional result, GM describes extra benefit |
 | +5+ Successes | **Triumph** - You narrate something impressive |
 
-### Degrees of Failure (Optional)
+### Degrees of Failure
 
 **Important:** Failure doesn't mean "nothing happens." Your actions still have impact - just not the outcome you intended.
 
@@ -333,6 +368,22 @@ When a player fails, ask yourself:
 - "Everything is exactly as it was before"
 
 **The Principle:** Every roll should move the story forward, whether success or failure. Failure means you didn't achieve your intent, but it doesn't mean you had no effect.
+
+### Contested Rolls
+
+When two characters directly oppose each other:
+
+1. **Both characters roll** using their relevant stats and modifiers
+2. **Compare Successes** - higher total wins
+3. **On a tie** - nothing changes, stalemate (neither side gains advantage)
+
+**Examples:**
+- Arm wrestling: Both roll Might, higher wins
+- Opposed persuasion: Both roll Persona, higher wins
+- Chase scene: Both roll Agility, higher wins (or gains/loses ground)
+- Grappling: Both roll Might or Agility (depending on approach)
+
+**Note:** Most NPC interactions don't use contested rolls - NPCs set a Difficulty and players roll against it. Contested rolls are primarily for PvP or special dramatic moments.
 
 ### Stats Determine Approach
 
@@ -445,12 +496,11 @@ Focus is precious and limited. You recover it in two ways:
 #### 1. Rest and Narrative Downtime
 
 **Narrative Long Rest** (full night's sleep, eating, interacting with each other):
-- At GM's discretion, recover Focus based on the quality of rest
-- Typically recover all Focus for a good night's rest
-- Narrative moments can restore Focus at GM's discretion
+- **Restores Focus to 3** (not to maximum)
+- Getting above 3 Focus requires the NP gamble (see below)
 - **This requires actual downtime** - sleeping, eating, meaningful character interaction
 
-**GM Guidance:** Use Focus recovery as a pacing tool. If players are rushing, they burn Focus. If they take time to rest and roleplay, reward them with Focus recovery.
+**GM Guidance:** Use Focus recovery as a pacing tool. If players are rushing, they burn Focus. If they take time to rest and roleplay, reward them with Focus recovery. The cap at 3 ensures Focus remains a meaningful resource even after rest.
 
 #### 2. Converting Fresh NP to Focus (The Gamble)
 
@@ -567,9 +617,27 @@ Your character has two simple elements:
 3. **Select starting Anchors** - GM tells you how many (typically 3-5). What are you good at?
 4. **Balance with Burdens (Rule of Balance: 1 Burden per 1 Anchor)** - What complicates your life?
 5. **Choose starting Gear** - Select from GM's available options or campaign-appropriate equipment
-6. **Start with Focus** - GM assigns starting Focus (typically 3 for standard campaigns)
+6. **Start with Focus** - All characters start with Focus 3
 
 **Time to Create:** 15-20 minutes (10 for experienced players)
+
+### Starting Character Templates
+
+For GMs who want guidance, use these default starting packages:
+
+| Template | Stat Points | Suggested Distribution | Anchors | Burdens | Starting Focus |
+|----------|-------------|------------------------|---------|---------|----------------|
+| **Street** (Level 1) | 6 | 3/1/1/1 or 2/2/1/1 | 2-3 (1 Advanced, 1-2 Basic) | 2-3 | 3 |
+| **Standard** (Level 2) | 10 | 4/3/2/1 or 4/2/2/2 | 4 (2 Advanced, 2 Basic) | 4 | 3 |
+| **Heroic** (Level 3) | 14 | 6/4/2/2 or 5/4/3/2 | 5-6 (3 Advanced, 2-3 Basic) | 5-6 | 3 |
+
+**Street Level:** Civilians, rookies, ordinary people thrust into danger. Struggles against Level 2+ threats.
+
+**Standard:** Experienced operatives, trained professionals, starting adventurers. The recommended default for most campaigns.
+
+**Heroic:** Elite professionals, legendary figures, characters with significant backstory achievements.
+
+**Note:** These are recommendations. The GM has final say on starting resources.
 
 ---
 
@@ -755,6 +823,13 @@ A Burden applies when:
 ### Earning NP from Burdens
 
 When a Burden **meaningfully complicates your life** - causes failure, forces difficult choice, or creates dramatic tension - the GM can award **1 NP**.
+
+**Who Can Invoke Burdens:**
+- **Players** can invoke their own Burdens for dramatic effect
+- **GMs** can invoke a player's Burden at any time
+- When GM invokes a Burden, the player still earns NP
+
+**GM Invocation:** If the GM notices a Burden never triggers naturally, they can force it into play. This prevents "paper Burdens" that players take but never engage with.
 
 **When to Award NP (Good Stab):**
 - Player roleplays the complication honestly
@@ -942,6 +1017,20 @@ Think of it as your "story authorship token."
 - "I've dealt with this crime boss before - we have history"
 - "I prepared for this scenario. I have flashbangs in my coat"
 
+### Optional Categories
+
+For players who want guidance, here are common types of Narrative Injections:
+
+| Category | What It Does | Example |
+|----------|--------------|---------|
+| **Contact** | Introduce an NPC connection | "I know someone here who owes me a favor" |
+| **Preparedness** | Establish you planned ahead | "I brought flashbangs - I planned for this" |
+| **Fact** | Declare a world/location detail | "This building has a back entrance through the basement" |
+| **Twist** | Add a complication or connection | "One of the cultists recognizes me - we have history" |
+| **Reframe** | Change the meaning of an event | "The bullet ricochets and hits the control panel" |
+
+**Note:** These categories are guidance, not restrictions. You can inject anything the GM approves.
+
 ### What Makes a Good Injection?
 
 **✅ Good Injections:**
@@ -1045,40 +1134,45 @@ If it's unclear or contested, the GM can:
 
 ### Taking Damage
 
-**Damage is calculated by the difference between your Successes and the Difficulty.**
+**NPCs have two combat values:**
+- **Attack** - Difficulty to defend against (defaults to NPC Level)
+- **Damage** - How much damage they deal (defaults to NPC Level)
 
-**Simple formula:**
+**Damage Formula:**
 ```
-Damage = Difficulty - Your Successes
+Final Damage = NPC Damage - Player's Successes (minimum 0)
 ```
 
-If you don't get enough Successes, you take damage equal to the difference.
+Player successes always reduce damage, even on a "failed" defense. Partial defense helps.
 
 **Examples:**
 
 **Example 1: Defending Against Attack**
-- NPC (Level 4) attacks you
-- You roll defense, get 3 Successes
-- Difficulty was 4, you got 3
-- **Damage: 4 - 3 = 1 Stress point**
+- NPC (Attack 4, Damage 4) attacks you
+- You roll defense vs Difficulty 4, get 3 Successes
+- **Final Damage: 4 - 3 = 1 Stress point**
 
 **Example 2: Barely Defending**
-- NPC (Level 5) attacks you
-- You roll defense, get 2 Successes
-- Difficulty was 5, you got 2
-- **Damage: 5 - 2 = 3 Stress points (fills Stress Track)**
+- NPC (Attack 5, Damage 5) attacks you
+- You roll defense vs Difficulty 5, get 2 Successes
+- **Final Damage: 5 - 2 = 3 Stress points (fills Stress Track)**
 
 **Example 3: Complete Defense**
-- NPC (Level 3) attacks you
-- You roll defense, get 4 Successes
-- Difficulty was 3, you got 4
-- **Damage: 3 - 4 = 0 (no damage, you exceeded the Difficulty)**
+- NPC (Attack 3, Damage 3) attacks you
+- You roll defense vs Difficulty 3, get 4 Successes
+- **Final Damage: 3 - 4 = 0 (no damage)**
 
-**Example 4: Failed Attack**
-- You attack NPC (Level 4)
-- You roll, get 2 Successes
-- Difficulty was 4, you got 2
-- **Damage to you: 4 - 2 = 2 Stress points** (the NPC counterattacks or you leave yourself open)
+**Example 4: Slow Devastator**
+- NPC (Attack 2, Damage 5) - slow but hits hard
+- You roll defense vs Difficulty 2, get 1 Success
+- **Final Damage: 5 - 1 = 4 Stress points** (easy to dodge, devastating if caught)
+
+**Example 5: Fast Harasser**
+- NPC (Attack 5, Damage 2) - quick but weak hits
+- You roll defense vs Difficulty 5, get 3 Successes
+- **Final Damage: 2 - 3 = 0** (even partial defense negates weak attacks)
+
+**Note on Failed Attacks:** When a player fails an attack roll, they simply miss. The NPC does not automatically counterattack - that would be a separate NPC action requiring another defense roll.
 
 ### Static Damage
 
@@ -1203,6 +1297,28 @@ Level: 3
 
 Done. Players roll vs Difficulty 3 for everything involving this character.
 
+### Encounter Balancing
+
+Use this threat budget system to create balanced encounters:
+
+**Formula:** Compare Total NPC Levels to Sum of Party Levels
+
+| Difficulty | NPC Level Budget | Example (4 Level 2 PCs = 8 total) |
+|------------|------------------|-----------------------------------|
+| **Easy** | ~50% of party | 4 levels (4× Level 1, or 2× Level 2) |
+| **Challenging** | ~100% of party | 8 levels (4× Level 2, or 2× Level 3 + 1× Level 2) |
+| **Hard** | ~150% of party | 12 levels (4× Level 3, or 1× Level 5 + 2× Level 3 + minions) |
+| **Deadly** | ~200% of party | 16 levels (4× Level 4, or 1× Level 6 boss + Level 3-4 elites) |
+
+**Considerations:**
+- Many weak enemies = more actions, can overwhelm through numbers
+- One strong enemy = simpler but can be focus-fired down quickly
+- Mix of boss + minions often works best for dramatic fights
+- High-Damage low-Attack enemies are dangerous but avoidable
+- High-Attack low-Damage enemies are consistent chip damage
+
+**Note:** This is a guideline. Terrain, tactics, surprise, and player resources (Focus) all affect actual difficulty.
+
 ### Understanding NPC Scale
 
 **What do Levels mean in terms of player capability?**
@@ -1292,6 +1408,15 @@ STRESS TRACK (shared for Physical and Mental)
 - You take Physical damage → Take a Physical Condition, reset Stress to 0/3
 
 **Stress is a buffer.** It absorbs minor hits before you take lasting harm.
+
+**Excess Damage Is Ignored:** If damage exceeds your remaining Stress, the excess is lost.
+- You have 1 Stress remaining, take 3 damage
+- Fill Stress Track (uses 1 of the 3 damage)
+- Take a Condition (severity based on the attack, NOT overflow amount)
+- Reset Stress to 0
+- The remaining 2 damage is ignored
+
+**One hit = one Condition maximum.** This keeps combat simpler and less lethal.
 
 ### How Condition Tracks Work
 

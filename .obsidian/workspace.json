@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tom's Thoughts.md",
+                "file": "RULES_SUMMARY.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tom's Thoughts"
+              "title": "RULES_SUMMARY"
             }
           }
         ]
@@ -186,9 +186,11 @@
   },
   "active": "72664bb5841409e0",
   "lastOpenFiles": [
-    "04_frameworks/BLOODWYRD_SUMMARY.md",
     "Tom's Thoughts.md",
     "RULES_SUMMARY.md",
+    "AI CRITICS.md",
+    "AGREED_CHANGES.md",
+    "04_frameworks/BLOODWYRD_SUMMARY.md",
     "04_frameworks/HEROIC_FANTASY_SUMMARY.md",
     "Untitled.canvas",
     "04_frameworks/WYRDWOOD_SUMMARY.md",
@@ -212,8 +214,6 @@
     "01_manuscript/02_characters/05_progression.md",
     "01_manuscript/02_characters/04_gear.md",
     "01_manuscript/02_characters/08_flaws.md",
-    "01_manuscript/02_characters/09_power_levels.md",
-    "01_manuscript/01_core_rules/01_the_roll.md",
     "online_sheet/sheet.html.tmp.60784.1768075629164",
     "online_sheet/sheet.html.tmp.60784.1768075575118",
     "01_manuscript/02_characters/09_power_levels.md.tmp.60784.1768075510278",
