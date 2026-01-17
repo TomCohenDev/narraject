@@ -1,7 +1,6 @@
 # Tom's Thoughts
 
-**Date:** 2026-01-16
-## Core Concerns: Anchors, Burdens, and Narrative Flow
+## **Date:** 2026-01-16
 
 I'm contemplating how Anchors and Burdens interact with the game's flow. Currently, Aspects can be invoked whenever they're relevant and create drama. Right now they just grant +Xd6 to rolls, while Burdens do the opposite. When a player creates an epic moment through Aspect narration, they earn NP (Narrative Points). NP is currently used to upgrade Anchors, lessen Burdens, or create new Anchors. NP can also be traded for Focus points, which add instant successes AFTER rolls. I love that idea.
 
@@ -32,3 +31,37 @@ Originally, I wanted NP to be the resource for Path abilities and character powe
 
 **Gear Should Always Apply**
 	- Some Aspects, like gear, should always be active. There's no reason to invoke armor—if I'm attacked and I have armor, I should be safer. Period.     
+
+
+## **Date:** 2026-01-17
+
+Lets play test gear adding impact instead of dice 
+- **Stats:** Base dice (1-5).
+    
+- **Anchors:** Skill dice (+1 or +2).
+    
+- **Aspects:** Advantage dice (+1 per relevant Aspect).
+
+so lets say i have a character with 
+Stats
+MIGHT 4, AGILITY 3, MIND 3, PERSONA 2 
+Gear: 
+a sword, armor, quick crossbow in my arm with one shot loaded, 
+Anchors:
+master swordsman
+know people in the council
+
+i go and attack someone LEVEL 2 with no special stats
+
+i say:
+i attack the enemy with my sword swinging overhead to cut of the head
+base die is 4 + master swordsman anchor that applies
+
+i roll: 2 success out of 5 dice
+i reached the needed diff and their head is cut off
+
+another case:
+i roll: 0 success out of 5 die
+i use one focus point for success and my sword grands me 1 success as well (impact) so i succed and cut of his head
+
+
