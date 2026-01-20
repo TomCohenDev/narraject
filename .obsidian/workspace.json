@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tom's Thoughts.md",
+                "file": "RULES_SUMMARY.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tom's Thoughts"
+              "title": "RULES_SUMMARY"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tl",
+                "query": "Marks",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -180,38 +180,40 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "72664bb5841409e0",
   "lastOpenFiles": [
-    "RULES_SUMMARY.md",
-    "01_manuscript/00_rules_summary.md",
     "Tom's Thoughts.md",
-    "AI CRITICS.md",
+    "RULES_SUMMARY.md",
     "AGREED_CHANGES.md",
-    "04_frameworks/HEROIC_FANTASY_SUMMARY.md",
     "04_frameworks/BLOODWYRD_SUMMARY.md",
+    "04_frameworks/HEROIC_FANTASY_SUMMARY.md",
+    "AI CRITICS.md",
+    "Untitled.canvas",
+    "04_frameworks/WYRDWOOD_SUMMARY.md",
+    "04_frameworks/README.md",
+    "04_frameworks/WYRDWOOD.md",
+    "04_frameworks/WYRDWOOD_CHARACTER_SHEET.md",
     "04_frameworks",
-    "01_manuscript/02_characters/03_anchors.md",
     "01_manuscript/02_characters/02_stats_and_capacity.md",
     "01_manuscript/02_characters/01_creation_flow.md",
-    "01_manuscript/02_characters/09_power_levels.md",
-    "01_manuscript/02_characters/05_progression.md",
-    "01_manuscript/01_core_rules/01_the_roll.md",
-    "01_manuscript/03_gameplay_loops/03_condition_tracks.md",
-    "01_manuscript/03_gameplay_loops/02_conflict.md",
-    "01_manuscript/03_gameplay_loops/01_pacing.md",
-    "01_manuscript/03_gameplay_loops/04_conflicts_and_enemies.md",
+    "02_assets/templates/character_sheet_v01.md",
     "01_manuscript/99_back_matter/02_definitions.md",
-    "01_manuscript/02_characters/04_gear.md",
+    "01_manuscript/99_back_matter/03_sheets.md",
+    "01_manuscript/04_gm_toolkit/02_npcs_threats.md",
+    "01_manuscript/03_gameplay_loops/03_condition_tracks.md",
+    "01_manuscript/04_gm_toolkit/01_principles.md",
+    "01_manuscript/02_characters/03_anchors.md",
     "01_manuscript/02_characters/03_traits.md",
-    "01_manuscript/02_characters/08_burdens.md",
-    "01_manuscript/02_characters/08_flaws.md",
-    "01_manuscript/01_core_rules/02_narrative_injection.md",
     "01_manuscript/00_front_matter/02_table_of_contents.md",
     "01_manuscript/00_front_matter/01_the_pitch.md",
     "01_manuscript/00_front_matter/00_title_credits.md",
+    "01_manuscript/02_characters/05_progression.md",
+    "01_manuscript/02_characters/04_gear.md",
+    "01_manuscript/02_characters/08_flaws.md",
     "online_sheet/sheet.html.tmp.60784.1768075629164",
     "online_sheet/sheet.html.tmp.60784.1768075575118",
     "01_manuscript/02_characters/09_power_levels.md.tmp.60784.1768075510278",

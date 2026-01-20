@@ -2,7 +2,7 @@
 
 **Purpose:** Track changes agreed upon after reviewing AI critic feedback
 **Date Started:** 2026-01-17
-**Status:** Complete - All changes implemented in RULES_SUMMARY.md v0.4
+**Status:** Complete - All changes implemented in RULES_SUMMARY.md v0.5
 
 ---
 
@@ -181,6 +181,30 @@ When two characters directly oppose each other:
 - Remaining 2 damage is lost/ignored
 
 **Reasoning:** Keeps combat less lethal and simpler to track. One hit = one Condition maximum.
+
+---
+
+### 13. Major System Overhaul: Anchors & Burdens Threshold Shift (v0.5)
+
+**Old System:**
+- Anchors added +1d6 to +3d6 (Basic/Advanced/Master tiers)
+- Burdens removed -1d6 to -3d6 (Minor/Moderate/Severe tiers)
+
+**New System:**
+- **Anchors:** When relevant, shift success threshold to **3-4-5-6** (66.7% per die instead of 50%)
+- **Burdens:** When relevant, shift success threshold to **5-6 only** (33.3% per die instead of 50%)
+- Both are binary - they either apply or don't
+- Only ONE Anchor and ONE Burden can apply per roll
+- If both apply, they cancel out (use normal 4-5-6)
+
+**Benefits:**
+- No more tracking different dice amounts
+- Simpler: same pool size, different threshold
+- Eliminates dice pool inflation problem
+- Forces meaningful choice about which Anchor applies
+- Gear and Aspects still add dice (+Xd6) for situational bonuses
+
+**Rule of Balance:** Still applies - 1 Burden per 1 Anchor owned.
 
 ---
 

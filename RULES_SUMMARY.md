@@ -1,10 +1,37 @@
 # Narraject: Complete Rules Summary
 
-**Version:** Working Draft v0.4
+**Version:** Working Draft v0.5
 **Purpose:** Comprehensive rules reference for playtesting and iteration
-**Last Updated:** 2026-01-16
+**Last Updated:** 2026-01-20
 
 ## Changelog
+
+### v0.5 (2026-01-20)
+- **MAJOR MECHANIC OVERHAUL: Anchors, Burdens & Conditions**
+- **Anchors:** No longer add dice. Instead, shift success threshold to 3-4-5-6 (66.7% per die)
+- **Burdens:** No longer remove dice. Instead, shift success threshold to 5-6 only (33.3% per die)
+- **Conditions Reworked:** Minor (-1d6), Moderate (5-6 only), Severe (6 only = 16.7% per die)
+- **Binary Application:** Anchors/Burdens are now binary (apply or don't), no tiers
+- **One Per Roll:** Only ONE Anchor and ONE Burden can apply per roll
+- **Cancellation:** If both apply, they cancel out (use normal 4-5-6)
+- **Rule of Balance:** Unchanged - 1 Burden per 1 Anchor owned
+- **Dice Pool Simplified:** Pool = Stat + Gear + Aspects - Minor Conditions
+- **Eliminated:** Anchor tiers (Basic/Advanced/Master), Burden tiers (Minor/Moderate/Severe)
+- **Progression Updated:** NP now adds new Anchors (must add Burden) or removes Burdens
+
+### v0.4 (2026-01-20)
+- **Damage Formula Rework:** NPCs now have Attack (difficulty) and Damage (how hard they hit) as separate values
+- **Enemy Archetypes:** Enabled slow devastators, fast harassers, etc.
+- **Focus Recovery:** Rest now restores to 3, not max
+- **Assist Rules:** Added - helpers grant +1d6 or lend their Anchor
+- **Contested Rolls:** Added - both roll, higher wins, tie = stalemate
+- **Degrees of Success/Failure:** Made core (removed Optional label)
+- **GM Burden Invocation:** GM can invoke player Burdens (player earns NP)
+- **Starting Templates:** Added Street/Standard/Heroic character packages
+- **Encounter Balancing:** Added threat budget guidance
+- **Social Rolls:** Added clarification (difficulty scales with request)
+- **Narrative Injection:** Added optional categories (Contact, Preparedness, Fact, Twist, Reframe)
+- **Stress Spillover:** Clarified - excess damage is ignored
 
 ### v0.3 (2026-01-16)
 - **MAJOR SYSTEM REBALANCE:**
@@ -173,10 +200,30 @@ If that's you, welcome. Let's tell some stories.
 
 1. **Declare Intent:** "I want to [Goal] by [Approach]"
 2. **Set Difficulty:** GM tells you how many Successes you need
-3. **Build Hand:** Gather d6s from Rating, Anchors, Gear, and Aspects
-4. **Roll:** Count Successes (4-6 on d6)
-5. **Decide to Focus (Optional):** If you failed, you can spend Focus to add Successes (1 Focus = +1 Success)
-6. **Result:** Succeed or Fail - Reality changes
+3. **Build Hand:** Gather d6s from Rating + Gear + Aspects
+4. **Determine Threshold:** Check if Anchors or Burdens apply
+5. **Roll:** Count Successes based on threshold
+6. **Decide to Focus (Optional):** If you failed, you can spend Focus to add Successes (1 Focus = +1 Success)
+7. **Result:** Succeed or Fail - Reality changes
+
+### Success Thresholds
+
+| State | Success On | Chance Per Die |
+|-------|------------|----------------|
+| **Normal** (no modifiers) | 4, 5, 6 | 50% |
+| **With Anchor** (relevant skill) | 3, 4, 5, 6 | 66.7% |
+| **With Burden** (relevant weakness) | 5, 6 only | 33.3% |
+| **Moderate Condition** (relevant injury) | 5, 6 only | 33.3% |
+| **Severe Condition** (relevant injury) | 6 only | 16.7% |
+
+**Note:** Minor Conditions remove -1d6 from pool instead of shifting threshold.
+
+**Key Rules:**
+- Anchors and Burdens don't add or remove dice - they shift what counts as success
+- If both an Anchor AND a Burden apply, they cancel out (use normal 4-5-6)
+- Only ONE Anchor can apply per roll (pick the most relevant)
+- Only ONE Burden can apply per roll (GM picks if multiple could apply)
+- Only the WORST Condition applies per roll (Severe > Moderate > Minor)
 
 ### The Golden Rules
 
@@ -206,18 +253,24 @@ Unreasonable requests have unreasonable difficulties. Asking someone to act agai
 ### Building Your Dice Pool
 
 ```
-DICE HAND = Rating + Anchors + Gear + Aspects - Burdens - Conditions
+DICE POOL = Stat Rating + Gear + Aspects - Conditions
 ```
 
 **Sources of Dice:**
 1. **Stats (Rating):** Base dice you always have (1d6 per Rating point)
-2. **Anchors:** Background/skills that apply (+1d6 to +3d6)
-3. **Gear:** Weapons, tools, equipment (+1d6 to +3d6)
-4. **Aspects:** Situational advantages (+1d6 to +2d6)
+2. **Gear:** Weapons, tools, equipment (+1d6 to +3d6)
+3. **Aspects:** Situational advantages (+1d6 to +2d6)
 
 **Removing Dice:**
-- **Burdens:** Narrative weaknesses (-1d6 to -3d6)
-- **Conditions:** Injuries and trauma (-1d6 to -3d6)
+- **Minor Conditions:** -1d6 to relevant rolls
+
+**Modifying Success Threshold (Conditions):**
+- **Moderate Conditions:** 5-6 only = success for relevant rolls
+- **Severe Conditions:** 6 only = success for relevant rolls
+
+**Modifying Success Threshold (not dice):**
+- **Anchors:** If relevant, 3s also count as success (3-4-5-6)
+- **Burdens:** If relevant, only 5-6 count as success
 
 **Adding Successes After Rolling:**
 - **Focus:** Spend AFTER rolling if you failed (1 Focus = +1 Success, up to Stat Rating limit)
@@ -228,10 +281,9 @@ Before another character rolls, you may **Assist** them:
 
 1. **Describe how you help** - What are you doing to contribute?
 2. **GM agrees it's relevant** - Your assistance must make sense in the fiction
-3. **Add dice to their pool:**
-   - Basic assistance: **+1d6**
-   - If you have a relevant Advanced Anchor: **+2d6**
-   - If you have a relevant Master Anchor: **+3d6**
+3. **Benefit:** The rolling character gains **+1d6** to their pool
+
+**Lending Your Anchor:** If you have a relevant Anchor and the lead character doesn't, your assistance can grant them the Anchor's benefit (3-4-5-6 threshold) instead of +1d6. You're effectively lending your expertise.
 
 **Best Stat Option:** Sometimes the most capable character should lead, with others assisting:
 - Example: Shoving a heavy metal door - the strongest character uses their Might
@@ -240,9 +292,9 @@ Before another character rolls, you may **Assist** them:
 
 **Example:**
 - Kira (Might 2) wants to break down a door
-- Marcus (Might 5, "Combat Training" Advanced) offers to lead instead
+- Marcus (Might 5, has "Combat Training" Anchor) offers to lead instead
 - Kira assists Marcus, adding +1d6 to his roll
-- Marcus rolls his Might 5 + Kira's assist (+1d6) = 6d6
+- Marcus rolls 6d6 with the Anchor threshold (3-4-5-6 = success)
 
 ### Focus in Action: Complete Example
 
@@ -645,9 +697,9 @@ For GMs who want guidance, use these default starting packages:
 
 ### What Are Anchors?
 
-**Anchors** are skills, backgrounds, training, connections and experiences that add dice to your pools when relevant.
+**Anchors** are skills, backgrounds, training, connections and experiences that shift your success threshold when relevant.
 
-**Mechanically:** Pure advantage - they never hinder you
+**Mechanically:** When an Anchor applies, **3s also count as successes** (3-4-5-6 instead of just 4-5-6). This increases your success rate from 50% to 66.7% per die.
 
 **Narratively:** Who you are, what you've done, story hooks for the GM
 
@@ -657,19 +709,22 @@ For GMs who want guidance, use these default starting packages:
 
 If you have 4 Anchors, you must have 4 Burdens. Gain a new Anchor = gain a new Burden (or deepen existing).
 
-### Anchor Tiers
+### How Anchors Work
 
-| Tier         | Bonus | What It Represents                          |
-| ------------ | ----- | ------------------------------------------- |
-| **Basic**    | +1d6  | Relevant background, training, or skill     |
-| **Advanced** | +2d6  | Specialized expertise or significant talent |
-| **Master**   | +3d6  | Exceptional mastery, world-class ability    |
+| Without Anchor | With Anchor | Effect |
+|----------------|-------------|--------|
+| 4, 5, 6 = Success | 3, 4, 5, 6 = Success | +16.7% per die |
+| 50% per die | 66.7% per die | ~33% more successes |
+
+**Example:** Rolling 6d6
+- Without Anchor: expect ~3 successes
+- With Anchor: expect ~4 successes
 
 ### When Anchors Apply
 
 An Anchor applies when the fiction supports it.
 
-**Important:** Only ONE Anchor applies per roll, even if multiple seem relevant.
+**Important:** Only ONE Anchor applies per roll, even if multiple seem relevant. Pick the most fitting one.
 
 ### Broad vs. Specific Anchors
 
@@ -738,7 +793,7 @@ An Anchor applies when the fiction supports it.
 
 **Think of them as knives:** You forge them and hand them to the GM to stab you with.
 
-**Mechanically:** Remove dice from your pool when they apply
+**Mechanically:** When a Burden applies, **only 5s and 6s count as successes** (instead of 4-5-6). This decreases your success rate from 50% to 33.3% per die.
 
 **Narratively:** Give the GM ammunition to make your character's story matter
 
@@ -746,13 +801,18 @@ An Anchor applies when the fiction supports it.
 
 **You must have 1 Burden for every 1 Anchor you possess.**
 
-### Burden Severity
+### How Burdens Work
 
-| Severity | Dice Penalty | When to Use |
-|----------|-------------|-------------|
-| **Minor** | -1d6 | Nuisance that complicates but doesn't cripple |
-| **Moderate** | -2d6 | Significant hindrance requiring adaptation |
-| **Severe** | -3d6 | Major obstacle or fail-state condition |
+| Without Burden | With Burden | Effect |
+|----------------|-------------|--------|
+| 4, 5, 6 = Success | 5, 6 only = Success | -16.7% per die |
+| 50% per die | 33.3% per die | ~33% fewer successes |
+
+**Example:** Rolling 6d6
+- Without Burden: expect ~3 successes
+- With Burden: expect ~2 successes
+
+**Important:** Only ONE Burden applies per roll. If multiple could apply, GM picks the most relevant.
 
 ### Types of Burden (11 Categories as example)
 
@@ -1276,8 +1336,8 @@ Most NPCs have **1-3 Conditions** before they're out. Bosses might have more.
 
 NPCs use the same Condition system as players, but simpler:
 - **Minor Condition:** -1d6 (if GM tracks NPC pools at all)
-- **Moderate Condition:** -2d6
-- **Severe Condition:** Out of fight (dead, unconscious, fleeing)
+- **Moderate Condition:** 5-6 only = success
+- **Severe Condition:** 6 only = success, or out of fight (dead, unconscious, fleeing)
 
 **Simple tracking:** Many GMs just use "hits to take down" instead of tracking Conditions:
 - Minion: 1 hit
@@ -1338,13 +1398,14 @@ To reliably succeed against an NPC, players need:
 
 **Example: Level 3 NPC**
 
-A Level 3 NPC requires ~6 Successes to reliably defeat. A Level 3 PC can achieve this with:
+A Level 3 NPC requires ~3 Successes to defeat. A Level 3 PC can achieve this with:
 - Base Stat 6-7 (6-7d6)
-- Advanced Anchor (+2d6)
 - Relevant gear (+1d6)
 - Aspect (+1d6)
-- **Total: 10-11 dice** (~5-5.5 Successes average)
-- May need to spend 1 Focus to guarantee success
+- **Total: 8-9 dice**
+- With Anchor (3-4-5-6 threshold): ~5-6 Successes average
+- Without Anchor (4-5-6 threshold): ~4-4.5 Successes average
+- Comfortable margin or may need Focus if unlucky
 
 **This means most "standard" NPCs should be Level 1-3.** Higher levels are bosses, experts, and serious threats.
 
@@ -1374,14 +1435,14 @@ Each track has **three slots**: Minor, Moderate, and Severe.
 
 ```
 PHYSICAL CONDITION TRACK
-□ Minor (-1d6)     _______________
-□ Moderate (-2d6)  _______________
-□ Severe (-3d6)    _______________
+□ Minor (-1d6)           _______________
+□ Moderate (5-6 only)    _______________
+□ Severe (6 only)        _______________
 
 MENTAL CONDITION TRACK
-□ Minor (-1d6)     _______________
-□ Moderate (-2d6)  _______________
-□ Severe (-3d6)    _______________
+□ Minor (-1d6)           _______________
+□ Moderate (5-6 only)    _______________
+□ Severe (6 only)        _______________
 ```
 
 **Standard (Gritty):** 1 Minor, 1 Moderate, 1 Severe per track (3 slots total)
@@ -1426,14 +1487,22 @@ STRESS TRACK (shared for Physical and Mental)
 2. Next damage determines Type (Physical or Mental - whatever the damage type was)
 3. Determine Severity (Minor, Moderate, or Severe based on attack)
 4. Mark a Slot (check box and name the Condition)
-5. Apply Penalty (Condition is now a temporary Burden)
+5. Apply Penalty (see Condition Severity below)
 6. Reset Stress Track to 0/3
+
+### Condition Severity
+
+| Severity | Effect | Success Rate |
+|----------|--------|--------------|
+| **Minor** | -1d6 to relevant rolls | Reduces pool |
+| **Moderate** | 5-6 only = success for relevant rolls | 33.3% per die |
+| **Severe** | 6 only = success for relevant rolls | 16.7% per die |
 
 **Example:** Slashed by sword. Your Stress Track is full (3/3). GM says "That's a Moderate Physical hit."
 
-You mark Moderate Physical slot and write: **"Deep gash in shoulder (-2d6)"**. Reset Stress Track to 0/3.
+You mark Moderate Physical slot and write: **"Deep gash in shoulder"**. Reset Stress Track to 0/3.
 
-From now on, when that Condition applies, you take -2d6 to rolls.
+From now on, when that Condition applies, only 5s and 6s count as successes.
 
 ### Naming Your Conditions
 
@@ -1479,19 +1548,21 @@ All slots marked = **vulnerable** in that area. Can still act, but:
 1
 **Only the highest relevant Condition applies to a roll.**
 
-If you have multiple Conditions that would affect the same action, use only the one with the highest penalty.
+If you have multiple Conditions that would affect the same action, use only the one with the **worst** penalty.
 
-**Example 1:** You have "Slashed arm" (Minor, -1d6) and "Broken leg" (Moderate, -2d6).
+**Severity Hierarchy:** Severe (6 only) > Moderate (5-6 only) > Minor (-1d6)
 
-You're trying to run away (Agility). Both are Physical Conditions that could apply, but only the **highest** applies: -2d6 from "Broken leg."
+**Example 1:** You have "Slashed arm" (Minor, -1d6) and "Broken leg" (Moderate, 5-6 only).
 
-**Example 2:** You have "Broken ribs" (Physical, -2d6) and "Rattled" (Mental, -1d6).
+You're trying to run away (Agility). Both are Physical Conditions that could apply, but only the **worst** applies: "Broken leg" (5-6 only threshold).
 
-You're climbing a wall (Agility). The Physical Condition applies (-2d6). The Mental Condition doesn't affect this physical task, so it's ignored.
+**Example 2:** You have "Broken ribs" (Moderate, 5-6 only) and "Rattled" (Minor, -1d6).
 
-**Example 3:** You have "Broken ribs" (Physical, -2d6) and "Terrified" (Mental, -2d6).
+You're climbing a wall (Agility). The Physical Condition applies (5-6 only). The Mental Condition doesn't affect this physical task, so it's ignored.
 
-You're trying to convince someone while injured and scared (Persona). Both could apply (physical pain + mental state affect your composure). Use the **highest**: -2d6.
+**Example 3:** You have "Broken ribs" (Moderate, 5-6 only) and "Terrified" (Moderate, 5-6 only).
+
+You're trying to convince someone while injured and scared (Persona). Both could apply (physical pain + mental state affect your composure). They're the same severity, so just use one: 5-6 only threshold.
 
 **Exception:** If Conditions affect completely different aspects of the roll, the GM might rule both apply. But this should be rare.
 
@@ -1628,16 +1699,16 @@ NP can be spent **between sessions**, during **in-game downtime**, or **during p
 
 ### Progression: Anchors and Burdens
 
-**Add/Upgrade Anchor (2 NP):**
-- Add new Basic Anchor (+1d6)
-- Upgrade Basic → Advanced (+1d6 → +2d6)
-- Upgrade Advanced → Master (+2d6 → +3d6)
+**Add New Anchor (2 NP):**
+- Add a new Anchor to your character
+- Must also add a new Burden (Rule of Balance)
 - Requires narrative justification
 
-**Reduce/Remove Burden (2 NP):**
-- Reduce Severity (Severe → Moderate → Minor → Removed)
-- Remove Burden entirely (if already Minor)
-- Requires narrative resolution
+**Remove Burden (2 NP):**
+- Remove a Burden entirely
+- Requires narrative resolution (how did you overcome it?)
+
+**Note:** Anchors and Burdens are binary - they either apply or don't. There are no tiers to upgrade.
 
 ### Narrative Justification Required
 
@@ -1651,9 +1722,11 @@ Can't just spend NP and claim advancement. Must narrate how character earned it.
 - "After months of practice, my swordsmanship has reached mastery. Upgrading Swordplay Advanced → Master."
 
 **Burdens:**
-- "After nearly dying in that fire, I've faced my fear. Reducing 'Fear of Fire' from Moderate (-2d6) → Minor (-1d6)."
-- "I've reconciled with my brother. Removing 'Estranged Family' Burden entirely."
-- "Therapy and time have helped. Reducing 'Traumatized' from Severe (-3d6) → Moderate (-2d6)."
+- "After nearly dying in that fire, I've faced my fear. Removing 'Fear of Fire' Burden."
+- "I've reconciled with my brother. Removing 'Estranged Family' Burden."
+- "Therapy and time have helped me process the trauma. Removing 'Traumatized' Burden."
+
+**Note:** Burdens are binary - they either apply or they don't. Spend NP to remove them entirely through narrative development.
 
 ### Milestone Advancement (Optional)
 
@@ -1691,22 +1764,23 @@ A character's level roughly equals their highest stat divided by 2. This helps G
 
 ### Power Levels Table
 
-| Level  | Highest Stat | Total Points | Example Distribution     | Expected Anchors       | Expected Dice in Specialty | Can Handle Easily | Campaign Use                     |
-| ------ | ------------ | ------------ | ------------------------ | ---------------------- | -------------------------- | ----------------- | -------------------------------- |
-| **1**  | 2-3          | 5-6          | (3,1,1,1) or (2,2,1,1)   | 1 Basic, 1 Advanced    | 6-7d6                      | Difficulty 1-2    | Street-level, rookies, civilians |
-| **2**  | 4-5          | 8-10         | (5,2,1,1) or (4,3,1,1)   | 2 Basic, 1 Advanced    | 8-10d6                     | Difficulty 2-3    | Standard starting characters     |
-| **3**  | 6-7          | 12-14        | (7,3,2,1) or (6,4,2,1)   | 2-3 Advanced           | 10-12d6                    | Difficulty 3-4    | Experienced operatives           |
-| **4**  | 8-9          | 16-18        | (9,5,2,1) or (8,6,2,1)   | 3-4 Advanced           | 12-14d6                    | Difficulty 4-5    | Elite professionals              |
-| **5**  | 10-11        | 20-22        | (11,6,3,1) or (10,7,3,1) | 3-4 Advanced, 1 Master | 14-16d6                    | Difficulty 5-6    | Masters, legendary NPCs          |
-| **6**  | 12-13        | 24-26        | (13,8,4,1) or (12,9,4,1) | 4-5 Advanced, 1 Master | 16-18d6                    | Difficulty 6-7    | Heroes of legend                 |
-| **7**  | 14-15        | 28-30        | (15,9,5,1) or (14,10,5,1) | 5 Advanced, 2 Master  | 18-20d6                    | Difficulty 7-8    | Demigods, ancient dragons        |
-| **8**  | 16-17        | 32-34        | (17,11,5,1) or (16,12,5,1) | 5 Advanced, 2-3 Master | 20-22d6                   | Difficulty 8-9    | Gods, primordial forces          |
-| **9**  | 18-19        | 36-38        | (19,12,6,1) or (18,13,6,1) | 6 Advanced, 3 Master  | 22-24d6                    | Difficulty 9-10   | Cosmic entities                  |
-| **10** | 20+          | 40+          | (20,14,7,1) or (21,13,7,1) | Full mastery          | 24-26d6                    | Difficulty 10+    | Peak of existence                |
+| Level  | Highest Stat | Total Points | Example Distribution     | Expected Anchors | Expected Dice | Can Handle | Campaign Use                     |
+| ------ | ------------ | ------------ | ------------------------ | ---------------- | ------------- | ---------- | -------------------------------- |
+| **1**  | 2-3          | 5-6          | (3,1,1,1) or (2,2,1,1)   | 2-3              | 5-7d6         | Diff 1-2   | Street-level, rookies, civilians |
+| **2**  | 4-5          | 8-10         | (5,2,1,1) or (4,3,1,1)   | 3-4              | 7-9d6         | Diff 2-3   | Standard starting characters     |
+| **3**  | 6-7          | 12-14        | (7,3,2,1) or (6,4,2,1)   | 4-5              | 9-11d6        | Diff 3-4   | Experienced operatives           |
+| **4**  | 8-9          | 16-18        | (9,5,2,1) or (8,6,2,1)   | 5-6              | 11-13d6       | Diff 4-5   | Elite professionals              |
+| **5**  | 10-11        | 20-22        | (11,6,3,1) or (10,7,3,1) | 6-7              | 13-15d6       | Diff 5-6   | Masters, legendary NPCs          |
+| **6+** | 12+          | 24+          | (13,8,4,1) or higher     | 7+               | 15+d6         | Diff 6+    | Heroes of legend, demigods       |
 
-**"Expected Dice in Specialty"** assumes: Base Rating + Advanced Anchor (+2d6) + Gear (+1d6) + Aspect (+1d6)
+**Note:** Anchors no longer add dice - they shift success threshold to 3-4-5-6 (66.7% per die). "Expected Dice" is pool size from Stats + Gear + Aspects.
 
-**Success rate:** Each die has 50% chance of Success (rolling 4, 5, or 6)
+**"Expected Dice in Specialty"** assumes: Base Rating + Gear (+1d6 to +2d6) + Aspect (+1d6)
+
+**Success rates:**
+- Without Anchor: 50% per die (4-5-6 = success)
+- With Anchor: 66.7% per die (3-4-5-6 = success)
+- With Burden: 33.3% per die (5-6 only = success)
 
 ### Stat Distribution Rules
 
@@ -1994,9 +2068,18 @@ Each Framework in this book provides everything needed to play in that setting:
 
 ## Quick Reference Tables
 
-### Success Rate
-- **4, 5, or 6 = Success** (50% per die)
-- Roll dice, count Successes, compare to Difficulty
+### Success Thresholds
+| Condition | Success On | Chance Per Die |
+|-----------|------------|----------------|
+| **Normal** | 4, 5, 6 | 50% |
+| **With Anchor** | 3, 4, 5, 6 | 66.7% |
+| **With Burden** | 5, 6 only | 33.3% |
+| **Moderate Condition** | 5, 6 only | 33.3% |
+| **Severe Condition** | 6 only | 16.7% |
+
+Roll dice, count Successes based on threshold, compare to Difficulty.
+
+**Note:** Minor Conditions remove -1d6 instead of shifting threshold.
 
 ### Difficulty Scale
 | Successes | Difficulty  | Example Task |
@@ -2033,37 +2116,37 @@ Each Framework in this book provides everything needed to play in that setting:
 - **Capacity:** 0-6 points (shared across all stats)
 - **Spend:** After rolling, add 1 Success per Focus spent
 - **Limit:** Cannot spend more than your Stat Rating for that roll
-- **Recovery:** Long Rest (full recovery) or Gamble fresh NP (roll 1d6, success if > current Focus)
+- **Recovery:** Long Rest (restores to 3, not max) or Gamble fresh NP (roll 1d6, success if > current Focus)
 
 ### Anchors (Skills & Competencies)
-| Tier | Bonus | Cost to Add/Upgrade |
-|------|-------|---------------------|
-| Basic | +1d6 | 2 NP |
-| Advanced | +2d6 | 2 NP (from Basic) |
-| Master | +3d6 | 2 NP (from Advanced) |
+**Note:** Anchors no longer add dice - they shift your success threshold to 3-4-5-6 (66.7% per die instead of 50%).
+
+| Action | Cost |
+|--------|------|
+| Add new Anchor | 2 NP (must also add a Burden per Rule of Balance) |
 
 ### Burdens (Flaws & Vulnerabilities)
-| Severity | Penalty | Cost to Reduce/Remove |
-|----------|---------|----------------------|
-| Minor | -1d6 | 2 NP |
-| Moderate | -2d6 | 2 NP (to Minor) |
-| Severe | -3d6 | 2 NP (to Moderate) |
+**Note:** Burdens no longer have severity tiers - they shift your success threshold to 5-6 only (33.3% per die instead of 50%).
+
+| Action | Cost |
+|--------|------|
+| Remove a Burden | 2 NP (requires narrative justification) |
 
 ### Condition Tracks
 **Two Core Tracks:** Physical, Mental (Social is optional)
 
-**Slots:** Minor (-1d6), Moderate (-2d6), Severe (-3d6)
+**Slots:** Minor (-1d6), Moderate (5-6 only), Severe (6 only)
 
 **Stress Track:** 3 points buffer before taking Conditions. When full, next damage triggers a Condition (type = damage type that broke the buffer). Resets after taking Condition.
 
 **Only highest relevant Condition applies** (they don't stack)
 
 ### Damage Formula
-**Damage = Difficulty - Your Successes**
+**Final Damage = NPC Damage - Player's Successes** (minimum 0)
 
-If you fail a roll, you take Stress equal to the margin of failure.
+NPCs have Attack (difficulty to defend) and Damage (how much they deal). Player successes always reduce damage.
 
-**Example:** NPC attacks (Level 4), you roll defense and get 2 Successes → Take 2 Stress
+**Example:** NPC (Attack 4, Damage 4) attacks, you roll defense and get 2 Successes → Take 4 - 2 = 2 Stress
 
 ### Gear
 - **Situational:** GM decides bonus per scenario
@@ -2104,13 +2187,13 @@ If you fail a roll, you take Stress equal to the margin of failure.
 
 ## Glossary
 
-**Anchors:** Character competencies (skills, backgrounds, training, connections). Come in three tiers: Basic (+1d6), Advanced (+2d6), Master (+3d6).
+**Anchors:** Character competencies (skills, backgrounds, training, connections). When relevant, shift success threshold to 3-4-5-6 (66.7% per die).
 
 **Aspects:** Temporary beneficial conditions created through play (+1d6 typically). Examples: "High Ground," "Behind Cover," "Studied Their Moves."
 
-**Burdens:** Character vulnerabilities (fears, enemies, obligations, flaws). Come in three severities: Minor (-1d6), Moderate (-2d6), Severe (-3d6).
+**Burdens:** Character vulnerabilities (fears, enemies, obligations, flaws). When relevant, shift success threshold to 5-6 only (33.3% per die).
 
-**Condition Tracks:** Physical, Mental, and (optionally) Social tracks for harm. Each has Minor, Moderate, and Severe slots.
+**Condition Tracks:** Physical, Mental, and (optionally) Social tracks for harm. Slots: Minor (-1d6), Moderate (5-6 only), Severe (6 only).
 
 **Focus:** Shared resource pool (0-6 points) representing concentration and determination. Spend after rolling to add Successes (1 Focus = +1 Success, max = Stat Rating).
 
@@ -2185,15 +2268,15 @@ If you fail a roll, you take Stress equal to the margin of failure.
 
 ## Glossary (Alphabetical)
 
-**Anchors:** Character competencies - skills, backgrounds, training, connections, and experiences. Come in three tiers: Basic (+1d6), Advanced (+2d6), Master (+3d6). Cost 2 NP to add or upgrade.
+**Anchors:** Character competencies - skills, backgrounds, training, connections, and experiences. When relevant, shift success threshold to 3-4-5-6 (66.7% per die instead of 50%). Cost 2 NP to add new Anchor (must also add Burden per Rule of Balance).
 
 **Aspects:** Temporary beneficial conditions created through play that add dice to rolls (+1d6 typically). Examples: "High Ground," "Behind Cover," "Studied Their Moves." Last until situation changes or scene ends.
 
-**Burdens:** Character vulnerabilities - fears, enemies, obligations, flaws, and narrative hooks. Come in three severities: Minor (-1d6), Moderate (-2d6), Severe (-3d6). Cost 2 NP to reduce or remove.
+**Burdens:** Character vulnerabilities - fears, enemies, obligations, flaws, and narrative hooks. When relevant, shift success threshold to 5-6 only (33.3% per die instead of 50%). Cost 2 NP to remove (requires narrative justification).
 
 **Character Level:** Reference point for power level, not a literal stat. Approximately equals Highest Stat ÷ 2. Used by GMs to balance challenges.
 
-**Condition Tracks:** Harm tracking system with separate tracks for Physical, Mental, and (optionally) Social damage. Each track has three slots: Minor (-1d6), Moderate (-2d6), Severe (-3d6). Only highest relevant Condition applies to any given roll.
+**Condition Tracks:** Harm tracking system with separate tracks for Physical, Mental, and (optionally) Social damage. Each track has three slots: Minor (-1d6), Moderate (5-6 only), Severe (6 only). Only worst relevant Condition applies to any given roll.
 
 **Difficulty:** Target number of Successes needed to accomplish a task. Set by GM based on ambition of the declared intent. Scale: 1 (Easy) to 10+ (Mythic).
 
