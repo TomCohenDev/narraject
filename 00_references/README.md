@@ -1,6 +1,6 @@
 # Reference Materials
 
-Research, inspiration, and source documents for Narraject design.
+Research, inspiration, and source documents for Run By Null design.
 
 ---
 

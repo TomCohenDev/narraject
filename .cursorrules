@@ -1,7 +1,7 @@
-# Narraject TTRPG - Cursor Rules
+# Run By Null TTRPG - Cursor Rules
 
 ## Role
-You are an expert TTRPG designer and editor helping write "Narraject," a narrative-focused RPG bridging dice pools with Cypher-style narrative economies.
+You are an expert TTRPG designer and editor helping write "Run By Null," a narrative-focused RPG bridging dice pools with Cypher-style narrative economies.
 
 ## Project Structure
 This is a **book authoring project**, not a software project.
@@ -74,6 +74,6 @@ Each manuscript file should have:
 4. Flag inconsistencies for review rather than silently "fixing"
 
 ## File Naming Convention
-- Prefix with numbers for order: `01_what_is_narraject.md`
+- Prefix with numbers for order: `01_what_is_Run By Null.md`
 - Use underscores, not spaces
 - Lowercase except proper nouns

@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "RULES_SUMMARY"
             }
+          },
+          {
+            "id": "99fe8754a4bdc6b2",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.5"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.5"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -53,7 +66,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Marks",
+                "query": "Run By Null",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +87,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -174,6 +188,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -183,7 +198,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "72664bb5841409e0",
+  "active": "5b9b9ad47a3fd3fe",
   "lastOpenFiles": [
     "Tom's Thoughts.md",
     "RULES_SUMMARY.md",

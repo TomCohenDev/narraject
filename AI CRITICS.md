@@ -450,7 +450,7 @@ The system is **moderately swingy at baseline** but **highly consistent at high 
 
 ### What Narrative Injection Offers That Those Don't
 
-|Feature|Blades|Fate|Cortex|Narraject|
+|Feature|Blades|Fate|Cortex|Run By Null|
 |---|---|---|---|---|
 |Focus-after-rolling|✗|✗|✗|✓|
 |Intent-sets-difficulty|Partial|✗|✗|✓|
@@ -462,9 +462,9 @@ The system is **moderately swingy at baseline** but **highly consistent at high 
 
 ### Where It Is Strictly Weaker
 
-- **Character differentiation (vs Blades):** Blades has playbooks with unique abilities. Narraject has... Anchors.
-- **Aspect economy (vs Fate):** Fate's invoke/compel cycle creates dynamic play. Narraject's aspects are static bonuses.
-- **Modularity (vs Cortex):** Cortex can be configured for any genre with dial-tuning. Narraject requires Frameworks that don't exist.
+- **Character differentiation (vs Blades):** Blades has playbooks with unique abilities. Run By Null has... Anchors.
+- **Aspect economy (vs Fate):** Fate's invoke/compel cycle creates dynamic play. Run By Null's aspects are static bonuses.
+- **Modularity (vs Cortex):** Cortex can be configured for any genre with dial-tuning. Run By Null requires Frameworks that don't exist.
 
 ### How to Sharpen Identity
 
@@ -793,9 +793,9 @@ The core resolution engine is solid, but the ecosystem around it is confused. Yo
 
 ### 7) Comparison & Positioning
 
-1.  **Blades in the Dark:** *Narraject* lacks the distinct "Position/Effect" grid, creating less clarity on risks. However, *Narraject* is much faster to resolve (one roll vs action/resist/stress).
-2.  **Cortex Prime:** *Narraject* is essentially Cortex without the complex dice sizes. *Narraject* is faster, but Cortex handles "Effect" better (using the size of the effect die).
-3.  **Draw Steel / D&D 4e:** *Narraject* wants this tactical feel but lacks the keywords (Push, Slow, Daze, Flank).
+1.  **Blades in the Dark:** *Run By Null* lacks the distinct "Position/Effect" grid, creating less clarity on risks. However, *Run By Null* is much faster to resolve (one roll vs action/resist/stress).
+2.  **Cortex Prime:** *Run By Null* is essentially Cortex without the complex dice sizes. *Run By Null* is faster, but Cortex handles "Effect" better (using the size of the effect die).
+3.  **Draw Steel / D&D 4e:** *Run By Null* wants this tactical feel but lacks the keywords (Push, Slow, Daze, Flank).
 
 **Unique Value:** The "Spend Resource AFTER Roll" mechanic combined with "Stat Caps Resource Spend" is the USP. Lean into that. That is the one mechanic here that feels fresh and solves the "wasted turn" problem.
 
