@@ -11,7 +11,7 @@ Compiled outputs go here.
 ```bash
 # Example (not yet implemented)
 cd 01_manuscript
-pandoc **/*.md -o ../dist/narraject_alpha.pdf --toc
+pandoc **/*.md -o ../dist/Run By Null_alpha.pdf --toc
 ```
 
 ---
@@ -26,6 +26,6 @@ pandoc **/*.md -o ../dist/narraject_alpha.pdf --toc
 
 ## Version Naming
 
-- `narraject_alpha_v0.1.pdf` — Early drafts, incomplete
-- `narraject_beta_v1.0.pdf` — Feature complete, testing
-- `narraject_v1.0.pdf` — Release candidate
+- `Run By Null_alpha_v0.1.pdf` — Early drafts, incomplete
+- `Run By Null_beta_v1.0.pdf` — Feature complete, testing
+- `Run By Null_v1.0.pdf` — Release candidate

@@ -1,6 +1,6 @@
 # The Ladder: Ambition vs Difficulty
 
-This is the most important rule in Narraject:
+This is the most important rule in Run By Null:
 
 **If you succeed on the roll, your Intent happens. Period.**
 

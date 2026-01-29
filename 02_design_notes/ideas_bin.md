@@ -6,10 +6,10 @@ Design notes, future ideas, and things to consider. Not for the book—just for 
 
 ## Future Expansions
 
-- **Narraject: Neon Streets** — Cyberware, hacking, corporate espionage
-- **Narraject: Iron Kingdoms** — Castle management, feudal politics, warfare
-- **Narraject: Cosmic Horror** — Expanded horror rules, sanity, the unknown
-- **Narraject: Space Opera** — Starships, alien contact, galactic politics
+- **Run By Null: Neon Streets** — Cyberware, hacking, corporate espionage
+- **Run By Null: Iron Kingdoms** — Castle management, feudal politics, warfare
+- **Run By Null: Cosmic Horror** — Expanded horror rules, sanity, the unknown
+- **Run By Null: Space Opera** — Starships, alien contact, galactic politics
 
 ---
 
