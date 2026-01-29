@@ -1,6 +1,6 @@
 # The Economy: Narrative Points
 
-Run By Null uses **Narrative Points (NP)** as a currency for character progression. You earn NP through exceptional play, and spend them to advance your character mechanically and narratively.
+NullFrame uses **Narrative Points (NP)** as a currency for character progression. You earn NP through exceptional play, and spend them to advance your character mechanically and narratively.
 
 ---
 

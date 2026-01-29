@@ -1,6 +1,6 @@
 # GM Principles
 
-Running Run By Null is about facilitating play, not controlling the story. These principles guide you.
+Running NullFrame is about facilitating play, not controlling the story. These principles guide you.
 
 ---
 
@@ -108,7 +108,7 @@ Adjust accordingly. The economy should _flow_.
 
 ## Improvisation
 
-Run By Null is designed for improvisation. You don't need to prep everything.
+NullFrame is designed for improvisation. You don't need to prep everything.
 
 **Single-number NPCs:** Level determines everything (Difficulty to affect, threat they pose).
 

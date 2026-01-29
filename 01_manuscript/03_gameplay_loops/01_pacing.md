@@ -1,6 +1,6 @@
 curr# Pacing: Scenes vs Downtime
 
-Run By Null alternates between **Scenes** (action, risk, rolls) and **Downtime** (recovery, planning, roleplay).
+NullFrame alternates between **Scenes** (action, risk, rolls) and **Downtime** (recovery, planning, roleplay).
 
 ---
 

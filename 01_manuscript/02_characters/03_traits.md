@@ -152,7 +152,7 @@ Now you have a character who's not just a fighter—they're a noble with social 
 
 ### 5. Consider Action Economy
 
-In Run By Null, you're building dice pools. Traits that apply to your PRIMARY actions (the things you'll do most often) should generally be Advanced or Master tier.
+In NullFrame, you're building dice pools. Traits that apply to your PRIMARY actions (the things you'll do most often) should generally be Advanced or Master tier.
 
 Traits that apply to SECONDARY actions (things you do occasionally) can be Basic tier.
 

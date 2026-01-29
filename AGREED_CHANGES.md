@@ -1,4 +1,4 @@
-# Run By Null v0.4 - Agreed Changes
+# NullFrame v0.4 - Agreed Changes
 
 **Purpose:** Track changes agreed upon after reviewing AI critic feedback
 **Date Started:** 2026-01-17

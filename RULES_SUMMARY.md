@@ -1,4 +1,4 @@
-# Run By Null: Complete Rules Summary
+# NullFrame: Complete Rules Summary
 
 **Version:** Working Draft v0.5
 **Purpose:** Comprehensive rules reference for playtesting and iteration
@@ -89,7 +89,7 @@
 
 ## About This Game
 
-Hi. I'm Tom Cohen, and this is **Run By Null**.
+Hi. I'm Tom Cohen, and this is **NullFrame**.
 
 I've been running and playing tabletop RPGs for years now, and I kept running into the same problem: I wanted tactical, crunchy gameplay with cool abilities and meaningful choices, but I also wanted fast-paced narrative play where the story moves forward and players have real authorship. And I couldn't find a system that gave me both.
 
@@ -99,7 +99,7 @@ On the other hand, tactical games - games with classes and abilities and cool po
 
 **I wanted both.** I wanted the tactician to feel as cool and unique as the wizard. I wanted players who are good at narration to still benefit from having specific abilities on their sheet. I wanted fast, flowing gameplay that doesn't bog down in rules, but still has meaningful tactical choices.
 
-So I made Run By Null.
+So I made NullFrame.
 
 ### The Core Problem I'm Solving
 
@@ -109,13 +109,13 @@ In most narrative games, a clever player can just narrate being tactical. They c
 
 The wizard gets spells - third-party mechanical elements that do things you can't just narrate. But what does the tactician get? What makes them special besides description?
 
-This is the problem Run By Null solves. Every Path (my term for classes/jobs/roles) gets abilities that affect the narrative in ways you can't just describe. The tactician doesn't just inspire people with words - they spend resources to make their allies' actions more impactful in concrete, mechanical ways. The investigator doesn't just look for clues - they have abilities that let them inject information into the scene that the GM has to honor.
+This is the problem NullFrame solves. Every Path (my term for classes/jobs/roles) gets abilities that affect the narrative in ways you can't just describe. The tactician doesn't just inspire people with words - they spend resources to make their allies' actions more impactful in concrete, mechanical ways. The investigator doesn't just look for clues - they have abilities that let them inject information into the scene that the GM has to honor.
 
 Your character sheet matters. Your choices matter. And the story still moves fast.
 
 ### What This System Does
 
-**Run By Null is designed to:**
+**NullFrame is designed to:**
 
 1. **Give every character type mechanical teeth** - Whether you're slinging spells or leading troops, you have unique abilities that matter
 2. **Keep narrative authority shared** - Players can inject story facts once per session, failures still create progress, description still matters
@@ -148,7 +148,7 @@ If you're tired of systems where "good at narration" is more powerful than anyth
 
 Look, I'm going to be honest with you: this game puts a lot of pressure on the GM. The narrative play style requires you to think on your feet, improvise constantly, track multiple story threads, and make failures interesting. You're not just running encounters from a book - you're co-creating a story with your players in real-time.
 
-That doesn't mean new players and GMs can't play this game and have fun. They absolutely can! But when I designed Run By Null, I designed it with **experienced players in mind**. Players who are comfortable with narrative authority. GMs who can improvise and don't need rigid structure.
+That doesn't mean new players and GMs can't play this game and have fun. They absolutely can! But when I designed NullFrame, I designed it with **experienced players in mind**. Players who are comfortable with narrative authority. GMs who can improvise and don't need rigid structure.
 
 If you're an experienced GM looking for something that gives you tools without boxing you in, this might be exactly what you need.
 
@@ -164,7 +164,7 @@ This creates a beautiful space where description and mechanics dance together. Y
 
 ### What's In This Document
 
-This is the **complete core rules** - everything you need to run Run By Null in any setting. Character creation, core mechanics, combat, progression, GM principles, everything.
+This is the **complete core rules** - everything you need to run NullFrame in any setting. Character creation, core mechanics, combat, progression, GM principles, everything.
 
 Later sections include **Frameworks** - setting-specific rules and Paths (character classes) for fantasy, sci-fi, horror, and more. Each Framework is modular. Use one, use many, or ignore them and make your own.
 
@@ -1628,7 +1628,7 @@ You earn **1 NP** when you:
 - Demonstrate exceptional play that enriches session
 - GM's discretion
 
-**Important:** NP awarded for **engaging with the system**, not just having Burdens or using mechanics. The goal of Run By Null is to create good epic stories
+**Important:** NP awarded for **engaging with the system**, not just having Burdens or using mechanics. The goal of NullFrame is to create good epic stories
 
 ### Who Can Award NP?
 
@@ -1846,7 +1846,7 @@ Examples:
 
 ### Scenes vs. Downtime
 
-Run By Null alternates between **Scenes** (action, risk, rolls) and **Downtime** (recovery, planning, roleplay).
+NullFrame alternates between **Scenes** (action, risk, rolls) and **Downtime** (recovery, planning, roleplay).
 
 **A Scene** is a discrete unit of action with clear stakes.
 
@@ -1922,7 +1922,7 @@ Player then decides: try for 10 Successes, or aim for something achievable?
 
 ### Improvisation
 
-Run By Null designed for improvisation. Don't need to prep everything.
+NullFrame designed for improvisation. Don't need to prep everything.
 
 **Single-number NPCs:** Level determines everything
 
@@ -1973,15 +1973,15 @@ Trust the system. Trust the table. Have fun.
 
 ### What Are Frameworks?
 
-**Frameworks** are setting-specific supplements that add flavor, rules, and options to Run By Null's core system.
+**Frameworks** are setting-specific supplements that add flavor, rules, and options to NullFrame's core system.
 
 Think of them as plug-and-play expansions:
-- "Run By Null with the Fantasy Framework"
-- "Run By Null with the Sci-Fi Framework"
-- "Run By Null with the Terra World Framework"
-- "Run By Null with the Horror Framework"
-- "Run By Null with the Alien Framework"
-- "Run By Null with the Zombie Apocalypse Framework"
+- "NullFrame with the Fantasy Framework"
+- "NullFrame with the Sci-Fi Framework"
+- "NullFrame with the Terra World Framework"
+- "NullFrame with the Horror Framework"
+- "NullFrame with the Alien Framework"
+- "NullFrame with the Zombie Apocalypse Framework"
 
 Each Framework is tailored to its genre and can include:
 - **Setting lore and worldbuilding**
