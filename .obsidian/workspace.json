@@ -25,12 +25,14 @@
             "id": "99fe8754a4bdc6b2",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.11.5"
+                "file": "Tom's Thoughts.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.5"
+              "icon": "lucide-file",
+              "title": "Tom's Thoughts"
             }
           }
         ],
@@ -66,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "NullFrame",
+                "query": "Run By Null",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -87,8 +89,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -170,21 +171,31 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01_manuscript/01_core_rules/01_the_roll.md",
+                "file": "Tom's Thoughts.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 01_the_roll"
+              "title": "Outline of Tom's Thoughts"
+            }
+          },
+          {
+            "id": "e679cceb8f70f1af",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -198,10 +209,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "5b9b9ad47a3fd3fe",
+  "active": "99fe8754a4bdc6b2",
   "lastOpenFiles": [
-    "Tom's Thoughts.md",
     "RULES_SUMMARY.md",
+    "Tom's Thoughts.md",
+    "01_manuscript/01_core_rules/01_the_roll.md",
     "AGREED_CHANGES.md",
     "04_frameworks/BLOODWYRD_SUMMARY.md",
     "04_frameworks/HEROIC_FANTASY_SUMMARY.md",
@@ -227,7 +239,6 @@
     "01_manuscript/00_front_matter/00_title_credits.md",
     "01_manuscript/02_characters/05_progression.md",
     "01_manuscript/02_characters/04_gear.md",
-    "01_manuscript/02_characters/08_flaws.md",
     "online_sheet/sheet.html.tmp.60784.1768075629164",
     "online_sheet/sheet.html.tmp.60784.1768075575118",
     "01_manuscript/02_characters/09_power_levels.md.tmp.60784.1768075510278",

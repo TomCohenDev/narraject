@@ -162,5 +162,4 @@ ok lets try to solve those issues:
 	- i thinking changing stats to something else like  Combat, Intellect, Vigor, Charisma, Mobility. and having each stat much lower but give a small static bonus
 	- ok but my issue yet, for simple conflics what is that the players roll? lets give an exmaple, breaking down a berricated door (avilable solutions: forcfully open, try to dissemble and disengage the lock, shout for someone from the other side to open) any of those exmaples is a different way to solve the issue by using a different method, this is good becouse differernt characters can try to solve the issue here with different methoed. each of those methoed should call of a dice throw to see for a success. 
 		- we have in this exmaple 3 character, a soldier, a scholar, a diplomat. each one can try the approch the fits them. so a soliders wouldnt try to hack the door even if he does try that then theres should be clearly a disadvantage becouse he is not good at that. 
-		- ok so what do i do?? lets assume that all of the options in this instance have the same difficulty level, breaking difficulty 3, hacking 3, shounting to open 3
-		- 
+		- ok so what do i do?? lets assume that all of the options in this instance have the same difficulty level, breaking difficulty 3, hacking 3, shouting to open 3
