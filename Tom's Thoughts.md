@@ -163,3 +163,19 @@ ok lets try to solve those issues:
 	- ok but my issue yet, for simple conflics what is that the players roll? lets give an exmaple, breaking down a berricated door (avilable solutions: forcfully open, try to dissemble and disengage the lock, shout for someone from the other side to open) any of those exmaples is a different way to solve the issue by using a different method, this is good becouse differernt characters can try to solve the issue here with different methoed. each of those methoed should call of a dice throw to see for a success. 
 		- we have in this exmaple 3 character, a soldier, a scholar, a diplomat. each one can try the approch the fits them. so a soliders wouldnt try to hack the door even if he does try that then theres should be clearly a disadvantage becouse he is not good at that. 
 		- ok so what do i do?? lets assume that all of the options in this instance have the same difficulty level, breaking difficulty 3, hacking 3, shouting to open 3
+
+## **Date:** 2026-01-31
+
+ok dice mechanics, after thinking a lot i have decied that i want to try to make the following work:
+Presence Dice: they are the base throw for everything, 2d10-20d10
+they jump only if even numbers meaning at base a character throws an even nubmer of dice (2d6, 4d6, 6d6...) this is to ease the calculation of success (each pool have a good possability of success of its size devided by 2) for exmaple a pool of 10 dice, most likly will get 5 success, a pool of 6 lickely will get 3 success.
+the base Presence Dice are great for scale, meaning of the base is 6 then the Null can expect that DL (difficutly level) of 3 should be easly achivable, 4-5 hard, 6 epic, 7+ impossible unless using aspects bonuses gear...
+
+ok so lets connecty that to the level, the character level is 1-10 the base presence dice are 2-20 (character level multiplied by 2). that means a character level is the same as the expected easy difficulty for that character. exmaple: a character level 7 (throwing 14 dice) should easly deal with level 7 DL, enemies...
+
+ok so for complex and simples conflics.
+simples conflics are like stated before, (1-3 throws to completeing the task) 
+Complex Conflics are conflics that require multiple throws and probably team work to solve.
+
+In both cases the players start by throwing the base presence dice.
+now what i need to figure is how the stats play into this. im starting to think to drop stats ALL TOGETHER, and just relay on aspects that will be used from a predefined lists along with player creativity. 
